@@ -6,11 +6,6 @@
 # yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
 
-remote_theme: pages-themes/minimal@v0.2.0. # https://pages-themes.github.io/minimal/
-
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
 
 ################################################################################
 # Site settings
@@ -63,6 +58,8 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-remote-theme 
+
 
 
 ################################################################################
