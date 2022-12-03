@@ -5,11 +5,11 @@ nav_order: 1
 permalink: /
 ---
 
-# Introduction
+# Welcome
 
-## Goal
+## Purpose
 
-In this session, you will get hands-on experience in creating a Travel Request application using the ServiceNow platform. We will cover concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio - our low-code application development interface for developers of any level of experience.
+This is a free, open resource of lab guides and associated materials. 
 
 ## Background
 
