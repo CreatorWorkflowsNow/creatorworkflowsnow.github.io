@@ -10,6 +10,3 @@ permalink: /
 ## Purpose
 
 This is a free, open resource of lab guides and associated materials. 
-
-This is the index.md file. 
-
