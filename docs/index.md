@@ -1,6 +1,6 @@
 ---
 layout: default
-title: index.md
+title: Welcome
 nav_order: 1
 permalink: /
 ---
