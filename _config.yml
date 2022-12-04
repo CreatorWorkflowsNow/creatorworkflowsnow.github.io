@@ -4,7 +4,8 @@
 ################################################################################
 title: Creator Workflows Now
 description: Hello World Description
-theme: just-the-docs
+#theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
 
@@ -15,7 +16,6 @@ aux_links: # remove if you don't want this link to appear on your pages
 ################################################################################
 # Shao's theme settings from https://github.com/shaoservicenow/travelrequest (12/3/22)
 ################################################################################
-#remote_theme: just-the-docs/just-the-docs
 logo: "docs/images/servicenow-logo.png"
 back_to_top: true
 back_to_top_text: "Back to top"
@@ -45,14 +45,6 @@ search:
   # Supports true or false (default)
   button: false
 
-################################################################################
-# Dale's theme settings
-################################################################################
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
 ################################################################################
 # Plugins (previously gems:)
