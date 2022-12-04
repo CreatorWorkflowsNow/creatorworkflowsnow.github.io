@@ -1,7 +1,21 @@
 ################################################################################
+# Theme suggestions
+#  https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#publishing-your-site-on-github-pages
+################################################################################
+title: Creator Workflows Now
+description: Hello World Description
+theme: just-the-docs
+
+url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
+
+aux_links: # remove if you don't want this link to appear on your pages
+  Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
+
+
+################################################################################
 # Shao's theme settings from https://github.com/shaoservicenow/travelrequest (12/3/22)
 ################################################################################
-remote_theme: just-the-docs/just-the-docs
+#remote_theme: just-the-docs/just-the-docs
 logo: "docs/images/servicenow-logo.png"
 back_to_top: true
 back_to_top_text: "Back to top"
@@ -31,7 +45,6 @@ search:
   # Supports true or false (default)
   button: false
 
-
 ################################################################################
 # Dale's theme settings
 ################################################################################
@@ -40,9 +53,6 @@ search:
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Creator Workflows Now
-email: dale.stubblefield@servicenow.com
-description: Hello World Description
 
 ################################################################################
 # Plugins (previously gems:)
