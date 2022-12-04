@@ -77,7 +77,7 @@ heading_anchors: true
 # Footer content
 # appears at the bottom of every page's main content
 # Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust
-markup / liquid-based content.
+#markup / liquid-based content.
 #footer_content: "Copyright &copy; 2022 <a href=\"https://www.servicenow.com\">ServiceNow</a>."
 
 # Footer last edited timestamp
