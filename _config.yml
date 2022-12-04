@@ -110,7 +110,7 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 # External navigation links
 nav_external_links:
   - title: Travel Request Lab Guide
-    url: https://github.com/CreatorWorkflowsNow/travelrequest
+    url: https://creatorworkflowsnow.github.io/travelrequest/
     hide_icon: true 
   - title: Learn more about Creator Workflows
     url: https://www.servicenow.com/workflows/creator-workflows.html
