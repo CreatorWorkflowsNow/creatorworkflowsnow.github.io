@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Exercise 4 Testing
-nav_order: 5
+nav_order: 15
 ---
 # Exercise 4: Putting it all together - Testing our application
 

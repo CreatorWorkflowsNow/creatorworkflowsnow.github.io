@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Exercise 3 Workflows
-nav_order: 4
+nav_order: 14
 ---
 # Exercise 3: Creating an approval workflow
 

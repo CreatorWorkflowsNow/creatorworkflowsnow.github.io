@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Exercise 1 Tables
-nav_order: 2
+nav_order: 12
 ---
 
 # Exercise 1: Creating tables for our travel request application
