@@ -1,24 +1,31 @@
 ################################################################################
-# Theme suggestions
-#  https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#publishing-your-site-on-github-pages
+# Based on "Just the Docs"
+# Refer to: 
+#   https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#publishing-your-site-on-github-pages)
 ################################################################################
-title: Creator Workflows Now
-description: Hello World Description
 #theme: just-the-docs
 remote_theme: just-the-docs/just-the-docs
 
-url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
+################################################################################
+#  -> Theme Suggestions
+################################################################################
+title: Creator Workflows Now
+description: Hello World Description
+
+url: https://creatorworkflowsnow.github.io/
 
 aux_links: # remove if you don't want this link to appear on your pages
-  Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
+  Template Repository: https://github.com/creatorworkflowsnow
 
 
 ################################################################################
+# Just the Docs: 
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "docs/images/servicenow-logo.png"
 
 
 ################################################################################
+# Just the Docs: 
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: true
@@ -93,6 +100,18 @@ gh_edit_branch: "main" # the branch that your docs is served from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
 # note: footer_content is deprecated, but still supported. For a better experience we have moved this into an include called _includes/footer_custom.html which will allow for robust markup / liquid-based content.
+
+
+
+################################################################################
+# Plugins (previously gems:)
+################################################################################
+# External navigation links
+nav_external_links:
+  - title: Just the Docs on GitHub
+    url: https://github.com/just-the-docs/just-the-docs
+    hide_icon: false # set to true to hide the external link icon - defaults to false
+
 
 
 ################################################################################
