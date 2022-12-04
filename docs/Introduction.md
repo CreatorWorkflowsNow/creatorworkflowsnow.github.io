@@ -7,10 +7,6 @@ permalink: /
 
 # Welcome
 
-## Purpose
-
-This is a free, open resource of lab guides and associated materials. 
-
 ## Background
 
 ![relative](docs/images/nowairline.png)
