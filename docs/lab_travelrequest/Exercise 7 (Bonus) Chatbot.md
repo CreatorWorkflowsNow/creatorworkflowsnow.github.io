@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Bonus - Dashboard Workspace
+parent: Travel Request Lab
 nav_order: 7
 nav_exclude: false
-parent: Travel Request Lab Introduction
 ---
 
 # Bonus Exercise 3: Adding a workspace for travel requests
