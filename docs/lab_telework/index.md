@@ -15,6 +15,6 @@ We will cover concepts such as Building Tables, Record Producers, Importing Data
 {: .fs-6 .fw-300 }
 
 
-[Begin][TeleworkLabLink]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Begin][TeleworkLabExternalLink]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-[TeleworkLabLink]: https://low-code.guide/docs/Telework/Introduction/
+[TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/

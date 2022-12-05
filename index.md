@@ -18,6 +18,6 @@ Help Amanda and the Office of Regulatory Affairs convert a PDF based approval pr
 
 [Begin][TeleworkLabLink]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-[CreatorWorkflowsNow Repo]: https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io
 [TravelRequestLabLink]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/
-[TeleworkLabLink]: https://low-code.guide/docs/Telework/Introduction/
+[TeleworkLabLink]: https://creatorworkflowsnow.github.io/docs/lab_telework/
+[TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/
