@@ -288,10 +288,10 @@ This flow should now run everyday to update the latitude and longitude of each a
 [TravelRequestLabLink]: https://creatorworkflowsnow.github.io/lab_travelrequest
 [TravelRequestLabHome]: https://creatorworkflowsnow.github.io/lab_travelrequest
 
-[Exercise1]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%201.html
-[Exercise2]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%202.html
-[Exercise3]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%203.html
-[Exercise4]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%204.html
-[Exercise5]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%205%20(Bonus).html
-[Exercise6]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%206%20(Bonus).html
-[Exercise7]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%207%20(Bonus)%20Chatbot.html
+[Exercise1]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/Exercise%201.html
+[Exercise2]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/Exercise%202.html
+[Exercise3]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/Exercise%203.html
+[Exercise4]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/Exercise%204.html
+[Exercise5]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/Exercise%205%20(Bonus).html
+[Exercise6]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/Exercise%206%20(Bonus).html
+[Exercise7]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/Exercise%207%20(Bonus)%20Chatbot.html
