@@ -108,13 +108,13 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 # Plugins (previously gems:)
 ################################################################################
 # External navigation links
-nav_external_links:
-  - title: Learn more about Creator Workflows
-    url: https://www.servicenow.com/workflows/creator-workflows.html
-    hide_icon: false # set to true to hide the external link icon - defaults to false
-  - title: Telework Case Management Lab
-    url: https://low-code.guide/docs/Telework/Introduction/
-    hide_icon: false # set to true to hide the external link icon - defaults to false
+#nav_external_links:
+#  - title: Learn more about Creator Workflows
+#    url: https://www.servicenow.com/workflows/creator-workflows.html
+#    hide_icon: false # set to true to hide the external link icon - defaults to false
+#  - title: Telework Case Management Lab
+#    url: https://low-code.guide/docs/Telework/Introduction/
+#    hide_icon: false # set to true to hide the external link icon - defaults to false
 
 
 ################################################################################
