@@ -3,7 +3,7 @@ layout: default
 title: Travel Request Lab
 nav_order: 10
 has_children: true
-permalink: /lab_travelrequest/
+permalink: /docs/lab_travelrequest
 ---
 
 # Travel Request Lab

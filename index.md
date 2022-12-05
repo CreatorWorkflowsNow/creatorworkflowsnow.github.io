@@ -14,7 +14,7 @@ In this lab, you will get hands-on experience in creating a Travel Request appli
 
 ## Telework Case Management
 
-Every organization is faced with the challenge of responding swiftly to the needs of its customers. It's easier said than done as most application development platforms require a steep learning before being productive. ServiceNow App Engine Studio takes away the complexity of building apps, so that more people can partipate and can focus on solving business problems instead of writing code.
+Help Amanda and the Office of Regulatory Affairs convert a PDF based approval process into a digital workflow. 
 
 [Begin][TeleworkLabLink]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
