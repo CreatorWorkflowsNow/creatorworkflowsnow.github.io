@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Example Section Parent
-nav_order: 10
+nav_order: 99
 has_children: true
 ---
 
