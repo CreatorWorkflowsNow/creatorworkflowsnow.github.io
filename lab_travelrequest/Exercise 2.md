@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Exercise 2 User Forms
-nav_order: 3
+nav_order: 2
 parent: Travel Request Lab Introduction
 ---
 

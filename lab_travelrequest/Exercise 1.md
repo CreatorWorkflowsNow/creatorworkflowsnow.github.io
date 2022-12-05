@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Exercise 1 Tables
-nav_order: 2
+nav_order: 1
 parent: Travel Request Lab Introduction
 ---
 
