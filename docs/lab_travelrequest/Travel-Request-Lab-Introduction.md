@@ -2,7 +2,6 @@
 layout: default
 title: Travel Request Lab
 nav_order: 10
-parent: Home
 permalink: /docs/lab_travelrequest/
 has_children: true
 ---
@@ -23,7 +22,7 @@ After completing these exercises, you will have an application that does the fol
 <br>
 <br>
 
-![relative](docs/lab_travelrequest/images/Userjourney.png)
+![relative](images/Userjourney.png)
 
 ## Note
 
