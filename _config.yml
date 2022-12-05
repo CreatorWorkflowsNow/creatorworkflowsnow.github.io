@@ -65,8 +65,8 @@ version: "9.1.3"
 ################################################################################
 # Aux links for the upper right navigation
 aux_links:
-  "Creator Workflows on GitHub":
-    - "//github.com/CreatorWorkflowsNow"
+  "ServiceNow Creator Workflows":
+    - "https://www.servicenow.com/workflows/creator-workflows.html"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
