@@ -10,7 +10,7 @@ remote_theme: just-the-docs/just-the-docs
 #  -> Theme Suggestions
 ################################################################################
 title: Creator Workflows Now
-description: Hello World Description
+#description: Hello World Description
 
 url: https://creatorworkflowsnow.github.io/
 
@@ -65,7 +65,7 @@ version: "9.1.3"
 ################################################################################
 # Aux links for the upper right navigation
 aux_links:
-  "ServiceNow Creator Workflows":
+  "ServiceNow.com/Creator-Workflows":
     - "https://www.servicenow.com/workflows/creator-workflows.html"
 
 # Makes Aux links open in a new tab. Default is false
