@@ -210,3 +210,16 @@ This widget will appear different if you have not completed Bonus Exercise 2, bu
 ![relative](images/dashboardfinal.gif)
 
 Well done once again! In this exercise, you have built a dashboard purely through drag and drop. This is obviously just a short snippet into the possibilities here, and there is so much more that can be done to give data-rich vizualizations to those who need easy access to data as fulfillers and admins, all in a single workspace.
+
+
+[OldTravelRequestLabLink]: https://shaoservicenow.github.io/travelrequest
+[TravelRequestLabLink]: https://creatorworkflowsnow.github.io/lab_travelrequest
+[TravelRequestLabHome]: https://creatorworkflowsnow.github.io/lab_travelrequest
+
+[Exercise1]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%201.html
+[Exercise2]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%202.html
+[Exercise3]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%203.html
+[Exercise4]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%204.html
+[Exercise5]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%205%20(Bonus).html
+[Exercise6]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%206%20(Bonus).html
+[Exercise7]: https://creatorworkflowsnow.github.io/lab_travelrequest/Exercise%207%20(Bonus)%20Chatbot.html

@@ -19,5 +19,5 @@ Every organization is faced with the challenge of responding swiftly to the need
 [Begin][TeleworkLabLink]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 [CreatorWorkflowsNow Repo]: https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io
-[TravelRequestLabLink]: https://creatorworkflowsnow.github.io/travelrequest
+[TravelRequestLabLink]: https://creatorworkflowsnow.github.io/labtravelrequest
 [TeleworkLabLink]: https://low-code.guide/docs/Telework/Introduction/
