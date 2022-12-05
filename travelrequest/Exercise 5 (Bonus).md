@@ -3,6 +3,7 @@ layout: default
 title: Bonus - APIs
 nav_order: 6
 nav_exclude: false
+parent: Travel Request Lab Introduction
 ---
 
 # Bonus Exercise 1: Integrating via APIs

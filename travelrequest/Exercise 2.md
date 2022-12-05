@@ -2,6 +2,7 @@
 layout: default
 title: Exercise 2 User Forms
 nav_order: 3
+parent: Travel Request Lab Introduction
 ---
 
 # Exercise 2: Creating a form on the Portal

@@ -3,6 +3,7 @@ layout: default
 title: Bonus - Calculations
 nav_order: 7
 nav_exclude: false
+parent: Travel Request Lab Introduction
 ---
 
 # Bonus Exercise 2: Adding calculations
