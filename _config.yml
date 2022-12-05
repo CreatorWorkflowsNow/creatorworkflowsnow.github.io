@@ -121,8 +121,8 @@ nav_external_links:
 # Shao's theme settings from https://github.com/shaoservicenow/travelrequest (12/3/22)
 ################################################################################
 
-back_to_top: true
-back_to_top_text: "Back to top"
+# back_to_top: false
+# back_to_top_text: "Back to top"
 
 
 ################################################################################
