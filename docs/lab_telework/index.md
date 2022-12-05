@@ -3,7 +3,7 @@ layout: default
 title: Telework Case Management Lab
 nav_order: 10
 permalink: /docs/lab_telework/
-has_children: true
+has_children: false
 ---
 
 # Telework Case Management Lab
