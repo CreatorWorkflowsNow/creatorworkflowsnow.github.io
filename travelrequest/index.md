@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Introduction
-nav_order: 1
-permalink: /
+title: Travel Request Lab Introduction
+nav_order: 10
+permalink: /travelrequest/
 ---
 
-# Introduction
+# Travel Request Lab Introduction
 
 ## Goal
 
