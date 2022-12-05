@@ -14,7 +14,8 @@ In this lab, you will get hands-on experience in creating a Telework Case Manage
 We will cover concepts such as Building Tables, Record Producers, Importing Data, Custom Workspaces, and Workflows within App Engine Studio - our low-code application development interface for developers of any level of experience.
 {: .fs-6 .fw-300 }
 
-
 [Begin][TeleworkLabExternalLink]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
+
 
 [TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/
