@@ -8,7 +8,7 @@ has_children: true
 
 # Travel Request Lab
 
-In this session, you will get hands-on experience in creating a Travel Request application using the ServiceNow platform. 
+In this lab, you will get hands-on experience in creating a Travel Request application using the ServiceNow platform. 
 {: .fs-6 .fw-300 }
 
 We will cover concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio - our low-code application development interface for developers of any level of experience.
