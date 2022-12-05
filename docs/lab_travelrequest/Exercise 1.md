@@ -2,7 +2,7 @@
 layout: default
 title: Exercise 1 Tables
 parent: Travel Request Lab
-nav_order: 1
+nav_order: 11
 ---
 
 # Exercise 1: Creating tables for our travel request application

@@ -2,7 +2,7 @@
 layout: default
 title: Bonus - Dashboard Workspace
 parent: Travel Request Lab
-nav_order: 7
+nav_order: 17
 nav_exclude: false
 ---
 

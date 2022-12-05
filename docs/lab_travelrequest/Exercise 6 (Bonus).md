@@ -2,7 +2,7 @@
 layout: default
 title: Bonus - Calculations
 parent: Travel Request Lab
-nav_order: 6
+nav_order: 16
 nav_exclude: false
 ---
 

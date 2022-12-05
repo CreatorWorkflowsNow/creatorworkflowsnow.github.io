@@ -2,7 +2,7 @@
 layout: default
 title: Exercise 3 Workflows
 parent: Travel Request Lab
-nav_order: 3
+nav_order: 13
 ---
 # Exercise 3: Creating an approval workflow
 

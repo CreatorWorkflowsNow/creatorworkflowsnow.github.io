@@ -2,7 +2,7 @@
 layout: default
 title: Exercise 4 Testing
 parent: Travel Request Lab
-nav_order: 4
+nav_order: 14
 ---
 # Exercise 4: Putting it all together - Testing our application
 
