@@ -2,7 +2,7 @@
 layout: default
 title: Travel Request Lab Introduction
 nav_order: 10
-permalink: /travelrequest/
+permalink: /travelrequest/docs/
 ---
 
 # Travel Request Lab Introduction
