@@ -19,13 +19,13 @@ aux_links: # remove if you don't want this link to appear on your pages
 
 
 ################################################################################
-# <<< Just the Docs Option >>>
+# <<< Just the Config Option >>>
 # Set a path/url to a logo that will be displayed instead of the title
 ################################################################################
 logo: "docs/images/servicenow-logo.png"
 
 ################################################################################
-# <<< Just the Docs Option >>>
+# <<< Just the Config Option >>>
 # Enable or disable the site search
 # Supports true (default) or false
 ################################################################################
@@ -125,10 +125,12 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 
 
 ################################################################################
+# <<< Jekyll configs >>>
 # Plugins (previously gems:)
 ################################################################################
 plugins:
   - jekyll-admin
+  - faraday-retry
 #  - jekyll-paginate
 #  - jekyll-sitemap
 #  - jekyll-gist
@@ -138,7 +140,7 @@ plugins:
 #  - jekyll-remote-theme 
 
 ################################################################################
-# <<< Just the Docs Option >>>
+# <<< Just the Config Option >>>
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
 ################################################################################
 color_scheme: nil
