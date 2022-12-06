@@ -106,8 +106,6 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 
 
 ################################################################################
-# Plugins (previously gems:)
-################################################################################
 # External navigation links
 #nav_external_links:
 #  - title: Learn more about Creator Workflows
@@ -129,7 +127,8 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 ################################################################################
 # Plugins (previously gems:)
 ################################################################################
-#plugins:
+plugins:
+  - jekyll-admin
 #  - jekyll-paginate
 #  - jekyll-sitemap
 #  - jekyll-gist
