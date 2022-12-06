@@ -8,6 +8,9 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+#theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
@@ -18,36 +21,47 @@ title: Creator Workflows Now
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://creatorworkflowsnow.github.io/
 
+permalink: pretty
+
+exclude:
+ # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+ # specific to the theme website:
+   - bin/
+   - lib/
+   - "*.gemspec"
+   - "*.gem"
+   - LICENSE.txt
+   - package.json
+   - package-lock.json
+   - Rakefile
+   - README.md
+
+
+
 ################################################################################
-# Based on "Just the Docs"
-# Refer to: 
+# <<< Just the Docs - Config Options >>>
+################################################################################
+
 #   https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#publishing-your-site-on-github-pages)
-################################################################################
-#theme: just-the-docs
-remote_theme: just-the-docs/just-the-docs
-
-################################################################################
-#  -> Theme Suggestions
-################################################################################
-
-
 aux_links: # remove if you don't want this link to appear on your pages
   Template Repository: https://github.com/creatorworkflowsnow
 
-
-################################################################################
-# <<< Just the Config Option >>>
 # Set a path/url to a logo that will be displayed instead of the title
-################################################################################
 logo: "docs/images/servicenow-logo.png"
 
-################################################################################
-# <<< Just the Config Option >>>
 # Enable or disable the site search
 # Supports true (default) or false
-################################################################################
 search_enabled: true
-
 search:
   # Split pages into sections that can be searched individually
   # Supports 1 - 6, default: 2
@@ -73,14 +87,22 @@ search:
   button: false
 
 
-################################################################################
+# To disable support for mermaid diagrams (https://mermaid-js.github.io/mermaid/),
+# comment out the `mermaid` and `version` keys below
+# By default, consuming the theme as a gem leaves mermaid disabled; it is opt-in
 mermaid:
-# Version of mermaid library
-# Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
-version: "9.1.3"
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.6"
+  # Put any additional configuration, such as setting the theme, in _includes/mermaid_config.js
+  # See also docs/ui-components/code
 
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+# Supports true (default) or false
+# Enable or disable heading anchors
+heading_anchors: true
 
-################################################################################
 # Aux links for the upper right navigation
 aux_links:
   "ServiceNow.com/Creator-Workflows":
@@ -89,40 +111,10 @@ aux_links:
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
 
+# Sort order for navigation links
+# nav_sort: case_insensitive # default, equivalent to nil
+nav_sort: case_sensitive # Capital letters sorted before lowercase
 
-################################################################################
-# Heading anchor links appear on hover over h1-h6 tags in page content
-# allowing users to deep link to a particular heading on a page.
-#
-# Supports true (default) or false
-heading_anchors: true
-
-
-################################################################################
-# Footer content
-# appears at the bottom of every page's main content
-# Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust
-#markup / liquid-based content.
-#footer_content: "Copyright &copy; 2022 <a href=\"https://www.servicenow.com\">ServiceNow</a>."
-
-# Footer last edited timestamp
-last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
-last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
-
-# Footer "Edit this page on GitHub" link text
-gh_edit_link: false # [false/true] # show or hide edit this page link
-gh_edit_link_text: "Edit this page on GitHub."
-#gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
-gh_edit_repository: "https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io" # the github URL for your repo
-gh_edit_branch: "main" # the branch that your docs is served from
-# gh_edit_source: docs # the source that your files originate from
-gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
-
-# note: footer_content is deprecated, but still supported. For a better experience we have moved this into an include called _includes/footer_custom.html which will allow for robust markup / liquid-based content.
-
-
-
-################################################################################
 # External navigation links
 #nav_external_links:
 #  - title: Learn more about Creator Workflows
@@ -133,34 +125,33 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 #    hide_icon: false # set to true to hide the external link icon - defaults to false
 
 
-################################################################################
-# Shao's theme settings from https://github.com/shaoservicenow/travelrequest (12/3/22)
-################################################################################
 
-# back_to_top: false
-# back_to_top_text: "Back to top"
+# Footer content
+# appears at the bottom of every page's main content
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust
+#markup / liquid-based content.
+footer_content: "Copyright &copy; 2022 <a href=\"https://www.servicenow.com\">ServiceNow</a>."
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
 
-################################################################################
-# <<< Jekyll configs >>>
-# Plugins (previously gems:)
-#  This section is ignored by GitHub-Pages
-################################################################################
-#plugins:
-#  - jekyll-admin
-#  - faraday-retry
-#  - jekyll-paginate
-#  - jekyll-sitemap
-#  - jekyll-gist
-#  - jekyll-feed
-#  - jemoji
-#  - jekyll-include-cache
-#  - jekyll-remote-theme 
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: false # [false/true] # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+#gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
+gh_edit_repository: "https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
-################################################################################
-# <<< Just the Config Option >>>
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
-################################################################################
 color_scheme: nil
 
 callouts_level: quiet # or loud
@@ -179,3 +170,34 @@ callouts:
   warning:
     title: Warning
     color: red
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+  # ignore:
+  #   envs: all
+
+################################################################################
+# <<< Jekyll configs >>>
+# Plugins (previously gems:)
+#  This section is ignored by GitHub-Pages
+################################################################################
+#plugins:
+#  - jekyll-admin
+#  - faraday-retry
+#  - jekyll-paginate
+#  - jekyll-sitemap
+#  - jekyll-gist
+#  - jekyll-feed
+#  - jemoji
+#  - jekyll-include-cache
+#  - jekyll-remote-theme 
