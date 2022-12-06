@@ -19,15 +19,16 @@ aux_links: # remove if you don't want this link to appear on your pages
 
 
 ################################################################################
-# Just the Docs: 
+# <<< Just the Docs Option >>>
 # Set a path/url to a logo that will be displayed instead of the title
+################################################################################
 logo: "docs/images/servicenow-logo.png"
 
-
 ################################################################################
-# Just the Docs: 
+# <<< Just the Docs Option >>>
 # Enable or disable the site search
 # Supports true (default) or false
+################################################################################
 search_enabled: true
 
 search:
@@ -136,3 +137,26 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 #  - jemoji
 #  - jekyll-include-cache
 #  - jekyll-remote-theme 
+
+################################################################################
+# <<< Just the Docs Option >>>
+# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
+################################################################################
+color_scheme: nil
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
