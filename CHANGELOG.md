@@ -23,4 +23,4 @@ All notable changes to this project are documented in this file.
 
 - none yet...
 
-**Full Changelog**: https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/releases/tag/v0.1.0
+**Full Changelog**: [Link](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/releases/tag/v0.1.0){:target="_blank"}
