@@ -2,10 +2,26 @@
 title: CHANGELOG
 layouts: default
 ---
-
 # CHANGELOG
 
 All notable changes to this project are documented in this file.
+
+---
+## v0.2.0 - COMING SOON!!
+
+### 🚀 Features
+
+- RPA Lab
+
+### 🐛 Bug Fixes
+
+- None
+
+### 🧰 Maintenance
+
+- None
+
+---
 
 ## v0.1.0
 
@@ -22,5 +38,7 @@ All notable changes to this project are documented in this file.
 ### 🧰 Maintenance
 
 - none yet...
+
+---
 
 **Full Changelog**: [Link](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/releases/tag/v0.1.0){:target="_blank"}
