@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Telework Case Management Lab
+title: Telework Case Lab
 nav_order: 10
 permalink: /docs/lab_telework/
 has_children: false
 ---
 
-# Telework Case Management Lab
+# Telework Case Lab
 
 In this lab, you will get hands-on experience in creating a Telework Case Management application using the ServiceNow platform. 
 {: .fs-6 .fw-300 }
