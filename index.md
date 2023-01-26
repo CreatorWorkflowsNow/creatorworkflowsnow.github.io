@@ -6,7 +6,9 @@ permalink: /
 ---
 # Creator Workflows Lab Guides
 
-## Automation Engine Overview Labs
+## Automation Engine Labs
+
+### Overview 
 
 In the following labs, you will get hands-on experience with Automation Engine products such as:
 
@@ -35,6 +37,8 @@ Help Amanda and the Office of Regulatory Affairs convert a PDF based approval pr
 [TravelRequestLabLink]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/
 [TeleworkLabLink]: https://creatorworkflowsnow.github.io/docs/lab_telework/
 [TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/
+
+[Auto Engine Overview Labs] /docs/lab_autoengine
 
 [Auto Center Docs]: https://docs.servicenow.com/csh?topicname=automation-center-landing-page.html&version=latest
 [Auto Center Lab]: /docs/lab_autoengine/automation_center/
