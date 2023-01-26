@@ -31,19 +31,19 @@ Help Amanda and the Office of Regulatory Affairs convert a PDF based approval pr
 
 [Begin][TeleworkLabLink]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-[RPALabLink]: /docs/lab_rpa/
+[RPALabLink]: /docs/lab_autoengine/
 [TravelRequestLabLink]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/
 [TeleworkLabLink]: https://creatorworkflowsnow.github.io/docs/lab_telework/
 [TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/
 
 [Auto Center Docs]: https://docs.servicenow.com/csh?topicname=automation-center-landing-page.html&version=latest
-[Auto Center Lab]: /docs/lab_rpa/Exercise_1/
+[Auto Center Lab]: /docs/lab_autoengine/automation_center/
 
 [Doc Intel Docs]: https://docs.servicenow.com/csh?topicname=document-intelligence-landing.html&version=latest
-[Doc Intel Lab]: /docs/lab_rpa/Exercise_2/
+[Doc Intel Lab]: /docs/lab_autoengine/doc_intel/
 
 [IHub Docs]: https://docs.servicenow.com/csh?topicname=integrationhub.html&version=latest
-[IHub Lab]: /docs/lab_rpa/Exercise_3/
+[IHub Lab]: /docs/lab_autoengine/ihub/
 
 [RPA Docs]: https://docs.servicenow.com/csh?topicname=rpa-main-landing-page.html&version=latest
-[RPA Lab]:  /docs/lab_rpa/Exercise_4/
+[RPA Lab]:  /docs/lab_autoengine/rpa/

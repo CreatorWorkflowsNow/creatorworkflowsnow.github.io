@@ -684,3 +684,10 @@ Now that the automation is complete, a bot process needs to be created so the bo
     ![Relative](../images/RPA-Images/Pending3.png)
 
 Congratulations! This concludes this RPA exercise. Now bot processes can be triggered from the ServiceNow instance. They can be triggered manually and can even be triggered via a workflow using the RPA Hub spoke.
+
+[Previous exercise][IHub Lab]{: .btn .mr-4 }
+
+[Auto Center Lab]: /docs/lab_autoengine/automation_center/
+[Doc Intel Lab]: /docs/lab_autoengine/doc_intel/
+[IHub Lab]: /docs/lab_autoengine/ihub/
+[RPA Lab]:  /docs/lab_autoengine/rpa/

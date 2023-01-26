@@ -183,3 +183,11 @@ In the following  exercice (IntegrationHub we see how to build a spoke to integr
 ## Conclusion
 
 In this **Document Intelligence** lab, we have covered how Document Intelligence can be configured to extract information from structured or semi-structed documents. We have seen how you can use those extracted values from within a workflow. In the following exercice, we are covering how to build a flow and integration using IntegrationHub to perform data validation (with the data extracted via DocIntel). You will learn how to build a spoke to integrate ServiceNow to an external system via API. 
+
+[Previous exercise][Auto Center Lab]{: .btn .mr-4 }
+[Next exercise][IHub Lab]{: .btn .btn-purple }
+
+[Auto Center Lab]: /docs/lab_autoengine/automation_center/
+[Doc Intel Lab]: /docs/lab_autoengine/doc_intel/
+[IHub Lab]: /docs/lab_autoengine/ihub/
+[RPA Lab]:  /docs/lab_autoengine/rpa/

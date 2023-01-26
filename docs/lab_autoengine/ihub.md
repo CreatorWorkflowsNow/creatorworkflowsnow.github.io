@@ -383,3 +383,11 @@ Close the Operation Execution Details tab(s):
 
 # Conclusion
 You have now completed the Integration Hub exercice. We have seen how to create a new API integration by creating a new Spoke Action and using the REST and JSON Parser steps, then how to publish that spoke action to be able to use it in a subflow.
+
+[Previous exercise][Doc Intel Lab]{: .btn .mr-4 }
+[Next exercise][RPA Lab]{: .btn .btn-purple }
+
+[Auto Center Lab]: /docs/lab_autoengine/automation_center/
+[Doc Intel Lab]: /docs/lab_autoengine/doc_intel/
+[IHub Lab]: /docs/lab_autoengine/ihub/
+[RPA Lab]:  /docs/lab_autoengine/rpa/

@@ -1,6 +1,7 @@
 ---
+layout: default
 title: CHANGELOG
-layouts: default
+nav_order: 99
 ---
 # CHANGELOG
 

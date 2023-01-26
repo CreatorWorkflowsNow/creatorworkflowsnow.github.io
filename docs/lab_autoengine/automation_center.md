@@ -179,3 +179,10 @@ Automation COE teams can prioritize, and manage automation requests from differe
 ## Conclusion
 
 In this **Automation Center** lab, we have seen how an Automation CoEs can use Automation Center to govern their end-to-end multi-vendor automation life cycles from one place. We have seen how the automation request can be funnel from (Service Catalog Request), reviewed and vetted from the Automation Center workspace. Also with the Automation Center dashboard, we have seen how Automation CoEs ca can view real-time metrics and analytics for their Automation activities indenpendtly of the automation tools used for their projects.
+
+[Next exercise][Doc Intel Lab]{: .btn .btn-purple }
+
+[Auto Center Lab]: /docs/lab_autoengine/automation_center/
+[Doc Intel Lab]: /docs/lab_autoengine/doc_intel/
+[IHub Lab]: /docs/lab_autoengine/ihub/
+[RPA Lab]:  /docs/lab_autoengine/rpa/
