@@ -38,7 +38,7 @@ Help Amanda and the Office of Regulatory Affairs convert a PDF based approval pr
 [TeleworkLabLink]: https://creatorworkflowsnow.github.io/docs/lab_telework/
 [TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/
 
-[Auto Engine Overview Labs] /docs/lab_autoengine
+[Auto Engine Overview Labs]: /docs/lab_autoengine
 
 [Auto Center Docs]: https://docs.servicenow.com/csh?topicname=automation-center-landing-page.html&version=latest
 [Auto Center Lab]: /docs/lab_autoengine/automation_center/
