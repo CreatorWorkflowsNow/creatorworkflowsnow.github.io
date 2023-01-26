@@ -4,13 +4,7 @@ title: Home
 nav_order: 1
 permalink: /
 ---
-# Creator Workflows Lab Guides
-
-## RPA
-
-In this lab, you will get hands-on experience creating an RPA application using the ServiceNow platform.
-
-[Coming Soon!][RPALabLink]{: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
+# App Engine Labs 
 
 ## Travel Request
 
@@ -24,7 +18,25 @@ Help Amanda and the Office of Regulatory Affairs convert a PDF based approval pr
 
 [Begin][TeleworkLabLink]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-[RPALabLink]: https://creatorworkflowsnow.github.io/docs/lab_rpa/
+---
+# Automation Engine Lab
+
+## Overview
+
+In this lab, you will get hands-on experience with Automation Engine products such as:
+* [Automation Center][Automation Center]{: target="_blank"}
+* [Document Intelligence][Document Intelligence]{: target="_blank"}
+* [Integration Hub]{: target="_blank"}
+* [RPA Hub]{: target="_blank"}
+
+[Coming Soon!][RPALabLink]{: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
+
+[RPALabLink]: /docs/lab_rpa/
 [TravelRequestLabLink]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/
 [TeleworkLabLink]: https://creatorworkflowsnow.github.io/docs/lab_telework/
 [TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/
+[Automation Center]: https://docs.servicenow.com/csh?topicname=automation-center-landing-page.html&version=latest
+[Document Intelligence]: https://docs.servicenow.com/csh?topicname=document-intelligence-landing.html&version=latest
+[Integration Hub]: https://docs.servicenow.com/csh?topicname=integrationhub.html&version=latest
+[RPA Hub]: https://docs.servicenow.com/csh?topicname=rpa-main-landing-page.html&version=latest

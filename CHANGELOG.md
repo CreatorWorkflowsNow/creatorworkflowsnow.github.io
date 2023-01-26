@@ -11,7 +11,7 @@ All notable changes to this project are documented in this file.
 
 ### 🚀 Features
 
-- RPA Lab
+- Automation Engine Overview Lab
 
 ### 🐛 Bug Fixes
 
