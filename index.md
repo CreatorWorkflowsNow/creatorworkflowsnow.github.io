@@ -17,7 +17,7 @@ In the following labs, you will get hands-on experience with Automation Engine p
 * Integration Hub
 * RPA Hub
 
-[Begin][RPALabLink]{: .btn .btn-green.fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Begin][Auto Engine Overview Labs]{: .btn .btn-green.fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ---
 ## App Engine Labs
