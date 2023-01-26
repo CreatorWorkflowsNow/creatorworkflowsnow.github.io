@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Travel Request Lab
-nav_order: 10
+nav_order: 2
 permalink: /docs/lab_travelrequest/
 has_children: true
 ---

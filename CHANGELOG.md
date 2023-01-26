@@ -7,11 +7,11 @@ layouts: default
 All notable changes to this project are documented in this file.
 
 ---
-## v0.2.0 - COMING SOON!!
+## v0.2.0 - 
 
 ### 🚀 Features
 
-- Automation Engine Overview Lab
+- Added Automation Engine Overview Labs
 
 ### 🐛 Bug Fixes
 
