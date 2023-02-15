@@ -4,7 +4,9 @@ title: Home
 nav_order: 1
 permalink: /
 ---
+
 # Creator Workflows Lab Guides
+{: .fs-10 .lh-10 }
 
 ## Automation Engine Labs
 

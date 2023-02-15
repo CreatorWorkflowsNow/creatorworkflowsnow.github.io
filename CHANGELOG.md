@@ -7,39 +7,31 @@ nav_order: 99
 
 All notable changes to this project are documented in this file.
 
----
-## v0.2.0 - 
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-### 🚀 Features
+## UNRELEASED
 
-- Added Automation Engine Overview Labs
+### Added
 
-### 🐛 Bug Fixes
+- Lab: App Engine Management Center
 
-- None
+## [0.2.0]
 
-### 🧰 Maintenance
+### Added
 
-- None
+- Lab: Automation Engine
 
----
+## [0.1.0]
 
-## v0.1.0
-
-### 🚀 Features
+### Added
 
 - Just the Docs theme configured
-- Travel Request Lab functional
+- Lab: Travel Request
 - External link to Telework Case Management added
 
-### 🐛 Bug Fixes
-
-- none yet... 
-
-### 🧰 Maintenance
-
-- none yet...
-
----
-
 **Full Changelog**: [Link](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/releases/tag/v0.1.0){:target="_blank"}
+
+[unreleased]: https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/compare/v0.3.0...HEAD
+[0.2.0]: https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/releases/tag/v0.2.0
+[0.1.0]: https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/releases/tag/v0.1.0
