@@ -7,6 +7,15 @@ has_children: true
 ---
 # Automation Engine Overview Labs
 
+## Overview
+
+In the following labs, you will get hands-on experience with Automation Engine products such as:
+
+- Automation Center
+- Document Intelligence
+- Integration Hub
+- RPA Hub
+
 ## Automation Center
 Use the ServiceNow® Automation Center application to govern your end-to-end multi-vendor automation life cycles from one place. By using real-time dashboards, you can manage and measure the health of the automation and prevent automation failures across multiple vendors​.
 

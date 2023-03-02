@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Telework Case Lab
-nav_order: 10
+nav_order: 200
 permalink: /docs/lab_telework/
 has_children: false
 ---
@@ -9,10 +9,10 @@ has_children: false
 # Telework Case Lab
 
 In this lab, you will get hands-on experience in creating a Telework Case Management application using the ServiceNow platform. 
-{: .fs-6 .fw-300 }
 
 We will cover concepts such as Building Tables, Record Producers, Importing Data, Custom Workspaces, and Workflows within App Engine Studio - our low-code application development interface for developers of any level of experience.
-{: .fs-6 .fw-300 }
+
+Help Amanda and the Office of Regulatory Affairs convert a PDF based approval process into a digital workflow.
 
 {: .highlight }
 This lab is hosted externally and will open in a new tab.

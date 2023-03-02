@@ -5,51 +5,19 @@ nav_order: 1
 permalink: /
 ---
 
-# Creator Workflows Lab Guides
+# Creator Workshop Lab Guides
 {: .fs-10 .lh-10 }
 
-## Automation Engine Labs
+| **Lab**{: .fs-6} | **Info**{: .fs-6} |
+| **Automation Engine**{: .fs-5} | [Begin][Auto Engine Overview Labs]{: .btn .btn-green.fs-5 .mb-4 .mb-md-0 .mr-2 } |
+| **Department Service**{: .fs-5} | [Begin][DeptSvcLab]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 } |
+| **Governance**{: .fs-5} | [Begin][GovernanceLab]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 } |
+| **Telework Case**{: .fs-5} | [Begin][TeleworkLab]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 } |
+| **Travel Request**{: .fs-5} | [Begin][TravelRequestLab]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 } |
 
-### Overview 
-
-In the following labs, you will get hands-on experience with Automation Engine products such as:
-
-* Automation Center
-* Document Intelligence
-* Integration Hub
-* RPA Hub
-
-[Begin][Auto Engine Overview Labs]{: .btn .btn-green.fs-5 .mb-4 .mb-md-0 .mr-2 }
-
----
-## App Engine Labs
-### Travel Request
-
-In this lab, you will get hands-on experience in creating a Travel Request application using the ServiceNow platform. Many concepts are covered such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio - our low-code application development interface for developers of any level of experience.
-
-[Begin][TravelRequestLabLink]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
-
-### Telework Case
-
-Help Amanda and the Office of Regulatory Affairs convert a PDF based approval process into a digital workflow. 
-
-[Begin][TeleworkLabLink]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
-
-[RPALabLink]: /docs/lab_autoengine/
-[TravelRequestLabLink]: https://creatorworkflowsnow.github.io/docs/lab_travelrequest/
-[TeleworkLabLink]: https://creatorworkflowsnow.github.io/docs/lab_telework/
-[TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/
 
 [Auto Engine Overview Labs]: /docs/lab_autoengine
-
-[Auto Center Docs]: https://docs.servicenow.com/csh?topicname=automation-center-landing-page.html&version=latest
-[Auto Center Lab]: /docs/lab_autoengine/automation_center/
-
-[Doc Intel Docs]: https://docs.servicenow.com/csh?topicname=document-intelligence-landing.html&version=latest
-[Doc Intel Lab]: /docs/lab_autoengine/doc_intel/
-
-[IHub Docs]: https://docs.servicenow.com/csh?topicname=integrationhub.html&version=latest
-[IHub Lab]: /docs/lab_autoengine/ihub/
-
-[RPA Docs]: https://docs.servicenow.com/csh?topicname=rpa-main-landing-page.html&version=latest
-[RPA Lab]:  /docs/lab_autoengine/rpa/
+[DeptSvcLab]: https://creatorworkflowsnow.github.io/lab_deptsvc/
+[GovernanceLab]: https://creatorworkflowsnow.github.io/lab_aemc/
+[TeleworkLab]: /docs/lab_telework/
+[TravelRequestLab]: /docs/lab_travelrequest/

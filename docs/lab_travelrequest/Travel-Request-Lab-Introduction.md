@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Travel Request Lab
-nav_order: 10
+nav_order: 205
 permalink: /docs/lab_travelrequest/
 has_children: true
 ---
@@ -9,10 +9,8 @@ has_children: true
 # Travel Request Lab
 
 In this lab, you will get hands-on experience in creating a Travel Request application using the ServiceNow platform. 
-{: .fs-6 .fw-300 }
 
 We will cover concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio - our low-code application development interface for developers of any level of experience.
-{: .fs-6 .fw-300 }
 
 [OldTravelRequestLabLink]: https://shaoservicenow.github.io/travelrequest
 [TravelRequestLabLink]: https://creatorworkflowsnow.github.io/lab_travelrequest
