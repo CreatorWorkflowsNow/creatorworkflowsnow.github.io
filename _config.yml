@@ -123,10 +123,16 @@ aux_links_new_tab: true
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
-#nav_external_links:
-#  - title: App Engine Mgmt Center Lab
-#    url: https://creatorworkflowsnow.github.io/lab_aemc/
-#    hide_icon: false # set to true to hide the external link icon - defaults to false
+nav_external_links:
+#  - title: Automation Engine
+#    url: https://creatorworkflowsnow.github.io/lab_autoengine
+#    hide_icon: true # set to true to hide the external link icon - defaults to false
+  - title: Department Service (EWF+CrWF)
+    url: https://creatorworkflowsnow.github.io/lab_deptsvc/
+    hide_icon: true # set to true to hide the external link icon - defaults to false
+  - title: Governance 
+    url: https://creatorworkflowsnow.github.io/lab_aemc/
+    hide_icon: true # set to true to hide the external link icon - defaults to false
 #  - title: Learn more about Creator Workflows
 #    url: https://www.servicenow.com/workflows/creator-workflows.html
 #    hide_icon: false # set to true to hide the external link icon - defaults to false
@@ -146,7 +152,7 @@ back_to_top_text: "Back to top"
 
 # Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust
 #markup / liquid-based content.
-footer_content: "Copyright &copy; 2022 <a href=\"https://www.servicenow.com\">ServiceNow</a>."
+footer_content: "Copyright &copy; 2023 <a href=\"https://www.servicenow.com\">ServiceNow</a>."
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
@@ -154,7 +160,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 
 
 # Footer "Edit this page on GitHub" link text
-gh_edit_link: false # [false/true] # show or hide edit this page link
+gh_edit_link: true # [false/true] # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
 #gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
 gh_edit_repository: "https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io" # the github URL for your repo
