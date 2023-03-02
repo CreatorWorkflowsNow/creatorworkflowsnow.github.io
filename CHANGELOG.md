@@ -1,7 +1,8 @@
 ---
 layout: default
 title: CHANGELOG
-nav_order: 99
+nav_order: 9999
+nav_exclude: true
 ---
 # CHANGELOG
 
