@@ -130,7 +130,7 @@ nav_external_links:
   - title: Department Service (EWF+CrWF)
     url: https://creatorworkflowsnow.github.io/lab_deptsvc/
     hide_icon: true # set to true to hide the external link icon - defaults to false
-  - title: Governance 
+  - title: App Governance 
     url: https://creatorworkflowsnow.github.io/lab_aemc/
     hide_icon: true # set to true to hide the external link icon - defaults to false
 #  - title: Learn more about Creator Workflows
