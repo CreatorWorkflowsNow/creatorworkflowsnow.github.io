@@ -3,6 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 permalink: /
+nav_exclude: true
 ---
 
 # Creator Workshop Lab Guides
