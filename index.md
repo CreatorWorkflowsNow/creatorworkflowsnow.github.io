@@ -8,6 +8,10 @@ permalink: /
 # Creator Workshop Lab Guides
 {: .fs-10 .lh-10 }
 
+The Lab Guides below are intended to be used as part of a workshop with a pre-configured ServiceNow instance. 
+
+They are not guaranteed to work on a PDI or other instance. 
+
 | **Lab**{: .fs-6} | **Info**{: .fs-6} |
 | **App Engine Governance**{: .fs-5} | [Begin][GovernanceLab]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 } |
 | **Automation Engine**{: .fs-5} | [Begin][Auto Engine Overview Labs]{: .btn .btn-green.fs-5 .mb-4 .mb-md-0 .mr-2 } |
