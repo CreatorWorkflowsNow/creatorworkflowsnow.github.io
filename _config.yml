@@ -123,7 +123,7 @@ aux_links_new_tab: true
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
-nav_external_links:
+# nav_external_links:
 #  - title: Automation Engine
 #    url: https://creatorworkflowsnow.github.io/lab_autoengine
 #    hide_icon: true # set to true to hide the external link icon - defaults to false
