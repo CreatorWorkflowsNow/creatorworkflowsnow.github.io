@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Automation Engine Labs 
-nav_order: 10
+nav_order: 15
 permalink: /docs/autoengine
 has_children: true
 ---
