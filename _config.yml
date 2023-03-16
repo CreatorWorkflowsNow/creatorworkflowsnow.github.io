@@ -1,3 +1,18 @@
+# ASCII-Font › http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
+#
+#      _____ _ __          _____      __  __  _
+#     / ___/(_) /____     / ___/___  / /_/ /_(_)___  ____ ______
+#     \__ \/ / __/ _ \    \__ \/ _ \/ __/ __/ / __ \/ __ `/ ___/
+#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  )
+#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/
+#                                                 /____/
+#
+
+#theme: just-the-docs
+#remote_theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.4.2
+#remote_theme: Phlow/feeling-responsive
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole site, values
@@ -8,18 +23,22 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-#theme: just-the-docs
-remote_theme: just-the-docs/just-the-docs
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Title of your website
 title: Creator Workflows Now
-#description: Hello World Description
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: https://creatorworkflowsnow.github.io/
+
+# The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
+description: Creator Workshops Lab Guides
+
+# Main author of the website
+# See > authors.yml
+author: dalenow
+
+# This URL is the main address for absolute links. Don't include a slash at the end.
+#
+#url: https://creatorworkflowsnow.github.io/lab_aemc/
+url: 'https://creatorworkflowsnow.github.io'
+baseurl: '/'
+
 
 permalink: pretty
 

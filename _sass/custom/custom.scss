@@ -1,0 +1,51 @@
+img {
+    border: 1px solid #71318C;
+  }
+
+$black: #000;
+
+$green-sn: #62d84e;
+$purple: purple;
+$green-sn-text: #293e40;
+$brand-blue: #032d42;
+
+$link-color: $green-sn-text !default;
+
+:root[data-theme=brand-evolution] {
+  --brand-green: #86ed78;
+  --brand-green-darker: #62d84e;
+  --brand-blue: #032d42;
+  --brand-blue-lighter: #1a5d68;
+  --brand-black: #000;
+  --brand-gray: #999;
+  --btn-border-radius: 6px;
+  --brand-opacity: 0.5;
+}
+
+$content-width: 900px !default;
+
+
+th, td {
+  /*font-size: 11px !important;*/
+  min-width: 50px;
+}
+
+a {
+  color: $green-sn-text !important;
+  background: linear-gradient(90deg,var(--brand-green-darker,var(--acapulco)) 50%,transparent 0);
+  text-decoration-color: $green-sn;
+}
+
+.side-bar {
+  z-index: 0;
+  display: flex;
+  flex-wrap: wrap;
+  _background-color: #022D42; /* */
+  _background-color: #90CCD3; /* */
+  background-color: #C4D9DF;
+}
+
+.btn-green {
+  @include btn-color($white, $green-sn);
+    color: $brand-blue !important;
+}

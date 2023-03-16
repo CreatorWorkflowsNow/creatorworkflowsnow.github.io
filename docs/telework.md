@@ -2,7 +2,7 @@
 layout: default
 title: Telework Case Lab
 nav_order: 200
-permalink: /docs/lab_telework/
+permalink: /docs/telework/
 has_children: false
 ---
 
@@ -17,6 +17,6 @@ Help Amanda and the Office of Regulatory Affairs convert a PDF based approval pr
 {: .highlight }
 This lab is hosted externally and will open in a new tab.
 
-[Begin][TeleworkLabExternalLink]{: target="_blank" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Begin][TeleworkLabExternalLink]{: target="_blank" .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 [TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/

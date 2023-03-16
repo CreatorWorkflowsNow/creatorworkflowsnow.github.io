@@ -2,7 +2,7 @@
 layout: default
 title: Automation Engine Labs 
 nav_order: 10
-permalink: /docs/lab_autoengine
+permalink: /docs/autoengine
 has_children: true
 ---
 # Automation Engine Overview Labs
