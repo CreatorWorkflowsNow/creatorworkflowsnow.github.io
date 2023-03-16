@@ -1,8 +1,8 @@
 ---
 layout: default
 title: App Engine Innovation Lab
-nav_order: 10
-permalink: /docs/app-engine-governance
+nav_order: 11
+permalink: /docs/innovation
 has_children: false
 ---
 
