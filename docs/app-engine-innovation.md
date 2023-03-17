@@ -2,7 +2,7 @@
 layout: default
 title: App Engine Innovation Lab
 nav_order: 11
-permalink: /docs/innovation
+permalink: /docs/app-engine-innovation
 has_children: false
 ---
 
