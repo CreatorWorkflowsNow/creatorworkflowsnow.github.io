@@ -41,13 +41,13 @@ Use the ServiceNow® Robotic Process Automation (RPA) Hub to enable end-to-end a
 [Docs][RPA Docs]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 target="_blank" }
 
 [Auto Center Docs]: https://docs.servicenow.com/csh?topicname=automation-center-landing-page.html&version=latest
-[Auto Center Lab]: /docs/lab_autoengine/automation_center/
+[Auto Center Lab]: docs/lab_autoengine/automation_center/
 
 [Doc Intel Docs]: https://docs.servicenow.com/csh?topicname=document-intelligence-landing.html&version=latest
-[Doc Intel Lab]: /docs/lab_autoengine/doc_intel/
+[Doc Intel Lab]: docs/lab_autoengine/doc_intel/
 
 [IHub Docs]: https://docs.servicenow.com/csh?topicname=integrationhub.html&version=latest
-[IHub Lab]: /docs/lab_autoengine/ihub/
+[IHub Lab]: docs/lab_autoengine/ihub/
 
 [RPA Docs]: https://docs.servicenow.com/csh?topicname=rpa-main-landing-page.html&version=latest
-[RPA Lab]:  /docs/lab_autoengine/rpa/
+[RPA Lab]:  docs/lab_autoengine/rpa/
