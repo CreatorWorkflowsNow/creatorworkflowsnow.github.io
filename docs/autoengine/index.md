@@ -38,16 +38,16 @@ Integration Hub enables execution of third-party APIs as a part of a flow when a
 Use the ServiceNow® Robotic Process Automation (RPA) Hub to enable end-to-end automation for your organization. With a combination of UI interactions, element-based automations, and APIs that interact between the various business applications, you can emulate user actions and eliminate mundane and repetitive human activities.
 
 [Lab][RPA Lab]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Docs][RPA Docs]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 target="_blank" }
+[Docs][RPA Docs]{: .btn .fs-5 .mb-4 .mb-md-0 .mr-2 target="_blank" }
 
 [Auto Center Docs]: https://docs.servicenow.com/csh?topicname=automation-center-landing-page.html&version=latest
-[Auto Center Lab]: ./automation_center/
+[Auto Center Lab]: ./docs/autoengine/automation_center/
 
 [Doc Intel Docs]: https://docs.servicenow.com/csh?topicname=document-intelligence-landing.html&version=latest
-[Doc Intel Lab]: ./doc_intel/
+[Doc Intel Lab]: ./autoengine/doc_intel/
 
 [IHub Docs]: https://docs.servicenow.com/csh?topicname=integrationhub.html&version=latest
-[IHub Lab]: ./ihub/
+[IHub Lab]: ./autoengine/ihub/
 
 [RPA Docs]: https://docs.servicenow.com/csh?topicname=rpa-main-landing-page.html&version=latest
-[RPA Lab]:  ./rpa/
+[RPA Lab]:  ./autoengine/rpa/
