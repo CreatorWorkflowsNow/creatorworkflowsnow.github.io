@@ -13,4 +13,4 @@ This lab utilizes App Engine Studio to create a custom app on the Now Platform. 
 
 [Begin][GuideLink]{: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-[GuideLink]: https://creatorworkflowsnow.github.io/lab_deptsvc/
+[GuideLink]: https://creatorworkflowsnow.github.io/lab-deptsvc/
