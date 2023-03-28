@@ -3,17 +3,15 @@
 [![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
 
 ## Table of contents
-- [App Engine Management Center Lab](#app-engine-management-center-lab)
+- [CreatorWorkflowsNow.github.io](#creatorworkflowsnowgithubio)
   - [Table of contents](#table-of-contents)
   - [Introduction](#introduction)
-  - [Main Sections](#main-sections)
   - [Requirements](#requirements)
   - [Installation](#installation)
   - [Configuration](#configuration)
   - [Troubleshooting](#troubleshooting)
   - [FAQ](#faq)
   - [Maintainers](#maintainers)
-  - [Extra Links](#extra-links)
 
 ## Introduction
 
