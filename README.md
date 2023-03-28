@@ -1,12 +1,6 @@
-
-# Details
-
-
-
 # [CreatorWorkflowsNow.github.io](CreatorWorkflowsNow.github.io)
 
 [![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
-
 
 ## Table of contents
 - [App Engine Management Center Lab](#app-engine-management-center-lab)
