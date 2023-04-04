@@ -19,4 +19,6 @@ This lab is hosted externally and will open in a new tab.
 
 [Begin][TeleworkLabExternalLink]{: target="_blank" .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
+[New Lab Guide - DRAFT](https://creatorworkflowsnow.github.io/lab-telework/)
+
 [TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/
