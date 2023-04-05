@@ -16,4 +16,4 @@ Track and manage your App Engine Studio (AES) requests, deployments, application
 
 [Let's Go!][GuideLink]{: .btn .btn-green .fs-5}
 
-[GuideLink]: https://creatorworkflowsnow.github.io/lab_aemc/
+[GuideLink]: https://creatorworkflowsnow.github.io/lab-aemc/
