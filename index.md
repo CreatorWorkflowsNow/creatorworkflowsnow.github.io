@@ -9,9 +9,11 @@ nav_exclude: true
 # Creator Workshop Lab Guides
 {: .fs-10 .lh-10 }
 
-The Lab Guides below are intended to be used as part of a workshop with a pre-configured ServiceNow instance. 
+{: .note}
+> The Lab Guides below are intended to be used as part of a workshop with a pre-configured ServiceNow instance. 
 
-They are not guaranteed to work on a PDI or other instance. 
+{: .warning}
+> They are not guaranteed to work on a PDI or other instance. 
 
 | **Lab Guide**{: .fs-6} | **Info**{: .fs-6} |
 | **App Engine Governance**{: .fs-5} | [Begin](/docs/app-engine-governance){: .btn .btn-green .fs-5}
