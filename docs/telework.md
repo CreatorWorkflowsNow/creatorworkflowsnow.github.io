@@ -22,3 +22,5 @@ This lab is hosted externally and will open in a new tab.
 [New Lab Guide - DRAFT](https://creatorworkflowsnow.github.io/lab-telework/)
 
 [TeleworkLabExternalLink]: https://low-code.guide/docs/Telework/Introduction/
+
+[Lab Materials Public Link - https://bit.ly/TeleworkLab](https://bit.ly/TeleworkLab)
