@@ -8,6 +8,7 @@ $green-sn: #62d84e;
 $purple: purple;
 $green-sn-text: #293e40;
 $brand-blue: #032d42;
+$brand-red: #ED6975;
 
 $link-color: $green-sn-text !default;
 
@@ -18,6 +19,7 @@ $link-color: $green-sn-text !default;
   --brand-blue-lighter: #1a5d68;
   --brand-black: #000;
   --brand-gray: #999;
+  --brand-red: #ED6975;
   --btn-border-radius: 6px;
   --brand-opacity: 0.5;
 }
@@ -47,5 +49,10 @@ a {
 
 .btn-green {
   @include btn-color($white, $green-sn);
+    color: $brand-blue !important;
+}
+
+.btn-red {
+  @include btn-color($white, $brand-red);
     color: $brand-blue !important;
 }

@@ -4,6 +4,7 @@ title: Telework Case Lab
 nav_order: 200
 permalink: /docs/telework/
 has_children: false
+nav_exclude: true
 ---
 
 # Telework Case Lab
