@@ -18,4 +18,6 @@ Track and manage your App Engine Studio (AES) requests, deployments, application
 
 [Let's Go! Utah][GuideLink]{: .btn .btn-green .fs-5}
 
+[Let's Go! Utah V2 (draft)](https://creatorworkflowsnow.github.io/lab-aemc-utah-v2/){: .btn .btn-green .fs-5}
+
 [GuideLink]: https://creatorworkflowsnow.github.io/lab-aemc-utah/
