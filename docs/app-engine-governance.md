@@ -14,4 +14,4 @@ We will cover concepts such as Pipelines and Deployments, Onboarding Developers,
 
 Track and manage your App Engine Studio (AES) requests, deployments, applications, and collaborative developers using the App Engine Management Center (AEMC) in your production instance. Additionally, AEMC allows admins to manage app development from intake through production.
 
-[Let's Go! Utah](https://creatorworkflowsnow.github.io/lab-aemc-utah-v2/){: .btn .btn-green .fs-5}
+[Let's Go! Utah](https://creatorworkflowsnow.github.io/lab-aemc-utah-v3/){: .btn .btn-green .fs-5}
