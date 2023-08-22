@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   title: 'Creator Workshop Lab Guides',
   tagline: 'Ready to learn something new?',
   url: 'https://creatorworkflowsnow.github.io',
-  baseUrl: '/CreatorWorkflowsNow.github.io.v2/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
