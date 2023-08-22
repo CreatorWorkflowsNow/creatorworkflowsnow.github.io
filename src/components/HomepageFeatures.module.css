@@ -1,0 +1,133 @@
+@media (min-width: 500px) {
+  .featureLink {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .featureLink {
+    width: 400px;
+  }
+}
+
+/* media query for screens smaller than 500px (iphone) */
+@media (max-width: 499px) {
+  .featureLink {
+    width: 100%;
+  }
+
+  .featureContainer {
+    /* Adjusted minmax for smaller screens */
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    /* Adjusted minmax for smaller screens */
+  }
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 64px;
+  width: 64px;
+}
+
+.featureSvgContainer {
+  padding: 10px;
+  /* adjust this value as needed */
+}
+
+.featureTitle {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.featureLink {
+  /*width: 100%;*/
+  width: 400px;
+  /* or whatever width you want on wider screens */
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  height: 100%;
+  min-height: 8.5rem;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: var(--ifm-background-color);
+  /* Use Docusaurus color variable */
+  border-color: var(--ifm-color-emphasis-300);
+  /* Use Docusaurus color variable */
+  color: var(--ifm-color-emphasis-800);
+  /* Use Docusaurus color variable */
+  /*color: initial; /* Reverts to default color */
+  text-decoration: initial;
+  /* Removes underline */
+}
+
+
+.featureLink::before {
+  display: none;
+  /* Removes the custom underline effect */
+}
+
+.featureRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureBox {
+  flex-direction: column;
+  margin: 5px;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--homepage-feature-box);
+  /* Updated background color */
+
+  /* Updated shadow for more pronounced effect */
+  transition: all 0.3s ease;
+
+  /* Updated transition to include border and box-shadow changes */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* Added half-pixel light gray border */
+
+  border: 0.5px solid var(--ifm-color-emphasis-300);
+  color: var(--ifm-font-color-base);
+  min-height: 230px;
+}
+
+
+.featureLink:hover {
+  /*color: initial; /* Reverts to default color on hover */
+  text-decoration: none;
+  /* Ensures no underline on hover */
+}
+
+.featureLink:hover .featureBox {
+  transform: scale(0.98);
+  /* Slightly reduces the size for "pushed-in" effect */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.featureSvgContainer {
+  /* styles... */
+}
+
+.featureContent {
+  /* styles... */
+}
+
+.featureContainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+[data-theme='dark'] {
+  background-color: var(--homepage-feature);
+}

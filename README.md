@@ -1,46 +1,33 @@
-# [CreatorWorkflowsNow.github.io](CreatorWorkflowsNow.github.io)
+# Website
 
-[![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## Table of contents
-- [CreatorWorkflowsNow.github.io](#creatorworkflowsnowgithubio)
-  - [Table of contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Requirements](#requirements)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Troubleshooting](#troubleshooting)
-  - [FAQ](#faq)
-  - [Maintainers](#maintainers)
+### Installation
 
-## Introduction
+```
+$ yarn
+```
 
-This is the repo for https://creatorworkflowsnow.github.io
+### Local Development
 
-Submit bug reports and feature suggestions, or track changes by contacting [Dale Stubblefield](mailto:dale.stubblefield@servicenow.com).
+```
+$ yarn start
+```
 
-## Requirements
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-GitHub Pages, Markdown knowledge
+### Build
 
-## Installation
+```
+$ yarn build
+```
 
-Fork
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Configuration
+### Deployment
 
-Edit markdown files as needed. 
+```
+$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
 
-## Troubleshooting
-
-- Should not be required. 
-
-## FAQ
-
-**Q:** What is this site for?
-
-**A:** ServiceNow Creator Workflows Workshop Lab Guides for Public use
-
-## Maintainers
-
-- Dale Stubblefield - https://github.com/dalestubblefield
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

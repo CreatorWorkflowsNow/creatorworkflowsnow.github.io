@@ -1,0 +1,10 @@
+.timeEstimate {
+    padding: 10px;
+    background-color: #eee;
+    /* Or any other color you want */
+    color: black;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 0.9em;
+    margin-bottom: 16px; /* Adjust the value as needed */
+}
