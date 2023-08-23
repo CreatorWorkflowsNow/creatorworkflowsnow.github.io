@@ -46,7 +46,7 @@ const FeatureList = [
         Read more
       </>
     ),
-    to: "https://creatorworkflowsnow.github.io/docs/autoengine",
+    to: "https://creatorworkflowsnow.github.io/lab_autoengine",
   },
 ];
 
