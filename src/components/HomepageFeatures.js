@@ -74,9 +74,24 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className={clsx('container', styles.featureContainer)}>
         {FeatureList.map((props, idx) => (
-          <Feature key={idx} {...props} />
+          <Link to={props.to} className={clsx(styles.featureLink)} target="_self">
+            <div className={clsx(styles.featureRow, styles.featureBox)}>
+              <div className={styles.featureSvgContainer}>
+                <props.Svg className={styles.featureSvg} alt={props.title} />
+              </div>
+              <div className={styles.featureContent}>
+                <h3>{props.title}</h3>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <p style={{ marginRight: '10px' }}>
+                    {props.description} <FontAwesomeIcon icon={faArrowRight} />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
     </section>
   );
 }
+
