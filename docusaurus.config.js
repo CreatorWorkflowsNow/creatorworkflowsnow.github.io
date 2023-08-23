@@ -59,40 +59,96 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           src: 'img/servicenow-logo.png',
           srcDark: 'img/servicenow-logo_dark.png',
         },
-        items: [
-          {
-            href: 'http://lowcodeworkshops.com/',
-            label: 'LowCodeWorkshops.com',
-            position: 'right',
-          },
-        ],
+        items: [{
+          href: 'http://lowcodeworkshops.com/',
+          label: 'LowCodeWorkshops.com',
+          position: 'right',
+        }, ],
       },
       footer: {
         style: 'light',
-        links: [
-          {
-            title: 'Docs',
-            items: [
+        links: [{
+            title: 'Learn',
+            items: [{
+                label: 'Developer Learning Paths',
+                href: 'https://developer.servicenow.com/dev.do#!/learn'
+              },
               {
-                label: 'Product Documentation',
-                href: 'https://docs.servicenow.com/',
+                label: 'Now Learning Training',
+                href: 'https://nowlearning.servicenow.com/',
+              },
+            ],
+          },
+          {
+            title: 'Reference',
+            items: [{
+                label: 'API Reference',
+                href: 'https://developer.servicenow.com/dev.do#!/reference'
+              },
+              {
+                label: 'Developer Glossary',
+                href: 'https://developer.servicenow.com/dev.do#!/guides/vancouver/now-platform/glossary/developer-glossary'
               },
               {
                 label: 'Now Create',
                 href: 'https://nowlearning.servicenow.com/nowcreate',
               },
               {
-                label: 'Now Learning',
-                href: 'https://nowlearning.servicenow.com/',
+                label: 'Product Documentation',
+                href: 'https://docs.servicenow.com/',
               },
-            ],
+            ]
           },
           {
-            title: 'Community',
-            items: [
+            title: 'Connect with us',
+            items: [{
+                label: 'Free ServiceNow Instance',
+                href: 'https://developer.servicenow.com/',
+              },
+              {
+                label: 'Developer Blog',
+                href: 'https://developer.servicenow.com/blog.do'
+              },
+              {
+                label: 'Developer Community',
+                href: 'https://www.servicenow.com/community/developer/ct-p/Developer'
+              },
               {
                 label: 'ServiceNow Community',
                 href: 'https://www.servicenow.com/community/',
+              },
+            ]
+          },
+
+          {
+            title: 'About ServiceNow',
+            items: [{
+                label: 'ServiceNow.com',
+                href: 'https://www.servicenow.com/',
+              },
+              {
+                label: 'ServiceNow Blogs',
+                href: 'https://www.servicenow.com/blogs.html',
+              },
+              {
+                label: 'Customer Success Center',
+                href: 'https://www.servicenow.com/success.html',
+              },
+              {
+                label: 'Knowledge Conference',
+                href: 'https://knowledge.servicenow.com/',
+              },
+            ],
+          }, 
+          {
+            title: 'Social',
+            items: [{
+                label: 'Facebook',
+                href: 'https://www.facebook.com/servicenow',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/servicenow/',
               },
               {
                 label: 'LinkedIn',
@@ -103,46 +159,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 href: 'https://twitter.com/servicenow',
               },
               {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/user/servicenowinc',
-              },
-              {
-                label: 'Facebook',
-                href: 'https://www.facebook.com/servicenow',
-              },
-              {
-                label: 'Instagram',
-                href: 'https://www.instagram.com/servicenow/',
-              },
-              {
                 label: 'TikTok',
                 href: 'https://www.tiktok.com/@servicenow',
               },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
-                label: 'ServiceNow Developer',
-                href: 'https://developer.servicenow.com/',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/CreatorWorkflowsNow/',
-              },
-            ],
-          },
-          {
-            title: 'Connect with Us',
-            items: [
-              {
-                label: 'ServiceNow Developer',
-                href: 'https://developer.servicenow.com/',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/CreatorWorkflowsNow/',
+                label: 'YouTube',
+                href: 'https://www.youtube.com/user/servicenowinc',
               },
             ],
           },

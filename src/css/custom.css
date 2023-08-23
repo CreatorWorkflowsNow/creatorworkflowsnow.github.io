@@ -19,25 +19,6 @@
 
 /* You can override the default Infima variables here.  */
 :root {
-  --ifm-heading-font-family: 'Gilroy-Regular';
-  --docusaurus-progress-bar-color: var(--ifm-color-primary);
-  --servicenow-brand-green: #86ed78;
-  --servicenow-brand-green-darker: #62d84e;
-  --servicenow-brand-blue: #032d42;
-  --servicenow-brand-blue-lighter: #1a5d68;
-  --servicenow-brand-black: #000;
-  --servicenow-brand-gray: #999;
-  --ifm-color-primary: var(--servicenow-brand-blue);
-  --ifm-link-color: var(--servicenow-brand-green-darker);
-  --ifm-heading-color: var(--servicenow-brand-green-darker);
-  --ifm-footer-link-hover-color: var(--ifm-link-color);
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: #0000001a;
   --docusaurus-announcement-bar-height: auto;
   --docusaurus-collapse-button-bg: #0000;
@@ -45,13 +26,37 @@
   --doc-sidebar-width: 300px;
   --doc-sidebar-hidden-width: 30px;
   --docusaurus-tag-list-border: var(--ifm-color-emphasis-300);
-  --ifm-background-color: #ffffff;
   --homepage-feature: #1B1B1D;
   --homepage-feature-box: #F7F7F7;
+  --docusaurus-progress-bar-color: var(--ifm-color-primary);
+  --ifm-background-color: #ffffff;
+  --ifm-color-primary: var(--servicenow-brand-blue);
+  --ifm-heading-color: var(--servicenow-brand-green-darker);
+  --ifm-heading-font-family: 'Gilroy-Regular';
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --ifm-footer-background-color: var(--ifm-color-emphasis-800);
+  --ifm-footer-color: var(--ifm-color-emphasis-300);
+  --ifm-footer-link-color: var(--ifm-color-emphasis-200);
+  --ifm-footer-link-hover-color: var(--ifm-link-color);
+  --ifm-footer-title-color: var(--ifm-color-emphasis-100);
+  --ifm-link-color: var(--servicenow-brand-green-darker);
+  --servicenow-brand-green: #86ed78;
+  --servicenow-brand-green-darker: #62d84e;
+  --servicenow-brand-blue: #032d42;
+  --servicenow-brand-blue-lighter: #1a5d68;
+  --servicenow-brand-black: #000;
+  --servicenow-brand-gray: #999;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark']:root {
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-color-primary: var(--servicenow-brand-green);
   /*--ifm-color-primary: var(--servicenow-brand-blue); */
   --ifm-color-primary-dark: #21af90;
@@ -61,10 +66,7 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --ifm-font-color-base-inverse: var(--servicenow-brand-blue);
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --homepage-feature-box: var(--servicenow-brand-green);
-  --ifm-footer-background-color: #303846;
-  --ifm-footer-title-color: #ffffff;
 }
 
 [data-theme='dark'] h1,
@@ -85,14 +87,6 @@
 [data-theme='dark'] .navbar {
   background-color: #242526;
 }
-
-[data-theme='dark'] .footer {
-  color: var(--ifm-footer-title-color);
-}
-
-
-
-
 
 /* media query for screens smaller than 500px (iphone) */
 @media (max-width: 499px) {
@@ -255,13 +249,25 @@ h1 {
   margin: 0px;
 }
 
+.footer {
+  background-color: #242526;
+}
+
 .footer__title {
-  color: var(--ifm-footer-title-color);
+  color: #ffffff;
   font-size: var(--ifm-h4-font-size);
   line-height: var(--ifm-heading-line-height);
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   margin-bottom: var(--ifm-heading-margin-bottom);
+}
+
+.footer__link-item {
+  color: #f5f6f7;
+}
+
+.footer__copyright {
+  color: #f5f6f7;
 }
 
 .theme-dark .markdown,
