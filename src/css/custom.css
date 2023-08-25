@@ -4,35 +4,20 @@
  * work well for content-centric websites.
  */
 
-/* Default values
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
-}
-*/
-
-/* You can override the default Infima variables here.  */
-:root {
-  --docusaurus-highlighted-code-line-bg: #0000001a;
+  --doc-sidebar-hidden-width: 30px;
+  --doc-sidebar-width: 300px;
   --docusaurus-announcement-bar-height: auto;
   --docusaurus-collapse-button-bg: #0000;
   --docusaurus-collapse-button-bg-hover: #0000001a;
-  --doc-sidebar-width: 300px;
-  --doc-sidebar-hidden-width: 30px;
+  --docusaurus-highlighted-code-line-bg: #0000001a;
+  --docusaurus-progress-bar-color: var(--ifm-color-primary);
   --docusaurus-tag-list-border: var(--ifm-color-emphasis-300);
+  --footer-gray: #242526;
   --homepage-feature: #1B1B1D;
   --homepage-feature-box: #F7F7F7;
-  --docusaurus-progress-bar-color: var(--ifm-color-primary);
   --ifm-background-color: #ffffff;
   --ifm-color-primary: var(--servicenow-brand-blue);
-  --ifm-heading-color: var(--servicenow-brand-green-darker);
-  --ifm-heading-font-family: 'Gilroy-Regular';
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -45,49 +30,167 @@
   --ifm-footer-link-color: var(--ifm-color-emphasis-200);
   --ifm-footer-link-hover-color: var(--ifm-link-color);
   --ifm-footer-title-color: var(--ifm-color-emphasis-100);
-  --ifm-link-color: var(--servicenow-brand-green-darker);
-  --servicenow-brand-green: #86ed78;
-  --servicenow-brand-green-darker: #62d84e;
+  --ifm-heading-color: var(--now-brand-green-darker);
+  --ifm-heading-font-family: 'Gilroy-Regular';
+  --ifm-link-color: var(--now-brand-green-darker);
+  --now-brand-blue: rgb(3, 45, 66);
+  --now-brand-green: rgb(134, 237, 120);
+  --now-brand-green-darker: #62d84e;
+  --now-button--primary--background-color: rgb(58, 87, 233);
+  --now-button--primary--background-color--active: rgb(31, 66, 150);
+  --now-button--primary--color: rgb(255, 255, 255);
+  --now-button--scale-size-block: 50px;
+  --now-button--scale-size-inline: 100px;
+  --now-color-white: rgb(255, 255, 255);
+  --now-color-gray: rgb(219, 221, 225);
+  --now-color-dark-green: rgb(63, 143, 91);
+  --now-download-green: rgb(0, 145, 86);
   --servicenow-brand-blue: #032d42;
   --servicenow-brand-blue-lighter: #1a5d68;
   --servicenow-brand-black: #000;
   --servicenow-brand-gray: #999;
+  --servicenow-brand-green: #86ed78;
+  --servicenow-brand-green-darker: #62d84e;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark']:root {
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-color-primary: var(--servicenow-brand-green);
-  /*--ifm-color-primary: var(--servicenow-brand-blue); */
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --ifm-font-color-base-inverse: var(--servicenow-brand-blue);
-  --homepage-feature-box: var(--servicenow-brand-green);
+/*--- Adjustments for the ServiceNow button in Markdown ---*/
+.aes_button {
+  background-color: var(--now-button--primary--background-color);
+  border-radius: 22px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
 }
 
-[data-theme='dark'] h1,
-[data-theme='dark'] h2,
-[data-theme='dark'] h3,
-[data-theme='dark'] h4,
-[data-theme='dark'] h5,
-[data-theme='dark'] h6,
-[data-theme='dark'] p {
-  color: var(--servicenow-brand-blue);
-  /* Your desired color */
+.aes_button:hover {
+  background-color: var(--now-button--primary--background-color--active);
 }
 
-[data-theme='dark'] .clean-btn {
-  background-color: #7c7f81;
+/*---HTML-Instruction-Styling----------------------------*/
+.step-content {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  /* Add space between steps */
 }
 
-[data-theme='dark'] .navbar {
-  background-color: #242526;
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: var(--now-button--primary--background-color);
+  color: var(--now-color-white);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+  /* Add space between step number and instructions */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Aligns the number to the top */
 }
 
+.step-instructions {
+  flex: 1;
+}
+
+/*---Markdown-Instruction-Styling----------------------------*/
+.markdown h1 {
+  color: black;
+  width: 100%;
+  padding: 10px;
+  /* Add padding for spacing */
+  margin: 0;
+  /* Remove default margin */
+  position: relative;
+  margin-bottom: 2.4rem;
+  line-height: 4.8rem;
+}
+
+/* Add a bottom border using a pseudo-element */
+.markdown h1::after {
+  content: "";
+  transform: translateX(-50%);
+  /* Center the line */
+  position: inherit;
+  left: 120px;
+  width: 16rem;
+  height: 5px;
+  /* Height of the border line */
+  background-color: var(--now-color-dark-green);
+  display: block;
+}
+
+.markdown h2 {
+  background-color: var(--now-brand-blue);
+  color: var(--now-brand-green);
+  width: 100%;
+  padding: 10px;
+  /* Add padding for spacing */
+  margin: 0;
+  /* Remove default margin */
+}
+
+
+.markdown ol {
+  background-color: var(--now-brand-green);
+  padding-left: 25px;
+  border-left: 3px solid var(--now-color-gray);
+  border-top: 3px solid var(--now-color-gray);
+  border-radius: 1em;
+}
+
+.markdown ol li {
+  background-color: white;
+  padding: 5px;
+  margin-bottom: .1em;
+  color: black;
+  align-items: center;
+  /* Vertically center the content */
+}
+
+/* Style the bullet points */
+.markdown ul {
+  margin-left: 40px;
+  /* Indentation for bullet points */
+}
+
+
+/*---DOWNLOAD-BOX-STUFF-----------------------------*/
+
+.download-box {
+  background-color: var(--now-download-green);
+  height: 176px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  /* Remove the border property */
+}
+
+.download-box td {
+  border: none;
+  background-color: white;
+}
+
+.attachment__title {
+  font-weight: 800;
+  font-size: larger;
+}
+
+/*--------------------------------------------------*/
 /* media query for screens smaller than 500px (iphone) */
 @media (max-width: 499px) {
   .markdown img {
@@ -104,8 +207,8 @@ a {
 }
 
 .markdown img {
-  margin-left: 40px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-left: 40px;
   max-width: 95%;
   height: auto;
 }
@@ -141,10 +244,6 @@ a {
 .navbar__brand:hover {
   color: var(--ifm-navbar-link-hover-color);
   /* Use the default hover color */
-}
-
-.theme-dark .markdown {
-  color: var(--ifm-font-color-base);
 }
 
 /* Basic link styling within .theme-doc-markdown and .markdown */
@@ -199,7 +298,6 @@ a {
   border: 0.5px solid transparent;
 }
 
-
 html body {
   color: #333333;
   font-family: "Gilroy-Regular", Arial, Helvetica, sans-serif;
@@ -217,10 +315,6 @@ html body {
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-}
-
-html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .customHeader {
@@ -250,7 +344,7 @@ h1 {
 }
 
 .footer {
-  background-color: #242526;
+  background-color: var(--footer-gray);
 }
 
 .footer__title {
@@ -270,13 +364,85 @@ h1 {
   color: #f5f6f7;
 }
 
-.theme-dark .markdown,
-.theme-dark .docItemContainer .post .markdown p {
-  color: var(--ifm-font-color-base-dark);
+/*--Dark-mode-settings------------------------------*/
+[data-theme='dark']:root {
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: var(--servicenow-brand-green);
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-font-color-base-inverse: var(--servicenow-brand-blue);
+  --homepage-feature-box: var(--servicenow-brand-green);
+
+  --dark-background-color: #20232a;
+  --dark-text-color: #ffffff;
+  --dark-link-color: #61dafb;
+  --dark-h1: #ffffff;
 }
 
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: var(--docusaurus-highlighted-code-line-bg);
+}
 
+[data-theme='dark'] a {
+  color: var(--servicenow-brand-green);
+}
 
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6,
+[data-theme='dark'] p {
+  color: var(--servicenow-brand-blue);
+}
+
+[data-theme='dark'] div.theme-doc-markdown.markdown h1,
+[data-theme='dark'] div.theme-doc-markdown.markdown h2,
+[data-theme='dark'] div.theme-doc-markdown.markdown h3, 
+[data-theme='dark'] div.theme-doc-markdown.markdown h4, 
+[data-theme='dark'] div.theme-doc-markdown.markdown h5, 
+[data-theme='dark'] div.theme-doc-markdown.markdown h6, 
+[data-theme='dark'] div.theme-doc-markdown.markdown p, {
+  color: var(--dark-h1);
+}
+
+[data-theme='dark'] div.theme-doc-markdown.markdown h2 {
+  color: var(--servicenow-brand-blue);
+  background-color: var(--servicenow-brand-green);
+}
+
+[data-theme='dark'] .clean-btn {
+  background-color: #7c7f81;
+}
+
+[data-theme='dark'] .navbar {
+  background-color: #242526;
+}
+
+[data-theme='dark'] .hero__title, 
+[data-theme='dark'] .hero__subtitle {
+  color: var(--servicenow-brand-blue);
+}
+
+[data-theme='dark'] .markdown {
+  color: var(--dark-text-color);
+}
+
+[data-theme='dark'] .menu__link--active {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
+
+[data-theme='dark'] .pagination-nav__link {
+  background-color: var(--footer-gray);
+}
+
+/*--- SERVICENOW FONTS ---*/
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Source+Sans+Pro:400,400i,600,600i,700,700|Lato:400,700i&subset=latin,latin-ext);
 
 @font-face {
