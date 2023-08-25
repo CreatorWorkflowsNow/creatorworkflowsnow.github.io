@@ -29,6 +29,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
   themes: ['@docusaurus/theme-mermaid'],
 
+  plugins: ['docusaurus-plugin-sass'],
+
   presets: [
     [
       '@docusaurus/preset-classic',

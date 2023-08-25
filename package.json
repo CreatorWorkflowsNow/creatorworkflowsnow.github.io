@@ -23,6 +23,7 @@
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^8.0.1",
     "clsx": "^1.1.1",
+    "docusaurus-plugin-sass": "^0.2.5",
     "file-loader": "^6.2.0",
     "mermaid": "^10.3.0",
     "prism-react-renderer": "^1.2.1",
