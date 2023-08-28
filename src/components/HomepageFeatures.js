@@ -36,7 +36,7 @@ const FeatureList = [
         Collaborate to Accelerate
       </>
     ),
-    to: "https://creatorworkflowsnow.github.io/lab-aemc-utah-v3/docs/Introduction/before-you-begin/",
+    to: "https://creatorworkflowsnow.github.io/lab-aemc-utah-v3/docs/Before-you-begin/about-this-lab/",
   },
   {
     title: 'Automation Engine',
