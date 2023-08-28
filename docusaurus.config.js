@@ -3,10 +3,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
-(module.exports = {
+
+module.exports = {
   title: 'Creator Workshop Lab Guides',
   tagline: 'Ready to learn something new?',
   favicon: 'img/favicon.ico',
+
+
 
   // Set the production url of your site here
   url: 'https://creatorworkflowsnow.github.io',
@@ -29,7 +32,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
   themes: ['@docusaurus/theme-mermaid'],
 
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    'docusaurus-plugin-sass',
+    async function myPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
 
   presets: [
     [
@@ -175,4 +191,4 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         darkTheme: darkCodeTheme,
       },
     }),
-});
+};

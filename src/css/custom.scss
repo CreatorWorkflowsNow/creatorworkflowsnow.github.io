@@ -4,6 +4,10 @@
  * work well for content-centric websites.
  */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --doc-sidebar-hidden-width: 30px;
   --doc-sidebar-width: 300px;
@@ -25,7 +29,7 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --ifm-footer-background-color: var(--ifm-color-emphasis-800);
+  --ifm-footer-background-color: var(--servicenow-brand-blue);
   --ifm-footer-color: var(--ifm-color-emphasis-300);
   --ifm-footer-link-color: var(--ifm-color-emphasis-200);
   --ifm-footer-link-hover-color: var(--ifm-link-color);
@@ -344,7 +348,11 @@ h1 {
 }
 
 .footer {
-  background-color: var(--footer-gray);
+  background-color: var(--servicenow-brand-blue);
+}
+
+.footer a {
+  color: var(--servicenow-brand-green);
 }
 
 .footer__title {
@@ -358,6 +366,11 @@ h1 {
 
 .footer__link-item {
   color: #f5f6f7;
+  font-size: 10px;
+}
+
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module {
+  height: 10px;
 }
 
 .footer__copyright {
@@ -407,7 +420,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 [data-theme='dark'] div.theme-doc-markdown.markdown h4, 
 [data-theme='dark'] div.theme-doc-markdown.markdown h5, 
 [data-theme='dark'] div.theme-doc-markdown.markdown h6, 
-[data-theme='dark'] div.theme-doc-markdown.markdown p, {
+[data-theme='dark'] div.theme-doc-markdown.markdown p {
   color: var(--dark-h1);
 }
 
