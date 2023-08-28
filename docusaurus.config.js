@@ -34,17 +34,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   presets: [
     [
       '@docusaurus/preset-classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-
+          breadcrumbs: true,
         },
-        blog: {
-          showReadingTime: true,
-        },
+        blog: false, // Optional: disable the blog plugin        
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       }),
     ],
