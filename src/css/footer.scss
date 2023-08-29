@@ -1,0 +1,55 @@
+/** 
+ * Just footer things
+ */
+
+[data-theme='dark'] .footer__title {
+    @apply text-white;
+}
+
+
+/* -------------------------------------------------- */
+[data-theme='dark'] .footer {
+    @apply no-underline bg-gray-800;
+}
+/* -------------------------------------------------- */
+.footer a {
+    @apply no-underline;
+}
+
+[data-theme='dark'] .footer a {
+    @apply no-underline;
+}
+
+/* -------------------------------------------------- */
+.footer__link-item {
+    display: inline-flex; /* Ensures both text and icon are on the same line */
+    @apply text-base font-medium text-nowwasabi;
+}
+
+[data-theme='dark'] .footer__link-item {
+    @apply no-underline text-nowwasabi;
+}
+
+/* -------------------------------------------------- */
+.footer__link-item:hover {
+    @apply text-nowblue ;
+}
+
+[data-theme='dark'] .footer__link-item:hover {
+    @apply text-nowblue ;
+}
+
+
+/* -------------------------------------------------- */
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module {
+    color: var(--servicenow-brand-blue);
+}
+
+[data-theme='dark'] .iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module {
+    @apply text-gray-800;
+}
+
+/* -------------------------------------------------- */
+[data-theme='dark'] .footer__copyright {
+    @apply text-nowwasabi;
+}

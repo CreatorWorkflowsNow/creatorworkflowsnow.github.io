@@ -1,0 +1,101 @@
+/** 
+ * <<< Dark-mode-settings >>>
+ * Let's try to keep everything for dark mode in one file as much as we can.
+ */
+
+/*-- nav bar on every page --*/
+[data-theme='dark'] .navbar.navbar--fixed-top {
+  @apply bg-gray-900;
+}
+
+[data-theme='dark'] .hero {
+  @apply bg-gray-800 ;
+}
+
+[data-theme='dark'] .hero__title{ 
+  @apply text-nowwasabi;
+}
+
+[data-theme='dark'] .hero__subtitle {
+  @apply text-white;
+}
+
+/*-- main page feature container --*/
+[data-theme='dark'] #__docusaurus_skipToContent_fallback {
+  @apply bg-gray-900;
+}
+
+
+[data-theme='dark']:root {
+  --ifm-color-scheme: dark;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: bg-nowgreen;
+  --ifm-color-primary: var(--servicenow-brand-green);
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-font-color-base-inverse: var(--servicenow-brand-blue);
+  --homepage-feature-box: red;
+
+  --dark-background-color: #20232a;
+  --dark-text-color: #ffffff;
+  --dark-link-color: #61dafb;
+  --dark-h1: #ffffff;
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: var(--docusaurus-highlighted-code-line-bg);
+}
+
+[data-theme='dark'] a {
+  color: var(--servicenow-brand-green);
+}
+
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6,
+[data-theme='dark'] p {
+  color: var(--servicenow-brand-blue);
+}
+
+[data-theme='dark'] div.theme-doc-markdown.markdown h1,
+[data-theme='dark'] div.theme-doc-markdown.markdown h2,
+[data-theme='dark'] div.theme-doc-markdown.markdown h3, 
+[data-theme='dark'] div.theme-doc-markdown.markdown h4, 
+[data-theme='dark'] div.theme-doc-markdown.markdown h5, 
+[data-theme='dark'] div.theme-doc-markdown.markdown h6, 
+[data-theme='dark'] div.theme-doc-markdown.markdown p {
+  color: var(--dark-h1);
+}
+
+[data-theme='dark'] div.theme-doc-markdown.markdown h2 {
+  color: var(--servicenow-brand-blue);
+  background-color: var(--servicenow-brand-green);
+}
+
+[data-theme='dark'] .clean-btn {
+  background-color: #7c7f81;
+}
+
+[data-theme='dark'] .navbar {
+  background-color: #242526;
+}
+
+[data-theme='dark'] .markdown {
+  color: var(--dark-text-color);
+}
+
+[data-theme='dark'] .menu__link--active {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
+
+[data-theme='dark'] .pagination-nav__link {
+  background-color: var(--footer-gray);
+}

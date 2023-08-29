@@ -2,9 +2,10 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import Link from '@docusaurus/Link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileCode, faUsers, faCog, faPlane, faRobot } from '@fortawesome/free-solid-svg-icons';
 
 
 const HomepageFeatures = () => (
@@ -17,27 +18,28 @@ const HomepageFeatures = () => (
   </div>
 );
 
-const Feature = ({ Svg, title, description, to }) => (
-  //<Link to={to} className={clsx('py-4 mb-4 text-green-700 no-underline')}>
-  <Link to={to} className={clsx('')}>
-    <li className={clsx('p-6 md:mt-6 lg:mt-8 pb-6 md:pb-8 lg:pb-10')}>
-      <div className={clsx('flex')}>
+const Feature = ({ title, description, to, icon }) => (
+  <li className={clsx('p-6 md:mt-6 lg:mt-8 pb-6 md:pb-8 lg:pb-10')}>
+    <div className={clsx('flex')}>
         <div className={clsx('flex-shrink-0')}>
-          <div className={clsx('flex items-center justify-center h-10 w-10 rounded-md bg-blue-950')}>
-            <Svg alt={title} />
-          </div>
+          <Link to={to} className={clsx('hover:no-underline')}>
+            <div className={clsx('flex items-center justify-center h-10 w-10 rounded-md bg-nowinfblue-100 hover:bg-nowinfblue-200 text-nowwasabi hover:text-nowwasabi/70 dark:bg-nowwasabi dark:hover:bg-nowwasabi/70 dark:text-white dark:hover:text-white')}>
+            <FontAwesomeIcon className={clsx('')} icon={icon} alt={title} />
+            </div>
+          </Link>
         </div>
-        <div className={clsx('ml-4 mr-4 text-blue-950')}>
-            <h4 className={clsx('text-xl leading-6 font-medium text-blue-950 dark:text-green-400 hover:no-underline')}>
+        <div className={clsx('ml-4 mr-4')}>
+          <Link to={to} className={clsx('hover:no-underline')}>
+            <h4 className={clsx('text-xl leading-6 font-extrabold text-nowinfblue-100 hover:text-nowwasabi dark:text-white dark:hover:text-white/70')}>
               {title}
             </h4>
-            <p className={clsx('text-sm mt-2 leading-6 dark:text-green-400')}>
+            <p className={clsx('text-md mt-2 leading-6 text-nowinfblue-100 hover:text-nowwasabi dark:text-nowwasabi dark:hover:text-nowwasabi/70')}>
               {description}
             </p>
+          </Link>
         </div>
-      </div>
-    </li>
-  </Link>
+    </div>
+  </li>
 );
 
 export default HomepageFeatures;
@@ -45,11 +47,11 @@ export default HomepageFeatures;
 const FeatureList = [
   {
     title: 'App Innovation',
-    Svg: require('../../static/img/AES_logo.svg').default,
+    icon: faFileCode,
     description: (
       <>
       Telework Case Management<br/>
-      <i>Learn to use App Engine studio to build your first app.</i>
+      Build your first app with App Engine Studio.
       </>
     ),
     //to: "/docs/telework-utah/Introduction/",
@@ -57,49 +59,40 @@ const FeatureList = [
   },
   {
     title: 'EWF+CrWF',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    icon: faUsers,
     description: (
       <>
-      <i>Create new Departmental Services and how to publish them to the enterprise using Employee Center.</i>
+      Create new Departmental Services and publish them to the enterprise using Employee Center.
       </>
     ),
     to: "https://creatorworkflowsnow.github.io/lab-deptsvc/",
   },
   {
     title: 'App Governance',
-    Svg: require('../../static/img/bus-management-console.svg').default,
+    icon: faCog,
     description: (
       <>
-      Collaborate to Accelerate<br/>
-      <i>Revolutionizing the way applications are crafted on the ServiceNow Platform, empowered by the capabilities of the App Engine Management Center.</i>
+      Revolutionizing the way applications are crafted on the ServiceNow Platform, empowered by the capabilities of the App Engine Management Center.
       </>
     ),
     to: "https://creatorworkflowsnow.github.io/lab-aemc-utah-v3/docs/Before-you-begin/about-this-lab/",
   },
   {
     title: 'Travel Request',
-    Svg: require('../../static/img/AES_logo.svg').default,
+    icon: faPlane,
     description: (
       <>
-      <i>Create a Travel Request application using the ServiceNow platform using concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio.</i>
+      Create a Travel Request application using the ServiceNow platform using concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio.
       </>
     ),
-    to: "https://shaoservicenow.github.io/travelrequest/",
+    to: "https://bit.ly/travelrequestlab",
   },
   {
     title: 'Automation Engine',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    icon: faRobot,
     description: (
       <>
-      <i>
-      Get hands-on experience with Automation Engine products such as:
-      <ol>
-        <li>Automation Center</li>
-        <li>Document Intelligence</li>
-        <li>Integration Hub</li>
-        <li>RPA Hub</li>
-      </ol>
-      </i>
+      Get hands-on experience with products such as Automation Center, Document Intelligence, Integration Hub, and RPA Hub.
       </>
     ),
     to: "https://creatorworkflowsnow.github.io/lab_autoengine",

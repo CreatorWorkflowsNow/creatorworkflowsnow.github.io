@@ -74,23 +74,36 @@ module.exports = {
           src: 'img/servicenow-logo.png',
           srcDark: 'img/servicenow-logo_dark.png',
         },
-        items: [{
-          href: 'http://lowcodeworkshops.com/',
-          label: 'LowCodeWorkshops.com',
-          position: 'right',
-        }, ],
+        items: [],
       },
       footer: {
         style: 'light',
         links: [{
             title: 'Learn',
-            items: [{
+            items: [
+              {
+                label: 'Developer Blog',
+                href: 'https://developer.servicenow.com/blog.do'
+              },
+              {
+                label: 'Developer Community',
+                href: 'https://www.servicenow.com/community/developer/ct-p/Developer'
+              },
+              {
                 label: 'Developer Learning Paths',
                 href: 'https://developer.servicenow.com/dev.do#!/learn'
               },
               {
+                label: 'FREE ServiceNow Instance',
+                href: 'https://developer.servicenow.com/',
+              },
+              {
                 label: 'Now Learning Training',
                 href: 'https://nowlearning.servicenow.com/',
+              },
+              {
+                label: 'ServiceNow Community',
+                href: 'https://www.servicenow.com/community/',
               },
             ],
           },
@@ -115,36 +128,8 @@ module.exports = {
             ]
           },
           {
-            title: 'Connect with us',
-            items: [{
-                label: 'Free ServiceNow Instance',
-                href: 'https://developer.servicenow.com/',
-              },
-              {
-                label: 'Developer Blog',
-                href: 'https://developer.servicenow.com/blog.do'
-              },
-              {
-                label: 'Developer Community',
-                href: 'https://www.servicenow.com/community/developer/ct-p/Developer'
-              },
-              {
-                label: 'ServiceNow Community',
-                href: 'https://www.servicenow.com/community/',
-              },
-            ]
-          },
-
-          {
             title: 'About ServiceNow',
-            items: [{
-                label: 'ServiceNow.com',
-                href: 'https://www.servicenow.com/',
-              },
-              {
-                label: 'ServiceNow Blogs',
-                href: 'https://www.servicenow.com/blogs.html',
-              },
+            items: [
               {
                 label: 'Customer Success Center',
                 href: 'https://www.servicenow.com/success.html',
@@ -152,6 +137,18 @@ module.exports = {
               {
                 label: 'Knowledge Conference',
                 href: 'https://knowledge.servicenow.com/',
+              },
+              {
+                label: 'LowCodeWorkshops.com',
+                href: 'http://lowcodeworkshops.com/',
+              }, 
+              {
+                label: 'ServiceNow.com',
+                href: 'https://www.servicenow.com/',
+              },
+              {
+                label: 'ServiceNow Blogs',
+                href: 'https://www.servicenow.com/blogs.html',
               },
             ],
           }, 
