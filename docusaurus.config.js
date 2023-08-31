@@ -9,8 +9,6 @@ module.exports = {
   tagline: 'Ready to learn something new?',
   favicon: 'img/favicon.ico',
 
-
-
   // Set the production url of your site here
   url: 'https://creatorworkflowsnow.github.io',
 
@@ -70,11 +68,19 @@ module.exports = {
         title: '',
         logo: {
           alt: 'Creator Workshop Lab Guides',
-          /** src: 'img/ServiceNow_logo_RGB_BL_WasabiGreen.svg', **/
           src: 'img/servicenow-logo.png',
           srcDark: 'img/servicenow-logo_dark.png',
+          href: 'https://creatorworkflowsnow.github.io/',
+          target: '_self',
         },
-        items: [],
+        items: [
+          {
+            label: 'Lab Guides Home',
+            href: 'https://creatorworkflowsnow.github.io/',
+            position: 'right',
+            target: '_self',
+          },
+        ],
       },
       footer: {
         style: 'light',
