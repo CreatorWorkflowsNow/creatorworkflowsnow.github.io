@@ -50,8 +50,7 @@ const FeatureList = [
     icon: faFileCode,
     description: (
       <>
-      Telework Case Management<br/>
-      Build your first app with App Engine Studio.
+      Gain valuable experience through hands-on exercises with App Engine Studio.
       </>
     ),
     //to: "/docs/telework-utah/Introduction/",
@@ -66,7 +65,7 @@ const FeatureList = [
       Create new Departmental Services and publish them to the enterprise using Employee Center.
       </>
     ),
-    to: "https://creatorworkflowsnow.github.io/lab-deptsvc/",
+    to: "https://creatorworkflowsnow.github.io/lab-deptsvc/docs/exercise_0_overview/",
     target: '_self',
   },
   {
@@ -74,7 +73,7 @@ const FeatureList = [
     icon: faCog,
     description: (
       <>
-      Revolutionizing the way applications are crafted on the ServiceNow Platform, empowered by the capabilities of the App Engine Management Center.
+      Learn to use App Engine Management Center to manage developers and deploy applications.
       </>
     ),
     to: "https://creatorworkflowsnow.github.io/lab-aemc-utah/docs/Before-you-begin/about-this-lab/",
@@ -85,7 +84,7 @@ const FeatureList = [
     icon: faPlane,
     description: (
       <>
-      Create a Travel Request application using the ServiceNow platform using concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio.
+      Create a Travel Request application using concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio.
       </>
     ),
     to: "https://bit.ly/travelrequestlab",
@@ -100,6 +99,6 @@ const FeatureList = [
       </>
     ),
     to: "https://creatorworkflowsnow.github.io/lab_autoengine",
-    target: '_blank',
+    target: '_self',
   },
 ];
