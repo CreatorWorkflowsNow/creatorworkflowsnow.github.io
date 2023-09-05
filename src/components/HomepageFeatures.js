@@ -19,7 +19,7 @@ const HomepageFeatures = () => (
 );
 
 const Feature = ({ title, description, to, icon, target }) => (
-  <li className={clsx('p-6 md:mt-6 lg:mt-8 pb-6 md:pb-8 lg:pb-10')}>
+  <li className={clsx('p-6 md:mt-6 lg:mt-8 pb-2 md:pb-2 lg:pb-2')}>
     <div className={clsx('flex')}>
         <div className={clsx('flex-shrink-0')}>
           <Link to={to} className={clsx('hover:no-underline')} target={target}>
