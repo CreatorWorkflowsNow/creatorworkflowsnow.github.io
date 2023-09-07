@@ -1,33 +1,46 @@
-# Website
+# [CreatorWorkflowsNow.github.io](CreatorWorkflowsNow.github.io)
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+[![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
 
-### Installation
+## Table of contents
+- [CreatorWorkflowsNow.github.io](#creatorworkflowsnowgithubio)
+  - [Table of contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Troubleshooting](#troubleshooting)
+  - [FAQ](#faq)
+  - [Maintainers](#maintainers)
 
-```
-$ yarn
-```
+## Introduction
 
-### Local Development
+This is the repo for https://creatorworkflowsnow.github.io
 
-```
-$ yarn start
-```
+Submit bug reports and feature suggestions, or track changes by contacting [Dale Stubblefield](mailto:dale.stubblefield@servicenow.com).
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Requirements
 
-### Build
+GitHub Pages, Markdown knowledge
 
-```
-$ yarn build
-```
+## Installation
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Fork
 
-### Deployment
+## Configuration
 
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
+Edit markdown files as needed. 
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Troubleshooting
+
+- Should not be required. 
+
+## FAQ
+
+**Q:** What is this site for?
+
+**A:** ServiceNow Creator Workflows Workshop Lab Guides for Public use
+
+## Maintainers
+
+- Dale Stubblefield - https://github.com/dalestubblefield
