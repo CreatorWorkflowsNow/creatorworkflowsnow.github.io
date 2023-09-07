@@ -76,7 +76,7 @@ const FeatureList = [
       Learn to use App Engine Management Center to manage developers and deploy applications.
       </>
     ),
-    to: "https://creatorworkflowsnow.github.io/lab-aemc-utah/docs/Before-you-begin/about-this-lab/",
+    to: "https://creatorworkflowsnow.github.io/lab-aemc-utah/docs/",
     target: '_self',
   },
   {
