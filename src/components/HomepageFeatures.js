@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileCode, faUsers, faCog, faPlane, faRobot } from '@fortawesome/free-solid-svg-icons';
+import { faFileCode, faUsers, faCog, faPlane, faRobot ,faHeadset } from '@fortawesome/free-solid-svg-icons';
 
 
 const HomepageFeatures = () => (
@@ -69,14 +69,14 @@ const FeatureList = [
     target: '_self',
   },
   {
-    title: 'App Governance',
+    title: 'Collaborate to Accelerate',
     icon: faCog,
     description: (
       <>
-      Learn to use App Engine Management Center to manage developers and deploy applications.
+      Learn to build and govern low-code applications with App Engine Management Center. 
       </>
     ),
-    to: "https://creatorworkflowsnow.github.io/lab-aemc-utah/docs/",
+    to: '/lab-aemc/',
     target: '_self',
   },
   {
@@ -90,6 +90,7 @@ const FeatureList = [
     to: "https://bit.ly/travelrequestlab",
     target: '_blank',
   },
+
   {
     title: 'Automation Engine',
     icon: faRobot,
@@ -99,6 +100,18 @@ const FeatureList = [
       </>
     ),
     to: "https://creatorworkflowsnow.github.io/lab_autoengine",
+    target: '_self',
+  },
+
+  {
+    title: 'Complaints Management',
+    icon: faHeadset,
+    description: (
+      <>
+      Unstoppable resolution: Enhance CSM capabilities with the power of low-code using App Engine. 
+      </>
+    ),
+    to: '/lab-complaint/overview',
     target: '_self',
   },
 ];

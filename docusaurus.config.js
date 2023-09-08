@@ -7,18 +7,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Creator Workshop Lab Guides',
   tagline: 'Ready to learn something new?',
+  url: 'https://creatorworkflowsnow.github.io', // Set the production url of your site here
+  baseUrl: '/', // Set the /<baseUrl>/ pathname under which your site is served. For GitHub pages deployment, it is often '/<projectName>/'
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://creatorworkflowsnow.github.io',
-
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
-  // GitHub pages deployment config.
-  organizationName: 'CreatorWorkflowsNow',
+  organizationName: 'CreatorWorkflowsNow', // GitHub pages deployment config.
   projectName: 'CreatorWorkflowsNow.github.io',
+
+  staticDirectories: ['static'],
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -32,17 +27,37 @@ module.exports = {
 
   plugins: [
     'docusaurus-plugin-sass',
-    async function myPlugin(context, options) {
-      return {
-        name: "docusaurus-tailwindcss",
-        configurePostCss(postcssOptions) {
-          // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require("tailwindcss"));
-          postcssOptions.plugins.push(require("autoprefixer"));
-          return postcssOptions;
-        },
-      };
-    },
+      async function myPlugin(context, options) {
+        return {
+          name: "docusaurus-tailwindcss",
+          configurePostCss(postcssOptions) {
+            // Appends TailwindCSS and AutoPrefixer.
+            postcssOptions.plugins.push(require("tailwindcss"));
+            postcssOptions.plugins.push(require("autoprefixer"));
+            return postcssOptions;
+          },
+        };
+      },
+
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'lab-aemc',
+        path: 'lab-aemc',
+        routeBasePath: 'lab-aemc',
+        sidebarPath: require.resolve('./sidebar-labaemc.js'),
+      },
+    ],
+
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'lab-complaint',
+        path: 'lab-complaint',
+        routeBasePath: 'lab-complaint',
+        sidebarPath: require.resolve('./sidebar-complaint.js'),
+      },
+    ],
   ],
 
   presets: [
@@ -70,24 +85,21 @@ module.exports = {
           alt: 'Creator Workshop Lab Guides',
           src: 'img/servicenow-logo.png',
           srcDark: 'img/servicenow-logo_dark.png',
-          href: 'https://creatorworkflowsnow.github.io/',
+          href: '/',
           target: '_self',
         },
-        items: [
-          {
-            label: 'Lab Guides Home',
-            href: 'https://creatorworkflowsnow.github.io/',
-            position: 'right',
-            target: '_self',
-          },
-        ],
+        items: [{
+          label: 'Lab Guides Home',
+          href: 'https://creatorworkflowsnow.github.io/',
+          position: 'right',
+          target: '_self',
+        }, ],
       },
       footer: {
         style: 'light',
         links: [{
             title: 'Learn',
-            items: [
-              {
+            items: [{
                 label: 'Developer Blog',
                 href: 'https://developer.servicenow.com/blog.do'
               },
@@ -135,8 +147,7 @@ module.exports = {
           },
           {
             title: 'About ServiceNow',
-            items: [
-              {
+            items: [{
                 label: 'Customer Success Center',
                 href: 'https://www.servicenow.com/success.html',
               },
@@ -147,7 +158,7 @@ module.exports = {
               {
                 label: 'LowCodeWorkshops.com',
                 href: 'http://lowcodeworkshops.com/',
-              }, 
+              },
               {
                 label: 'ServiceNow.com',
                 href: 'https://www.servicenow.com/',
@@ -157,7 +168,7 @@ module.exports = {
                 href: 'https://www.servicenow.com/blogs.html',
               },
             ],
-          }, 
+          },
           {
             title: 'Social',
             items: [{
