@@ -76,7 +76,7 @@ const FeatureList = [
       Learn to build and govern low-code applications with App Engine Management Center. 
       </>
     ),
-    to: '/lab-aemc/',
+    to: '/lab-aemc/get_started/intro',
     target: '_self',
   },
   {
