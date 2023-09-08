@@ -1,46 +1,30 @@
-# [CreatorWorkflowsNow.github.io](CreatorWorkflowsNow.github.io)
+![image](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/blob/source/static/img/servicenow-logo.png?raw=true)
 
 [![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
 
-## Table of contents
-- [CreatorWorkflowsNow.github.io](#creatorworkflowsnowgithubio)
-  - [Table of contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Requirements](#requirements)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Troubleshooting](#troubleshooting)
-  - [FAQ](#faq)
-  - [Maintainers](#maintainers)
+A lab guide website for ServiceNow Creator Workflow Workshops.
 
-## Introduction
+Visit:
 
-This is the repo for https://creatorworkflowsnow.github.io
+[https://CreatorWorkflowsNow.github.io](https://creatorWorkflowsNow.github.io)
 
-Submit bug reports and feature suggestions, or track changes by contacting [Dale Stubblefield](mailto:dale.stubblefield@servicenow.com).
+To run locally:
 
-## Requirements
+1. Clone this repo
+2. Run `npm install`
+3. Run `npm start`
 
-GitHub Pages, Markdown knowledge
+Deployment is done by pushing the code to the gh-pages branch using this command:
+- `npm run build`
+- `npm run deploy`
 
-## Installation
+## Who do I talk to?
 
-Fork
-
-## Configuration
-
-Edit markdown files as needed. 
-
-## Troubleshooting
-
-- Should not be required. 
-
-## FAQ
-
-**Q:** What is this site for?
-
-**A:** ServiceNow Creator Workflows Workshop Lab Guides for Public use
+If you have any questions or problems, please [open an issue](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/issues) on github and we will do our best to give you a timely answer.
 
 ## Maintainers
+The lab guides are maintained by:
 
 - Dale Stubblefield - https://github.com/dalestubblefield
+- Kristy Merriam - https://github.com/KristyS96
+- Marc Mouries - https://github.com/marcmouries
