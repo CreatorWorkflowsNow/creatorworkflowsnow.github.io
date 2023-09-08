@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkCreatorWorkflowsNow=self.webpackChunkCreatorWorkflowsNow||[]).push([[7266],{5270:o=>{o.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"lab-complaint"}')}}]);
