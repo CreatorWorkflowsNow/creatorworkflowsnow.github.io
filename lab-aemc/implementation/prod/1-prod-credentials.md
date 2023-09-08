@@ -1,6 +1,7 @@
 ---
 id: credential
-title: Credential Alias
+title: 1. Credential Alias
+sidebar_position: 1
 ---
 
 # Exercise: Create Credential Alias

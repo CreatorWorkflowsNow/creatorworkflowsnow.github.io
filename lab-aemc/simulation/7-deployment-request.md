@@ -1,6 +1,7 @@
 ---
 id: deployment-request
-title: Deployment Request
+title: 7. Deployment Request
+sidebar_position: 7
 ---
 # Exercise: Request Deployment
 

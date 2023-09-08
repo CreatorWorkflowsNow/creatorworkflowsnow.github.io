@@ -1,6 +1,7 @@
 ---
 id: admins-group
-title: App Engine Admins
+title: 6. App Engine Admins
+sidebar_position: 6
 ---
 
 # Exercise: App Engine Admins

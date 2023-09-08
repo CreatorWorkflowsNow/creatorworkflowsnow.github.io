@@ -1,6 +1,7 @@
 ---
 id: intake
-title: App Intake
+title: 5. App Intake
+sidebar_position: 5
 ---
 # Exercise: App Intake - Catalog Item
 

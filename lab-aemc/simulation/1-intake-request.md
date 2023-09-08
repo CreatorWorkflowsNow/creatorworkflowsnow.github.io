@@ -1,6 +1,7 @@
 ---
 id: intake
-title: Intake Request
+title: 1. Intake Request
+sidebar_position: 1
 ---
 # Exercise: Intake Request
 

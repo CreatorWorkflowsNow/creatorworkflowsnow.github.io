@@ -1,6 +1,7 @@
 ---
 id: collaboration
-title: Collaboration Descriptors
+title: 3. Collaboration Descriptors
+sidebar_position: 3
 ---
 # Exercise: Collaboration Descriptors
 

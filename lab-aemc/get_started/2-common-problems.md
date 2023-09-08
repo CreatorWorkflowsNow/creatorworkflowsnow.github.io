@@ -2,6 +2,7 @@
 id: common
 title: Common challenges
 hide_table_of_contents: true
+sidebar_position: 2
 ---
 ## Common application development challenges for the business
 

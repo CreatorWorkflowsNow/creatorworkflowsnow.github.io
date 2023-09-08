@@ -1,6 +1,7 @@
 ---
 id: complete
 title: Implementation Complete
+sidebar_position: 4
 ---
 
 # Implementation Complete

@@ -1,6 +1,7 @@
 ---
 id: build-app-from-template
-title: Build app from template
+title: 3. Build app from template
+sidebar_position: 3
 ---
 # Exercise: Build the app from template
 

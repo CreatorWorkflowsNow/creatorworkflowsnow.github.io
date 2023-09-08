@@ -1,6 +1,7 @@
 ---
 id: user-provisioning
-title: User Provisioning
+title: 4. User Provisioning
+sidebar_position: 4
 ---
 
 #  Exercise: User Provisioning

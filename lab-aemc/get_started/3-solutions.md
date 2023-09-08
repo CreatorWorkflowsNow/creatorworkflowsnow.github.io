@@ -2,6 +2,7 @@
 id: solutions
 title: Solutions
 hide_table_of_contents: true
+sidebar_position: 3
 ---
 
 ## ServiceNow no-code and low-code solutions

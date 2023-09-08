@@ -1,6 +1,7 @@
 ---
 id: environments
-title: Environments
+title: 2. Environments
+sidebar_position: 2
 ---
 
 #  Exercise: Create Environments

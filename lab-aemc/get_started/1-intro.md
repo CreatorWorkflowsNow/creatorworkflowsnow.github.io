@@ -1,8 +1,8 @@
 ---
 id: intro
-sidebar_position: 0
-sidebar_label: Introduction
 title: Collaborate to Accelerate
+sidebar_label: Introduction
+sidebar_position: 1
 hide_table_of_contents: true
 ---
 

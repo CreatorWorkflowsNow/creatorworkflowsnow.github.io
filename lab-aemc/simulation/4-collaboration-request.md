@@ -1,6 +1,7 @@
 ---
 id: collaboration-request
-title: Collaboration Request
+title: 4. Collaboration Request
+sidebar_position: 4
 ---
 # Exercise: Collaboration Request
 

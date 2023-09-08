@@ -7,12 +7,13 @@ const sidebars = {
             'get_started/intro',
             'get_started/common',
             'get_started/solutions',
+            'get_started/lab-structure',
             'get_started/tips',
         ],
 
-        'Implementation': [
+        '1. Implementation': [
             {
-                'Prod': [
+                '1. Prod': [
                     'implementation/prod/credential',
                     'implementation/prod/environments',
                     'implementation/prod/pipeline',
@@ -22,7 +23,7 @@ const sidebars = {
                     'implementation/prod/complete',
                 ],
 
-                'Dev': [
+                '2. Dev': [
                     'implementation/dev/credential',
                     'implementation/dev/environment',
                     'implementation/dev/collaboration',
@@ -31,7 +32,7 @@ const sidebars = {
             },
         ],
 
-        'Simulation': [
+        '2. Simulation': [
             'simulation/overview',
             'simulation/intake',
             'simulation/intake-approval',
@@ -41,9 +42,10 @@ const sidebars = {
             'simulation/configure-integration',
             'simulation/deployment-request',
             'simulation/deployment-approval',
+            'simulation/lab-complete',
         ],
 
-        'Additional Content': [
+        'Extra Content': [
             'additional_content/aes-vs-studio',
             'additional_content/cloning',
             'additional_content/faqs',

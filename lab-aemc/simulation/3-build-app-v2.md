@@ -1,5 +1,7 @@
 ---
-title: Build the entire app 
+id: build-app-from-template-v2
+title: 3. Build the entire app 
+sidebar_position: 3
 draft: true
 ---
 # Exercise: Build the entire app from scratch

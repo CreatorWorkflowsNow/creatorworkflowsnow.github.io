@@ -1,6 +1,7 @@
 ---
 id: intake-approval
-title: Intake Approval
+title: 2. Intake Approval
+sidebar_position: 2
 ---
 # Exercise: Intake Approval
 

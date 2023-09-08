@@ -1,6 +1,7 @@
 ---
 id: configure-integration
-title: Configure Integration
+title: 6. Configure Integration
+sidebar_position: 6
 ---
 # Exercise: Configure Integration
 

@@ -1,6 +1,7 @@
 ---
 id: pipeline
-title: Pipeline
+title: 3. Pipeline
+sidebar_position: 3
 ---
 
 #  Exercise: Configure Pipeline in Prod

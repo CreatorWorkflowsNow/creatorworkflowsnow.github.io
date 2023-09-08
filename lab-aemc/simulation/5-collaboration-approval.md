@@ -1,6 +1,7 @@
 ---
 id: collaboration-approval
-title: Collaboration Approval
+title: 5. Collaboration Approval
+sidebar_position: 5
 ---
 # Exercise: Collaboration Approval
 
