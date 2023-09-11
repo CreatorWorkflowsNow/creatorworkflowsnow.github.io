@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileCode, faUsers, faCog, faPlane, faRobot ,faHeadset } from '@fortawesome/free-solid-svg-icons';
+import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset } from '@fortawesome/free-solid-svg-icons';
 
 
 const HomepageFeatures = () => (
@@ -76,7 +76,7 @@ const FeatureList = [
       Learn to build and govern low-code applications with App Engine Management Center. 
       </>
     ),
-    to: '/lab-aemc/get_started/intro',
+    to: '/labs/collaborate/get_started/intro',
     target: '_self',
   },
   {
@@ -104,6 +104,17 @@ const FeatureList = [
   },
 
   {
+    title: 'Logistics',
+    icon: faTruck,
+    description: (
+      <>
+      </>
+    ),
+    to: '/labs/logistics/overview',
+    target: '_self',
+  },
+
+  {
     title: 'Complaints Management',
     icon: faHeadset,
     description: (
@@ -111,7 +122,8 @@ const FeatureList = [
       Unstoppable resolution: Enhance CSM capabilities with the power of low-code using App Engine. 
       </>
     ),
-    to: '/lab-complaint/overview',
+    to: '/labs/complaint/overview/',
     target: '_self',
   },
+
 ];

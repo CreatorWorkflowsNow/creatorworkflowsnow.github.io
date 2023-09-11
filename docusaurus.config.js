@@ -42,20 +42,30 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'lab-aemc',
-        path: 'lab-aemc',
-        routeBasePath: 'lab-aemc',
-        sidebarPath: require.resolve('./sidebar-labaemc.js'),
+        id: 'collaborate',
+        path: 'labs/collaborate',
+        routeBasePath: 'labs/collaborate',
+        sidebarPath: require.resolve('./labs/collaborate/sidebar.js'),
       },
     ],
 
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'lab-complaint',
-        path: 'lab-complaint',
-        routeBasePath: 'lab-complaint',
-        sidebarPath: require.resolve('./sidebar-complaint.js'),
+        id: 'complaint',
+        path: 'labs/complaint',
+        routeBasePath: 'labs/complaint',
+        sidebarPath: require.resolve('./labs/complaint/sidebar.js'),
+      },
+    ],
+
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'logistics',
+        path: 'labs/logistics',
+        routeBasePath: 'labs/logistics',
+        sidebarPath: require.resolve('./labs/logistics/sidebar.js'),
       },
     ],
   ],
@@ -64,10 +74,7 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          breadcrumbs: true,
-        },
+        docs: false,
         blog: false, // Optional: disable the blog plugin        
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
