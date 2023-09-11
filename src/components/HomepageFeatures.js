@@ -108,9 +108,10 @@ const FeatureList = [
     icon: faTruck,
     description: (
       <>
+      Empower Joe Shipman to revolutionize logistics with ServiceNow, driving efficiency and data integration.
       </>
     ),
-    to: '/labs/logistics/overview',
+    to: '/labs/logistics/get_started/overview',
     target: '_self',
   },
 
