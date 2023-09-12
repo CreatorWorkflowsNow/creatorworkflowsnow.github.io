@@ -17,7 +17,7 @@ In our lab, we will utlize a three (3) different personas outlined below. Each w
 
 ## John Jason, Service Agent
 
-![](/img/lab-complaintsmgmt/2023-08-03-09-08-47.png) 
+![](./images/2023-09-11-08-52-37.png)
 
 ### Responsibilities
 
@@ -35,7 +35,7 @@ In our lab, we will utlize a three (3) different personas outlined below. Each w
 
 ## Julie Lewis, Customer
 
-![](/img/lab-complaintsmgmt/2023-08-03-09-10-19.png)
+![](./images/2023-09-11-08-50-13.png)
 
 ### Responsibilities
 - Submit requests for new custom applications to build in App Engine Studio
