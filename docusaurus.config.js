@@ -68,6 +68,17 @@ module.exports = {
         sidebarPath: require.resolve('./labs/logistics/sidebar.js'),
       },
     ],
+
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'travelrequest',
+        path: 'labs/travelrequest',
+        routeBasePath: 'labs/travelrequest',
+        sidebarPath: require.resolve('./labs/travelrequest/sidebar.js'),
+      },
+    ],
+
   ],
 
   presets: [

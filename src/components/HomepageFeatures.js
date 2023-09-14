@@ -87,8 +87,8 @@ const FeatureList = [
       Create a Travel Request application using concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio.
       </>
     ),
-    to: "https://bit.ly/travelrequestlab",
-    target: '_blank',
+    to: '/labs/travelrequest/introduction',
+    target: '_self',
   },
 
   {
