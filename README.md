@@ -6,17 +6,6 @@ A lab guide website for ServiceNow Creator Workflow Workshops.
 
 Visit: [https://CreatorWorkflowsNow.github.io](https://creatorWorkflowsNow.github.io)
 
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Got changes?](#got-changes)
-- [Want to test locally?](#want-to-test-locally)
-  - [How to install Node.js and NPM on MacOS](#how-to-install-nodejs-and-npm-on-macos)
-  - [How to install Node.js and NPM on Windows](#how-to-install-nodejs-and-npm-on-windows)
-- [How do I run a local version of CreatorWorkflowsNow.github.io?](#how-do-i-run-a-local-version-of-creatorworkflowsnowgithubio)
-- [How are my new changes made live?](#how-are-my-new-changes-made-live)
-- [Who do I talk to?](#who-do-i-talk-to)
-- [Maintainers](#maintainers)
-
 # Got changes?
 
 *Do you have suggestions or want to propose changes to lab guide content?*
