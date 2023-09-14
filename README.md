@@ -7,7 +7,6 @@ A lab guide website for ServiceNow Creator Workflow Workshops.
 Visit: [https://CreatorWorkflowsNow.github.io](https://creatorWorkflowsNow.github.io)
 
 # Got changes?
-
 *Do you have suggestions or want to propose changes to lab guide content?*
 
 1. Clone the repo.
@@ -17,11 +16,9 @@ Visit: [https://CreatorWorkflowsNow.github.io](https://creatorWorkflowsNow.githu
 5. Open Pull Request to merge with "source" branch.
 
 # Want to test locally? 
-
 You'll need to install 'npm' onto your local system.
 
 ## How to install Node.js and NPM on MacOS
-
 Here are the steps to install Node.js and NPM on macOS:
 
 1. **Install Homebrew**: Homebrew is a package manager for macOS that simplifies the installation of software. You can install it by visiting the [Homebrew's official website](https://www.youtube.com/watch?v=0i-gstqgjuE) and following the instructions.
@@ -30,10 +27,9 @@ Here are the steps to install Node.js and NPM on macOS:
 
 3. **Verify Installation**: After the installation finishes, you can confirm that you successfully installed Node.js by checking its version with the command: `node -v`. Similarly, you can check the installed version of NPM by typing: `npm -v`.
 
-Please note that Node.js has a PKG installer for macOS available on its website. However, installing with Homebrew is the recommended approach.
+*Please note that Node.js has a PKG installer for macOS available on its website. However, installing with Homebrew is the recommended approach.*
 
 ## How to install Node.js and NPM on Windows
-
 1. **Download the installer**: Download the Windows Installer from the Node.js official website. [https://nodejs.org/en/download](https://nodejs.org/en/download)
 
 2. **Run the installer**: Double-click the .msi binary files to initiate the installation process.
@@ -41,7 +37,6 @@ Please note that Node.js has a PKG installer for macOS available on its website.
 3. **Verify Installation**: After the installation finishes, you can confirm that you successfully installed Node.js by checking its version with the command: `node -v`. Similarly, you can check the installed version of NPM by typing: `npm -v`.
 
 # How do I run a local version of CreatorWorkflowsNow.github.io?
-
 This is much better than just viewing as a preview in VSCode as you will be able to see the full styling of the site in your local web browser.
 
 1. Clone this repo
@@ -50,10 +45,9 @@ This is much better than just viewing as a preview in VSCode as you will be able
 4. Open your web browser to http://localhost:3000
 
 # How are my new changes made live? 
-
 Contact one of the maintainers.  They will follow the steps below. 
 
-Deployment is done by pushing the code to the gh-pages branch using this command:
+Deployment is done by pushing the code to the gh-pages branch like this: 
 - Sync most recent copy of the 'source' branch.
 - Run these commands in the repo folder: 
 - `npm run build`
