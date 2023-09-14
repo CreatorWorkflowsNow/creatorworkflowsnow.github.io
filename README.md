@@ -6,6 +6,12 @@ A lab guide website for ServiceNow Creator Workflow Workshops.
 
 Visit: [https://CreatorWorkflowsNow.github.io](https://creatorWorkflowsNow.github.io)
 
+
+# Pre-requisites to contribute 
+- Code editor (VSCode is recommended)
+- Knowledge of Markdown syntax
+- Knowledge of GitHub source control (repos, branching)
+
 # Got changes?
 *Do you have suggestions or want to propose changes to lab guide content?*
 
