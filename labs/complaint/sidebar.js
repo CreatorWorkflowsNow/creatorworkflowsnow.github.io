@@ -7,6 +7,10 @@ const sidebars = {
             'overview',
         ],
 
+        '1. Agent Workspace': [
+            'exercise_1_workspace/configure',
+        ],
+
         '5. Create with App Engine': [
             'exercise_5-build/overview',
             'exercise_5-build/apply',
