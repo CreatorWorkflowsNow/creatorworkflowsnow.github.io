@@ -108,7 +108,7 @@ module.exports = {
         },
         items: [{
           label: 'Lab Guides Home',
-          href: 'https://creatorworkflowsnow.github.io/',
+          href: '/',
           position: 'right',
           target: '_self',
         }, ],

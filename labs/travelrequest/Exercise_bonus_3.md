@@ -1,20 +1,24 @@
 ---
-id: exercise7
-title: Bonus - Dashboard Workspace
-sidebar_position: 7
-sidebar_label: 7. Dashboard Workspace
-hide_table_of_contents: true
-draft: true
+id: exercise-bonus-3
+title: "Bonus Exercise 3: Adding a workspace for travel requests"
+sidebar_label: 3. Dashboard Workspace
+hide_table_of_contents: false
+draft: false
 ---
-
-# Bonus Exercise 3: Adding a workspace for travel requests
 
 **Duration: 30 minutes**
 
->Pre-requisite(s): 
-<br/>**Bonus Exercise 2** - Some screens will show forms that were configured in Bonus Exercise 2. These are minor changes that will not affect the completion of this exercise.
-
 In this bonus exercise, you will learn how to create an interactive workspace for your users to process travel requests. You will also learn how to build a dashboard with custom reports in the workspace.
+
+
+:::caution
+**Pre-requisites: Bonus Exercise 2**
+
+Some screens will show forms that were configured in Bonus Exercise 2. 
+
+These are minor changes that will not affect the completion of this exercise.
+:::
+
 
 ## Part 1: Creating a workspace for our form
 

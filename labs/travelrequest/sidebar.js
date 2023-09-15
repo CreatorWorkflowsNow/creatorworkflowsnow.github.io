@@ -4,15 +4,70 @@
 const sidebars = {
 
     travelrequest: [
-            'introduction',
-            'exercise1',
-            'coming-soon',
-            //'exercise2',
-            //'exercise3',
-            //'exercise4',
-            //'exercise5',
-            //'exercise6',
-            //'exercise7',
+        'introduction',
+        'exercise-1',
+        {
+            type: 'category',
+            label: '2. Tables',
+            items: [
+                'exercise-2-0',
+                'exercise-2-1',
+                'exercise-2-2',
+                'exercise-2-3',
+            ],
+        },
+
+        'exercise-3',
+        'exercise-4',
+
+        {
+            type: 'category',
+            label: '5. Testing',
+            items: [
+                'exercise-5-0',
+                'exercise-5-1',
+                'exercise-5-2',
+
+            ],
+        },
+
+        'lab-recap',
+
+        {
+            type: 'category',
+            label: 'Bonus Exercises',
+            items: [
+                'exercise-bonus-0',
+                {
+                    type: 'category',
+                    label: '1. Integrating via APIs',
+                    items: [
+                        'exercise-bonus-1-0',
+                        'exercise-bonus-1-1',
+                        'exercise-bonus-1-2',
+                    ],
+                },
+                {
+                    type: 'category',
+                    label: '2. Auto Calculate Trip Cost',
+                    items: [
+                        'exercise-bonus-2-0',
+                        'exercise-bonus-2-1',
+                        'exercise-bonus-2-2',
+                    ],
+                },
+                {
+                    type: 'category',
+                    label: '3. Add a Workspace',
+                    items: [
+                        'exercise-bonus-3-0',
+                        'exercise-bonus-3-1',
+                        'exercise-bonus-3-2',
+                    ],
+                },
+            ],
+        },
+
     ],
 
 };
