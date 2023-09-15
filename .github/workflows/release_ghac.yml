@@ -1,4 +1,4 @@
-name: "Release PDF"
+name: "Release PDF GHAC"
 
 on:
   push:
