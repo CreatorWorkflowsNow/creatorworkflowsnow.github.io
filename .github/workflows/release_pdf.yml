@@ -3,7 +3,7 @@ name: CreatePDFs
 on:
     push:
       paths:
-        - 'labs/collaborate'
+        - 'labs/collaborate/**'
 
 
 jobs:
