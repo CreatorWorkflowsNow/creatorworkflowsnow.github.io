@@ -1,4 +1,5 @@
-# name: "Release PDF"
+name: "Release PDF"
+
 # 
 # on:
 #   push:

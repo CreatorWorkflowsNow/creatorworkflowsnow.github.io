@@ -1,4 +1,5 @@
-# name: "Release PDF GHAC"
+name: "Release PDF GHAC"
+
 # 
 # on:
 #   push:
