@@ -29,7 +29,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          dockerfile: ./path-to-your-Dockerfile/Dockerfile # Specify the path to your Dockerfile
+          dockerfile: ./Dockerfile 
           tags: ${{ github.repository }}:${{ github.sha }}
           labels: |
             org.opencontainers.image.description=Creator Workflows Workshop Lab Guides
