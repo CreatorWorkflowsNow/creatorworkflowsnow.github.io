@@ -79,8 +79,7 @@ const sidebars = {
             ],
         },
 
-        'lab-guide-pdf'
-
+        'lab-guide-pdf',
     ],
 
 };
