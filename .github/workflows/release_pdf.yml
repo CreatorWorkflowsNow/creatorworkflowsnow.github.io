@@ -14,7 +14,7 @@ jobs:
     - uses: mkrakowitzer/actions-makepdfs@master
       if: github.ref == 'refs/heads/master'
       with:
-        markdown_dir: doc
+        markdown_dir: labs/collaborate
         output_dir: static
     - uses: actions/upload-artifact@v1
       with:
