@@ -32,7 +32,7 @@ jobs:
           yes "" | sudo ./install.sh
   
       - name: Build PDF
-        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output ./creatorworkflowsnow.github.io-labs-collaborate.pdf
+        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
   
         # https://github.com/actions/upload-artifact
       - name: Upload results
