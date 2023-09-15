@@ -1,9 +1,10 @@
+name: CreatePDFs
+
 on:
     push:
       paths:
         - 'labs/collaborate'
 
-name: CreatePDFs
 
 jobs:
   makepdfs:
