@@ -68,3 +68,6 @@ remove_ignored_files.sh
 
 utilities
 utilities/*
+
+pdf
+pdf/*
