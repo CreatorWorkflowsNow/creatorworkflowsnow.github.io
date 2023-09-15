@@ -10,8 +10,8 @@ module.exports = {
   url: 'https://creatorworkflowsnow.github.io', // Set the production url of your site here
   baseUrl: '/', // Set the /<baseUrl>/ pathname under which your site is served. For GitHub pages deployment, it is often '/<projectName>/'
   favicon: 'img/favicon.ico',
-  organizationName: 'CreatorWorkflowsNow', // GitHub pages deployment config.
-  projectName: 'CreatorWorkflowsNow.github.io',
+  organizationName: 'creatorworkflowsnow', // GitHub pages deployment config.
+  projectName: 'creatorworkflowsnow.github.io',
 
   staticDirectories: ['static'],
 
