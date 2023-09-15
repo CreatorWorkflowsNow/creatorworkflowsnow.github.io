@@ -91,8 +91,7 @@ module.exports = {
           customCss: require.resolve('./src/css/custom.scss'),
         },
         gtag: {
-          trackingID: 'G-P6HQJZPT0C',
-          anonymizeIP: false,
+          trackingID: 'G-P6HQJZPT0C'
         }
       }),
     ],
