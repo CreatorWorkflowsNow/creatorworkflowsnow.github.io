@@ -1,0 +1,37 @@
+name: Create Collaborate Lab PDF
+
+on:
+    push:
+      paths:
+        - 'labs/collaborate/**'
+
+jobs:
+  make_collab_pdfs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: npm install and build
+        run: |
+          npm install
+          npm run build --if-present
+          npm start
+  
+      - name: Install Prince
+        run: |
+          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
+          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
+          cd prince-14.2-linux-generic-x86_64
+          yes "" | sudo ./install.sh
+  
+      - name: Build PDF
+        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output ./creatorworkflowsnow.github.io-labs-collaborate.pdf
+  
+        # https://github.com/actions/upload-artifact
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: result
+          path: 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+          if-no-files-found: error
