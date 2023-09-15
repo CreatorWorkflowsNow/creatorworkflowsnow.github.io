@@ -74,6 +74,8 @@ jobs:
         # https://github.com/bahmutov/npm-install
         - name: "📦 install dependencies"
           uses: bahmutov/npm-install@v1.6.0
+          with:
+            working-directory: ./
 
         - name: "🚀 static app"
           run: npm run build
