@@ -12,11 +12,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: npm install and build
-        run: |
-          npm install
-          npm run build --if-present
-          npm start
+      - name: NPM Install
+        run: npm install
+
+      - name: NPM Build
+        run: npm run build --if-present
+
+      - name: NPM Start
+        run: npm start & # Run npm start in the background
+
+      - name: Wait for npm start to finish
+        run: wait $!
   
       - name: Install Prince
         run: |
