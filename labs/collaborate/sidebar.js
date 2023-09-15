@@ -2,6 +2,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
+
     labaemc: {
         'Get started': [
             'get_started/intro',
