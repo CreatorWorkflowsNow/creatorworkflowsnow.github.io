@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "^2.4.1",
+    "@docusaurus/plugin-google-gtag": "^2.4.1",
     "@docusaurus/preset-classic": "^2.4.1",
     "@docusaurus/theme-mermaid": "^2.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -30,6 +31,7 @@
     "mermaid": "^10.3.0",
     "postcss": "^8.4.28",
     "prism-react-renderer": "^1.2.1",
+    "puppeteer": "^21.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "tailwindcss": "^3.3.3",
