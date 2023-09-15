@@ -33,7 +33,7 @@ jobs:
           tags: ${{ github.repository }}:${{ github.sha }}
           labels: |
             org.opencontainers.image.description=Creator Workflows Workshop Lab Guides
-            org.opencontainers.image.source=https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io
+            org.opencontainers.image.source=https://github.com/creatorworkflowsnow/creatorworkflowsnow.github.io
           push: true
 
   release:
