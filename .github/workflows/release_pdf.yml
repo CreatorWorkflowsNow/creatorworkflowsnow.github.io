@@ -1,7 +1,7 @@
 on:
     push:
       paths:
-        - 'doc/**'
+        - 'labs/collaborate'
 
 name: CreatePDFs
 
