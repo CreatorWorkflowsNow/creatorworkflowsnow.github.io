@@ -5,8 +5,8 @@ const sidebars = {
 
     travelrequest: [
             'introduction',
+            'exercise1',
             'coming-soon',
-            //'exercise1',
             //'exercise2',
             //'exercise3',
             //'exercise4',
