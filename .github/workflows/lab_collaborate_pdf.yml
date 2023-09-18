@@ -23,6 +23,7 @@ jobs:
             exit 0
           fi
   
+
       - name: Install Prince
         run: |
           curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
