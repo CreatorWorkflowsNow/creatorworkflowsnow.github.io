@@ -45,6 +45,16 @@ jobs:
         with:
           token: ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}
 
+      - name: Approve and Merge Pull Request
+        run: |
+          # Approve the pull request using the GitHub API
+          pr_number=$(curl -X POST -H "Authorization: token ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}" -d '{"event": "APPROVE"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls | jq '.number')
+          
+          # Merge the pull request using the GitHub API
+          curl -X PUT -H "Authorization: token ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}" -d '{"merge_method": "merge"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls/$pr_number/merge
+  
+  
+
 #     - name: Commit and Push PDF
 #       run: |
 #         git config --local user.email "dale.stubblefield@servicenow.com"
