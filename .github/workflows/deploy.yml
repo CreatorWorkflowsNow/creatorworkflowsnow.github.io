@@ -6,72 +6,18 @@ on:
       - source
 
 jobs:
-  checkout:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4.0.0
-
-      - name: Upload workspace
-        uses: actions/upload-artifact@v3.1.3
-        with:
-          name: workspace
-          path: ./
-
-  npm-install:
-    needs: checkout
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Download workspace
-        uses: actions/download-artifact@v2.1.1
-        with:
-          name: workspace
 
       - name: NPM Install
         run: npm install
 
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3.1.3
-        with:
-          name: node-modules
-          path: node_modules/
-
-  npm-build:
-    needs: npm-install
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4.0.0
-
-      - name: Upload workspace
-        uses: actions/download-artifact@v2.1.1
-        with:
-          name: node-modules
-
       - name: NPM Build
         run: npm run build --if-present
-
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3.1.3
-        with:
-          name: build-artifacts
-          path: dist/
-
-  npm-deploy:
-    needs: npm-build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4.0.0
-
-      - name: Download artifacts
-        uses: actions/download-artifact@v2.1.1
-        with:
-          name: build-artifacts
 
       - name: NPM Deploy
         env:
