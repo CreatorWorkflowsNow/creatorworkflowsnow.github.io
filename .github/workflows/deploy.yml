@@ -34,5 +34,9 @@ jobs:
           git config --global user.name "${GIT_USER_NAME}"
           git config --global user.email "${GIT_USER_EMAIL}"
 
+          git status
+
+          git remote -v
+
           # Push to the gh-pages branch
           npm run deploy
