@@ -21,28 +21,56 @@ jobs:
       - name: NPM Install
         run: npm install
 
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: node-modules
+          path: node_modules/
+
   npm-build:
     needs: npm-install
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: node-modules
+
       - name: NPM Build
         run: npm run build --if-present
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: dist/
 
   npm-deploy:
     needs: npm-build
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+
       - name: NPM Deploy
         env:
-          GIT_USER_NAME: ${{ secrets.user.name }}
+          GIT_user: ${{ secrets.user.name }}
           GIT_USER_EMAIL: ${{ secrets.user.email }}
           GH_PAGES_AUTH_TOKEN: ${{ secrets.GH_PAGES_AUTH_TOKEN }}
         run: |
           # Authenticate to GitHub using the token
           git config --global credential.helper cache
-          git config --global user.name "${GIT_USER_NAME}"
+          git config --global user.name "${GIT_user}"
           git config --global user.email "${GIT_USER_EMAIL}"
 
           # Push to the gh-pages branch
