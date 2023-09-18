@@ -3,7 +3,7 @@ name: create-pdf-collaborate-lab
 on:
   push:
     branches: 
-    - source
+    - gh-pages
     paths:
     - 'labs/collaborate/**'
     - '!labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf' 
