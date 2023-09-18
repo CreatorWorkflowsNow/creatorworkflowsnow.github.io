@@ -5,6 +5,13 @@ on:
     branches:
       - source
 
+on: workflow_dispatch
+  inputs:
+    branch:
+        description: 'Branch to deploy (source)'
+        required: true
+        default: 'source'
+
 jobs:
   build:
     runs-on: ubuntu-latest
