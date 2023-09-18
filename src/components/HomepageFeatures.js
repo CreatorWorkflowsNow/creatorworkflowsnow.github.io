@@ -9,7 +9,7 @@ import { faFileCode, faUsers, faCog, faPlane, faRobot, faTruck, faHeadset } from
 
 
 const HomepageFeatures = () => (
-  <div className={clsx('container max-w-xl mx-auto px-4 md:px-6 lg:px-8 lg:max-w-screen-xl pt-4 md:pt-6 lg:pt-8 ')}>
+  <div className={clsx('container max-w-xl mx-auto px-4 md:px-6 md:py-7 lg:px-8 lg:py-9 lg:max-w-screen-xl pt-4 md:pt-6 lg:pt-8 ')}>
       <ul className={clsx('grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-gap-4 md:col-gap-6 lg:col-gap-8 lg:grid lg:gap-y-50')}>
         {FeatureList.map((props, idx) => (
           <Feature key={idx} {...props} />
