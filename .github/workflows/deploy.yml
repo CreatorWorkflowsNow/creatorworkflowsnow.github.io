@@ -1,16 +1,11 @@
 name: Source Branch Workflow
 
 on:
+  workflow_dispatch
+
   push:
     branches:
       - source
-
-on: workflow_dispatch
-  inputs:
-    branch:
-        description: 'Branch to deploy (source)'
-        required: true
-        default: 'source'
 
 jobs:
   build:
