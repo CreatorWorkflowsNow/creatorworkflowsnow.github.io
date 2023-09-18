@@ -4,6 +4,9 @@ on:
     push:
       paths:
         - 'labs/collaborate/**'
+      paths-ignore:
+        - 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+
 
 jobs:
   make_collab_pdfs:
@@ -34,9 +37,6 @@ jobs:
       - name: Build PDF
         run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
 
-      - name: List files in static directory
-        run: ls -la static/
-
       - name: List files in labs/collaborate directory
         run: ls -la labs/collaborate/
   
@@ -44,6 +44,15 @@ jobs:
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
-          name: 'creatorworkflowsnow.github.io-labs-collaborate.pdf'
-          path: 'labs/collaborate/'
+          name: output
+          path: 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
           if-no-files-found: error
+
+      - name: Commit and Push PDF
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
+          git commit -m "Add generated PDF"
+          git push
+
