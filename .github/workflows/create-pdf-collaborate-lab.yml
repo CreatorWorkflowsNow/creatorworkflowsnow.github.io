@@ -9,7 +9,7 @@ on:
     - '!labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf' 
 
 jobs:
-  make_collab_pdfs:
+  create-pdf-collaborate-lab:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.head_ref }}
