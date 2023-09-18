@@ -12,7 +12,6 @@ on:
 
 jobs:
   create-pdf-collaborate-lab:
-    needs: deploy
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
