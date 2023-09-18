@@ -59,6 +59,12 @@ jobs:
       - name: List files in labs/collaborate directory
         run: ls -la labs/collaborate/
 
+      - name: Debug Workflow
+        run: |
+          git config --list  # Display Git configuration
+          git remote -v      # Display remote repository URL
+          git status         # Check Git status
+
       - name: Commit and Push PDF
         run: |
           git config --local user.email "dale.stubblefield@servicenow.com"
