@@ -59,16 +59,10 @@ jobs:
       - name: List files in labs/collaborate directory
         run: ls -la labs/collaborate/
 
-      - name: Commit and Push PDF (with force)
+      - name: Commit and Push PDF
         run: |
           git config --local user.email "dale.stubblefield@servicenow.com"
           git remote add origin_with_token "https://${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}@github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io.git"
           git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
           git commit -m "Add generated PDF"
-          git push --force
-  
-#      - name: Commit and Push to New Branch
-#        run: |
-#          git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
-#          git commit -m "Add generated PDF"
-#          git push origin ${{ steps.read_branch_name.outputs.branch_name }}
+          git push
