@@ -63,7 +63,7 @@ jobs:
   
       - name: Build PDF
 #       run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
-        run: npx docusaurus-prince-pdf -u https://localhost:3000/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+        run: npx docusaurus-prince-pdf -u http://localhost:3000/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
 
       - name: List files in labs/collaborate directory
         run: ls -la labs/collaborate/
