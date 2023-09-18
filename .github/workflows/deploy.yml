@@ -14,19 +14,25 @@ jobs:
         uses: actions/checkout@v3
 
   npm-install:
+    needs: checkout
     runs-on: ubuntu-latest
+
     steps:
       - name: NPM Install
         run: npm install
 
   npm-build:
+    needs: npm-install
     runs-on: ubuntu-latest
+
     steps:
       - name: NPM Build
         run: npm run build --if-present
 
   npm-deploy:
+    needs: npm-build
     runs-on: ubuntu-latest
+
     steps:
       - name: NPM Deploy
         env:
