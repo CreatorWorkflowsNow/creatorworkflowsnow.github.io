@@ -42,22 +42,13 @@ jobs:
       - name: Build PDF
         run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
 
-      - name: List files in labs/collaborate directory
-        run: ls -la labs/collaborate/
+#      - name: List files in labs/collaborate directory
+#        run: ls -la labs/collaborate/
   
-        # https://github.com/actions/upload-artifact
-      - name: Upload results
-        uses: actions/upload-artifact@v3
-        with:
-          name: output
-          path: 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
-          if-no-files-found: error
-
-      - name: Commit and Push PDF
+      - name: Commit and Push PDF (with force)
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
           git commit -m "Add generated PDF"
-          git push
-
+          git push --force
