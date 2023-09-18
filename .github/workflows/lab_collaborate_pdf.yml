@@ -9,8 +9,8 @@ jobs:
   make_collab_pdfs:
     runs-on: ubuntu-latest
     steps:
-#      - name: Checkout repository
-#        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       # Check for PDF file changes before proceeding with NPM steps
       - name: Check for PDF file changes
@@ -40,8 +40,8 @@ jobs:
           yes "" | sudo ./install.sh
   
       - name: Build PDF
-#       run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
-        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'creatorworkflowsnow.github.io-labs-collaborate.pdf'
+        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+#       run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'creatorworkflowsnow.github.io-labs-collaborate.pdf'
 
 #      - name: List files in labs/collaborate directory
 #        run: ls -la labs/collaborate/
