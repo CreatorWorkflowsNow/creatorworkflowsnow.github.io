@@ -6,19 +6,28 @@ on:
       - source
 
 jobs:
-  build:
+  checkout:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
+  npm-install:
+    runs-on: ubuntu-latest
+    steps:
       - name: NPM Install
         run: npm install
 
+  npm-build:
+    runs-on: ubuntu-latest
+    steps:
       - name: NPM Build
         run: npm run build --if-present
 
+  npm-deploy:
+    runs-on: ubuntu-latest
+    steps:
       - name: NPM Deploy
         env:
           GIT_USER_NAME: ${{ secrets.user.name }}
