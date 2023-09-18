@@ -11,6 +11,10 @@ on:
 jobs:
   make_collab_pdfs:
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.head_ref }}
+      cancel-in-progress: true
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
