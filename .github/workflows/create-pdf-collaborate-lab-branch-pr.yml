@@ -1,0 +1,70 @@
+name: create-pdf-collaborate-lab-branch-pr
+
+on:
+  push:
+    branches: 
+    - source
+    paths:
+    - 'labs/collaborate/**'
+    paths-ignore:
+    - '.github/**' # Ignore changes in '.github/' directory
+
+jobs:
+  make_collab_pdfs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Check for PDF file changes before proceeding with NPM steps
+      - name: Check for PDF file changes
+        run: |
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'; then
+            echo "PDF file changed. Skipping NPM steps."
+            exit 0
+          fi
+  
+
+      - name: Install Prince
+        run: |
+          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
+          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
+          cd prince-14.2-linux-generic-x86_64
+          yes "" | sudo ./install.sh
+  
+      - name: Build PDF
+        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+
+      - name: Create Branch and Commit PDF
+        run: |
+          git config --local user.email "dale.stubblefield@servicenow.com"
+          git config --local user.name "dalestubblefield"
+          new_branch_name="pdf-update-$(date +'%Y%m%d%H%M%S')-${{ github.sha }}"
+          git checkout -b $new_branch_name
+          git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
+          git commit -m "Add generated PDF"
+          git push origin $new_branch_name
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}
+
+      - name: Approve and Merge Pull Request
+        run: |
+          # Approve the pull request using the GitHub API
+          pr_number=$(curl -X POST -H "Authorization: token ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}" -d '{"event": "APPROVE"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls | jq '.number')
+          
+          # Merge the pull request using the GitHub API
+          curl -X PUT -H "Authorization: token ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}" -d '{"merge_method": "merge"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls/$pr_number/merge
+  
+  
+
+#     - name: Commit and Push PDF
+#       run: |
+#         git config --local user.email "dale.stubblefield@servicenow.com"
+#         git config --global user.name "dalestubblefield"
+#         git remote add origin_with_token "https://${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}@github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io.git"
+#         git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
+#         git commit -m "Add generated PDF"
+#         git push
