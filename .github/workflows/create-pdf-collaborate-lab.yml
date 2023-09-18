@@ -1,4 +1,4 @@
-name: create-pdf-collaborate-lab-branch-pr
+name: create-pdf-collaborate-lab
 
 on:
   push:
