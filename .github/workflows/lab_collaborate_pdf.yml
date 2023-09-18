@@ -62,6 +62,7 @@ jobs:
       - name: Commit and Push PDF
         run: |
           git config --local user.email "dale.stubblefield@servicenow.com"
+          git config --global user.name "dalestubblefield"
           git remote add origin_with_token "https://${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}@github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io.git"
           git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
           git commit -m "Add generated PDF"
