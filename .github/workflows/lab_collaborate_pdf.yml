@@ -9,16 +9,8 @@ jobs:
   make_collab_pdfs:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      # Cache node_modules directory to avoid reinstallation
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
-        if: steps.checkout.outputs.checkout == '2'  # Only cache if checkout was performed
+#      - name: Checkout repository
+#        uses: actions/checkout@v3
 
       # Check for PDF file changes before proceeding with NPM steps
       - name: Check for PDF file changes
@@ -28,38 +20,17 @@ jobs:
             exit 0
           fi
 
-#      - name: Generate branch name based on date and file
-#        id: branch_name
-#        run: echo "pdf-update-$(date +'%Y%m%d%H%M%S')-${{ github.sha }}" >> branch_name.txt
+#      - name: NPM Install
+#        run: npm install
 #
-#      - name: Read branch name from file
-#        id: read_branch_name
-#        run: echo "::set-output name=branch_name::$(cat branch_name.txt)"
+#      - name: NPM Build
+#        run: npm run build --if-present
 #
-#      - name: Create new branch
-#        run: |
-#          git checkout -b ${{ steps.read_branch_name.outputs.branch_name }}
-#          git config --local user.email "action@github.com"
-#          git config --local user.name "GitHub Action"
-
-
-      - name: Restore NPM dependencies from cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
-
-      - name: NPM Install
-        run: npm install
-
-      - name: NPM Build
-        run: npm run build --if-present
-
-      - name: NPM Start
-        run: npm start & # Run npm start in the background
-
-      - name: Wait for npm start to finish
-        run: wait $!
+#      - name: NPM Start
+#        run: npm start & # Run npm start in the background
+#
+#      - name: Wait for npm start to finish
+#        run: wait $!
   
       - name: Install Prince
         run: |
@@ -69,11 +40,10 @@ jobs:
           yes "" | sudo ./install.sh
   
       - name: Build PDF
-#       run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
-        run: npx docusaurus-prince-pdf -u http://localhost:3000/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
 
-      - name: List files in labs/collaborate directory
-        run: ls -la labs/collaborate/
+#      - name: List files in labs/collaborate directory
+#        run: ls -la labs/collaborate/
 
       - name: Debug Workflow
         run: |
