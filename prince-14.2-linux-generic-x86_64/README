@@ -1,0 +1,38 @@
+Prince
+https://www.princexml.com
+
+INSTALLATION
+
+To install Prince, please run the install.sh shell script contained
+in this distribution and follow the instructions provided.
+
+The installation directory can be supplied as a command line argument:
+
+    $ ./install.sh /path/to/directory
+
+(You will need to be logged in as root if you wish to install into
+a system directory such as /usr/local).
+
+RUNNING PRINCE
+
+To run Prince after installation, enter:
+
+    $ prince input.html -o output.pdf
+
+To see the usage and available options, enter:
+
+    $ prince --help
+
+If you have difficulty running the program, please ensure that the
+installation directory is in your $PATH. This is necessary if you
+did not install the program in /usr/local.
+
+FEEDBACK
+
+Thank you for choosing Prince, we hope you find it useful.
+If you have any comments or questions regarding the program, please
+email us or visit our website.
+
+    Email:  prince@yeslogic.com
+      Web:  https://www.princexml.com
+

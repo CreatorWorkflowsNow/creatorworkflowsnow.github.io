@@ -1,0 +1,95 @@
+#! /bin/sh
+
+prince=`dirname "$0"`/prince
+out="/tmp/prince.debug"
+strace_out="/tmp/prince.strace"
+
+date > "$out"
+
+(
+    if [ -d /proc ] ; then
+        printf "\n/proc/$$/cmdline\n" >> "$out"
+        cat /proc/$$/cmdline >> "$out"
+
+        printf "\n\n/proc/$$/status\n" >> "$out"
+        cat /proc/$$/status >> "$out"
+
+        printf "\nls -l /proc/$$/fd\n" >> "$out"
+        ls -l /proc/$$/fd >> "$out"
+
+        printf "\n/proc/cpuinfo\n" >> "$out"
+        cat /proc/cpuinfo >> "$out"
+        
+        printf "\n/proc/meminfo\n" >> "$out"
+        cat /proc/meminfo >> "$out"
+    fi
+
+    if command -v sysctl > /dev/null ; then
+        printf "\nsysctl -A\n" >> "$out"
+        sysctl -A >> "$out"
+    fi
+
+    if [ "$(uname -s)" = "Linux" ] ; then
+        printf "\nps -fww --forest\n" >> "$out"
+        ps -fww --forest >> "$out"
+    fi
+
+    printf "\nenv\n" >> "$out"
+    env >> "$out"
+
+    printf "\nulimit -a\n" >> "$out"
+    ulimit -a >> "$out"
+
+    printf "\nprlimit\n" >> "$out"
+    prlimit >> "$out"
+
+    printf "\nuname -a\n" >> "$out"
+    uname -a >> "$out"
+
+    if command -v lsb_release > /dev/null ; then
+        printf "\nlsb_release -a\n" >> "$out"
+        lsb_release -a >> "$out"
+    fi
+
+    if command -v sw_vers > /dev/null ; then
+        printf "\nsw_vers\n" >> "$out"
+        sw_vers >> "$out"
+    fi
+
+    for i in /etc/os-release /etc/redhat-release /etc/SuSE-release ; do
+        if [ -f "$i" ]  ; then
+            printf "\n$i\n" >> "$out"
+            cat "$i" >> "$out"
+        fi
+    done
+
+    printf "\nfile $prince\n" >> "$out"
+    file "$prince" >> "$out"
+
+    printf "\n$prince --version --debug\n" >> "$out"
+    "$prince" --version --debug >> "$out"
+    
+    printf "\n$prince --show-license\n" >> "$out"
+    "$prince" --show-license >> "$out"
+    
+    printf "\n$prince --credits\n" >> "$out"
+    "$prince" --credits >> "$out"
+
+    if command -v ldd > /dev/null ; then
+        printf "\nldd $prince\n" >> "$out"
+        ldd "$prince" >> "$out"
+    fi
+
+    if command -v otool > /dev/null ; then
+        printf "\notool -L $prince\n" >> "$out"
+        otool -L "$prince" >> "$out"
+    fi
+
+    if command -v strace > /dev/null ; then
+        printf "\nstrace $prince\n" >> "$out"
+        strace -T -tt -o "$strace_out" -f "$prince" "$@"
+    else
+        printf "\nno strace\n" >> "$out"
+        "$prince" "$@"
+    fi
+) 2>>"$out"
