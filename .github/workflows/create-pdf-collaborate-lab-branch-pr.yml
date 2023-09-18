@@ -53,15 +53,15 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}
+          token: ${{ secrets.GH_PAGES_AUTH_TOKEN }}
 
       - name: Approve and Merge Pull Request
         run: |
           # Approve the pull request using the GitHub API
-          pr_number=$(curl -X POST -H "Authorization: token ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}" -d '{"event": "APPROVE"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls | jq '.number')
+          pr_number=$(curl -X POST -H "Authorization: token ${{ secrets.GH_PAGES_AUTH_TOKEN }}" -d '{"event": "APPROVE"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls | jq '.number')
           
           # Merge the pull request using the GitHub API
-          curl -X PUT -H "Authorization: token ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}" -d '{"merge_method": "merge"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls/$pr_number/merge
+          curl -X PUT -H "Authorization: token ${{ secrets.GH_PAGES_AUTH_TOKEN }}" -d '{"merge_method": "merge"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls/$pr_number/merge
   
   
 

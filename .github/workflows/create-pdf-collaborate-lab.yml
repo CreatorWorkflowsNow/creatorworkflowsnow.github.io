@@ -38,36 +38,36 @@ jobs:
       - name: Build PDF
         run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
 
-      - name: Create Branch and Commit PDF
+      - name: Commit and Push PDF
         run: |
-          git config --local user.email "dale.stubblefield@servicenow.com"
-          git config --local user.name "dalestubblefield"
-          new_branch_name="pdf-update-$(date +'%Y%m%d%H%M%S')-${{ github.sha }}"
-          git checkout -b $new_branch_name
+          git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
+          git config --global user.name "${{ secrets.GIT_USER_NAME }}"
+          git remote add origin_with_token "https://${{ secrets.GH_PAGES_AUTH_TOKEN }}@github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io.git"
           git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
           git commit -m "Add generated PDF"
-          git push origin $new_branch_name
+          git push origin_with_token source
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}
-
-      - name: Approve and Merge Pull Request
-        run: |
-          # Approve the pull request using the GitHub API
-          pr_number=$(curl -X POST -H "Authorization: token ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}" -d '{"event": "APPROVE"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls | jq '.number')
-          
-          # Merge the pull request using the GitHub API
-          curl -X PUT -H "Authorization: token ${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}" -d '{"merge_method": "merge"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls/$pr_number/merge
+#      - name: Create Branch and Commit PDF
+#        run: |
+#          git config --local user.email "dale.stubblefield@servicenow.com"
+#          git config --local user.name "dalestubblefield"
+#          new_branch_name="pdf-update-$(date +'%Y%m%d%H%M%S')-${{ github.sha }}"
+#          git checkout -b $new_branch_name
+#          git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
+#          git commit -m "Add generated PDF"
+#          git push origin $new_branch_name
+#
+#      - name: Create Pull Request
+#        uses: peter-evans/create-pull-request@v3
+#        with:
+#          token: ${{ secrets.GH_PAGES_AUTH_TOKEN }}
+#
+#      - name: Approve and Merge Pull Request
+#        run: |
+#          # Approve the pull request using the GitHub API
+#          pr_number=$(curl -X POST -H "Authorization: token ${{ secrets.GH_PAGES_AUTH_TOKEN }}" -d '{"event": "APPROVE"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls | jq '.number')
+#          
+#          # Merge the pull request using the GitHub API
+#          curl -X PUT -H "Authorization: token ${{ secrets.GH_PAGES_AUTH_TOKEN }}" -d '{"merge_method": "merge"}' https://api.github.com/repos/CreatorWorkflowsNow/creatorworkflowsnow.github.io/pulls/$pr_number/merge
   
   
-
-#     - name: Commit and Push PDF
-#       run: |
-#         git config --local user.email "dale.stubblefield@servicenow.com"
-#         git config --global user.name "dalestubblefield"
-#         git remote add origin_with_token "https://${{ secrets.DALESTUBBLEFIELD_SERVICENOW_COM_CREATORWORKFLOWS_GITHUB_IO_ACTION_TOKEN }}@github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io.git"
-#         git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
-#         git commit -m "Add generated PDF"
-#         git push
