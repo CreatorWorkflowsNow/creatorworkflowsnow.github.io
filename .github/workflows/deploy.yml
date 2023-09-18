@@ -1,10 +1,10 @@
 name: Source Branch Workflow
 
 on:
-  workflow_dispatch
   push:
     branches:
       - source
+  workflow_dispatch:
 
 jobs:
   build:
