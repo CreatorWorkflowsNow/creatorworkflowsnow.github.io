@@ -1,6 +1,9 @@
 name: Create Collaborate Lab PDF
 
 on:
+
+  workflow_dispatch: 
+
   push:
     paths:
       - 'labs/collaborate/**'
