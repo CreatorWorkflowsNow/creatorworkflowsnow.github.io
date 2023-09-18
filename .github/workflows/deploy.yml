@@ -21,13 +21,13 @@ jobs:
 
       - name: NPM Deploy
         env:
-          GIT_user: ${{ secrets.user.name }}
-          GIT_USER_EMAIL: ${{ secrets.user.email }}
+          GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+          GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
           GH_PAGES_AUTH_TOKEN: ${{ secrets.GH_PAGES_AUTH_TOKEN }}
         run: |
           # Authenticate to GitHub using the token
           git config --global credential.helper cache
-          git config --global user.name "${GIT_user}"
+          git config --global user.name "${GIT_USER_NAME}"
           git config --global user.email "${GIT_USER_EMAIL}"
 
           # Push to the gh-pages branch
