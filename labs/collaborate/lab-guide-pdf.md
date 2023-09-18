@@ -4,7 +4,6 @@ title: Lab Guide PDF
 draft: false
 ---
 
-# test
 
 Download link for Lab Guide PDF
 
