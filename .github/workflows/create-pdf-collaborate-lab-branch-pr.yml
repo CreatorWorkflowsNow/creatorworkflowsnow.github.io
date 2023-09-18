@@ -6,8 +6,7 @@ on:
     - source
     paths:
     - 'labs/collaborate/**'
-    paths-ignore:
-    - '.github/**' # Ignore changes in '.github/' directory
+    - '!labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
 
 jobs:
   make_collab_pdfs:
