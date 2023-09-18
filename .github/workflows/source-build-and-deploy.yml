@@ -24,20 +24,11 @@ jobs:
           node-version: 20.5.1
           cache: npm
 
-#     - name: Checkout repository
-#       uses: actions/checkout@v4.0.0
-
       - name: Install dependencies
         run: npm ci
 
       - name: Build website
         run: npm run build
-
-#     - name: NPM Install
-#       run: npm install
-
-#     - name: NPM Build
-#       run: npm build --if-present
 
       - name: NPM Start
         run: npm start &
@@ -52,31 +43,12 @@ jobs:
           cd prince-14.2-linux-generic-x86_64
           yes "" | sudo ./install.sh
 
-      - name: Build PDF
-        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+      - name: Build Collaborate Lab PDF
+#       run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+        run: npx docusaurus-prince-pdf -u http://localhost:3000/labs/collaborate/get_started/intro/ --output 'labs/collaborate/collaborate-lab.pdf'
 
-#     - name: Commit and Push PDF
-#       run: |
-#         git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
-#         git config --global user.name "${{ secrets.GIT_USER_NAME }}"
-#         git remote add origin_with_token "https://${{ secrets.GH_PAGES_AUTH_TOKEN }}@github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io.git"
-#         git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
-#         git commit -m "Add generated PDF"
-#         git push origin_with_token source
-
-# deploy:
-#   steps:
-#     - uses: actions/checkout@v4.0.0
-#     - uses: actions/setup-node@v3.8.1
-#       with:
-#         node-version: 20.5.1
-#         cache: npm
-
-#     - name: Install dependencies
-#       run: npm ci
-
-#    - name: Build website
-#      run: npm run build
+      - name: Build Trave Request Lab PDF
+        run: npx docusaurus-prince-pdf -u http://http://localhost:3000/labs/travelrequest/introduction/ --output 'labs/travelrequest/travel-request-lab.pdf'
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurusk
