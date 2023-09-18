@@ -1,0 +1,34 @@
+name: Source Branch Workflow
+
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: NPM Install
+        run: npm install
+
+      - name: NPM Build
+        run: npm run build --if-present
+
+      - name: NPM Deploy
+        env:
+          GIT_USER_NAME: ${{ secrets.user.name }}
+          GIT_USER_EMAIL: ${{ secrets.user.email }}
+          GH_PAGES_AUTH_TOKEN: ${{ secrets.GH_PAGES_AUTH_TOKEN }}
+        run: |
+          # Authenticate to GitHub using the token
+          git config --global credential.helper cache
+          git config --global user.name "${GIT_USER_NAME}"
+          git config --global user.email "${GIT_USER_EMAIL}"
+
+          # Push to the gh-pages branch
+          npm run deploy
