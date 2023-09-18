@@ -20,19 +20,19 @@ jobs:
             exit 0
           fi
 
-      - name: Generate branch name based on date and file
-        id: branch_name
-        run: echo "pdf-update-$(date +'%Y%m%d%H%M%S')-${{ github.sha }}" >> branch_name.txt
-
-      - name: Read branch name from file
-        id: read_branch_name
-        run: echo "::set-output name=branch_name::$(cat branch_name.txt)"
-
-      - name: Create new branch
-        run: |
-          git checkout -b ${{ steps.read_branch_name.outputs.branch_name }}
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+#      - name: Generate branch name based on date and file
+#        id: branch_name
+#        run: echo "pdf-update-$(date +'%Y%m%d%H%M%S')-${{ github.sha }}" >> branch_name.txt
+#
+#      - name: Read branch name from file
+#        id: read_branch_name
+#        run: echo "::set-output name=branch_name::$(cat branch_name.txt)"
+#
+#      - name: Create new branch
+#        run: |
+#          git checkout -b ${{ steps.read_branch_name.outputs.branch_name }}
+#          git config --local user.email "action@github.com"
+#          git config --local user.name "GitHub Action"
 
       - name: NPM Install
         run: npm install
@@ -58,18 +58,18 @@ jobs:
 
       - name: List files in labs/collaborate directory
         run: ls -la labs/collaborate/
-  
-      - name: Commit and Push to New Branch
+
+      - name: Commit and Push PDF (with force)
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
           git commit -m "Add generated PDF"
-          git push origin ${{ steps.read_branch_name.outputs.branch_name }}
+          git push --force
 
-      - name: Open Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          base: source
-          branch: ${{ steps.read_branch_name.outputs.branch_name }}
-          commit-message: "Add generated PDF"
-          title: "Update PDF"
-          body: "This PR updates the PDF file."
+  
+#      - name: Commit and Push to New Branch
+#        run: |
+#          git add labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf
+#          git commit -m "Add generated PDF"
+#          git push origin ${{ steps.read_branch_name.outputs.branch_name }}
