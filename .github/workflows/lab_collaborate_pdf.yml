@@ -32,12 +32,18 @@ jobs:
           yes "" | sudo ./install.sh
   
       - name: Build PDF
-        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'static/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+
+      - name: List files in static directory
+        run: ls -la static/
+
+      - name: List files in labs/collaborate directory
+        run: ls -la labs/collaborate/
   
         # https://github.com/actions/upload-artifact
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
-          name: result
-          path: 'static/creatorworkflowsnow.github.io-labs-collaborate.pdf'
+          name: 'creatorworkflowsnow.github.io-labs-collaborate.pdf'
+          path: 'labs/collaborate/'
           if-no-files-found: error
