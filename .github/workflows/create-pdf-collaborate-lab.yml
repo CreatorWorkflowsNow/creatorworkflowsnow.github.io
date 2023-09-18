@@ -1,12 +1,13 @@
-name: Create Collaborate Lab PDF
+name: create-pdf-collaborate-lab
 
 on:
-
-  workflow_dispatch: 
-
   push:
+    branches: 
+    - source
     paths:
-      - 'labs/collaborate/**'
+    - 'labs/collaborate/**'
+    paths-ignore:
+    - '.github/**' # Ignore changes in '.github/' directory
 
 jobs:
   make_collab_pdfs:
