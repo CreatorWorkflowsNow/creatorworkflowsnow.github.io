@@ -1,5 +1,7 @@
 ![image](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/blob/source/static/img/servicenow-logo.png?raw=true)
 
+[![deploy-source-to-gh-pages](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/actions/workflows/deploy.yml/badge.svg?branch=source)](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/actions/workflows/deploy.yml)
+
 [![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
 
 A lab guide website for ServiceNow Creator Workflow Workshops.
@@ -51,7 +53,10 @@ This is much better than just viewing as a preview in VSCode as you will be able
 4. Open your web browser to http://localhost:3000
 
 # How are my new changes made live? 
-Contact one of the maintainers.  They will follow the steps below. 
+When your pull request is approved to merge to the branch 'source', an automated GitHub Action will handle the deployment to the live site by deploying to the branch 'gh-pages'.
+
+## Can I deploy manually from my local machine to gh-pages?  
+Yes, but it is not recommended.  The recommended approach is to open a PR to merge with the 'source' branch and let the automated GitHub action take care of it. 
 
 Deployment is done by pushing the code to the gh-pages branch like this: 
 - Sync most recent copy of the 'source' branch.
