@@ -232,6 +232,7 @@ module.exports = {
         darkTheme: darkCodeTheme,
       },
 
+      // https://docusaurus.io/docs/search#using-algolia-docsearch
       algolia: {
         // The application ID provided by Algolia
         appId: 'LE7UCUELDB',
