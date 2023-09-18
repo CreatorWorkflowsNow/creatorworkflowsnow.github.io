@@ -11,6 +11,7 @@ on:
 jobs:
   make_collab_pdfs:
     runs-on: ubuntu-latest
+    if: ${{ false }} # This makes sure the workflow is skipped without any alert
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
