@@ -4,10 +4,10 @@ on:
   push:
     branches:
     - source
-  # paths:
-  # - '!.github/**' # Ignore changes in '.github/' directory
-  # - '!labs/collaborate/collaborate-lab.pdf'
-  # - '!labs/collaborate/travel-request-lab.pdf'
+    paths:
+  # Do not run if only the PDF files were updated
+    - '!labs/collaborate/collaborate-lab.pdf'
+    - '!labs/collaborate/travel-request-lab.pdf'
   # Review gh actions docs if you want to further define triggers, paths, etc
   # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
