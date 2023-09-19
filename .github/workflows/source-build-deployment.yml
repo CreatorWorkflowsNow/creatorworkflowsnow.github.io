@@ -1,4 +1,4 @@
-name: source-build-deployment
+name: Source build and deploy to gh-pages
 
 on:
   push:
