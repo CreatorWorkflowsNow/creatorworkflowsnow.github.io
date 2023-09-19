@@ -1,4 +1,4 @@
-name: Generate-PDFs
+name: generate-pdfs
 
 on:
     workflow_run:
@@ -7,7 +7,7 @@ on:
         - completed
 
 jobs:
-    generate_pdfs:
+    generate-pdfs:
     runs-on: ubuntu-latest
     steps:
 
