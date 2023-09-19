@@ -1,4 +1,4 @@
-name: Generate PDFs
+name: Generate-PDFs
 
 on:
     workflow_run:
