@@ -6,8 +6,8 @@ on:
     - source
   # paths:
   # - '!.github/**' # Ignore changes in '.github/' directory
-    - '!labs/collaborate/collaborate-lab.pdf'
-    - '!labs/collaborate/travel-request-lab.pdf'
+  # - '!labs/collaborate/collaborate-lab.pdf'
+  # - '!labs/collaborate/travel-request-lab.pdf'
   # Review gh actions docs if you want to further define triggers, paths, etc
   # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
@@ -30,26 +30,6 @@ jobs:
 
       - name: Build website
         run: npm run build
-
-      - name: NPM Start
-        run: npm start &
-
-      - name: Wait for NPM to start
-        run: wait $!
-
-      - name: Install Prince
-        run: |
-          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
-          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
-          cd prince-14.2-linux-generic-x86_64
-          yes "" | sudo ./install.sh
-
-      - name: Build Collaborate Lab PDF
-#       run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'labs/collaborate/creatorworkflowsnow.github.io-labs-collaborate.pdf'
-        run: npx docusaurus-prince-pdf -u http://localhost:3000/labs/collaborate/get_started/intro/ --output 'labs/collaborate/collaborate-lab.pdf'
-
-      - name: Build Trave Request Lab PDF
-        run: npx docusaurus-prince-pdf -u http://http://localhost:3000/labs/travelrequest/introduction/ --output 'labs/travelrequest/travel-request-lab.pdf'
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurusk
