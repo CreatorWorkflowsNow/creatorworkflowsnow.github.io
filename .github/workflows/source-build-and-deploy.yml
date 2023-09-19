@@ -1,4 +1,4 @@
-name: source-build-and-deploy
+name: source-build-deployment
 
 on:
   push:
@@ -12,7 +12,7 @@ on:
   # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
-  source-build-and-deploy:
+  source-build-deployment:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
