@@ -29,18 +29,6 @@ jobs:
         - name: List files
           run: ls -l build/labs/collaborate/ build/labs/travelrequest/
   
-## Hello world
-##      - name: Commit and Push PDFs
-##        run: |
-##          git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
-##          git config --local user.name "${{ secrets.GIT_USER }}"
-##          git add build/labs/collaborate/collaborate-lab.pdf build/labs/travelrequest/travel-request-lab.pdf
-##          git commit -m "Add generated PDFs"
-##          git push origin gh-pages
-##        env:
-##        GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
-##        GIT_USER: ${{ secrets.GIT_USER }}
-
         - name: Create New Branch and Commit PDFs
           run: |
             git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
@@ -67,3 +55,14 @@ jobs:
           uses: pascalgn/automerge-action@v0.14.2
           env:
             GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+##      - name: Commit and Push PDFs
+##        run: |
+##          git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
+##          git config --local user.name "${{ secrets.GIT_USER }}"
+##          git add build/labs/collaborate/collaborate-lab.pdf build/labs/travelrequest/travel-request-lab.pdf
+##          git commit -m "Add generated PDFs"
+##          git push origin gh-pages
+##        env:
+##        GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+##        GIT_USER: ${{ secrets.GIT_USER }}
