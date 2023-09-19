@@ -6,8 +6,8 @@ on:
     - source
     paths:
   # Do not run if only the PDF files were updated
-    - '!labs/collaborate/collaborate-lab.pdf'
-    - '!labs/collaborate/travel-request-lab.pdf'
+    - '!/pdfs/collaborate-lab.pdf'
+    - '!/pdfs/travel-request-lab.pdf'
   # Review gh actions docs if you want to further define triggers, paths, etc
   # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
