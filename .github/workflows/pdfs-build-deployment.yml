@@ -1,0 +1,67 @@
+name: pdfs-build-deployment
+
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
+
+jobs:
+  pdfs-build-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.0.0
+
+      - name: Install Prince
+        run: |
+          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
+          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
+          cd prince-14.2-linux-generic-x86_64
+          yes "" | sudo ./install.sh
+
+      - name: Build Collaborate Lab PDF
+        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/ --output 'build/labs/collaborate/collaborate-lab.pdf'
+
+      - name: Build Travel Request Lab PDF
+        run: npx docusaurus-prince-pdf -u https://creatorworkflowsnow.github.io/labs/travelrequest/introduction/ --output 'build/labs/travelrequest/travel-request-lab.pdf'
+
+      - name: List files
+        run: ls -l build/labs/collaborate/ build/labs/travelrequest/
+
+      - name: Create New Branch and Commit PDFs
+        run: |
+          git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
+          git config --local user.name "${{ secrets.GIT_USER }}"
+          # Get the current date and time
+          current_time=$(date +"%Y-%m-%d-%H-%M-%S")
+          # Use the current date and time in the branch name
+          git checkout -b "new-pdf-branch-$current_time"
+          git add build/labs/collaborate/collaborate-lab.pdf build/labs/travelrequest/travel-request-lab.pdf
+          git commit -m "Add generated PDFs"
+          git push origin "new-pdf-branch-$current_time"
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: gh-pages
+          # Use the current date and time in the branch name
+          branch: "new-pdf-branch-$current_time"
+          title: "Add generated PDFs"
+          body: "This PR adds the newly generated PDFs."
+
+      - name: Merge Pull Request
+        uses: pascalgn/automerge-action@v0.14.2
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+##      - name: Commit and Push PDFs
+##        run: |
+##          git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
+##          git config --local user.name "${{ secrets.GIT_USER }}"
+##          git add build/labs/collaborate/collaborate-lab.pdf build/labs/travelrequest/travel-request-lab.pdf
+##          git commit -m "Add generated PDFs"
+##          git push origin gh-pages
+##        env:
+##        GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+##        GIT_USER: ${{ secrets.GIT_USER }}
