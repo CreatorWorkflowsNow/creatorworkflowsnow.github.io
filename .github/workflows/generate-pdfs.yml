@@ -54,15 +54,15 @@ jobs:
 
         - name: Create Pull Request
           uses: peter-evans/create-pull-request@v3
-          with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          base: gh-pages
-          # Use the current date and time in the branch name
-          branch: "new-pdf-branch-$current_time"
-          title: "Add generated PDFs"
-          body: "This PR adds the newly generated PDFs."
+            with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            base: gh-pages
+            # Use the current date and time in the branch name
+            branch: "new-pdf-branch-$current_time"
+            title: "Add generated PDFs"
+            body: "This PR adds the newly generated PDFs."
 
         - name: Merge Pull Request
           uses: pascalgn/automerge-action@v0.14.2
           env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+            GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
