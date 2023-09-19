@@ -1,24 +1,52 @@
+---
+# Build the PDFs after new deployment has been made to gh-pages
+# This is because PrinceXML can only scan public pages and not localserver
+
 name: PDFs Build and Deploy
 
+# Controls when the action will run.  
 on:
+  # Only run after pages-build-deployment is completed. This is the final push to make the site live. 
   workflow_run:
     workflows: ["pages-build-deployment"]
     types:
       - completed
 
+  # Allows you to run the workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+# group: "pages"
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   pdfs-build-deployment:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4.0.0
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4.0.0
 
       - name: Install Prince
         run: |
-          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
-          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
-          cd prince-14.2-linux-generic-x86_64
+          curl https://www.princexml.com/download/prince-15.1-linux-generic-x86_64.tar.gz -O
+          tar zxf prince-15.1-linux-generic-x86_64.tar.gz
+          cd prince-15.1-linux-generic-x86_64
           yes "" | sudo ./install.sh
+
+      - name: Make directories
+        run: |
           mkdir -p build/labs/collaborate/
 
       - name: Build Collaborate Lab PDF
