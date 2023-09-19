@@ -7,7 +7,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 module.exports = {
   title: "Creator Workshop Lab Guides",
   tagline: "Ready to learn something new?",
-  url: "https://creatorworkflowsnow.github.io", // Set the production url of your site here
+  url: "https://creatorworkflowsnow.github.io", 
+  trailingSlash: false,
   baseUrl: "/", // Set the /<baseUrl>/ pathname under which your site is served. For GitHub pages deployment, it is often '/<projectName>/'
   favicon: "img/favicon.ico",
   organizationName: "creatorworkflowsnow", // GitHub pages deployment config.
@@ -17,7 +18,6 @@ module.exports = {
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  trailingSlash: false,
 
   markdown: {
     mermaid: true,
@@ -225,6 +225,7 @@ module.exports = {
               {
                 label: "Instagram",
                 href: "https://www.instagram.com/servicenow/",
+                icon: 'instagram',
               },
               {
                 label: "LinkedIn",
