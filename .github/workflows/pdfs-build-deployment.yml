@@ -1,4 +1,4 @@
-name: pdfs-build-deployment
+name: PDFs Build and Deploy
 
 on:
   workflow_run:
