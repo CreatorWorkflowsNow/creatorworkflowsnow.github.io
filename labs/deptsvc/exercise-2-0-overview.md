@@ -1,6 +1,10 @@
 ---
 id: exercise-2-0-overview
 title: Overview
+sidebar_label: Overview
+hide_table_of_contents: true
+pagination_label: "2. Data - Overview"
+draft: false
 ---
 
 # Departmental Services Data Model

@@ -66,7 +66,7 @@ const FeatureList = [
       Create new Departmental Services and publish them to the enterprise using Employee Center.
       </>
     ),
-    to: 'labs/deptsvc/exercise-0-1-introduction/',
+    to: 'labs/deptsvc/lab-introduction/',
     target: '_self',
   },
 

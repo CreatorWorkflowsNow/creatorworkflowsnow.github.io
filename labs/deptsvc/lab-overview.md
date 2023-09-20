@@ -1,10 +1,11 @@
 ---
-id: exercise-0-2-overview
+id: lab-overview
 title: Use Case Overview
+sidebar_position: 2
+sidebar_label: Use Case Overview
+hide_table_of_contents: true
+draft: false
 ---
-
-# Use Case Overview
-
 
 Departments frequently use email, spreadsheets and manual processes to manage requests for services that they might provide. When consumers of the department’s services have questions or run into problems, they frequently utilize ad-hoc communication to engage the department. This lab will focus on these three facets of service delivery.
 

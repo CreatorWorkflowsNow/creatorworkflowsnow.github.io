@@ -1,6 +1,7 @@
 ---
 id: exercise-2-3-dept-issue-table
 title: Department Issue Table
+hide_table_of_contents: true
 ---
 
 # Department Issue Table

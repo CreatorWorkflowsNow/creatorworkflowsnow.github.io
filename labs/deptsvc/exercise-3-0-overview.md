@@ -1,6 +1,7 @@
 ---
 id: exercise-3-0-overview
 title: Overview
+hide_table_of_contents: true
 ---
 
 # Create meaningful experiences for your application users

@@ -1,6 +1,7 @@
 ---
 id: exercise-3-4-dept-inquiry
 title: Department Inquiry Record Producer
+hide_table_of_contents: true
 ---
 
 # Department Inquiry Record Producer

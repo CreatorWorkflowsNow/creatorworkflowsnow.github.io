@@ -1,6 +1,7 @@
 ---
 id: exercise-5-1-bonus-exercise-1
 title: Add dynamic behaviors
+hide_table_of_contents: true
 ---
 
 # Add dynamic behavior to the Dept Requests Record Producer

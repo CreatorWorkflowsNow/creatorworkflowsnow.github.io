@@ -1,6 +1,7 @@
 ---
 id: lab-review
 title: Lab Review
+hide_table_of_contents: true
 ---
 
 # Lab Review

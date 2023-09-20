@@ -1,6 +1,7 @@
 ---
 id: exercise-2-4-dept-inq-table
 title: Department Inquiry Table
+hide_table_of_contents: true
 ---
 
 # Department Inquiry Table

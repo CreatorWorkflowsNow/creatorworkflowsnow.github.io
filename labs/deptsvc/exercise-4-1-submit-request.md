@@ -1,6 +1,7 @@
 ---
 id: exercise-4-1-submit-request
 title: Submit request from Employee Center
+hide_table_of_contents: true
 ---
 
 # Submit a Dept Request from the Employee Center Portal

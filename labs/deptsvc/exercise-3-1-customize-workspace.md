@@ -1,6 +1,7 @@
 ---
 id: exercise-3-1-customize-workspace
 title: Configure Workspace Home Page
+hide_table_of_contents: true
 ---
 
 # Configure Workspace Home Page

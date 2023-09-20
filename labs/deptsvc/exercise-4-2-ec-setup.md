@@ -1,6 +1,7 @@
 ---
 id: exercise-4-2-ec-setup
 title: Employee Center Topic
+hide_table_of_contents: true
 ---
 
 # Create an Employee Center topic

@@ -1,6 +1,10 @@
 ---
 id: exercise-1-1-overview
 title: Overview
+sidebar_label: Overview
+hide_table_of_contents: true
+pagination_label: "Overview"
+draft: false
 ---
 
 # Create an app in App Engine Studio

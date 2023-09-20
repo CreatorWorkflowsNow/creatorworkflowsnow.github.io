@@ -1,6 +1,7 @@
 ---
 id: exercise-5-2-bonus-exercise-2
 title: Create a workflow
+hide_table_of_contents: true
 ---
 
 # Add Flow and Approval

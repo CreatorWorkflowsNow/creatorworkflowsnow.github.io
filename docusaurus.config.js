@@ -86,6 +86,8 @@ module.exports = {
         path: "labs/deptsvc",
         routeBasePath: "labs/deptsvc",
         sidebarPath: require.resolve("./labs/deptsvc/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
       },
     ],
 

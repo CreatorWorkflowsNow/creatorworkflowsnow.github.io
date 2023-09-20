@@ -1,6 +1,7 @@
 ---
 id: exercise-3-3-dept-issue
 title: Department Issue Record Producer
+hide_table_of_contents: true
 ---
 
 # Department Issue Record Producer

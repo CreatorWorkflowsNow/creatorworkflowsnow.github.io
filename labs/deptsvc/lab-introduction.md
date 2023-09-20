@@ -1,6 +1,10 @@
 ---
-id: exercise-0-1-introduction
+id: lab-introduction
 title: Introduction
+sidebar_position: 1
+sidebar_label: Introduction
+hide_table_of_contents: true
+draft: false
 ---
 
 # Departmental Services Introduction

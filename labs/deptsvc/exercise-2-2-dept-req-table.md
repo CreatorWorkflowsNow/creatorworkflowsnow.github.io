@@ -1,6 +1,7 @@
 ---
 id: exercise-2-2-dept-req-table
 title: Department Request Table
+hide_table_of_contents: true
 ---
 
 # Department Request Table

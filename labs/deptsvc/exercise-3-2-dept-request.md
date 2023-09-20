@@ -1,6 +1,7 @@
 ---
 id: exercise-3-2-dept-request
 title: Department Request Record Producer
+hide_table_of_contents: true
 ---
 
 # Department Request Record Producer

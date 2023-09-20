@@ -1,6 +1,7 @@
 ---
 id: exercise-2-1-app-data-model
 title: Base Department Task Table
+hide_table_of_contents: true
 ---
 
 # Base Dept Task Table

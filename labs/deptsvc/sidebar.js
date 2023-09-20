@@ -6,8 +6,8 @@
 const sidebars = {
 
     deptsvc: [
-        'exercise-0-1-introduction',
-        'exercise-0-2-overview',
+        'lab-introduction',
+        'lab-overview',
 
         {
             type: 'category',

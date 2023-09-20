@@ -1,6 +1,7 @@
 ---
 id: exercise-1-2-create-app-in-aes
 title: Create Application in AES
+hide_table_of_contents: true
 ---
 
 # Create Application in App Engine Studio

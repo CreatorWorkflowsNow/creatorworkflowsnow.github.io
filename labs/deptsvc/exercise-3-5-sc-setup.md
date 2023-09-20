@@ -1,6 +1,7 @@
 ---
 id: exercise-3-5-sc-setup
 title: Service Catalog Category
+hide_table_of_contents: true
 ---
 
 # Create a Service Catalog category
