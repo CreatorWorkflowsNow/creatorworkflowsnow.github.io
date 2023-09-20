@@ -63,7 +63,8 @@ const sidebars = {
             ],
         },
 
-        'lab-review'
+        'lab-review',
+        'download-pdf'
 
     ],
 

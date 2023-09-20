@@ -59,7 +59,7 @@ jobs:
         run: npx docusaurus-prince-pdf -d './labs/travelrequest/downloads' -u 'https://creatorworkflowsnow.github.io/labs/travelrequest/introduction/' --output './labs/travelrequest/downloads/travelrequest-lab.pdf'
 
       - name: Build Dept Services Lab PDF
-        run: npx docusaurus-prince-pdf -d './labs/deptsvc/downloads' -u 'https://creatorworkflowsnow.github.io/labs/deptsvc/introduction/' --output './labs/deptsvc/downloads/deptsvc-lab.pdf'
+        run: npx docusaurus-prince-pdf -d './labs/deptsvc/downloads' -u 'https://creatorworkflowsnow.github.io/labs/deptsvc/lab-introduction/' --output './labs/deptsvc/downloads/deptsvc-lab.pdf'
 
 #     - name: Create New Branch and Commit PDFs
 #       run: |
