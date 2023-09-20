@@ -1,7 +1,7 @@
 ---
 id: lab-guide-pdf
-title: Lab Guide PDF
+title: Download Lab Guide PDF
 draft: false
 ---
 
-[Download link for Lab Guide PDF](./downloads/collaborate-lab.pdf)
+[Click here to download Lab Guide PDF](./downloads/collaborate-lab.pdf)

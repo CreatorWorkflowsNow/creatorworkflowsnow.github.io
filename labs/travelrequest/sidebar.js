@@ -65,8 +65,10 @@ const sidebars = {
                         'exercise-bonus-3-2',
                     ],
                 },
+
             ],
         },
+        'lab-guide-pdf',
     ],
 
 };
