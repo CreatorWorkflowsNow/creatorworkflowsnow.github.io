@@ -4,7 +4,8 @@ on:
   push:
     branches:
     - source
-    paths:
+  # paths:
+  # - '*'
   # Do not run if only the PDF files were updated
   # - '!/pdfs/collaborate-lab.pdf'
   # - '!/pdfs/travel-request-lab.pdf'
@@ -20,8 +21,7 @@ on:
 
 jobs:
   source-build-deployment:
-#   runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4.0.0
