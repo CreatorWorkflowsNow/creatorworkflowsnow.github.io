@@ -5,7 +5,7 @@ title: Complaint App Overview Demo
 hide_table_of_contents: true
 sidebar_label: Overview
 sidebar_position: 1
-draft: true
+draft: false
 ---
 
 ## Personas

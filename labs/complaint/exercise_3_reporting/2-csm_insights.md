@@ -9,11 +9,6 @@ draft: false
 
 In this section, we see how a manager can leverage reporting in ServiceNow to keep track of his company's and team’s performance.
 
-## Personas
-| Fred Luddy | Manager
-|--|--|
-| ![Fred Luddy, Manager](../images/2023-09-19-11-40-18.png)|  Fred is responsible for overseeing and leading a team of customer service representatives and ensuring the delivery of excellent customer support. His primary role is to manage and optimize customer service operations to meet or exceed customer expectations. 
-
 1.	Let’s get started! First, we need to pick the right user. Click the **user profile picture**, if you are still impersonated as John Jason, select **End impersonation**.
 ![](../images/2023-09-19-11-45-17.png)
 
@@ -31,11 +26,11 @@ In this section, we see how a manager can leverage reporting in ServiceNow to ke
 
 
 5.	What you see on your screen is a sample **service manager dashboard**. CSM OOB provides you template dashboards that you can edit based on your needs. Observe that on the highlighted graph below, the number of open cases is increasing but the average age of open cases is decreasing. 
-![](../images/2023-09-19-11-48-45.png)
+![](../images/2023-09-20-13-15-54.png)
 
 
 6.	Let’s understand this trend. You can click anywhere on the lines to drill down into the data. For this lab purpose, click on the **yellow line** where it intersects with the blue line. 
-![](../images/2023-09-19-11-49-48.png)
+![](../images/2023-09-20-13-15-54_copy.jpg)
 :::note
 It’s ok if you click somewhere else, you’ll still be able to follow along
 :::
