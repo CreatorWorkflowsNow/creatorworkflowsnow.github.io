@@ -57,6 +57,7 @@ const FeatureList = [
     to: "https://low-code.guide/docs/Telework/Introduction",
     target: '_blank',
   },
+
   {
     title: 'EWF+CrWF',
     icon: faUsers,
@@ -65,9 +66,10 @@ const FeatureList = [
       Create new Departmental Services and publish them to the enterprise using Employee Center.
       </>
     ),
-    to: "https://creatorworkflowsnow.github.io/lab-deptsvc/docs/exercise_0_overview/",
+    to: 'labs/deptsvc/exercise-0-1-introduction/',
     target: '_self',
   },
+
   {
     title: 'Collaborate to Accelerate',
     icon: faCog,
