@@ -95,9 +95,9 @@ jobs:
           git add ./labs/collaborate/downloads/collaborate-lab.pdf ./labs/travelrequest/downloads/travelrequest-lab.pdf ./labs/deptsvc/downloads/deptsvc-lab.pdf
           git commit -m "Add generated PDFs"
           git push origin gh-pages
-        env:
-          GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
-          GIT_USER: ${{ secrets.GIT_USER_NAME }}
+#       env:
+#         GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+#         GIT_USER: ${{ secrets.GIT_USER_NAME }}
 
       # Commit all changed files back to the repository
       - uses: stefanzweifel/git-auto-commit-action@v4
