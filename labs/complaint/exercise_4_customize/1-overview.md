@@ -1,5 +1,6 @@
 ---
-title: Complaint App Demo Overview
+id: overview
+title: Scale Digital Innovation with no-code Configuration
 hide_table_of_contents: true
 sidebar_label: Overview
 sidebar_position: 1

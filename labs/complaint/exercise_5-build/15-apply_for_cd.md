@@ -11,11 +11,11 @@ Governance plays a key role in the success of any citizen development program. O
 
 NOTE: In a real world environment, notifications in the form or email, text, playform notifications would take place. In our lab environment we will simply rely on the switching of users to see and approve the requests.
 
-1. To get started, navigate to the Employee Center portal and impersonate **Devon Samrah**. You can find the link to Employee Center on the landing page of your instance, but for quick reference - 
-
-  [https://INSTANCENAME.lab.service-now.com/esc](https://INSTANCENAME.lab.service-now.com/esc) 
-
-  (replacing INSTANCENAME with your personal lab instance)
+1. To get started, navigate to the Employee Center portal and impersonate our Citizen Developer, **Devon Samrah**. You can find the link to Employee Center on the landing page of your instance, but for quick reference - 
+[https://INSTANCENAME.lab.service-now.com/esc](https://INSTANCENAME.lab.service-now.com/esc) 
+:::note
+Replace INSTANCENAME with your personal lab instance
+:::note
 
 
 2. Type **Apply for Citizen Development** in the **How can we help?** search box and then click on the **Apply for Citizen Development - V2** option that appears.
