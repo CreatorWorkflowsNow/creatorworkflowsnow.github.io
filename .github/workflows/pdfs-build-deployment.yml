@@ -58,6 +58,9 @@ jobs:
       - name: Build Travel Request Lab PDF
         run: npx docusaurus-prince-pdf -d './labs/travelrequest/downloads' -u 'https://creatorworkflowsnow.github.io/labs/travelrequest/introduction/' --output './labs/travelrequest/downloads/travelrequest-lab.pdf'
 
+      - name: Build Dept Services Lab PDF
+        run: npx docusaurus-prince-pdf -d './labs/deptsvc/downloads' -u 'https://creatorworkflowsnow.github.io/labs/deptsvc/introduction/' --output './labs/deptsvc/downloads/deptsvc-lab.pdf'
+
 #     - name: Create New Branch and Commit PDFs
 #       run: |
 #         git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
@@ -89,7 +92,7 @@ jobs:
         run: |
           git config --local user.email "${{ secrets.GIT_USER_EMAIL }}"
           git config --local user.name "${{ secrets.GIT_USER }}"
-          git add build/labs/collaborate/collaborate-lab.pdf build/labs/travelrequest/travel-request-lab.pdf
+          git add ./labs/collaborate/downloads/collaborate-lab.pdf ./labs/travelrequest/downloads/travelrequest-lab.pdf ./labs/deptsvc/downloads/deptsvc-lab.pdf
           git commit -m "Add generated PDFs"
           git push origin gh-pages
         env:
