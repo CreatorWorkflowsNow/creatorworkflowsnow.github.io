@@ -4,4 +4,4 @@ title: Lab Guide PDF
 draft: false
 ---
 
-[Download link for Lab Guide PDF](/pdf/collaborate-lab.pdf)
+[Download link for Lab Guide PDF](./downloads/collaborate-lab.pdf)
