@@ -3,7 +3,7 @@ title: Configure Complaints Playbook using Process Automation Designer
 hide_table_of_contents: true
 sidebar_label: Configure Playbook in PAD
 sidebar_position: 3
-draft: true
+draft: false
 ---
 
 1. First, end any impersonation you may have set in a previous lab.

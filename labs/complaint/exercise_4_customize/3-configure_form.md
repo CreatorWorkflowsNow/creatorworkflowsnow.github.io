@@ -3,7 +3,7 @@ title: Configure Case Form
 hide_table_of_contents: true
 sidebar_label: Agent Experience
 sidebar_position: 2
-draft: true
+draft: false
 ---
 
 # Configure Customer Service Agent Experience - Case

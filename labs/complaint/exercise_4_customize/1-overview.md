@@ -4,7 +4,7 @@ title: Scale Digital Innovation with no-code Configuration
 hide_table_of_contents: true
 sidebar_label: Overview
 sidebar_position: 1
-draft: true
+draft: false
 ---
 
 ## Preventing important cases from falling through the cracks 
