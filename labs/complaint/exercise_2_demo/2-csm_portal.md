@@ -79,14 +79,14 @@ Your instance name will vary from what is reflected in the screenshot
  |**Date issue occurred**| Click on the calendar icon. Select today and click **OK**. You can also type in the answer instead of using the calendar widget|
  |**Complaint Details**| The product is shattered and can’t be used|
  |**List the additional parties involved in the complaint**| Click on **Add** button. On the **Involved Parties** field, select **Mike Rogers**. On the **Type** field, select **Co-Complainant**|
+ Click **Submit**
+![](../images/2023-09-19-10-50-34.png)
 :::note
 Note that once you type in the **Short Description**, the system automatically displays knowledge articles and related services. If you want to, you can disable this feature
-::::
-Click **Submit**
-![](../images/2023-09-19-10-50-34.png)
+:::
 
 
-12. See that Julie is presented with a complaint record that she can always come back to and track progress.
+12.  See that Julie is presented with a complaint record that she can always come back to and track progress.
 ![](../images/2023-09-19-10-51-03.png)
 
 

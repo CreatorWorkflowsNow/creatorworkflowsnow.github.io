@@ -44,29 +44,29 @@ draft: false
 ![](../images/2023-08-03-09-35-43.png)
 
 
-8.	On the case page, we can see all the details such as customer information, work orders, SLA, tasks etc.
-![](../images/2023-08-03-09-36-07.png)
+8.	On the case page, we can see all the details such as customer information, work orders, SLA, tasks etc. John can also see the details about the issue to quickly decide the next steps to resolve the issue.
+![](../images/2023-09-21-11-04-59.png)
 
 
 9.	John will leverage out of the box features to search for similar cases that were resolved and look for helpful knowledge articles. Click on the **Agent Assist** icon as shown on the screenshot below
 ![](../images/2023-08-03-09-36-37.png)
 
 
-10.	Click on the hamburger icon as shown on the picture to see all the out of the box search options. Currently you are seeing all similar resolved cases. Click on **Knowledge Articles**. 
-![](../images/2023-08-03-09-37-08.png)
+10.	Click on the **hamburger icon** as shown on the picture to see all the out of the box search options. Currently you are seeing all similar resolved cases. Click on **Knowledge Articles**. 
+![](../images/2023-09-21-11-06-24.png)
 
 
-11.	We can now see relevant Knowledge Articles that gets surfaced automatically. Click on the first article and then click **Attach** to attach it to the case.
-![](../images/2023-08-03-09-37-29.png)
-![](../images/2023-08-03-09-37-46.png)
-![](../images/2023-08-03-09-37-57.png)
+11.	We can now see relevant Knowledge Articles that gets surfaced automatically. Click on the first article and then click **Attach** to attach it to the case and share it with the customer.
+![](../images/2023-09-21-11-08-12.png)
+![](../images/2023-09-21-11-08-26.png)
+![](../images/2023-09-21-11-08-33.png)
 :::note
 If you include ’Additional Comments (Customer Visible)’ before clicking on Attach Article, the article will be visible to the customer via the customer portal including your comment.
 :::
 
 
 12.	Finally, John will escalate the case before moving on to other cases in his queue. Click on the **three-dot icon** and select **Escalate Case**.
-![](../images/2023-08-03-09-39-41.png)
+![](../images/2023-09-21-11-09-08.png)
 
 
 13.	On the Case Escalation page, select these values:
@@ -81,7 +81,7 @@ If you include ’Additional Comments (Customer Visible)’ before clicking on A
  ![](../images/2023-09-19-09-53-30.png)
 
 
- 14. Click on the **Details** tab to go back to the case. Observe the escalation that is automatically attached to the case.
+ 14.  Click on the **Details** tab to go back to the case. Observe the escalation that is automatically attached to the case.
  ![](../images/2023-09-19-09-55-06.png)
  ![](../images/2023-09-19-09-55-31.png)
  
@@ -89,7 +89,7 @@ If you include ’Additional Comments (Customer Visible)’ before clicking on A
 
 
 15.	We will continue working on the agent workspace. Click on the hamburger icon to go to the case and task lists assigned to John.
-![](../images/2023-08-03-09-41-49.png)
+![](../images/2023-09-21-11-11-35.png)
 
 
 16.	John has quick access to cases and tasks that matter to him. These lists are automatically updated and always show real-time data.
@@ -118,6 +118,8 @@ If you include ’Additional Comments (Customer Visible)’ before clicking on A
 
 22.	On the first input field select **Priority**, in the second input field select is, in the third input field select **1-Critical**. Click **Create**.
 ![](../images/2023-08-03-09-45-06.png)
+Here's how your list should look:
+![](../images/2023-09-21-11-12-38.png)
 
 
 **Congratulations!** You helped John to efficiently work on and prioritize his cases. Next chapter we will see how one of your customers will log a complaint using out of the box customer portal and then John addressing the complaint leveraging automation.
