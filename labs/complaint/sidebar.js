@@ -26,6 +26,7 @@ const sidebars = {
         '4. Scale Digital Innovation ': [
             'exercise_4_customize/overview',
             'exercise_4_customize/configure',
+            'exercise_4_customize/test',
         ],
 
         '5. Create with App Engine': [

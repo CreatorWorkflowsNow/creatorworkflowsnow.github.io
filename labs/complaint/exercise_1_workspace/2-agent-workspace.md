@@ -86,6 +86,10 @@ If you include ’Additional Comments (Customer Visible)’ before clicking on A
  ![](../images/2023-09-19-09-55-31.png)
  
  **Great Job!** John now has escalated the case and added his manager as watch list. He did all this work by using out of the box features!
+:::info
+You can also create an incident, problem or a change request right from this case as shown below. For example, if the billing issue was due to the billing software that is used, you could easily create an incident right from the case and assign it to the IT team.
+![](../images/2023-09-21-13-44-06.png)
+:::
 
 
 15.	We will continue working on the agent workspace. Click on the hamburger icon to go to the case and task lists assigned to John.
