@@ -15,6 +15,19 @@ const sidebars = {
                 'get_started/tips',
             ],
         },
+
+        /*
+        {
+            type: 'category',
+            label: 'guides',
+            link: {
+                type: 'generated-index',
+                title: 'Guides',
+                description: 'learn stuff',
+            },
+            items: ['simulation/build-app-from-template'],
+        },
+        */
         
         {
             type: 'category',
