@@ -32,7 +32,7 @@
     "mermaid": "^10.3.0",
     "postcss": "^8.4.28",
     "prism-react-renderer": "^1.2.1",
-    "puppeteer": "^21.2.1",
+    "puppeteer": "^21.3.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "tailwindcss": "^3.3.3",
