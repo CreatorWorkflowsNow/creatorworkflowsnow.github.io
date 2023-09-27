@@ -4,9 +4,11 @@ title: Lab Review
 hide_table_of_contents: true
 sidebar_label: Lab Review
 sidebar_position: 99
-draft: true
+draft: false
 ---
-
+:::caution
+This page is in draft and for review purposes only
+:::
 
 # Lab Review
 
@@ -14,10 +16,4 @@ draft: true
 
 In this lab you:
 
-# TODO #
-
-- Used App Engine Studio for low-code app development
-- Extended the Task table to create multiple services
-- Configured a Topic and Category in Employee Center for a new department
-- Created Record Producers and published to the Service Catalog
-- Generated a Workspace for department specific service fulfillment
+**TODO: Write a lab review**

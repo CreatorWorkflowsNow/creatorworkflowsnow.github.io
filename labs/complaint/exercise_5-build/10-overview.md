@@ -7,11 +7,10 @@ sidebar_position: 0
 draft: false
 ---
 
-:::caution
-This lab still is still in Draft.  The information below is only for review purposes.  It is not a complete lab guide yet...
-:::
+## Overview
+In this exercise, we'll see how IT and the business can partner to create applications to better support our customers.
 
-## Personas Overview
+## Personas
 
 <details>
   <summary><strong>Citizen Developer</strong> [<em>sit-uh-zuhn dih-vel-uh-per</em>]</summary>
@@ -24,12 +23,9 @@ This lab still is still in Draft.  The information below is only for review purp
 
 | Devon Samrah | Business Process Owner & Citizen Developer 
 |--|--|
-| ![](../images/2023-09-11-08-59-01.png) | Devon Samrah, an IT veteran with diverse roles under her belt, aspires to be part of the company's Citizen Developer Program. This section outlines the steps in Sydney's journey to becoming a citizen developer.
+| ![](../images/2023-09-11-08-59-01.png) | Devon Samrah is a long time member of the Legal team and leads the Complaint Investigation team. Given her vast knowledge of the overall process, she is the perfect candidate to build a low-code app that supports the complaints investigation process.
 
 
-| Andy Brady | System Administrator & App Engine Admin
+| Andy Brady | System Administrator
 |--|--|
-| ![](../images/2023-09-11-09-05-54.png) | Andy Brady, an IT veteran with diverse roles under her belt, aspires to be part of the company's Citizen Developer Program. This section outlines the steps in Sydney's journey to becoming a citizen developer.
-
-
-In this exercise, we'll see how IT and the business can partner to create applications to better support our customers.
+| ![Andy Brady, Admin](../images/2023-09-11-09-05-54.png) | As a ServiceNow System Administrator, Andy's primary responsibilities involve managing and maintaining the ServiceNow platform within an organization. Here is a brief description of Andy's role|

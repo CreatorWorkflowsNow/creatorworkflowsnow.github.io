@@ -7,80 +7,117 @@ sidebar_position: 3
 draft: false
 ---
 
-In this exercise will start building out the tables needed to support out application. We'll import a spreadsheet to quickly populate the table with existing data. This is a very common way customers are building tables in App Engine Studio for processes that are currently being administered in Excel and email.
+In this exercise, we'll tie our investigation process together with the Complaints Management module in CSM so we can wave bye-bye to those spreadsheets!
 
-Data can also be imported from other third-party sources like a database or web service/API.
-
-1. On the app homepage, click on **+Add** next to **Data**.
-![](../images/2023-08-18-09-19-43.png)
+1. If you haven't done so already, close your workspace and go back to your App Engine Studio window. In the **Logis and Automation** section, click on **Add**
+![](../images/2023-09-27-13-24-58.png)
 
 
-2. Select **Import a spreadsheet** and then the **Continue** on the next screen
-    ![](../images/2023-08-18-09-26-54.png)
+2. There are several options for automation when building an app as a low code developer on the ServiceNow platform, but today we will be focusing on workflow. So on this screen, choose **Flow** from the options
+![](../images/2023-09-27-13-26-19.png)
 
 
-3. Click **Drag and drop or browse to upload spreadsheet**. Find the file you downloaded at the beginning of the lab and upload it. 
-![](../images/2023-08-18-09-23-58.png)
+3. To help you get started quickly, we've provided a set of common flows we see our customers building. In addition to that, we've built these flows with pre-existing integrations to collboration tools like Teams. We, however, will be starting from scratch. Click on **Build from scratch**
+![](../images/2023-09-27-13-29-39.png)
 
 
-4. Check the **Import spreadsheet data** checkbox and click **Continue**
-![](../images/2023-09-11-09-30-54.png)
+4. Set the following values for your new flow:
+
+ |Field Name|Value|
+ |---|---|
+ |Name|Complaint Investigation Flow|
+ |Description|Workflow that gets triggered when a new complaint is received and requires investigation.|
+Click **Continue**
+![](../images/2023-09-27-13-31-39.png)
 
 
-5. On the next screen, keep the default option of **A new table** and choose **Create from an extensible table** then click **Continue**
-![](../images/2023-09-11-09-47-16.png)
+5. On the **Success! Your flow is ready** screen, click **Edit this flow**
+![](../images/2023-09-27-13-35-15.png)
 
 
-6. Search in the **Table** field for **Customer** and choose **Task** from the list. Click **Continue**
-![](../images/2023-09-11-10-00-11.png)
+6. This will open **Flow Designer** where we can define our trigger and our resultant actions in our workflow. Click **Add a trigger**
+![](../images/2023-09-27-13-37-15.png)
 
 
-7. Set the **Table label** field to **Complaint Investigation**\
-    Select **Auto number**\
-    Set the **Prefix** field to **CMPLINV**
-![](../images/2023-09-11-10-01-48.png)
-
-    Setting the Prefix allows us to distinguish our tasks from records created that are also extended from the Customer Service Task table.
+7. Choose **Created or Updated** in the dropdown. 
+![](../images/2023-09-27-13-39-10.png)
 
 
-8. The next step is to setup permission for the Dept Task table. Assign full permissions to the admin role by selecting **All**. Select the **Create**, **Read** and **Write** permissions for the user role. When finished, click **Continue**.
-![](../images/2023-09-11-10-03-57.png)
+8. To complete the trigger confguration, set the following values and click **Done**:
+
+ |Field Name|Value|
+ |---|---|
+ |Table|Complaint Case [sn_complaint_case]|
+ |Condition|Requires Investigation is True|
+![](../images/2023-09-27-13-42-24.png)
 
 
-9. Now, we wait for the platform to create our table. Select **Continue** once the table is created to move on to mapping our imported data to the appropriate fields.
-    ![](../images/2023-09-11-10-05-52.png)
+9. Now that we know when our flow is going to execute, let's tell it what we want it to do. Under **Actions** click the **+ Add an Action, Flow Logic, or Subflow** then click **Action**
+![](../images/2023-09-27-13-44-58.png)
 
 
-10. Once the screen loads, you can exit out of any guided tour popup that may appear initially. Looking at the right hand column, you'll notice the platform automatically mapped our fields for us! This is indicated by the wand icon next to the column name
-![](../images/2023-09-11-11-58-37.png)
+10. In the **Search Actions** field, type **Create Record** and choose the **Create Record** option listed in the right column
+![](../images/2023-09-27-13-47-12.png)
 
 
-11. Scroll through the list to ensure all your fields are accounted for. You'll notice that **Group** is not associated with the **Assignment Group** field on our table. Drag and drop it from the left side to the right next to the **Assignment Group** field. 
-![](../images/2023-09-11-12-02-09.png)
+11.  Set the Table field to our **Complaint Investigation** table we created in our first exercise in App Engine Studio. Then set the **Fields** as shown below then click **Done** when complete:
+ :::note
+ Values highlighted in bold below indicate we are dot walking to the fields we need in our workflow
+ :::
+ |Field Name|Value|
+ |---|---|
+ |Parent|**Trigger - Record Created or Updated - Complaint Case Record**|
+ |Subject|Investigation required for **Trigger - Record Created or Updated - Complaint Case Record - Number**|
+ |Description|**Trigger - Record Created or Updated - Complaint Case Record - Short Description**|
+ |Contact|**Trigger - Record Created or Updated - Complaint Case Record - Contact**|
+ |Assignment Group|Complaints Investigation|
+
+ When you're finsihed, your action should look similar to this:
+ ![](../images/2023-09-27-14-02-06.png)
 
 
-12. We also need to associate these existing complaint investigations with the cases they are related to. Scroll down until you see the **Parent** field on the right. Click the magic wand icon on the right of the field then the small arrow next to **Source** and choose the **Complaint Case** option from the menu.
-![](../images/2023-09-11-12-43-01.png)
-:::info
-This is referred to as 'dot-walking'.    
+ 12. Next, we want to make sure we indicate in the complaint case record that we have automatically created this investigation. This will ensure that anyone who looks at the case later will know we've taken action. Let's add a new action by clicking the **+ Add an Action, Flow Logic, or Subflow** button under the action we just created then click **Action**
+![](../images/2023-09-27-14-09-28.png)
+
+
+13. This time we're looking for the **Add Comment To Task** action. In the Search field, type **Add comment** and select the option that appears under the **Customer Serivice** spoke
+![](../images/2023-09-27-14-07-58.png)
+
+
+14. Complete the action with the following values then click **Done**:
+ :::note
+ Values highlighted in bold below indicate we are dot walking to the fields we need in our workflow
+ :::
+ |Field Name|Value|
+ |---|---|
+ |Task [task]|**Trigger - Record Created or Updated - Complaint Case Record**|
+ |Comment|Created investigation task: **1 - Create Record - Complaint Investigation Record - Number**
+ When you're finsihed, your action should look similar to this:
+ ![](../images/2023-09-27-14-12-01.png)
+
+
+15. Time to test! Save your flow and click the **Test** button at the top of the screen. When prompted, choose the complaint case we created earlier in our lab
+:::note
+Your complaint number may vary from the one reflected in the lab guide.
 :::
+![](../images/2023-09-27-14-14-42.png)
 
 
-13. Click **Continue**
-![](../images/2023-09-11-12-34-05.png)
+16. To view your test results, click the link on the pop-up
+![](../images/2023-09-27-14-18-12.png)
 
 
-14. Click **Done** once the table has been created to return to the App Home.
-![](../images/2023-09-11-12-47-55.png)
+17. Here you will be able to view any errors or resultant records that are created as part of your workflow. If you received errors, go back and take a look at your flow to ensure everything has been completed correctly. If it was successful, you should see **Test Run - Completed** at the top of your screen
+![](../images/2023-09-27-14-19-46.png)
 
 
-15. Let's check our table to make sure the data is mapped correctly. You should see our newly created **Complaints Investigation** table listed under **Data**. Click on the **Preview** link
-![](../images/2023-09-11-12-50-28.png)
+18. Finally, let's see what this looks like for Devon in her new Workspace. Go back to **App Home** and Preview the Workspace again.
+![](../images/2023-09-27-14-23-28.png)
 
 
-16. Your screen should look similar to the one below
-![](../images/2023-09-11-12-51-44.png)
-Once you've finished reviewing the data, close the window to return to App Engine Studio
+19. Notice there is now an unassigned Investigation for Devon awaiting her on the workspace homepage. Click on the **1** under **Unassigned Investigations** to view the list of investigations that are unnassigned
+![](../images/2023-09-27-14-26-05.png)
 
 
-Excellent! Now that we have our legacy data in the plaform, let's look to see how we create our own Workspace to start managing these investigations using ServiceNow!
+ 20. Click on the record that appears in the list to view the newly created investigation record. Your screen should look very much like the screen below!
+![](../images/2023-09-27-14-57-05.png)

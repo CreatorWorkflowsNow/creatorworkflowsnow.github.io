@@ -57,6 +57,57 @@ Before we move on **SAVE YOUR WORK**!
 :::
 
 
-12. Next, let's add a new Data Visualization widget to our workspace so we have some visiability into the overall landscape of Complaints Investigations. Click on **Add new element** at the top and choose **Data visualization**
+12. Next, let's add a new Data Visualization widget to our workspace so we have some visability into the overall landscape of Complaints Investigations. Click on **Add new element** at the top and choose **Data visualization**
 ![](../images/2023-09-12-09-00-08.png)
 
+
+13. The new component will be added to the bottom of the workspace by default. Drag it up just about **My Work** and resize it to match the **My Work** list below.
+![](../images/2023-09-27-12-59-48.png)
+
+
+14. Now let's configure the new widget. On the configuration pane, choose **Vertical Bar** from the **Visualization type**list.
+![](../images/2023-09-27-13-00-45.png)
+
+
+15. Find and expand the **Header and border** section. Enter **Complaint Cases by Account** in the **Chart Title** field
+![](../images/2023-09-27-13-12-38.png)
+
+
+16. Under the **Data** section, click **Add data source**
+![](../images/2023-09-27-13-04-42.png)
+
+
+17. On the **Add data source** page, search for **Complaint Case** and click on the option when it appears.
+![](../images/2023-09-27-13-06-26.png)
+
+
+18. Under **Predefined conditions** choose **ComplaintCases.Open** and click **Run**. Ensure that data is displayed then click **Add this source**
+![](../images/2023-09-27-13-07-55.png)
+
+
+19. Save your work and click **Exit editing mode**
+:::info
+Before saving, it may be necessary to do some resizing of the compomnents on the screen. Feel free to do so as needed.
+:::
+![](../images/2023-09-27-13-15-18.png)
+
+
+20. Your dashboard should look similar to the screenshot below
+![](../images/2023-09-27-13-16-24.png)
+
+
+21. Now that we have our homepage complete, let's take a look at the record pages and ensure we can see the activities that take place on these investigation records. Back on your **App Home** screen, find your workspace under the **Experiences** section, click the **...** on the right and click **Edit**
+![](../images/2023-09-27-14-50-00.png)
+
+
+22. This takes us to **Workspace Builder**. Click on **Get started** if you get a pop-up screen welcoming you. At the top under **Record pages** click on **Complaint Investigation**
+![](../images/2023-09-27-14-52-28.png)
+
+
+23. Click on **Record details** in the left panel then toggle **Activity Strean** in the right panel. You should see a message indicating that we have successfully activated the activity stream
+![](../images/2023-09-27-14-53-59.png)
+
+
+**That's it!** You've just successfully configured a new dashboard for Complaints Investigations team and added fetaures to the form that will help the team work more efficiently in the complaints investigation process!
+
+Feel free to add additional data visulization and components to get a better feel for the flexibility of the dashboards and workspaces.

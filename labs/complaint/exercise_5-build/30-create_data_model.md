@@ -19,7 +19,9 @@ Data can also be imported from other third-party sources like a database or web 
     ![](../images/2023-08-18-09-26-54.png)
 
 
-3. Click **Drag and drop or browse to upload spreadsheet**. Find the file you downloaded at the beginning of the lab and upload it. 
+3. Click **Drag and drop or browse to upload spreadsheet**. 
+Download this file: [ComplaintsInvestigationImport.xlsx](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/raw/source/labs/complaint/downloads/ComplaintsInvestigationImport.xlsx) 
+and upload the file to the instance.
 ![](../images/2023-08-18-09-23-58.png)
 
 
@@ -35,12 +37,15 @@ Data can also be imported from other third-party sources like a database or web 
 ![](../images/2023-09-11-10-00-11.png)
 
 
-7. Set the **Table label** field to **Complaint Investigation**\
-    Select **Auto number**\
-    Set the **Prefix** field to **CMPLINV**
+7. Set the **Table label** field to **Complaint Investigation**
+ 
+ Select **Auto number**
+ 
+ Set the **Prefix** field to **CMPLINV**
 ![](../images/2023-09-11-10-01-48.png)
-
-    Setting the Prefix allows us to distinguish our tasks from records created that are also extended from the Customer Service Task table.
+:::info
+Setting the Prefix allows us to distinguish our tasks from records created that are also extended from the Customer Service Task table.
+:::
 
 
 8. The next step is to setup permission for the Dept Task table. Assign full permissions to the admin role by selecting **All**. Select the **Create**, **Read** and **Write** permissions for the user role. When finished, click **Continue**.
@@ -81,6 +86,32 @@ This is referred to as 'dot-walking'.
 16. Your screen should look similar to the one below
 ![](../images/2023-09-11-12-51-44.png)
 Once you've finished reviewing the data, close the window to return to App Engine Studio
+
+
+17. Next, let's focus on the data we want to be shown on the screens when viewing these investigation records. In **App Engine Studio**, click on the table and click on **Forms** at the top of the screen to open **Table Builder**
+![](../images/2023-09-27-14-30-29.png)
+
+
+18. Forms can have many views, but for our lab today, we will focus on the **Workspace** view only. Click on the button that says **Default view** and choose the **Workspace** view from the list
+:::note
+Your view name(s) may vary from what is reflect in the screenshot but you should only have single view starting with **Workspce**
+:::
+![](../images/2023-09-27-14-41-17.png)
+
+
+19. To make this form more useful for us, remove the **Configuration Item** field by hovering over the field and clicking on the **X** that appears
+![](../images/2023-09-27-14-32-49.png)
+
+
+20. Now we'll add some fields that help us with our investigation process. On the **Add form elements** side bar, search for the **Assignment Group** field and drag/drop it on the form. Repeat the process for **Contact** and save your form once complete. Your form should look similar to below
+![](../images/2023-09-27-14-36-08.png)
+
+
+21. Let's also rename the **Parent** field so it is more meaningful for our process. Click on the **Parent** field and change the **Label** field in the right configuration section to say **Complaint Case** and click **Save**
+:::info
+This label change will only be reflected in our Complaint Investigation table and will not impact the rest of the platform.
+:::
+![](../images/2023-09-27-14-44-01.png)
 
 
 Excellent! Now that we have our legacy data in the plaform, let's look to see how we create our own Workspace to start managing these investigations using ServiceNow!
