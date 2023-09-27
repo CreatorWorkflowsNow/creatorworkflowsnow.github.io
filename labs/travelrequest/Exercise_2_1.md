@@ -131,7 +131,6 @@ Instead of adding fields individually via table builder, we will add fields dire
 32. Drag and drop those 4 fields onto the form
 ![](images/dragdrop.png)
 
-
 :::tip
 You will need to ensure that you see a grey outline box with a plus icon before releasing the field
 ![](images/dragdrophelp.png)
