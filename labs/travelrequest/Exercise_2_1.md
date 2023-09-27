@@ -186,7 +186,7 @@ You will need to ensure that you see a grey outline box with a plus icon before 
 47. Key in a **comma**
 ![](images/returndate1.png)
 
-    :::note
+:::tip
 If this does not appear, it means you haven't saved your form yet, so go ahead and click **Save** on the top right.
 :::
 
