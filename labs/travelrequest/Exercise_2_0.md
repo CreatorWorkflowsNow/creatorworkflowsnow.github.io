@@ -16,3 +16,5 @@ Create a table called "Airport Table".  This is where we will import and store a
 
 ## 2.3 Reference the table
 We will create a field on the Travel Request table to reference the Airport Table. 
+
+Click "Next" to start.

@@ -143,7 +143,7 @@ You will need to ensure that you see a grey outline box with a plus icon before 
 34. Click **Save** on the top right of the form
 
 
-35. Within you form, locate and click **Reason for travel**
+35. Within your form, locate and click **Reason for travel**
 
 
 36. The right-side panel will update for the configuration of this field. Expand **Choices**, then click **Edit (1)**
@@ -186,15 +186,21 @@ You will need to ensure that you see a grey outline box with a plus icon before 
 47. Key in a **comma**
 ![](images/returndate1.png)
 
+    :::note
+If this does not appear, it means you haven't saved your form yet, so go ahead and click **Save** on the top right.
+:::
+
 
 48. Finish off the formula by entering and selecting **departure_date**
 ![](images/depdate.png)
 
+49. You can copy and paste the whole formula if you are having trouble with the auto-fill capability: **TIMEDIFF(return_date, departure_date)**
 
-49. Click **Submit**
+
+50. Click **Submit**
 
 
-50. Click **Save**
+51. Click **Save**
 
     At this point, we could also capture the Origin and Destination via a String field so that the users can enter free text, but for more consistency, let's create an **Airports** table so that users can select these locations (like how you would select on any airline reservation website)
 
