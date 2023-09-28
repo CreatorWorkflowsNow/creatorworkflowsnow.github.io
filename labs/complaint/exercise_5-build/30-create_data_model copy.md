@@ -1,5 +1,5 @@
 ---
-id: data-model
+id: data-model-old
 title: Create Application Data Model
 hide_table_of_contents: true
 sidebar_label: Create Data Model
@@ -92,15 +92,22 @@ Once you've finished reviewing the data, close the window to return to App Engin
 ![](../images/2023-09-27-14-30-29.png)
 
 
-18. To make this form more useful for us, remove the **Configuration Item** field by hovering over the field and clicking on the **X** that appears
+18. Forms can have many views, but for our lab today, we will focus on the **Workspace** view only. Click on the button that says **Default view** and choose the **Workspace** view from the list
+:::note
+Your view name(s) may vary from what is reflect in the screenshot but you should only have single view starting with **Workspce**
+:::
+![](../images/2023-09-27-14-41-17.png)
+
+
+19. To make this form more useful for us, remove the **Configuration Item** field by hovering over the field and clicking on the **X** that appears
 ![](../images/2023-09-27-14-32-49.png)
 
 
-19.  Now we'll add some fields that help us with our investigation process. On the **Add form elements** side bar, search for the **Assignment Group** field and drag/drop it on the form. Repeat the process for **Contact** and save your form once complete. Your form should look similar to below
+20. Now we'll add some fields that help us with our investigation process. On the **Add form elements** side bar, search for the **Assignment Group** field and drag/drop it on the form. Repeat the process for **Contact** and save your form once complete. Your form should look similar to below
 ![](../images/2023-09-27-14-36-08.png)
 
 
-20. Let's also rename the **Parent** field so it is more meaningful for our process. Click on the **Parent** field and change the **Label** field in the right configuration section to say **Complaint Case** and click **Save**
+21. Let's also rename the **Parent** field so it is more meaningful for our process. Click on the **Parent** field and change the **Label** field in the right configuration section to say **Complaint Case** and click **Save**
 :::info
 This label change will only be reflected in our Complaint Investigation table and will not impact the rest of the platform.
 :::
