@@ -74,7 +74,7 @@ Your RITM number may vary from what is in the screenshot
 
 
 9. Once complete, save the reqest record. Since we are operating in a lab environment and this is NOT a governance workshop, we've reconfigured Devon to have the access she needs without requiring a complete pipeline configuration. We can now move on to impersonating  Devon again and build our Complaints Investigation app.
-Click on Andy's profile picture and the top right and click **Impersonate User**. Choose Devon Samrah from the list.
+Click on Andy's profile picture in the top right and click **Impersonate User**. Choose Devon Samrah from the list.
 ![](../images/2023-09-11-11-48-19.png)
 ![](../images/2023-09-11-11-48-36.png)
 Click **Impersonate User** to complete the switch to Devon's persona.
