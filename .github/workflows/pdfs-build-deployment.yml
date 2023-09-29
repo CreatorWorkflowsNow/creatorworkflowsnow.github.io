@@ -71,21 +71,20 @@ jobs:
           # Get the current date and time
           current_time=$(date +"%Y-%m-%d-%H-%M-%S")
           # Use the current date and time in the branch name
-          git checkout -b "new-pdf-branch-$current_time"
+          git checkout -b "new-pdf-branch"
           git add ./labs/collaborate/downloads/collaborate-lab.pdf
           git add ./labs/travelrequest/downloads/travelrequest-lab.pdf
           git add ./labs/deptsvc/downloads/deptsvc-lab.pdf
           git add ./labs/telework-utah/downloads/telework-utah-lab.pdf 
           git commit -m "Add generated PDFs"
-          git push origin "new-pdf-branch-$current_time"
-          echo "::set-output name=branch_name::new-pdf-branch-$current_time"
+          git push origin "new-pdf-branch"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: source
-          branch: ${{ steps.create_branch.outputs.branch_name }}
+          branch: "new-pdf-branch"
           title: "Add generated PDFs"
           body: "This PR adds the newly generated PDFs."
 
