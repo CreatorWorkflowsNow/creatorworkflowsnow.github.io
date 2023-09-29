@@ -83,7 +83,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          base: gh-pages
+          base: source
           # Use the current date and time in the branch name
           branch: "new-pdf-branch-$current_time"
           title: "Add generated PDFs"
