@@ -17,6 +17,10 @@ module.exports = {
         },
         nowpink:'#FC7786', 
         nowpurple:'#5274FF', 
+        polarispurple:'#4349B1', 
+        polarispurpledarkbg:'#21233D', 
+        polarispurpledarktxt:'#9EA1FB', 
+        polarispurplehover:'#ECECF7', 
         noworange:'#F0964F', 
         nowgreen: {
           100: '#DDFFCA', 

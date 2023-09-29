@@ -90,6 +90,10 @@ h1 {
   @apply text-nowwasabi;
 }
 
+[data-theme="dark"] p {
+  @apply text-white;
+}
+
 /*--- Adjustments for the ServiceNow button in Markdown ---*/
 .aes_button {
   background-color: var(--now-button--primary--background-color);
@@ -108,6 +112,38 @@ h1 {
 
 .aes_button:hover {
   background-color: var(--now-button--primary--background-color--active);
+}
+
+.aes_button_white {
+  @apply bg-white;
+  @apply text-polarispurple;
+  @apply border-polarispurple;
+  border-width: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+  box-shadow: 0 2px 4px 0;
+}
+
+.aes_button_white:hover {
+  @apply bg-polarispurplehover;
+}
+
+[data-theme="dark"] .aes_button_white {
+  @apply bg-polarispurpledarkbg;
+  @apply text-polarispurpledarktxt;
+  box-shadow: 0 0 0 0;
+}
+
+[data-theme="dark"] .aes_button_white:hover {
+  @apply bg-polarispurpledarkbg;
 }
 
 /*---HTML-Instruction-Styling----------------------------*/
@@ -181,7 +217,8 @@ h1 {
 }
 
 [data-theme="dark"] .markdown h2 {
-  @apply bg-gray-700;
+  @apply text-white;
+  @apply bg-nowpurple;
 }
 
 .markdown h3,
@@ -189,6 +226,7 @@ h1 {
   @apply bg-gray-600;
   @apply font-bold;
   @apply ml-5;
+  @apply mt-2;
   @apply p-1;
   @apply pl-4;
   @apply rounded-md;
@@ -196,7 +234,8 @@ h1 {
 }
 
 [data-theme="dark"] .markdown h3 {
-  @apply bg-gray-600;
+  @apply text-white;
+  @apply bg-nowinfblue-100;
 }
 
 .markdown h4,
@@ -231,6 +270,7 @@ h1 {
 
 [data-theme="dark"] .markdown h5 {
   @apply bg-gray-700;
+  @apply text-white;
 }
 
 /* Basic link styling within .theme-doc-markdown and .markdown */
@@ -258,7 +298,16 @@ h1 {
   @apply ml-5;
 }
 
-/*--- Instruction number styling ---*/
+/*--------------------------------------------------*/
+/*--- Markdown list styling ---*/
+
+.markdown ul {
+  @apply ml-8;
+  list-style: disc;
+}
+
+/*--------------------------------------------------*/
+/* .markdown > ol */
 .markdown ol {
   @apply list-decimal;
   @apply bg-gray-300;
@@ -268,8 +317,13 @@ h1 {
 }
 
 [data-theme="dark"] .markdown ol {
-  @apply bg-gray-200;
+  @apply bg-gray-700;
+  @apply border-t;
+  @apply border-gray-700;
 }
+
+/*--------------------------------------------------*/
+/* .markdown > ol > li */
 
 .markdown ol li {
   @apply bg-white;
@@ -278,33 +332,81 @@ h1 {
   @apply text-black;
 }
 
-[data-theme="dark"] .markdown ol li {
-  @apply bg-gray-900;
-  @apply text-nowwasabi;
-}
-
 .markdown ol li::marker {
   @apply font-bold;
   @apply text-gray-900;
 }
 
+.markdown ol li p {
+  @apply mt-0;
+  @apply mb-0;
+}
+
+.markdown ol li table {
+  margin-top: 20px;
+}
+
+[data-theme="dark"] .markdown ol li {
+  @apply bg-gray-900;
+  @apply text-white;
+}
+
 [data-theme="dark"] .markdown ol li::marker {
-  @apply text-gray-900;
+  @apply text-white;
 }
 
-/* Style the bullet points */
-.markdown ul {
-  margin-left: 40px;
-  list-style: disc;
+/*--------------------------------------------------*/
+/* .markdown > ol > li > ul > li */
+
+.markdown ol li ul li {
+  @apply m-0;
+  @apply p-0;
 }
 
-[data-theme="dark"] div.theme-doc-markdown.markdown h3,
-[data-theme="dark"] div.theme-doc-markdown.markdown h4,
-[data-theme="dark"] div.theme-doc-markdown.markdown h5,
-[data-theme="dark"] div.theme-doc-markdown.markdown h6,
-[data-theme="dark"] div.theme-doc-markdown.markdown p {
-  color: var(--dark-h1);
+[data-theme="dark"] .markdown ol li ul li::marker {
+  @apply text-nowwasabi;
 }
+
+/*--------------------------------------------------*/
+/* .markdown > ol > li > ol */
+
+.markdown ol li ol {
+  @apply bg-transparent;
+  @apply mt-1;
+  @apply pl-0;
+  @apply ml-5;
+  border: none;
+}
+
+[data-theme="dark"] .markdown ol li ol {
+  @apply bg-transparent;
+}
+
+[data-theme="dark"] .markdown ol li ol li::marker {
+  @apply text-nowwasabi;
+}
+
+/*--------------------------------------------------*/
+/* .markdown > ol > li > ol > li */
+/* (Ex. 19.a) */
+
+.markdown ol li ol li {
+  @apply pb-0;
+  @apply mt-0;
+  @apply mb-0;
+  list-style-type: lower-alpha;
+}
+
+.markdown ol li ol li::marker {
+  @apply text-black;
+}
+
+.markdown ol li ol li p img {
+  @apply mt-5;
+  @apply mb-5;
+}
+
+/* end of list styling */
 
 .markdown img {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -467,7 +569,7 @@ h1 {
   opacity: .6
 }
 
-.header-github-link:before {
+.header-github-link::before {
   background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
   content: "";
   display: flex;
@@ -475,7 +577,7 @@ h1 {
   width: 24px
 }
 
-[data-theme=dark] .header-github-link:before {
+[data-theme=dark] .header-github-link::before {
   background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat
 }
 
@@ -602,4 +704,10 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   stroke: #000 !important;
   fill: #000 !important;
   stroke-width: 3px !important;
+}
+
+
+.large-number {
+  font-size: 1.5em;
+  color: #63D74F;
 }
