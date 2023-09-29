@@ -78,14 +78,14 @@ jobs:
           git add ./labs/telework-utah/downloads/telework-utah-lab.pdf 
           git commit -m "Add generated PDFs"
           git push origin "new-pdf-branch-$current_time"
+          echo "::set-output name=branch_name::new-pdf-branch-$current_time"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: source
-          # Use the current date and time in the branch name
-          branch: "new-pdf-branch-$current_time"
+          branch: ${{ steps.create_branch.outputs.branch_name }}
           title: "Add generated PDFs"
           body: "This PR adds the newly generated PDFs."
 
