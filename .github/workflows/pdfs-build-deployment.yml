@@ -79,20 +79,20 @@ jobs:
           git commit -m "Add generated PDFs"
           git push origin "new-pdf-branch-$current_time"
 
-#     - name: Create Pull Request
-#       uses: peter-evans/create-pull-request@v3
-#       with:
-#         token: ${{ secrets.GITHUB_TOKEN }}
-#         base: gh-pages
-#         # Use the current date and time in the branch name
-#         branch: "new-pdf-branch-$current_time"
-#         title: "Add generated PDFs"
-#         body: "This PR adds the newly generated PDFs."
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: gh-pages
+          # Use the current date and time in the branch name
+          branch: "new-pdf-branch-$current_time"
+          title: "Add generated PDFs"
+          body: "This PR adds the newly generated PDFs."
 
-#     - name: Merge Pull Request
-#       uses: pascalgn/automerge-action@v0.14.2
-#       env:
-#         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Merge Pull Request
+        uses: pascalgn/automerge-action@v0.14.2
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
 #       - name: Commit and Push PDFs
 #         run: |
@@ -106,4 +106,4 @@ jobs:
 #         GIT_USER: ${{ secrets.GIT_USER_NAME }}
 
       # Commit all changed files back to the repository
-      - uses: stefanzweifel/git-auto-commit-action@v4
+#     - uses: stefanzweifel/git-auto-commit-action@v4
