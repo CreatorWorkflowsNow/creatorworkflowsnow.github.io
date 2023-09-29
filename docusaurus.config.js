@@ -91,6 +91,18 @@ module.exports = {
       },
     ],
 
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "teleoworkutah",
+        path: "labs/telework-utah",
+        routeBasePath: "labs/telework-utah",
+        sidebarPath: require.resolve("./labs/telework-utah/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+      },
+    ],
+
   ],
 
   presets: [
@@ -141,7 +153,7 @@ module.exports = {
             target: '_blank',
           },
           {
-            href: "https://github.com/CreatorWorkflowsNow/",
+            href: "https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io",
             position: "right",
             target: "_blank",
             className: "header-github-link",

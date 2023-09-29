@@ -46,7 +46,7 @@ export default HomepageFeatures;
 
 const FeatureList = [
   {
-    title: 'App Innovation',
+    title: 'Telework Case Management',
     icon: faFileCode,
     description: (
       <>
@@ -54,8 +54,9 @@ const FeatureList = [
       </>
     ),
     //to: "/docs/telework-utah/Introduction/",
-    to: "https://low-code.guide/docs/Telework/Introduction",
-    target: '_blank',
+    //to: "https://low-code.guide/docs/Telework/Introduction",
+    to: '/labs/telework-utah/0.0-introduction/overview',
+    target: '_self',
   },
 
   {
