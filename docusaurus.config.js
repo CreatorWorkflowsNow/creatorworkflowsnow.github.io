@@ -42,64 +42,70 @@ module.exports = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "collaborate",
         path: "labs/collaborate",
+        id: "collaborate",
         routeBasePath: "labs/collaborate",
         sidebarPath: require.resolve("./labs/collaborate/sidebar.js"),
+        breadcrumbs: false,
       },
     ],
 
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "complaint",
         path: "labs/complaint",
+        id: "complaint",
         routeBasePath: "labs/complaint",
         sidebarPath: require.resolve("./labs/complaint/sidebar.js"),
+        breadcrumbs: false,
       },
     ],
 
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "logistics",
         path: "labs/logistics",
+        id: "logistics",
         routeBasePath: "labs/logistics",
         sidebarPath: require.resolve("./labs/logistics/sidebar.js"),
+        breadcrumbs: false,
       },
     ],
 
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "travelrequest",
         path: "labs/travelrequest",
+        id: "travelrequest",
         routeBasePath: "labs/travelrequest",
         sidebarPath: require.resolve("./labs/travelrequest/sidebar.js"),
+        breadcrumbs: false,
       },
     ],
 
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "deptsvc",
         path: "labs/deptsvc",
+        id: "deptsvc",
         routeBasePath: "labs/deptsvc",
         sidebarPath: require.resolve("./labs/deptsvc/sidebar.js"),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
+        breadcrumbs: false,
       },
     ],
 
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "teleoworkutah",
         path: "labs/telework-utah",
+        id: "teleoworkutah",
         routeBasePath: "labs/telework-utah",
         sidebarPath: require.resolve("./labs/telework-utah/sidebar.js"),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
+        breadcrumbs: false,
       },
     ],
 
