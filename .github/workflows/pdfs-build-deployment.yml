@@ -61,7 +61,7 @@ jobs:
       - name: Build Dept Services Lab PDF
         run: npx docusaurus-prince-pdf -d './labs/deptsvc/downloads' -u 'https://creatorworkflowsnow.github.io/labs/deptsvc/lab-introduction/' --output './labs/deptsvc/downloads/deptsvc-lab.pdf'
 
-      - name: Telework Lab PDF
+      - name: Build Telework Lab PDF
         run: npx docusaurus-prince-pdf -d './labs/telework-utah/downloads' -u 'https://creatorworkflowsnow.github.io/labs/telework-utah/0.0-introduction/overview' --output './labs/telework-utah/downloads/telework-utah-lab.pdf'
 
       - name: Create New Branch and Commit PDFs
@@ -83,7 +83,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          base: gh-pages
+          base: source
           # Use the current date and time in the branch name
           branch: "new-pdf-branch-$current_time"
           title: "Add generated PDFs"
