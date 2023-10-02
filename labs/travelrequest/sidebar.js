@@ -4,7 +4,13 @@
 const sidebars = {
 
     travelrequest: [
-        'introduction',
+        {
+            type: 'category',
+            label: 'Travel Request',
+            items: [
+                'introduction',
+            ],
+        },
         'exercise-1',
         {
             type: 'category',

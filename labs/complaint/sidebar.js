@@ -3,7 +3,7 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
     labcomplaint: {
-        'Get started': [
+        'ESM Experience': [
             'overview',
             'audience',
             'definitions',
