@@ -6,7 +6,7 @@ const sidebars = {
     labaemc: [
         {
             type: 'category',
-            label: 'Get started',
+            label: 'Collaborate to Accelerate',
             items: [
                 'get_started/intro',
                 'get_started/common',

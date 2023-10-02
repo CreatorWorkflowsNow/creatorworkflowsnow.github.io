@@ -4,7 +4,7 @@
 const sidebars = {
     logistics: {
 
-        'Get started': [
+        'Logistics Lab': [
             'get_started/overview',
             'get_started/goals',
             'get_started/usecase',

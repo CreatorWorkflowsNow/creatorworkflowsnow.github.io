@@ -6,8 +6,15 @@
 const sidebars = {
 
     deptsvc: [
-        'lab-introduction',
-        'lab-overview',
+        {
+            type: 'category',
+            label: 'Department Services',
+            items: [
+                'lab-introduction',
+                'lab-overview',
+            ],
+
+        },
 
         {
             type: 'category',
