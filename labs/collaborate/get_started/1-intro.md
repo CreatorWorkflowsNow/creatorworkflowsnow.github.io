@@ -4,6 +4,8 @@ title: Collaborate to Accelerate
 sidebar_label: Introduction
 sidebar_position: 1
 hide_table_of_contents: true
+tags:
+ - Getting started
 ---
 
 # Collaborate to Accelerate:<br/>Learn to build and govern App Engine applications

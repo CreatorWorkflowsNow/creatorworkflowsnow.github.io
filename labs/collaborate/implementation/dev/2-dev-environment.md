@@ -2,6 +2,8 @@
 id: environment
 title: 2. Controller Environment
 sidebar_position: 2
+tags:
+- environments
 ---
 
 # Exercise: Create Controller Environment

@@ -2,6 +2,8 @@
 id: environments
 title: 2. Environments
 sidebar_position: 2
+tags:
+- environments
 ---
 
 #  Exercise: Create Environments
