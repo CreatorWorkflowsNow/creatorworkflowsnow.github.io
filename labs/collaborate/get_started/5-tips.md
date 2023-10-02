@@ -3,6 +3,8 @@ id: tips
 title: Tips and Tricks
 hide_table_of_contents: true
 sidebar_position: 5
+tags:
+- tips
 ---
 
 ## Remember The Copy Button

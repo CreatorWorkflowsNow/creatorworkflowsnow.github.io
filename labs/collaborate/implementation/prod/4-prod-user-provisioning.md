@@ -2,6 +2,8 @@
 id: user-provisioning
 title: 4. User Provisioning
 sidebar_position: 4
+tags:
+- user management
 ---
 
 #  Exercise: User Provisioning
