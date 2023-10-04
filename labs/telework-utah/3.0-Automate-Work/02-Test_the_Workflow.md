@@ -40,7 +40,7 @@ Let's go back to the ServiceNow admin page.
     1. Search for "Telework".
     2. Open the catalog item.
     3. Complete the form as below and Submit.
-    ![](images/catalog_item_form.png)
+    ![](../images/user_form_filled_out.png)
 
 
 7. Let's check the execution
