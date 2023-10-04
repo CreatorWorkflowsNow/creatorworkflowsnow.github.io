@@ -18,3 +18,4 @@ https://creatorworkflowsnow.github.io/labs/telework-utah/5.0-conclusion/lab-revi
 https://creatorworkflowsnow.github.io/labs/telework-utah/5.0-conclusion/resources
 https://creatorworkflowsnow.github.io/labs/telework-utah/5.0-conclusion/appendix
 https://creatorworkflowsnow.github.io/labs/telework-utah/changelog
+https://creatorworkflowsnow.github.io/labs/telework-utah/lab-guide-pdf
