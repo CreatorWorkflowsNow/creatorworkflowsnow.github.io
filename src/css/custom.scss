@@ -411,10 +411,10 @@ h1 {
 
 .markdown img {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  max-width: 95%;
   margin: auto;
   @apply mb-10;
   @apply mt-8;
+  max-width: 70%;
 }
 
 .markdown table {
