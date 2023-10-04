@@ -1,10 +1,12 @@
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-// With JSDoc @type annotations, IDEs can provide config autocompletion
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
 
-module.exports = {
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   title: "Creator Workshop Lab Guides",
   tagline: "Ready to learn something new?",
   url: "https://creatorworkflowsnow.github.io", 
@@ -130,6 +132,12 @@ module.exports = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+      image: "img/creatorworkflowsnow.github.io.png",
       navbar: {
         title: "",
         logo: {
@@ -317,3 +325,5 @@ module.exports = {
       },
     }),
 };
+
+module.exports = config;
