@@ -50,7 +50,7 @@ const FeatureList = [
     icon: faFileCode,
     description: (
       <>
-      Gain valuable experience through hands-on exercises with App Engine Studio.
+      <b>UTAH EDITION</b><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
       </>
     ),
     //to: "/docs/telework-utah/Introduction/",
