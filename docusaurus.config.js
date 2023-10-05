@@ -45,10 +45,15 @@ const config = {
       "@docusaurus/plugin-content-docs",
       {
         path: "labs/collaborate",
+        breadcrumbs: false,
         id: "collaborate",
         routeBasePath: "labs/collaborate",
         sidebarPath: require.resolve("./labs/collaborate/sidebar.js"),
-        breadcrumbs: false,
+        // https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/edit/source/labs/collaborate/get_started/1-intro.md
+        editUrl: ({versionDocsDirPath, docPath}) => 
+        `https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/edit/source/labs/collaborate/${docPath}`,
+        editLocalizedFiles: false,
+        editCurrentVersion: false,
       },
     ],
 
