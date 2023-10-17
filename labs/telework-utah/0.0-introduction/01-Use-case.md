@@ -8,7 +8,10 @@ pagination_label: "Use Case"
 sidebar_position: 2
 ---
 
-Amanda is part of the Office of Regulatory Affairs and her team responsible for managing different cases across the agency. One of their responsibilities is to ensure employees are approved to work remotely and have the necessary I.T. equipment to protect and manage the records and other sensitive information stored on telework devices and transmitted across external networks. Currently, her team has no centralized case management solution for tracking the status of telework cases and tasks across 3 departments (the employee's department, the HR department, and the IT department). 
+
+Amanda works in the Office of Regulatory Affairs where she and her team manage various cases across the agency. Their duties include confirming that employees are authorized for remote work and ensuring they are equipped with the required I.T. tools to handle records and sensitive information securely.
+
+Despite the critical nature of these responsibilities, Amanda’s team lacks a centralized system to track the progress and status of telework cases. Each case involves three departments: the employee’s department, the HR department, and the IT department. The absence of a unified case management system complicates the coordination and monitoring of tasks, leading to potential inefficiencies and security risks.
 
 ## Today the team is using:
 
