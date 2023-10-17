@@ -1,5 +1,12 @@
 #!/usr/bin/env zsh
 
+# Check if prince is installed
+if ! command -v prince &> /dev/null
+then
+    echo "prince could not be found. Please install it to proceed."
+    exit 1
+fi
+
 # Get the current directory name
 current_directory=${PWD##*/}
 
