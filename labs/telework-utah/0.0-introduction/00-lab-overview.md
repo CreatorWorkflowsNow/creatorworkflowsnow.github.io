@@ -11,7 +11,7 @@ draft: false
 
 ## Introduction
 
-Every organization is faced with the challenge of responding swiftly to the needs of its customers. It's easier said than done as most application development platforms require a steep learning before being productive. ServiceNow App Engine Studio takes away the complexity of building apps, so that more people can partipate and can focus on solving business problems instead of writing code.
+Every organization is faced with the challenge of responding swiftly to the needs of its customers. It's easier said than done as most application development platforms require a steep learning curve before being productive. ServiceNow App Engine Studio takes away the complexity of building apps, so that more people can partipate and can focus on solving business problems instead of writing code.
 
 ## Goals
 
