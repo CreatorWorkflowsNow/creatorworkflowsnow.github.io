@@ -21,8 +21,10 @@ const sidebars = {
             items: [
                 '1.0-Build-the-Foundation/overview',
                 '1.0-Build-the-Foundation/create-app',
-                '1.0-Build-the-Foundation/create-tables',
-                '1.0-Build-the-Foundation/configure-table-form',
+                '1.0-Build-the-Foundation/create-arrangement-table',
+                '1.0-Build-the-Foundation/create-telework-case-table',
+                '1.0-Build-the-Foundation/data-in-table-builder',
+                '1.0-Build-the-Foundation/forms-in-table-builder',
             ],
         },
 
