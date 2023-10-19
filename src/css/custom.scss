@@ -45,6 +45,10 @@
   --ifm-navbar-item-padding-horizontal: 1rem;
   --ifm-navbar-item-padding-vertical: 0.25rem;
 
+  --aes-tan-background: #F6F7F7;
+  --now-brand-purple:  rgb(58, 87, 233);
+  --now-brand-tan-hover: #E4E7F5;
+
   --now-brand-blue: rgb(3, 45, 66);
   --now-brand-green: rgb(134, 237, 120);
   --now-brand-green-darker: #62d84e;
@@ -134,6 +138,28 @@ h1 {
 
 .aes_button_white:hover {
   @apply bg-polarispurplehover;
+}
+
+.tan-button {
+  background-color: var(--aes-tan-background);
+  border-color: var(--now-brand-purple);
+  border-radius: 22px;
+  border-width: 1px;
+  color: var(--now-brand-purple);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+}
+
+.tan-button:hover {
+  background-color: var(--now-brand-tan-hover);
+  box-shadow: 0 2px 4px 0 RGBA(56,56,56,.25);
 }
 
 [data-theme="dark"] .aes_button_white {

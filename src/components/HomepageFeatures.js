@@ -50,6 +50,18 @@ const FeatureList = [
     icon: faFileCode,
     description: (
       <>
+      <b>VANCOUVER EDITION</b><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
+      </>
+    ),
+    to: '/labs/telework-vancouver/0.0-introduction/overview',
+    target: '_self',
+  },
+
+  {
+    title: 'Telework Case Management',
+    icon: faFileCode,
+    description: (
+      <>
       <b>UTAH EDITION</b><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
       </>
     ),

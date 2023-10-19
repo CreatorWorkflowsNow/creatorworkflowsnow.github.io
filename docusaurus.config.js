@@ -109,9 +109,22 @@ const config = {
       "@docusaurus/plugin-content-docs",
       {
         path: "labs/telework-utah",
-        id: "teleoworkutah",
+        id: "teleworkutah",
         routeBasePath: "labs/telework-utah",
         sidebarPath: require.resolve("./labs/telework-utah/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/telework-vancouver",
+        id: "teleworkvancouver",
+        routeBasePath: "labs/telework-vancouver",
+        sidebarPath: require.resolve("./labs/telework-vancouver/sidebar.js"),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
         breadcrumbs: false,
