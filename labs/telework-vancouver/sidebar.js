@@ -24,6 +24,7 @@ const sidebars = {
                 '1.0-Build-the-Foundation/create-arrangement-table',
                 '1.0-Build-the-Foundation/create-telework-case-table',
                 '1.0-Build-the-Foundation/data-in-table-builder',
+                '1.0-Build-the-Foundation/configure-telework-form',
                 '1.0-Build-the-Foundation/forms-in-table-builder',
             ],
         },
