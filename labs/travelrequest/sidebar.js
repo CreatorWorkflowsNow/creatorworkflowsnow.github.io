@@ -44,9 +44,10 @@ const sidebars = {
             label: 'Bonus Exercises',
             items: [
                 'exercise-bonus-0',
+                
                 {
                     type: 'category',
-                    label: '1. Integrating via APIs',
+                    label: '1. Auto Calculate Trip Cost',
                     items: [
                         'exercise-bonus-1-0',
                         'exercise-bonus-1-1',
@@ -55,7 +56,7 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: '2. Auto Calculate Trip Cost',
+                    label: '2. Add a Workspace',
                     items: [
                         'exercise-bonus-2-0',
                         'exercise-bonus-2-1',
@@ -64,14 +65,13 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: '3. Add a Workspace',
+                    label: '3. Integrating via APIs',
                     items: [
                         'exercise-bonus-3-0',
                         'exercise-bonus-3-1',
                         'exercise-bonus-3-2',
                     ],
                 },
-
             ],
         },
         'lab-guide-pdf',

@@ -1,7 +1,7 @@
 ---
-id: exercise-bonus-1-1
-title: "Bonus Exercise 1.1: Create an Integration Hub Action"
-sidebar_label: 1.1. Create the Action
+id: exercise-bonus-3-1
+title: "Bonus Exercise 3.1: Create an Integration Hub Action"
+sidebar_label: 3.1. Create the Action
 hide_table_of_contents: true
 draft: false
 ---

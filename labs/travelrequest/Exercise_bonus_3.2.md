@@ -1,7 +1,7 @@
 ---
-id: exercise-bonus-1-2
-title: "Bonus Exercise 1.2: Use the Action in a Flow"
-sidebar_label: 1.2 Use Action in a Flow
+id: exercise-bonus-3-2
+title: "Bonus Exercise 3.2: Use the Action in a Flow"
+sidebar_label: 3.2 Use Action in a Flow
 hide_table_of_contents: true
 draft: false
 ---
