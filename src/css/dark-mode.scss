@@ -30,7 +30,7 @@
   --ifm-color-scheme: dark;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-background-color: bg-nowgreen;
-  --ifm-color-primary: var(--servicenow-brand-green);
+  --ifm-color-primary: var(--now-wasabi-green);
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
@@ -51,7 +51,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 [data-theme='dark'] a {
-  color: var(--servicenow-brand-green);
+  color: var(--now-wasabi-green);
 }
 
 [data-theme='dark'] h1,
@@ -76,7 +76,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 [data-theme='dark'] div.theme-doc-markdown.markdown h2 {
   color: var(--servicenow-brand-blue);
-  background-color: var(--servicenow-brand-green);
+  background-color: var(--now-wasabi-green);
 }
 
 [data-theme='dark'] .clean-btn {
