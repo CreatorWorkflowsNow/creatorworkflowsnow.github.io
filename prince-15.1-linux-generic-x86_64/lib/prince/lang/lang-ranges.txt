@@ -1,0 +1,3047 @@
+#
+# ISO 639-2 (T)
+#
+
+aar = aa
+abk = ab
+afr = af
+aka = ak
+sqi = sq
+amh = am
+ara = ar
+arg = an
+hye = hy
+asm = as
+ava = av
+ave = ae
+aym = ay
+aze = az
+bak = ba
+bam = bm
+eus = eu
+bel = be
+ben = bn
+bih = bh
+bis = bi
+bod = bo
+bos = bs
+bre = br
+bul = bg
+mya = my
+cat = ca
+ces = cs
+cha = ch
+che = ce
+zho = zh
+chu = cu
+chv = cv
+cor = kw
+cos = co
+cre = cr
+cym = cy
+dan = da
+deu = de
+div = dv
+nld = nl
+dzo = dz
+ell = el
+eng = en
+epo = eo
+est = et
+ewe = ee
+fao = fo
+fas = fa
+fij = fj
+fin = fi
+fra = fr
+fry = fy
+ful = ff
+kat = ka
+gla = gd
+gle = ga
+glg = gl
+glv = gv
+grn = gn
+guj = gu
+hat = ht
+hau = ha
+heb = he
+her = hz
+hin = hi
+hmo = ho
+hrv = hr
+hun = hu
+ibo = ig
+isl = is
+ido = io
+iii = ii
+iku = iu
+ile = ie
+ina = ia
+ind = id
+ipk = ik
+ita = it
+jav = jv
+jpn = ja
+kal = kl
+kan = kn
+kas = ks
+kau = kr
+kaz = kk
+khm = km
+kik = ki
+kin = rw
+kir = ky
+kom = kv
+kon = kg
+kor = ko
+kua = kj
+kur = ku
+lao = lo
+lat = la
+lav = lv
+lim = li
+lin = ln
+lit = lt
+ltz = lb
+lub = lu
+lug = lg
+mkd = mk
+mah = mh
+mal = ml
+mri = mi
+mar = mr
+msa = ms
+mlg = mg
+mlt = mt
+mon = mn
+nau = na
+nav = nv
+nbl = nr
+nde = nd
+ndo = ng
+nep = ne
+nno = nn
+nob = nb
+nor = no
+nya = ny
+oci = oc
+oji = oj
+ori = or
+orm = om
+oss = os
+pan = pa
+pli = pi
+pol = pl
+por = pt
+pus = ps
+que = qu
+roh = rm
+ron = ro
+run = rn
+rus = ru
+sag = sg
+san = sa
+sin = si
+slk = sk
+slv = sl
+sme = se
+smo = sm
+sna = sn
+snd = sd
+som = so
+sot = st
+spa = es
+srd = sc
+srp = sr
+ssw = ss
+sun = su
+swa = sw
+swe = sv
+tah = ty
+tam = ta
+tat = tt
+tel = te
+tgk = tg
+tgl = tl
+tha = th
+tir = ti
+ton = to
+tsn = tn
+tso = ts
+tuk = tk
+tur = tr
+twi = tw
+uig = ug
+ukr = uk
+urd = ur
+uzb = uz
+ven = ve
+vie = vi
+vol = vo
+wln = wa
+wol = wo
+xho = xh
+yid = yi
+yor = yo
+zha = za
+zul = zu
+
+#
+# ISO 639-2 (B)
+#
+
+alb = sq
+arm = hy
+baq = eu
+tib = bo
+bur = my
+cze = cs
+chi = zh
+wel = cy
+ger = de
+dut = nl
+gre = el
+per = fa
+fre = fr
+geo = ka
+ice = is
+mac = mk
+mao = mi
+may = ms
+rum = ro
+slo = sk
+
+#--------------------------------------------------------------------#
+
+$common = U+0020..U+007E    # Basic Latin
+
+$common_marks = {       # Combining Diacritical Marks (subset)
+    U+0300..U+030C
+    U+0323              # dot below
+    U+0326..U+0328      # comma below, cedilla, ogonek
+    }
+
+$apostrophes = {
+    # Various apostrophe like letters, often used to indicate glottal stop.
+    U+02B9              # ʹ
+    U+02BB              # ʻ
+    U+02BC              # ʼ
+    U+2019              # ’
+    U+A78B..U+A78C      # Ꞌꞌ
+    }
+
+und = $common           # undetermined (used by default)
+
+#--------------------------------------------------------------------#
+#
+# Languages covered by ISO-8859-1
+#
+
+$iso_8859_1 = {
+    $common
+    $common_marks
+    U+00A1..U+00AC      # ¡¢£¤¥¦§¨©ª«¬
+    U+00AE..U+00AF      # ®¯
+    U+00B0..U+00BF      # °±²³´µ¶·¸¹º»¼½¾¿
+    U+00C0..U+00CF      # ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ
+    U+00D0..U+00DF      # ÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß
+    U+00E0..U+00EF      # àáâãäåæçèéêëìíîï
+    U+00F0..U+00FF      # ðñòóôõö÷øùúûüýþÿ
+    U+20AC              # € (additional)
+    }
+
+ace = $iso_8859_1       # Acehnese
+af = $iso_8859_1        # Afrikaans
+an = $iso_8859_1        # Aragonese
+ast = $iso_8859_1       # Asturian
+bcl = $iso_8859_1       # Central Bikol
+bej = $iso_8859_1       # Beja (also Arabic)
+bem = $iso_8859_1       # Bemba
+bi = $iso_8859_1        # Bislama
+br = $iso_8859_1        # Breton
+ca = $iso_8859_1        # Catalan (except two deprecated letters)
+car = $iso_8859_1       # Carib
+cbk = $iso_8859_1       # Chavacano
+ceb = $iso_8859_1       # Cebuano
+cgg = $iso_8859_1       # Kiga
+ch = $iso_8859_1        # Chamorro
+chk = $iso_8859_1       # Chuukese
+chy = $iso_8859_1       # Cheyenne
+co = $iso_8859_1        # Corsican
+eka = $iso_8859_1       # Ekajuk (assumed)
+en = $iso_8859_1        # English
+es = $iso_8859_1        # Spanish
+eu = $iso_8859_1        # Basque
+fil = $iso_8859_1       # Filipino
+fj = $iso_8859_1        # Fijian
+fo = $iso_8859_1        # Faroese
+frs = $iso_8859_1       # East Frisian Low Saxon
+fur = $iso_8859_1       # Friulian
+fy = $iso_8859_1        # West Frisian
+ga = $iso_8859_1        # Irish
+gd = $iso_8859_1        # Scottish Gaelic
+gil = $iso_8859_1       # Gilbertese
+gl = $iso_8859_1        # Galician
+gsw = $iso_8859_1       # Swiss German
+gv = $iso_8859_1        # Manx
+gwi = $iso_8859_1       # Gwich'in
+hil = $iso_8859_1       # Hiligaynon
+ho = $iso_8859_1        # Hiri Motu
+ht = $iso_8859_1        # Haitian Creole
+ia = $iso_8859_1        # Interlingua
+iba = $iso_8859_1       # Iban
+ibg = $iso_8859_1       # Ibanag
+id = $iso_8859_1        # Indonesian
+ie = $iso_8859_1        # Interlingue
+ilo = $iso_8859_1       # Ilocano
+io = $iso_8859_1        # Ido
+is = $iso_8859_1        # Icelandic
+it = $iso_8859_1        # Italian
+ivb = $iso_8859_1       # Ibatan
+ivv = $iso_8859_1       # Ivatan
+kha = $iso_8859_1       # Khasi
+ki = $iso_8859_1        # Kikuyu
+kl = $iso_8859_1        # Greenlandic
+kos = $iso_8859_1       # Kosraean
+kw = $iso_8859_1        # Cornish
+la = $iso_8859_1        # Latin
+lam = $iso_8859_1       # Lamba (assumed)
+lb = $iso_8859_1        # Luxembourgish
+li = $iso_8859_1        # Limburgish
+lld = $iso_8859_1       # Ladin
+loz = $iso_8859_1       # Lozi
+lu = $iso_8859_1        # Luba-Katanga (assumed)
+lua = $iso_8859_1       # Luba-Kasai
+lus = $iso_8859_1       # Lushai
+mdh = $iso_8859_1       # Maguindanao
+mic = $iso_8859_1       # Mi'kmaq
+mrw = $iso_8859_1       # Maranao
+mwl = $iso_8859_1       # Mirandese
+na = $iso_8859_1        # Nauru
+nap = $iso_8859_1       # Neapolitan
+nd = $iso_8859_1        # Northern Ndebele
+nds = $iso_8859_1       # Low German
+nia = $iso_8859_1       # Nias
+nr = $iso_8859_1        # Southern Ndebele
+nyn = $iso_8859_1       # Nkore
+nyo = $iso_8859_1       # Nyoro
+oc = $iso_8859_1        # Occitan
+pag = $iso_8859_1       # Pangasinan
+pam = $iso_8859_1       # Kapampangan
+pap = $iso_8859_1       # Papiamento
+pau = $iso_8859_1       # Palauan
+pon = $iso_8859_1       # Pohnpeian
+pt = $iso_8859_1        # Portuguese
+qu = $iso_8859_1        # Quechua
+rm = $iso_8859_1        # Romansh
+rn = $iso_8859_1        # Kirundi
+rup = $iso_8859_1       # Aromanian
+rw = $iso_8859_1        # Kinyarwanda
+sad = $iso_8859_1       # Sandawe
+sco = $iso_8859_1       # Scots
+sma = $iso_8859_1       # Southern Sami
+so = $iso_8859_1        # Somali (also Arabic)
+sq = $iso_8859_1        # Albanian
+srn = $iso_8859_1       # Sranan Tongo
+ss = $iso_8859_1        # Swazi/Swati
+stq = $iso_8859_1       # Saterland Frisian
+sv = $iso_8859_1        # Swedish
+sw = $iso_8859_1        # Swahili
+tdt = $iso_8859_1       # Tetum
+ter = $iso_8859_1       # Terêna
+tiv = $iso_8859_1       # Tiv
+tl = $iso_8859_1        # Tagalog
+tpi = $iso_8859_1       # Tok Pisin
+ts = $iso_8859_1        # Tsonga
+umb = $iso_8859_1       # Umbundu
+vo = $iso_8859_1        # Volapük
+wa = $iso_8859_1        # Walloon
+wal = $iso_8859_1       # Wolaitta
+war = $iso_8859_1       # Waray
+xh = $iso_8859_1        # Xhosa
+xsb = $iso_8859_1       # Sambal
+yap = $iso_8859_1       # Yapese
+yka = $iso_8859_1       # Yakan
+zap = $iso_8859_1       # Zapotec languages (assumed)
+zu = $iso_8859_1        # Zulu
+
+akl = $iso_8859_1       # Aklanon
+mlz = akl               # Malaynon
+
+ay = $iso_8859_1        # Aymara
+ayc = ay                # Southern Aymara
+ayr = ay                # Central Aymara
+
+kck = $iso_8859_1       # Kalanga
+nmq = kck               # Nambya
+
+kg = $iso_8859_1        # Kongo (assumed)
+kng = kg                # Koongo
+ldi = kg                # Laari
+kwy = kg                # San Salvador Kongo
+yom = kg                # Yombe
+
+kj = $iso_8859_1        # Kwanyama
+ng = $iso_8859_1        # Ndonga
+kwm = $iso_8859_1       # Kwambi
+lnb = $iso_8859_1       # Mbalanhu
+nne = $iso_8859_1       # Ngandjera
+
+mg = $iso_8859_1        # Malagasy
+xmv = mg                # Antankarana
+bhr = mg                # Bara
+buc = mg                # Bushi
+msh = mg                # Masikoro
+bmm = mg                # Northern Betsimisaraka
+plt = mg                # Plateau Malagasy
+skg = mg                # Sakalava
+bzc = mg                # Southern Betsimisaraka
+tdx = mg                # Tandroy-Mafahaly
+txy = mg                # Tanosy
+tkg = mg                # Tesaka
+xmw = mg                # Tsimihety
+
+ms = $iso_8859_1        # Malay
+kxd = ms                # Brunei Malay
+zsm = ms                # Standard Malay
+jax = ms                # Jambi Malay
+meo = ms                # Kedah Malay
+kvr = ms                # Kerinci
+xmm = ms                # Manado Malay
+min = ms                # Minangkabau
+mui = ms                # Musi
+zmi = ms                # Negeri Sembilan
+max = ms                # North Moluccan Malay
+coa = ms                # Cocos Malay
+
+no = $iso_8859_1        # Norwegian
+nb = no                 # Norwegian Bokmål
+nn = no                 # Norwegian Nynorsk
+
+om = $iso_8859_1        # Oromo
+gax = om                # Borana–Arsi–Guji–Wallaggaa-Shawaa Oromo
+hae = om                # Eastern Oromo
+orc = om                # Orma
+gaz = om                # West Central Oromo
+ssn = om                # Waata
+
+sc = $iso_8859_1        # Sardinian
+sro = sc                # Campidanese Sardinian
+src = sc                # Logudorese Sardinian
+
+seh = $iso_8859_1       # Mozambiquean Sena
+swk = seh               # Malawian Sena
+bwg = seh               # Barwe
+
+sg = $iso_8859_1        # Sango
+snj = sg                # Riverain Sango
+
+sgd = $iso_8859_1       # Surigaonon
+tgn = sgd               # Tandaganon
+
+sn = $iso_8859_1        # Shona
+twl = sn                # Tavara (Korekore)
+mxc = sn                # Manyika
+twx = sn                # Tewe (Manyika)
+ndc = sn                # Ndau
+
+toi = $iso_8859_1       # Tonga (Chitonga, assumed)
+dov = toi               # Dombe
+
+za = $iso_8859_1        # Zhuang
+zch = za                # Central Hongshuihe Zhuang
+zhd = za                # Dai Zhuang (Wenma)
+zeh = za                # Eastern Hongshuihe Zhuang
+zgb = za                # Guibei Zhuang
+zgn = za                # Guibian Zhuang
+zln = za                # Lianshan Zhuang
+zlj = za                # Liujiang Zhuang
+zlq = za                # Liuqian Zhuang
+zgm = za                # Minz Zhuang
+zhn = za                # Nong Zhuang (Yanguang)
+zqe = za                # Qiubei Zhuang
+zyg = za                # Yang Zhuang (Dejing)
+zyb = za                # Yongbei Zhuang
+zyn = za                # Yongnan Zhuang
+zyj = za                # Youjiang Zhuang
+zzj = za                # Zuojiang Zhuang
+
+#--------------------------------------------------------------------#
+#
+# Languages covered by ISO-8859-1 except rare letters
+#
+
+da = {                  # Danish
+    $iso_8859_1
+    U+01FE..U+01FF      # Ǿǿ
+    }
+jut = da                # Jutlandic
+
+de = {                  # German
+    $iso_8859_1
+    U+1E9E              # ẞ
+    }
+
+fr = {                  # French
+    $iso_8859_1
+    U+0152..U+0153      # Œœ
+    U+0178              # Ÿ
+    }
+
+nl = {                  # Dutch
+    $iso_8859_1
+    U+0132..U+0133      # Ĳĳ
+    }
+
+$finnic_latin = {
+    $iso_8859_1
+    U+010C..U+010D      # Čč
+    U+0160..U+0161      # Šš
+    U+017D..U+017E      # Žž
+    $apostrophes
+    }
+et = $finnic_latin      # Estonian
+ekk = et                # Standard Estonian
+vro = et                # Võro
+fi = $finnic_latin      # Finnish
+krl = $finnic_latin     # Karelian
+vep = $finnic_latin     # Veps
+vot = $finnic_latin     # Votic
+
+#--------------------------------------------------------------------#
+#
+# Languages covered by ISO-8859-2
+#
+
+$iso_8859_2 = {
+    $common
+    $common_marks
+    U+00A4              # ¤
+    U+00A7..U+00A8      # §¨
+    U+00B0              # °
+    U+00B4              # ´
+    U+00B8              # ¸
+    U+00C1..U+00C2      # ÁÂ
+    U+00C4              # Ä
+    U+00C7              # Ç
+    U+00C9              # É
+    U+00CB              # Ë
+    U+00CD..U+00CE      # ÍÎ
+    U+00D3..U+00D4      # ÓÔ
+    U+00D6..U+00D7      # Ö×
+    U+00DA              # Ú
+    U+00DC..U+00DD      # ÜÝ
+    U+00DF              # ß
+    U+00E1..U+00E2      # áâ
+    U+00E4              # ä
+    U+00E7              # ç
+    U+00E9              # é
+    U+00EB              # ë
+    U+00ED..U+00EE      # íî
+    U+00F3..U+00F4      # óô
+    U+00F6..U+00F7      # ö÷
+    U+00FA              # ú
+    U+00FC..U+00FD      # üý
+    U+0102..U+0107      # ĂăĄąĆć
+    U+010C..U+010F      # ČčĎď
+    U+0110..U+0111      # Đđ
+    U+0118..U+011B      # ĘęĚě
+    U+0139..U+013A      # Ĺĺ
+    U+013D..U+013E      # Ľľ
+    U+0141..U+0144      # ŁłŃń
+    U+0147..U+0148      # Ňň
+    U+0150..U+0151      # Őő
+    U+0154..U+0155      # Ŕŕ
+    U+0158..U+015B      # ŘřŚś
+    U+015E..U+015F      # Şş
+    U+0160..U+0165      # ŠšŢţŤť
+    U+016E..U+016F      # Ůů
+    U+0170..U+0171      # Űű
+    U+0179..U+017E      # ŹźŻżŽž
+    U+02C7              # ˇ
+    U+02D8..U+02D9      # ˘˙
+    U+02DB              # ˛
+    U+02DD              # ˝
+    U+20AC              # € (additional)
+    }
+
+cs = $iso_8859_2        # Czech
+hr = $iso_8859_2        # Croatian
+hu = $iso_8859_2        # Hungarian
+pl = $iso_8859_2        # Polish
+sk = $iso_8859_2        # Slovak
+sl = $iso_8859_2        # Slovene
+hsb = $iso_8859_2       # Upper Sorbian
+dsb = $iso_8859_2       # Lower Sorbian
+
+#--------------------------------------------------------------------#
+#
+# Languages covered by ISO-8859-3
+#
+
+$iso_8859_3 = {
+    $common
+    $common_marks
+    U+00A3..U+00A4      # £¤
+    U+00A7..U+00A8      # §¨
+    U+00B0              # °
+    U+00B2..U+00B5      # ²³´µ
+    U+00B7..U+00B8      # ·¸
+    U+00BD              # ½
+    U+00C0..U+00C2      # ÀÁÂ
+    U+00C4              # Ä
+    U+00C7..U+00CF      # ÇÈÉÊËÌÍÎÏ
+    U+00D1..U+00D4      # ÑÒÓÔ
+    U+00D6..U+00D7      # Ö×
+    U+00D9..U+00DC      # ÙÚÛÜ
+    U+00DF              # ß
+    U+00E0..U+00E2      # àáâ
+    U+00E4              # ä
+    U+00E7..U+00EF      # çèéêëìíîï
+    U+00F1..U+00F4      # ñòóô
+    U+00F6..U+00F7      # ö÷
+    U+00F9..U+00FC      # ùúûü
+    U+0108..U+010B      # ĈĉĊċ
+    U+011C..U+011F      # ĜĝĞğ
+    U+0120..U+0121      # Ġġ
+    U+0124..U+0127      # ĤĥĦħ
+    U+0130..U+0131      # İı
+    U+0134..U+0135      # Ĵĵ
+    U+015C..U+015F      # ŜŝŞş
+    U+016C..U+016D      # Ŭŭ
+    U+017B..U+017C      # Żż
+    U+02D8..U+02D9      # ˘˙
+    U+20AC              # € (additional)
+    }
+
+eo = $iso_8859_3        # Esperanto
+mt = $iso_8859_3        # Maltese
+
+#--------------------------------------------------------------------#
+#
+# Languages covered by ISO-8859-4 / ISO-8849-10
+#
+
+$iso_8859_4_10 = {
+    $common
+    $common_marks
+    U+00A4              # ¤
+    U+00A7..U+00A8      # §¨
+    U+00AF              # ¯
+    U+00B0              # °
+    U+00B4              # ´
+    U+00B7              # ·
+    U+00B8              # ¸
+    U+00C1..U+00C6      # ÁÂÃÄÅÆ
+    U+00C9              # É
+    U+00CB              # Ë
+    U+00CD..U+00CF      # ÍÎÏ
+    U+00D0              # Ð
+    U+00D3..U+00D8      # ÓÔÕÖ×Ø
+    U+00DA..U+00DF      # ÚÛÜÝÞß
+    U+00E1..U+00E6      # áâãäåæ
+    U+00E9              # é
+    U+00EB              # ë
+    U+00ED..U+00EF      # íîï
+    U+00F0              # ð
+    U+00F3..U+00F8      # óôõö÷ø
+    U+00FA..U+00FE      # úûüýþ
+    U+0100..U+0101      # Āā
+    U+0104..U+0105      # Ąą
+    U+010C..U+010D      # Čč
+    U+0110..U+0113      # ĐđĒē
+    U+0116..U+0119      # ĖėĘę
+    U+0122..U+0123      # Ģģ
+    U+0128..U+012B      # ĨĩĪī
+    U+012E..U+012F      # Įį
+    U+0136..U+0138      # Ķķĸ
+    U+013B..U+013C      # Ļļ
+    U+0145..U+0146      # Ņņ
+    U+014A..U+014D      # ŊŋŌō
+    U+0156..U+0157      # Ŗŗ
+    U+0160..U+0161      # Šš
+    U+0166..U+016B      # ŦŧŨũŪū
+    U+0172..U+0173      # Ųų
+    U+017D..U+017E      # Žž
+    U+02C7              # ˇ
+    U+02D9              # ˙
+    U+02DB              # ˛
+    U+20AC              # € (additional)
+    }
+
+lv = $iso_8859_4_10     # Latvian
+lvs = lv                # Standard Latvian language
+ltg = lv                # Latgalian language
+
+lt = $iso_8859_4_10     # Lithuanian
+sgs = lt                # Samogitian
+
+se = $iso_8859_4_10     # Northern Sami
+smj = $iso_8859_4_10    # Lule Sami
+smn = $iso_8859_4_10    # Inari Sami
+
+#--------------------------------------------------------------------#
+#
+# Languages using other Latin alphabets
+#
+
+# Europe
+
+csb = {                 # Kashubian
+    $common
+    $common_marks
+    U+00C3              # Ã
+    U+00C9              # É
+    U+00CB              # Ë
+    U+00D2..U+00D4      # ÒÓÔ
+    U+00D9              # Ù
+    U+00E3              # ã
+    U+00E9              # é
+    U+00EB              # ë
+    U+00F2..U+00F4      # òóô
+    U+00F9              # ù
+    U+0104..U+0105      # Ąą
+    U+0141..U+0144      # ŁłŃń
+    U+017B..U+017C      # Żż
+    }
+
+cy = {                  # Welsh
+    $iso_8859_1
+    U+0174..U+0178      # ŴŵŶŷŸ
+    U+1E80..U+1E85      # ẀẁẂẃẄẅ
+    U+1EF2..U+1EF3      # Ỳỳ
+    }
+
+frr = {                 # North Frisian
+    $iso_8859_1
+    U+0100..U+0101      # Āā
+    U+0110..U+0113      # ĐđĒē
+    }
+
+scn = {                 # Sicilian
+    $iso_8859_1
+    U+00D0              # Ð
+    U+0111              # đ
+    U+1E0C..U+1E0D      # Ḍḍ
+    }
+
+sms = {                 # Skolt Sami
+    $common
+    $common_marks
+    U+00C2              # Â
+    U+00C4..U+00C5      # ÄÅ
+    U+00D5              # Õ
+    U+00E2              # â
+    U+00E4..U+00E5      # äå
+    U+00F5              # õ
+    U+010C..U+010D      # Čč
+    U+0110..U+0111      # Đđ
+    U+014A..U+014B      # Ŋŋ
+    U+0160..U+0161      # Šš
+    U+017D..U+017E      # Žž
+    U+01B7              # Ʒ
+    U+01E4..U+01E9      # ǤǥǦǧǨǩ
+    U+01EE..U+01EF      # Ǯǯ
+    U+0292              # ʒ
+    $apostrophes
+    U+02C8              # ˈ
+    }
+
+szl = {                 # Silesian
+    $common
+    $common_marks
+    U+00C3              # Ã
+    U+00D4..U+00D5      # ÔÕ
+    U+00E3              # ã
+    U+00F4..U+00F5      # ôõ
+    U+0106..U+0107      # Ćć
+    U+010C..U+010D      # Čč
+    U+0141..U+0144      # ŁłŃń
+    U+014C..U+014F      # ŌōŎŏ
+    U+0158..U+015B      # ŘřŚś
+    U+0160..U+0161      # Šš
+    U+016E..U+016F      # Ůů
+    U+0179..U+017E      # ŹźŻżŽž
+    }
+
+# Asia
+
+$formosan_alphabets = {
+    $common
+    $common_marks
+    U+00C9              # É
+    U+00E9              # é
+    U+0197              # Ɨ
+    U+0268              # ɨ
+    U+0244              # Ʉ
+    U+0289              # ʉ
+    U+1E5E..U+1E5F      # Ṟṟ
+    }
+ami = $formosan_alphabets   # Amis
+tay = $formosan_alphabets   # Atayal
+bnn = $formosan_alphabets   # Bunun
+xnb = $formosan_alphabets   # Kanakanavu
+ckv = $formosan_alphabets   # Kavalan
+pwn = $formosan_alphabets   # Paiwan
+pyu = $formosan_alphabets   # Puyuma
+dru = $formosan_alphabets   # Rukai
+sxr = $formosan_alphabets   # Saaroa
+xsy = $formosan_alphabets   # Saisiyat
+szy = $formosan_alphabets   # Sakizaya
+trv = $formosan_alphabets   # Seediq, Taroko
+ssf = $formosan_alphabets   # Thao
+tsu = $formosan_alphabets   # Tsou
+tao = $formosan_alphabets   # Yami/Tao
+
+hak = {                 # Hakka
+    $iso_8859_1
+    U+016E..U+016F      # Ůů
+    U+1E72..U+1E73      # Ṳṳ
+    U+030D              # combining vertical line above
+    U+0324              # combining diaeresis below
+    }
+
+krj = {                 # Karay-a
+    $common
+    U+00CB              # Ë
+    U+00EB              # ë
+    U+014A..U+014B      # Ŋŋ
+    U+018F              # Ə
+    U+0259              # ə
+}
+
+nan = {                 # Southern Min
+    $iso_8859_1
+    U+0100..U+0101      # Āā
+    U+0112..U+0113      # Ēē
+    U+012A..U+012B      # Īī
+    U+0143..U+0144      # Ńń
+    U+014C..U+014D      # Ōō
+    U+016A..U+016B      # Ūū
+    U+01F8..U+01F9      # Ǹǹ
+    U+1E72..U+1E73      # Ṳṳ
+    U+207F              # ⁿ
+    U+030D              # combining vertical line above
+    U+030E              # combining double vertical line above
+    U+0358              # combining dot above right
+    }
+
+$turkic_latin = {
+    $iso_8859_1
+    U+010C..U+010D      # Čč
+    U+0116..U+0117      # Ėė
+    U+011E..U+011F      # Ğğ
+    U+0130..U+0131      # İı
+    U+0143..U+0144      # Ńń
+    U+014A..U+014B      # Ŋŋ
+    U+015A..U+015B      # Śś
+    U+015E..U+015F      # Şş
+    U+0160..U+0161      # Šš
+    U+0162..U+0163      # Ţţ
+    U+016A..U+016B      # Ūū
+    U+0179..U+017A      # Źź
+    U+017D..U+017E      # Žž
+    U+018F              # Ə
+    U+01F4..U+01F5      # Ǵǵ
+    U+0259              # ə
+    $apostrophes
+    }
+tr = $turkic_latin      # Turkish
+
+tsg = {                 # Tausug
+    $common
+    $common_marks
+    U+0100..U+0101      # Āā
+    U+0112..U+0113      # Ēē
+    U+012A..U+012B      # Īī
+    U+014A..U+014B      # Ŋŋ
+    U+014C..U+014D      # Ōō
+    U+016A..U+016B      # Ūū
+    }
+
+vi = {                  # Vietnamese
+    $iso_8859_1
+    U+0100..U+017F      # Latin Extended-A
+    U+0180..U+024F      # Latin Extended-B
+    U+1EA0..U+1EF9      # Latin Extended Additional (subset)
+    U+0340..U+0341      # ◌̀◌́
+    U+1DC4              #  ᷄
+    U+20AB              # ₫
+    }
+
+zza = {                 # Zaza
+    $common
+    $common_marks
+    U+00C7              # Ç
+    U+00CA              # Ê
+    U+00CE              # Î
+    U+00DB              # Û
+    U+00E7              # ç
+    U+00EA              # ê
+    U+00EE              # î
+    U+00FB              # û
+    U+011E..U+011F      # Ğğ
+    U+015E..U+015F      # Şş
+    }
+
+# Oceania
+
+$polynesian_latin = {
+    $common
+    $common_marks
+    U+0100..U+0101      # Āā
+    U+0112..U+0113      # Ēē
+    U+012A..U+012B      # Īī
+    U+014A..U+014B      # Ŋŋ
+    U+014C..U+014D      # Ōō
+    U+016A..U+016B      # Ūū
+    U+0294              # ʔ
+    $apostrophes
+    }
+haw = $polynesian_latin # Hawaiian
+mi = $polynesian_latin  # Maori
+niu = $polynesian_latin # Niuean
+pnh = $polynesian_latin # Tongareva
+rap = $polynesian_latin # Rapa Nui
+rar = $polynesian_latin # Cook Islands Maori
+rkh = $polynesian_latin # Rakahanga-Manihiki
+sm = $polynesian_latin  # Samoan
+tkl = $polynesian_latin # Tokelauan
+to = $polynesian_latin  # Tongan
+tvl = $polynesian_latin # Tuvaluan
+ty = $polynesian_latin  # Tahitian
+
+mh = {                  # Marshallese
+    $common
+    $common_marks
+    U+00D1              # Ñ
+    U+00F1              # ñ
+    U+0100..U+0101      # Āā
+    U+013B..U+013C      # Ļļ
+    U+0145..U+0146      # Ņņ
+    U+014C..U+014D      # Ōō
+    U+016A..U+016B      # Ūū
+    U+1E36..U+1E37      # Ḷḷ
+    U+1E42..U+1E43      # Ṃṃ
+    U+1E46..U+1E47      # Ṇṇ
+    U+1ECC..U+1ECD      # Ọọ
+    }
+
+# Africa
+
+$benin_alphabets = {
+    $iso_8859_1
+    U+0100..U+0101      # Āā
+    U+0112..U+0113      # Ēē
+    U+011A..U+011B      # Ěě
+    U+0128..U+0129      # Ĩĩ
+    U+012A..U+012B      # Īī
+    U+0143..U+0144      # Ńń
+    U+0147..U+0148      # Ňň
+    U+014A..U+014B      # Ŋŋ
+    U+014C..U+014D      # Ōō
+    U+0168..U+0169      # Ũũ
+    U+016A..U+016B      # Ūū
+    U+0181              # Ɓ
+    U+0186              # Ɔ
+    U+0189..U+018A      # ƉƊ
+    U+018E..U+018F      # ƎƏ
+    U+0190..U+0192      # ƐƑƒ
+    U+0194              # Ɣ
+    U+0196              # Ɩ
+    U+01B1..U+01B4      # ƱƲƳƴ
+    U+01B7              # Ʒ
+    U+01CD..U+01CF      # ǍǎǏ
+    U+01D0..U+01D4      # ǐǑǒǓǔ
+    U+01DD              # ǝ
+    U+01F8..U+01F9      # Ǹǹ
+    U+0253..U+0254      # ɓɔ
+    U+0256..U+0257      # ɖɗ
+    U+0259              # ə
+    U+025B              # ɛ
+    U+0263              # ɣ
+    U+0269              # ɩ
+    U+028A..U+028B      # ʊʋ
+    U+0292              # ʒ
+    U+0330              # combining tilde below
+    U+1E1A..U+1E1B      # Ḛḛ
+    U+1E2C..U+1E2D      # Ḭḭ
+    U+1E3E..U+1E3F      # Ḿḿ
+    U+1E4C..U+1E4D      # Ṍṍ
+    U+1E74..U+1E75      # Ṵṵ
+    U+1E78..U+1E79      # Ṹṹ
+    U+1EBC..U+1EBD      # Ẽẽ
+    }
+ajg = $benin_alphabets  # Aja
+bba = $benin_alphabets  # Bariba
+beh = $benin_alphabets  # Berba (Biali)
+blo = $benin_alphabets  # Anii (Basila)
+bqc = $benin_alphabets  # Boko, Boo
+ddn = $benin_alphabets  # Dendi
+dop = $benin_alphabets  # Lukpa
+fod = $benin_alphabets  # Foodo
+fon = $benin_alphabets  # Fon
+gej = $benin_alphabets  # Gen
+mql = $benin_alphabets  # Mbelime
+ntm = $benin_alphabets  # Nateni
+pil = $benin_alphabets  # Yom
+soy = $benin_alphabets  # Yobe
+tbz = $benin_alphabets  # Tammari
+wwa = $benin_alphabets  # Waama
+xwe = $benin_alphabets  # Xwela
+
+$ghana_alphabets = {
+    $iso_8859_1
+    U+014A..U+014B      # Ŋŋ
+    U+0181              # Ɓ
+    U+0186              # Ɔ
+    U+0189              # Ɖ
+    U+018E              # Ǝ
+    U+0190..U+0192      # ƐƑƒ
+    U+0194              # Ɣ
+    U+0196              # Ɩ
+    U+01B2..U+01B4      # ƲƳƴ
+    U+01B7              # Ʒ
+    U+01DD              # ǝ
+    U+0253..U+0254      # ɓɔ
+    U+0256              # ɖ
+    U+025B              # ɛ
+    U+0263              # ɣ
+    U+0269              # ɩ
+    U+028B              # ʋ
+    U+0292              # ʒ
+    $apostrophes
+    }
+ak = $ghana_alphabets   # Akan
+tw = ak                 # Twi
+fat = ak                # Fante
+dga = $ghana_alphabets  # Southern Dagaare
+dgd = $ghana_alphabets  # Dagaari Dioula
+dgi = $ghana_alphabets  # Northern Dagara
+dag = $ghana_alphabets  # Dagbani
+ada = $ghana_alphabets  # Dangme
+ee = $ghana_alphabets   # Ewe
+wci = ee                # Waci
+kef = ee                # Kpesi
+gur = $ghana_alphabets  # Frafra
+gaa = $ghana_alphabets  # Ga
+gjn = $ghana_alphabets  # Gonja
+nzi = $ghana_alphabets  # Nzema
+xsm = $ghana_alphabets  # Kasem
+
+ach = {                 # Acholi
+    $iso_8859_1
+    U+014A..U+014B      # Ŋŋ
+    }
+
+$balanta_alphabets = {
+    $common
+    $common_marks
+    U+00D1              # Ñ
+    U+00F1              # ñ
+    U+014A..U+014B      # Ŋŋ
+    U+0166..U+0167      # Ŧŧ
+    U+0181              # Ɓ
+    U+0253              # ɓ
+    }
+ble = $balanta_alphabets    # Balanta-Kentohe
+bjt = $balanta_alphabets    # Balanta-Ganja
+
+bdm = {                 # Yedina (Buduma)
+    $iso_8859_1
+    U+018F              # Ə
+    U+0259              # ə
+    }
+
+bin = {                 # Bini, Edo
+    $common
+    $common_marks
+    U+1EB8..U+1EB9      # Ẹẹ
+    U+1ECC..U+1ECD      # Ọọ
+    }
+
+bsc = {                 # Bassari
+    $iso_8859_1
+    U+0124..U+0125      # Ĥĥ
+    U+014A..U+014B      # Ŋŋ
+    U+015C..U+015D      # Ŝŝ
+    U+0174..U+0177      # ŴŵŶŷ
+    U+0181              # Ɓ
+    U+0186              # Ɔ
+    U+018A              # Ɗ
+    U+018E              # Ǝ
+    U+0190              # Ɛ
+    U+019D              # Ɲ
+    U+01A9              # Ʃ
+    U+01B3..U+01B4      # Ƴƴ
+    U+01DD              # ǝ
+    U+0248..U+0249      # Ɉɉ
+    U+0253..U+0254      # ɓɔ
+    U+0257              # ɗ
+    U+025B              # ɛ
+    U+0272              # ɲ
+    U+0283              # ʃ
+    U+1EF8..U+1EF9      # Ỹỹ
+    }
+
+boo = {                 # Bozo
+    $common
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+019D              # Ɲ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    U+0272              # ɲ
+    }
+boz = boo
+bze = boo
+bzx = boo
+
+bmq = {                 # Bomu
+    $common
+    U+0181              # Ɓ
+    U+0190              # Ɛ
+    U+019D              # Ɲ
+    U+0253              # ɓ
+    U+025B              # ɛ
+    U+0272              # ɲ
+    $apostrophes
+    }
+
+$chewa_tumbuka_latin = {
+    $iso_8859_1
+    U+0174..U+0175      # Ŵŵ
+    U+014A..U+014B      # Ŋŋ
+    }
+ny = $chewa_tumbuka_latin   # Chewa (Nyanja)
+tum = $chewa_tumbuka_latin  # Tumbuka
+
+cou = {                 # Wamey
+    $common
+    $common_marks
+    U+00C1              # Á
+    U+00CB              # Ë
+    U+00D1              # Ñ
+    U+00E1              # á
+    U+00EB              # ë
+    U+00F1              # ñ
+    U+014A..U+014B      # Ŋŋ
+    U+0181              # Ɓ
+    U+018A              # Ɗ
+    U+01B3..U+01B4      # Ƴƴ
+    U+0253              # ɓ
+    U+0257              # ɗ
+    U+1EF8..U+1EF9      # Ỹỹ
+    }
+
+$dinka_nuer_alphabets = {
+    $common
+    $common_marks
+    U+00C4              # Ä
+    U+00CB              # Ë
+    U+00CF              # Ï
+    U+00D6              # Ö
+    U+00E4              # ä
+    U+00E9              # é
+    U+00EB              # ë
+    U+00EF              # ï
+    U+00F3              # ó
+    U+00F6              # ö
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+0194              # Ɣ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    U+0263              # ɣ
+    }
+din = $dinka_nuer_alphabets     # Dinka
+dip = din                       # Northeastern (Padang)
+diw = din                       # Northwestern (Ruweng)
+dib = din                       # South Central (Agar)
+dks = din                       # Southeastern
+dik = din                       # Southwestern (Rek & Twic)
+nus = $dinka_nuer_alphabets     # Nuer
+
+dje = {                 # Zarma
+    $iso_8859_1
+    U+014A..U+014B      # Ŋŋ
+    U+019D              # Ɲ
+    U+0272              # ɲ
+    U+0330              # combining tilde below
+    U+1E1A..U+1E1B      # Ḛḛ
+    U+1E2C..U+1E2D      # Ḭḭ
+    U+1E74..U+1E75      # Ṵṵ
+    # unofficial
+    U+0128..U+0129      # Ĩĩ
+    U+0168..U+0169      # Ũũ
+    U+1EBC..U+1EBD      # Ẽẽ
+    }
+
+dsh = {
+    $iso_8859_1
+    U+A7C7..U+A7C8      # Ꟈꟈ
+    $apostrophes
+    }
+
+dyo = {                 # Jola-Fonyi
+    $iso_8859_1
+    U+014A..U+014B      # Ŋŋ
+    }
+
+efi = {                 # Efik
+    $common
+    $common_marks
+    U+00D1              # Ñ
+    U+00D6              # Ö
+    U+00F1              # ñ
+    U+00F6              # ö
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+0254              # ɔ
+    U+1EB8..U+1EB9      # Ẹẹ
+    U+1ECA..U+1ECD      # ỊịỌọ
+    U+1EE4..U+1EE5      # Ụụ
+    }
+
+ewo = {                 # Ewondo
+    $common
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+018F              # Ə
+    U+0190              # Ɛ
+    U+0254              # ɔ
+    U+0259              # ə
+    U+025B              # ɛ
+    }
+
+$fula_alphabets = {
+    $common
+    $common_marks
+    U+00D1              # Ñ
+    U+00F1              # ñ
+    U+014A..U+014B      # Ŋŋ
+    U+0181              # Ɓ
+    U+018A              # Ɗ
+    U+0193              # Ɠ
+    U+019D              # Ɲ
+    U+01B3..U+01B4      # Ƴƴ
+    U+0253              # ɓ
+    U+0257              # ɗ
+    U+0260              # ɠ
+    U+0272              # ɲ
+    }
+ff = $fula_alphabets    # Fula
+fuc = ff                # Pulaar
+fuf = ff                # Pular
+ffm = ff                # Maasina Fulfulde
+fue = ff                # Borgu Fulfulde
+fuh = ff                # Western Niger
+fuq = ff                # Central–Eastern Niger
+fuv = ff                # Nigerian Fulfulde
+fub = ff                # Adamawa Fulfulde
+fui = ff                # Bagirmi Fulfulde
+
+ha = {                  # Hausa
+    $common
+    U+0181              # Ɓ
+    U+018A              # Ɗ
+    U+0198..U+0199      # Ƙƙ
+    U+01B3..U+01B4      # Ƴƴ
+    U+0253              # ɓ
+    U+0257              # ɗ
+    $apostrophes
+    }
+
+hz = {                  # Herero
+    $common
+    U+1E12..U+1E13      # Ḓḓ
+    U+1E4A..U+1E4B      # Ṋṋ
+    U+1E70..U+1E71      # Ṱṱ
+    U+032D              # combining circumflex accent below
+    }
+
+ig = {                  # Igbo
+    $common
+    $common_marks
+    U+1E44..U+1E45      # Ṅṅ
+    U+1ECA..U+1ECD      # ỊịỌọ
+    U+1EE4..U+1EE5      # Ụụ
+    }
+
+kbp = {                 # Kabiye
+    $common
+    $common_marks
+    U+00D1              # Ñ
+    U+00E0..U+00E1      # àá
+    U+00F1              # ñ
+    U+00F9              # ù
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+0189              # Ɖ
+    U+0190              # Ɛ
+    U+0194              # Ɣ
+    U+0196              # Ɩ
+    U+01B2              # Ʋ
+    U+0251              # ɑ
+    U+0254              # ɔ
+    U+0256              # ɖ
+    U+025B              # ɛ
+    U+0263              # ɣ
+    U+0269              # ɩ
+    U+028B              # ʋ
+    }
+
+knf = {                 # Mankanya
+    $common
+    $common_marks
+    U+00CB              # Ë
+    U+00D1              # Ñ
+    U+00EB              # ë
+    U+00F1              # ñ
+    U+014A..U+014B      # Ŋŋ
+    U+015E..U+015F      # Şş
+    U+0162..U+0163      # Ţţ
+    U+0166..U+0167      # Ŧŧ
+    }
+
+$kpelle_alphabets = {
+    $iso_8859_1
+    U+0128..U+0129      # Ĩĩ
+    U+014A..U+014B      # Ŋŋ
+    U+0168..U+0169      # Ũũ
+    U+0181              # Ɓ
+    U+0186              # Ɔ
+    U+018F              # Ə
+    U+0190              # Ɛ
+    U+0193..U+0194      # ƓƔ
+    U+0194              # Ɣ
+    U+019D              # Ɲ
+    U+0253..U+0254      # ɓɔ
+    U+0259              # ə
+    U+025B              # ɛ
+    U+0260              # ɠ
+    U+0263              # ɣ
+    U+0272              # ɲ
+    }
+kpe = $kpelle_alphabets # Kpelle
+gkp = $kpelle_alphabets # Guinea Kpelle
+xpe = $kpelle_alphabets # Liberia Kpelle
+knu = $kpelle_alphabets # Kono
+
+kr = {                  # Kanuri
+    $iso_8859_1
+    U+018E..U+018F      # ƎƏ
+    U+01CD..U+01CE      # Ǎǎ
+    U+01D1..U+01D4      # ǑǒǓǔ
+    U+01DD              # ǝ
+    U+024C..U+024D      # Ɍɍ
+    U+0259              # ə
+    U+02C6              # ˆ
+    U+0314              # ̔
+    }
+knc = kr                # Central Kanuri
+kby = kr                # Manga Kanuri
+krt = kr                # Tumari Kanuri
+bms = kr                # Bilma Kanuri
+kbl = kr                # Kanembu
+
+kri = {                 # Krio
+    $iso_8859_1
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    }
+
+lg = {                  # Luganda
+    $common
+    U+014A..U+014B      # Ŋŋ
+    }
+
+ln = {                  # Lingala
+    $iso_8859_1
+    U+011A..U+011B      # Ěě
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+01CD..U+01CF      # ǍǎǏ
+    U+01D0..U+01D2      # ǐǑǒ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    }
+
+lom = {                 # Loma
+    $iso_8859_1
+    U+014A..U+014B      # Ŋŋ
+    U+0168..U+0169      # Ũũ
+    U+0181              # Ɓ
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+0194              # Ɣ
+    U+01B2              # Ʋ
+    U+0253..U+0254      # ɓɔ
+    U+025B              # ɛ
+    U+0263              # ɣ
+    U+028B              # ʋ
+    }
+tod = lom               # Toma
+
+mas = {                 # Masai
+    $iso_8859_1
+    U+0100..U+0101      # Āā
+    U+0112..U+0113      # Ēē
+    U+012A..U+012B      # Īī
+    U+014A..U+014B      # Ŋŋ
+    U+014C..U+014D      # Ōō
+    U+016A..U+016B      # Ūū
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+0197              # Ɨ
+    U+0244              # Ʉ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    U+0268              # ɨ
+    U+0289              # ʉ
+    U+0294              # ʔ
+    }
+
+men = {                 # Mende
+    $iso_8859_1
+    U+0102..U+0103      # Ăă
+    U+0114..U+0115      # Ĕĕ
+    U+012C..U+012D      # Ĭĭ
+    U+014A..U+014B      # Ŋŋ
+    U+014E..U+014F      # Ŏŏ
+    U+016C..U+016D      # Ŭŭ
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    }
+
+mfv = {                 # Manjak
+    $common
+    $common_marks
+    U+00CB              # Ë
+    U+00D1              # Ñ
+    U+00EB              # ë
+    U+00F1              # ñ
+    U+014A..U+014B      # Ŋŋ
+    U+015C..U+015D      # Ŝŝ
+    U+0162..U+0163      # Ţţ
+    }
+
+mur = {                 # Murle
+    $common
+    $common_marks
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    U+1E0E..U+1E0F      # Ḏḏ
+    U+1E6E..U+1E6F      # Ṯṯ
+    }
+
+myk = {                 # Minyanka
+    $common
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+019D              # Ɲ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    U+0272              # ɲ
+    }
+
+mos = {                 # Mossi
+    $iso_8859_1
+    U+0190              # Ɛ
+    U+0196              # Ɩ
+    U+01B2              # Ʋ
+    U+025B              # ɛ
+    U+0269              # ɩ
+    U+028B              # ʋ
+    $apostrophes
+    }
+
+sav = {                 # Safene
+    $common
+    $common_marks
+    U+00D1              # Ñ
+    U+00F1              # ñ
+    U+014A..U+014B      # Ŋŋ
+    U+0181              # Ɓ
+    U+018A              # Ɗ
+    U+01B3..U+01B4      # Ƴƴ
+    U+0253              # ɓ
+    U+0257              # ɗ
+    $apostrophes
+    }
+
+seq = {                 # Senara
+    $common
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+019D              # Ɲ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    U+0272              # ɲ
+    }
+shz = seq               # Syenara
+
+snf = {                 # Noon
+    $iso_8859_1
+    U+014A..U+014B      # Ŋŋ
+    U+0181              # Ɓ
+    U+018A              # Ɗ
+    U+01B3..U+01B4      # Ƴƴ
+    U+0253              # ɓ
+    U+0257              # ɗ
+    $apostrophes
+    }
+
+snk = {                 # Soninke
+    $common
+    $common_marks
+    U+00D1              # Ñ
+    U+00F1              # ñ
+    U+014A..U+014B      # Ŋŋ
+    $apostrophes
+    }
+
+$sotho_tswana_latin = {
+    $iso_8859_1
+    U+0160..U+0161      # Šš
+    }
+st = $sotho_tswana_latin    # Sotho
+tn = $sotho_tswana_latin    # Tswana
+nso = $sotho_tswana_latin   # Northern Sotho
+
+srr = {                 # Serer
+    $common
+    $common_marks
+    U+00D1              # Ñ
+    U+00F1              # ñ
+    U+014A..U+014B      # Ŋŋ
+    U+0181              # Ɓ
+    U+0187..U+0188      # Ƈƈ
+    U+018A              # Ɗ
+    U+01A4..U+01A5      # Ƥƥ
+    U+01AC..U+01AD      # Ƭƭ
+    U+01B3..U+01B4      # Ƴƴ
+    U+0253              # ɓ
+    U+0257              # ɗ
+    $apostrophes
+    }
+
+sus = {                 # Susu
+    $iso_8859_1
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+019D              # Ɲ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    U+0272              # ɲ
+    }
+
+suq = {                 # Suri
+    $common
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    }
+
+tem = {                 # Temne
+    $common
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+018F              # Ə
+    U+0190              # Ɛ
+    U+0226..U+0227      # Ȧȧ
+    U+0245              # Ʌ
+    U+0254              # ɔ
+    U+0259              # ə
+    U+025B              # ɛ
+    U+028C              # ʌ
+    }
+
+tnr = {                 # Bedik
+    $common
+    $common_marks
+    U+00C8..U+00C9      # ÈÉ
+    U+00CB              # Ë
+    U+00D1              # Ñ
+    U+00E8..U+00E9      # èé
+    U+00EB              # ë
+    U+00F1              # ñ
+    U+014A..U+014B      # Ŋŋ
+    U+015C..U+015D      # Ŝŝ
+    U+0181              # Ɓ
+    U+018A              # Ɗ
+    U+01B3..U+01B4      # Ƴƴ
+    U+0253              # ɓ
+    U+0257              # ɗ
+    }
+
+udu = {                 # Uduk
+    $common
+    $common_marks
+    U+014A..U+014B      # Ŋŋ
+    U+1E34..U+1E35      # Ḵḵ
+    U+1E6E..U+1E6F      # Ṯṯ
+    U+0320              # combining minus sign below
+    U+0331..U+0332      # macron below, low line
+    $apostrophes
+    }
+
+ve = {                  # Venda
+    $common
+    $common_marks
+    U+1E12..U+1E13      # Ḓḓ
+    U+1E3C..U+1E3D      # Ḽḽ
+    U+1E44..U+1E45      # Ṅṅ
+    U+1E4A..U+1E4B      # Ṋṋ
+    U+1E70..U+1E71      # Ṱṱ
+    U+032D              # combining circumflex accent below
+    }
+
+wo = {                  # Wolof
+    $iso_8859_1
+    U+014A..U+014B      # Ŋŋ
+    }
+wof = wo                # Gambian Wolof
+
+yao = {                 # Yao
+    $common
+    $common_marks
+    U+0174..U+0175      # Ŵŵ
+    }
+
+yo = {                  # Yoruba
+    $common
+    $common_marks
+    # Nigeria
+    U+1E62..U+1E63      # Ṣṣ
+    U+1EB8..U+1EB9      # Ẹẹ
+    U+1ECC..U+1ECD      # Ọọ
+    # Benin
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    }
+
+# America
+
+arn = {                 # Mapudungun
+    $iso_8859_1
+    U+1E3A..U+1E3B      # Ḻḻ
+    U+1E48..U+1E49      # Ṉṉ
+    U+1E6E..U+1E6F      # Ṯṯ
+    }
+
+arp = {                 # Arapaho
+    $iso_8859_1
+    U+010C..U+010D      # Čč
+    U+0294              # ʔ
+    U+0398              # Θ
+    U+03B8              # θ
+    $apostrophes
+    }
+
+cad = {                 # Caddo
+    $common
+    U+0294              # ʔ
+    $apostrophes
+    }
+
+chn = {                 # Chinook jargon
+    $common
+    $common_marks
+    U+018F              # Ə
+    U+0259              # ə
+    U+026C              # ɬ
+    U+0294              # ʔ
+    U+02B0              # ʰ
+    U+A7AD              # Ɬ
+    $apostrophes
+    }
+
+cho = {                 # Choctaw
+    $common
+    $common_marks
+    U+0100..U+0101      # Āā
+    U+0104..U+0105      # Ąą
+    U+010C..U+010D      # Čč
+    U+012A..U+012B      # Īī
+    U+012E..U+012F      # Įį
+    U+0141..U+0142      # Łł
+    U+014C..U+014D      # Ōō
+    U+0160..U+0161      # Šš
+    U+01B2              # Ʋ
+    U+01EA..U+01EB      # Ǫǫ
+    U+028B              # ʋ
+    U+1EA0..U+1EA1      # Ạạ
+    U+207F              # ⁿ
+    }
+
+$sioux_alphabets = {
+    $iso_8859_1
+    U+0104..U+0107      # ĄąĆć
+    U+010A..U+010D      # ĊċČč
+    U+0120..U+0121      # Ġġ
+    U+0126..U+0127      # Ħħ
+    U+012E..U+012F      # Įį
+    U+0136..U+0137      # Ķķ
+    U+0147..U+0148      # Ňň
+    U+014A..U+014B      # Ŋŋ
+    U+015A..U+015B      # Śś
+    U+0160..U+0163      # ŠšŢţ
+    U+0172..U+0173      # Ųų
+    U+0179..U+017E      # ŹźŻżŽž
+    U+01E4..U+01E7      # ǤǥǦǧ
+    U+0218..U+0219      # Șș
+    U+021E..U+021F      # Ȟȟ
+    U+02BC..U+02BF      # ʼʽʾʿ
+    U+0314              # ̔
+    U+0397              # Η
+    U+03B7              # η
+    U+1E22..U+1E23      # Ḣḣ
+    U+1E32..U+1E33      # Ḳḳ
+    U+1E56..U+1E57      # Ṗṗ
+    U+1E60..U+1E61      # Ṡṡ
+    U+1E6A..U+1E6D      # ṪṫṬṭ
+    $apostrophes
+    }
+dak = $sioux_alphabets  # Dakota
+lkt = $sioux_alphabets  # Lakota
+
+dgr = {                 # Dogrib
+    $common
+    $common_marks
+    U+00C0              # À
+    U+00C8              # È
+    U+00CC              # Ì
+    U+00D2              # Ò
+    U+00D9              # Ù
+    U+00E0              # à
+    U+00E8              # è
+    U+00EC              # ì
+    U+00F2              # ò
+    U+00F9              # ù
+    U+0104..U+0105      # Ąą
+    U+0118..U+0119      # Ęę
+    U+012E..U+012F      # Įį
+    U+0131              # ı
+    U+0141..U+0142      # Łł
+    U+0172..U+0173      # Ųų
+    U+01EA..U+01EB      # Ǫǫ
+    $apostrophes
+    }
+
+gn = {                  # Guarani
+    $common
+    $common_marks
+    U+00C3              # Ã
+    U+00D1              # Ñ
+    U+00D5              # Õ
+    U+00E3              # ã
+    U+00F1              # ñ
+    U+00F5              # õ
+    U+0128..U+0129      # Ĩĩ
+    U+0168..U+0169      # Ũũ
+    U+1EBC..U+1EBD      # Ẽẽ
+    U+1EF8..U+1EF9      # Ỹỹ
+    $apostrophes
+    }
+
+ik = {                  # Inupiaq
+    $common
+    $common_marks
+    U+00D1              # Ñ
+    U+00F1              # ñ
+    U+0120..U+0121      # Ġġ
+    U+0141..U+0142      # Łł
+    U+014A..U+014B      # Ŋŋ
+    U+1E36..U+1E37      # Ḷḷ
+    $apostrophes
+    }
+esi = ik                # North Alaskan Inupiatun
+esk = ik                # Northwest Alaska Inupiatun
+
+kut = {                 # Kutenai
+    $common
+    $common_marks
+    U+00B7              # ·
+    U+023B..U+023C      # Ȼȼ
+    U+0294              # ʔ
+    U+0313              # ̓
+    U+0315              # ̕
+    U+2C60..U+2C61      # Ⱡⱡ
+    }
+
+moh = {                 # Mohawk
+    $iso_8859_1
+    U+1E48..U+1E49      # Ṉṉ
+    U+A789              # ꞉
+    $apostrophes
+    }
+
+mus = {                 # Muscogee (Creek)
+    $common
+    $common_marks
+    U+0112..U+0113      # Ēē
+    }
+
+nv = {                  # Navajo
+    $common
+    $common_marks
+    U+00C1              # Á
+    U+00C9              # É
+    U+00CD              # Í
+    U+00D3              # Ó
+    U+00E1              # á
+    U+00E9              # é
+    U+00ED              # í
+    U+00F3              # ó
+    U+0104..U+0105      # Ąą
+    U+0118..U+0119      # Ęę
+    U+012E..U+012F      # Įį
+    U+0141..U+0142      # Łł
+    U+01EA..U+01EB      # Ǫǫ
+    $apostrophes
+    }
+
+tli = {                 # Tlingit
+    $iso_8859_1
+    U+0141..U+0142      # Łł
+    U+0178              # Ÿ
+    U+0320              # combining minus sign below
+    U+0331..U+0332      # macron below, low line
+    U+1E34..U+1E35      # Ḵḵ
+    $apostrophes
+    }
+
+was = {                 # Washo
+    $common
+    $common_marks
+    U+00C1              # Á
+    U+00C9              # É
+    U+00CD              # Í
+    U+00D3              # Ó
+    U+00DA              # Ú
+    U+00E1              # á
+    U+00E9              # é
+    U+00ED              # í
+    U+00F3              # ó
+    U+00FA              # ú
+    U+0106..U+0107      # Ćć
+    U+014A..U+014B      # Ŋŋ
+    U+0160..U+0161      # Šš
+    U+0197              # Ɨ
+    U+0268              # ɨ
+    U+0294              # ʔ
+    U+A789              # ꞉
+    $apostrophes
+    }
+
+zun = {                 # Zuni
+    $common
+    U+0141..U+0142      # Łł
+    U+A789              # ꞉
+    $apostrophes
+    }
+
+#--------------------------------------------------------------------#
+#
+# Languages using Greek script
+#
+
+$greek = $common U+0370..U+03E1 U+03F0..U+03FF
+
+el = $greek             # Greek
+
+#--------------------------------------------------------------------#
+#
+# Languages using Cyrillic script
+#
+
+$cyrillic = {
+    $common
+    $common_marks
+    $apostrophes
+    U+00AB U+00BB       # «»
+    U+0400..U+040F      # Cyrillic extensions
+    U+0410..U+044F      # Basic Cyrillic
+    U+0450..U+045F      # Cyrillic extensions
+    U+048A..U+04F9      # Extended Cyrillic
+    U+2018..U+201F      # punctuation
+    U+20BD              # ₽
+    }
+
+                        # East Slavic languages:
+ru = $cyrillic          #   Russian
+be = $cyrillic          #   Belarusian
+uk = $cyrillic          #   Ukrainian
+rue = $cyrillic         #   Rusyn
+                        # South Slavic languages:
+bg = $cyrillic          #   Bulgarian
+mk = $cyrillic          #   Macedonian
+                        #   Bosnian (below)
+                        #   Serbian (below)
+                        #   Montenegrin (below)
+                        # Uralic languages:
+sjd = $cyrillic         #   Kildin Sami
+kv = $cyrillic          #   Komi
+koi = $cyrillic         #   Permyak
+udm = $cyrillic         #   Udmurt
+                        #   Khanty (below)
+mns = $cyrillic         #   Mansi
+                        #   Enets (below)
+                        #   Nenets (missing codes)
+nio = $cyrillic         #   Nganasan
+sel = $cyrillic         #   Selkup
+chm = $cyrillic         #   Mari
+myv = $cyrillic         #   Erzya (Mordvin)
+mdf = $cyrillic         #   Moksha (Mordvin)
+                        # Non-Slavic Indo-European languages:
+                        #   Kurdish (below)
+os = $cyrillic          #   Ossetian
+tg = $cyrillic          #   Tajik
+sgh = $cyrillic         #   Shughni
+                        #   Tat (below)
+                        #   Judeo-tat/Juhuri (below)
+                        #   Yaghnobi (below)
+                        #   Yazghulami (below)
+                        # Romance languages:
+                        #   Moldovan (below)
+                        # Indo-Aryan languages:
+                        #   Romani (below)
+                        # Mongolian languages:
+mn = $cyrillic          #   Mongolian
+khk = $cyrillic         #   Khalkha
+bua = $cyrillic         #   Buryat
+xal = $cyrillic         #   Kalmyk
+                        # Northwest Caucasian languages:
+abq = $cyrillic         #   Abaza
+ady = $cyrillic         #   Adyghe
+kbd = $cyrillic         #   Kabardian
+uby = $cyrillic         #   Ubykh
+                        # Northeast Caucasian languages:
+av = $cyrillic          #   Avar
+lez = $cyrillic         #   Lezgin
+ce = $cyrillic          #   Chechen
+dar = $cyrillic         #   Dargwa
+lbe = $cyrillic         #   Lak
+tab = $cyrillic         #   Tabassaran
+inh = $cyrillic         #   Ingush
+aqc = $cyrillic         #   Archi
+agx = $cyrillic         #   Aghul
+rut = $cyrillic         #   Rutul
+                        # Turkic languages:
+                        #   Azerbaijani (below)
+ba = $cyrillic          #   Bashkir
+cv = $cyrillic          #   Chuvash
+                        #   Kazakh (below)
+ky = $cyrillic          #   Kyrgyz (some Arabic)
+tt = $cyrillic          #   Tatar (some Arabic)
+                        #   Uzbek (below)
+alt = $cyrillic         #   Altay
+krc = $cyrillic         #   Karachay-Balkar
+                        #   Crimean Tatar (below)
+                        #   Gagauz (below)
+                        #   Karakalpak (below)
+                        #   Karaim (below)
+kjh = $cyrillic         #   Khakas
+kum = $cyrillic         #   Kumyk
+nog = $cyrillic         #   Nogai
+tyv = $cyrillic         #   Tuvan
+                        #   Uyghur (below)
+sah = $cyrillic         #   Yakut
+dlg = $cyrillic         #   Dolgan
+bgx = $cyrillic         #   Balkan Gagauz Turkish
+uum = $cyrillic         #   Urum
+                        #   Siberian Tatar (below)
+                        # Sinitic:
+dng = $cyrillic         #   Dungan
+                        # Tungusic languages:
+eve = $cyrillic         #   Even
+evn = $cyrillic         #   Evenki
+gld = $cyrillic         #   Nanai
+ude = $cyrillic         #   Udege
+                        #   Orok (below)
+ulc = $cyrillic         #   Ulch
+                        # Chukotko-Kamchatkan languages:
+                        #   Chukchi (below)
+kpy = $cyrillic         #   Koryak
+                        #   Itelmen (below)
+alr = $cyrillic         #   Alyutor
+                        # Eskimo-Aleut languages:
+                        #   Aleut (below)
+ynk = $cyrillic         #   Naukan Yupik
+ess = $cyrillic         #   Central Siberian Yupik
+                        # Yukaghir languages:
+                        #   Tundra Yukaghir (below)
+                        #   Southern Yukaghir (below)
+                        # Other languages:
+ket = $cyrillic         #   Ket
+                        #   Nivkh (below)
+
+#--------------------------------------------------------------------#
+#
+# Languages requiring chars outside main Cyrillic range
+#
+
+ab = {                  # Abkhazian
+    $cyrillic
+    U+0524..U+0525      # Ԥԥ
+    }
+
+oaa = {                 # Orok
+    $cyrillic
+    U+0528..U+0529      # Ԩԩ
+    }
+
+niv = {                 # Nivkh
+    $cyrillic
+    U+04FA..U+04FF      # Additions for Nivkh
+    }
+
+$khanty_enets_itelmen = {
+    $cyrillic
+    U+0510..U+0511      # Ԑԑ
+    U+0512..U+0513      # Ԓԓ
+    U+052E..U+052F      # Ԯԯ
+    }
+kca = $khanty_enets_itelmen     # Khanty
+enf = $khanty_enets_itelmen     # Forest Enets
+enh = $khanty_enets_itelmen     # Tundra Enets
+ckt = $khanty_enets_itelmen     # Chukchi
+itl = $khanty_enets_itelmen     # Itelmen
+
+$cyrillic_we = {
+    $cyrillic
+    U+051C..U+051D      # Ԝԝ
+    }
+ykg = $cyrillic_we      # Tundra Yukaghir
+yux = $cyrillic_we      # Southern Yukaghir
+
+#--------------------------------------------------------------------#
+#
+# Languages with both Latin and Cyrillic alphabets
+#
+
+bs = $iso_8859_2 $cyrillic      # Bosnian
+sr = $iso_8859_2 $cyrillic      # Serbian
+cnr = $iso_8859_2 $cyrillic     # Montenegrin
+tk = $iso_8859_2 $cyrillic      # Turkmen (also Arabic)
+
+$kurdish_latin = {
+    $iso_8859_1
+    U+0141..U+0142      # Łł
+    U+0147..U+0148      # Ňň
+    U+0158..U+0159      # Řř
+    U+015E..U+015F      # Şş
+    U+051A..U+051D      # ԚԛԜԝ
+    }
+ku = $kurdish_latin $cyrillic   # Kurdish
+kmr = ku                        # Kurmanji
+
+ro = {                  # Romanian/Moldovan
+    $iso_8859_1
+    U+0102..U+0103      # Ăă
+    U+015E..U+015F      # Şş
+    U+0162..U+0163      # Ţţ
+    U+0218..U+021B      # ȘșȚț
+    $cyrillic
+    }
+
+az = $turkic_latin $cyrillic    # Azerbaijani (also Perso-Arabic)
+azj = az                        # North Azerbaijani
+kk = $turkic_latin $cyrillic    # Kazakh (also Arabic)
+uz = $turkic_latin $cyrillic    # Uzbek (some Arabic)
+crh = $turkic_latin $cyrillic   # Crimean Tatar
+gag = $turkic_latin $cyrillic   # Gagauz
+kaa = $turkic_latin $cyrillic   # Karakalpak
+kdr = $turkic_latin $cyrillic   # Karaim
+sty = $turkic_latin $cyrillic   # Siberian Tatar
+
+ug = {                  # Uyghur (also Arabic)
+    $iso_8859_1
+    # Uyghur New Script
+    U+018F              # Ə
+    U+019F              # Ɵ
+    U+01A2..U+01A3      # Ƣƣ
+    U+0259              # ə
+    U+0275              # ɵ
+    U+2C67..U+2C6C      # ⱧⱨⱩⱪⱫⱬ
+    $cyrillic
+    }
+
+ttt = {                 # Tat
+    $iso_8859_1
+    U+011E..U+011F      # Ğğ
+    U+0130..U+0131      # İı
+    U+015E..U+015F      # Şş
+    U+018F              # Ə
+    U+0259              # ə
+    $cyrillic
+    U+0526..U+0527      # Ԧԧ
+    }
+
+ale = {                 # Aleut
+    $iso_8859_1
+    U+011C..U+011D      # Ĝĝ
+    $cyrillic
+    U+04FC..U+04FD      # Ӽӽ
+    }
+
+rom = {                 # Romani
+    $common
+    $common_marks
+    U+00C4              # Ä
+    U+00C4..U+00C5      # ÄÅ
+    U+00C7              # Ç
+    U+00D6              # Ö
+    U+00E4..U+00E5      # äå
+    U+00E7              # ç
+    U+00F6              # ö
+    U+0102..U+0103      # Ăă
+    U+0106..U+0107      # Ćć
+    U+010C..U+010D      # Čč
+    U+014E..U+014F      # Ŏŏ
+    U+015A..U+015B      # Śś
+    U+0160..U+0161      # Šš
+    U+0179..U+017A      # Źź
+    U+017D..U+017E      # Žž
+    U+01B7              # Ʒ
+    U+01F4..U+01F5      # Ǵǵ
+    U+021E..U+021F      # Ȟȟ
+    U+0292              # ʒ
+    U+0398              # Θ
+    U+03B8              # θ
+    $cyrillic
+    }
+
+tkr = {                 # Tsakhur
+    $cyrillic
+    $iso_8859_1
+    U+011E..U+011F      # Ğğ
+    U+0130..U+0131      # İı
+    U+015E..U+015F      # Şş
+    U+0361              # combining double inverted breve
+    $apostrophes
+    }
+
+yah = {                 # Yazghulami
+    $cyrillic_we
+    U+0100..U+0101      # Āā
+    U+010C..U+010D      # Čč
+    U+0394              # Δ
+    U+03B4              # δ
+    U+018F              # Ə
+    U+0259              # ə
+    U+01F4..U+01F5      # Ǵǵ
+    U+0263..U+0264      # ɣɤ
+    U+03B3              # γ
+    U+01F0              # ǰ
+    U+1E30..U+1E31      # Ḱḱ
+    U+0160..U+0161      # Šš
+    U+0398              # Θ
+    U+03B8              # θ
+    U+03D1              # ϑ
+    U+016F              # Ů
+    U+016F              # ů
+    U+017D..U+017E      # Žž
+    U+02DA              # ˚
+    }
+
+yai = {                 # Yaghnobi
+    $cyrillic_we
+    $iso_8859_1
+    U+010C..U+010D      # Čč
+    U+012A..U+012B      # Īī
+    U+0160..U+0161      # Šš
+    U+016A..U+016B      # Ūū
+    U+017D..U+017E      # Žž
+    U+0194              # Ɣ
+    U+01F0              # ǰ
+    U+0263              # ɣ
+    U+028F              # ʏ
+    U+1E24..U+1E25      # Ḥḥ
+    }
+
+#--------------------------------------------------------------------#
+#
+# Languages using Armenian script
+#
+
+$armenian = {
+    $common
+    U+0530..U+058F      # Armenian Unicode block
+    U+FB13..U+FB17      # Armenian ligatures
+    U+058F              # ֏
+    }
+
+hy = $armenian          # Armenian
+hyw = hy                # Western Armenian
+
+#--------------------------------------------------------------------#
+#
+# Languages using Hebrew script
+#
+
+$hebrew = {
+    $common
+    U+0590..U+05FF      # Hebrew Unicode block
+    U+FB1D..U+FB4F      # Hebrew ligatures
+    }
+
+he = $hebrew            # Hebrew
+yi = $hebrew            # Yiddish
+ydd = yi                # Eastern Yiddish
+yih = yi                # Western Yiddish
+apc = $hebrew           # North Levantine (also Arabic)
+ajp = $hebrew           # South Levantine (also Arabic)
+jpr = $hebrew           # Judeo-Persian
+jrb = $hebrew           # Judeo-Arabic
+lad = $hebrew           # Judeo-Spanish (also other scripts)
+
+jdt = {                 # Judeo-Tat/Juhuri
+    ttt                 # Latin, Cyrillic
+    U+0126..U+0127      # Ħħ
+    U+1E28..U+1E29      # Ḩḩ
+    $hebrew
+    }
+
+#--------------------------------------------------------------------#
+
+# Embedding a single glyph per code point won't work for Arabic script.
+# Embedding a single glyph per code point won't work for Syriac script.
+
+#--------------------------------------------------------------------#
+#
+# Languages using Thaana script
+#
+
+$thaana = $common U+0780..U+07BF
+
+dv = $thaana            # Divehi
+
+#--------------------------------------------------------------------#
+#
+# Languages using NKo script (probably)
+#
+
+$nko = $common U+07C0..U+07FF
+$nko_and_latin = {
+    $nko
+    U+014A..U+014B      # Ŋŋ
+    U+0186              # Ɔ
+    U+0190              # Ɛ
+    U+019D              # Ɲ
+    U+0254              # ɔ
+    U+025B              # ɛ
+    U+0272              # ɲ
+    }
+
+nqo = $nko              # N'Ko
+man = $nko_and_latin    # Manding
+                        # Manding-East:
+bm = $nko_and_latin     #   Bambara
+bof = $nko_and_latin    #   Bolon
+dyu = $nko_and_latin    #   Dyula
+rkm = $nko_and_latin    #   Marka
+                        # Manding-West:
+jad = $nko_and_latin    #   Jahanka
+kao = $nko_and_latin    #   Kassonke
+mlq = $nko_and_latin    #   Western Malinke
+mnk = $nko_and_latin    #   Mandinka
+mku = $nko_and_latin    #   Konyanka
+emk = $nko_and_latin    #   Eastern Maninkaka
+msc = $nko_and_latin    #   Sankaran Maninkaka
+mzj = $nko_and_latin    #   Manya
+jod = $nko_and_latin    #   Wojenaka
+jud = $nko_and_latin    #   Worodougou
+kfo = $nko_and_latin    #   Koro
+kga = $nko_and_latin    #   Koyaga
+mxx = $nko_and_latin    #   Mahou
+mwk = $nko_and_latin    #   Kita Maninka
+xkg = $nko_and_latin    #   Kagoro
+                        # Unclear:
+skq = $nko_and_latin    #   Sininkere
+
+#--------------------------------------------------------------------#
+#
+# Languages using Samaritan script
+#
+
+$samaritan = $common U+0800..U+083F
+
+smp = $samaritan        # Samaritan Hebrew
+sam = $samaritan        # Samaritan Aramaic
+
+#--------------------------------------------------------------------#
+#
+# Languages using Mandaic script
+#
+
+$mandaic = $common U+0840..U+085F
+
+mid = $mandaic          # Mandaic
+myz = $mandaic          # Classical Mandaic
+
+#--------------------------------------------------------------------#
+
+# Embedding a single glyph per code point won't work for Indic scripts:
+#   Devanagari
+#   Bengali
+#   Gurmukhi
+#   Gujarati
+#   Oriya
+#   Tamil
+#   Telugu
+#   Kannada
+#   Malayalam
+#   Sinhala
+
+#--------------------------------------------------------------------#
+#
+# Languages using Thai script
+#
+
+$thai = $common U+0E00..U+0E7F
+
+th = $thai              # Thai
+sou = $thai             # Southern Thai
+                        # Northern Thai (below)
+                        # Isan (below)
+mfa = $thai             # Kelantan-Pattani Malay (also Latin)
+
+#--------------------------------------------------------------------#
+#
+# Languages using Lao script
+#
+
+$lao = $common U+0E80..U+0EFF
+
+lo = $lao               # Lao
+kjg = $lao              # Khmu
+khf = $lao              # Buddhist Kmhmu
+
+#--------------------------------------------------------------------#
+#
+# Languages using Tibetan script (possibly)
+#
+
+$tibetan = $common U+0F00..U+0FFF
+
+                        # Central Tibetan:
+bo = $tibetan           #   Lhasa Tibetan / Standard Tibetan
+dre = $tibetan          #   Dolpo
+hut = $tibetan          #   Humla, Limi
+lhm = $tibetan          #   Lhomi (Shing Saapa)
+muk = $tibetan          #   Mugom (Mugu)
+ola = $tibetan          #   Walungge (Gola)
+loy = $tibetan          #   Lowa/Loke (Mustang)
+tcn = $tibetan          #   Tichurong
+                        # Amdo:
+adx = $tibetan          #   Amdo Tibetan
+                        #   Gserpa (missing code)
+                        #   Khalong (missing code)
+                        # Kham (Eastern):
+khg = $tibetan          #   Khams
+kbg = khg               #   Khamba
+tsk = khg               #   Tseku
+bqh = $tibetan          #   Baima
+cda = $tibetan          #   Choni
+                        #   Zhongu (missing code)
+                        #   Dongwang (missing code)
+                        #   Drugchu (missing code)
+                        #   Zitsadegu (missing code)
+                        # Southern:
+sip = $tibetan          #   Sikkimese
+dz = $tibetan           #   Dzongkha (Bhutanese)
+lya = dz                #   Laya
+luk = dz                #   Lunana
+adp = dz                #   Adap
+gro = $tibetan          #   Groma
+bro = $tibetan          #   Brokkat
+sgt = $tibetan          #   Brokpa
+cgk = $tibetan          #   Chochangachakha
+lkh = $tibetan          #   Lakha
+nao = $tibetan          #   Naapa
+                        # Ladakhi-Balti:
+lbj = $tibetan          #   Ladakhi
+zau = $tibetan          #   Zangskari
+cna = $tibetan          #   Changthang
+bft = $tibetan          #   Balti (mainly Perso-Arabic)
+prx = $tibetan          #   Purgi (also Perso-Arabic)
+                        # Lahuli-Spiti:
+sbu = $tibetan          #   Lahuli (Stod Bhoti)
+spt = $tibetan          #   Spiti Bhoti
+nes = $tibetan          #   Bhoti Kinnauri / Nyamkat
+tqp = $tibetan          #   Tukpa
+                        # Sherpa-Jirel:
+xsr = $tibetan          #   Sherpa
+jul = $tibetan          #   Jirel
+                        # Kyirong–Kagate:
+kgy = $tibetan          #   Kyirong
+syw = $tibetan          #   Kagate
+ttz = $tibetan          #   Tsum
+scp = $tibetan          #   Yolmo
+kte = $tibetan          #   Nubri
+gyo = $tibetan          #   Gyalsumdo
+                        # Tshangla:
+tsj = $tibetan          #   Tshangla
+kkf = $tibetan          #   Kalaktang Monpa
+                        # East Bodish:
+dka = $tibetan          #   Dakpa
+twm = $tibetan          #   Tawang Monpa
+dzl = $tibetan          #   Dzala
+neh = $tibetan          #   Nyen
+tgf = $tibetan          #   Chali
+kjz = $tibetan          #   Bumthang
+xkf = $tibetan          #   Kheng
+xkz = $tibetan          #   Kurtöp
+npb = $tibetan          #   Nupbi
+ole = $tibetan          #   'Ole
+                        # Basum:
+                        #   Basum (missing code)
+                        # Tamangic:
+taj = $tibetan          #   Eastern Tamang
+tdg = $tibetan          #   Western Tamang
+tmk = $tibetan          #   Northwestern Tamang
+tge = $tibetan          #   Eastern Gorkha Tamang
+gvr = $tibetan          #   Gurung
+ths = $tibetan          #   Thakali
+skj = $tibetan          #   Seke
+nmm = $tibetan          #   Manang
+chx = $tibetan          #   Chantyal
+ghh = $tibetan          #   Northern Ghale
+ghe = $tibetan          #   Southern Ghale
+ght = $tibetan          #   Kutang
+kzq = $tibetan          #   Kaike
+
+#--------------------------------------------------------------------#
+#
+# Languages using scripts in the Myanmar block
+#
+
+$myanmar = $common U+1000..U+109F
+
+my = $myanmar           # Burmese
+int = my                # Intha
+dnv = my                # Danu
+tvn = my                # Tavoyan dialects
+tco = my                # Taungyo dialects
+rki = my                # Rakhine language
+rmz = my                # Marma
+
+shn = $myanmar          # Shan
+
+kar = $myanmar          # Karen (many more)
+pdu = $myanmar          # Padaung
+
+kac = $myanmar          # Jingpho
+sgp = $myanmar          # Singpho
+tcl = $myanmar          # Taman
+
+mnw = $myanmar          # Modern Mon
+omx = $myanmar          # Old Mon
+
+#--------------------------------------------------------------------#
+#
+# Languages using Georgian script
+#
+
+$georgian = {
+    $common
+    U+10A0..U+10FF      # Georgian Unicode block
+    U+2D00..U+2D2F      # Georgian Supplement
+    U+1C90..U+1CBF      # Georgian Extended
+    U+20BE              # ₾
+    }
+
+ka = $georgian          # Georgian
+
+#--------------------------------------------------------------------#
+#
+# Languages using Hangul script
+#
+
+$hangul = {
+    $common
+    U+1100..U+11FF      # Hangul Jamo
+    U+3130..U+318F      # Hangul Compatibility Jamo
+    U+AC00..U+D7AF      # Hangul Syllables
+    U+20A9              # ₩
+    }
+
+ko = $hangul            # Korean
+
+#--------------------------------------------------------------------#
+#
+# Languages using Ethiopic scripts (possibly)
+#
+
+$ethiopic = {
+    $common
+    U+1200..U+137F      # Ethiopic Unicode block
+    U+1380..U+139F      # Ethiopic Supplement
+    U+2D80..U+2DDF      # Ethiopic Extended
+    U+AB00..U+AB2F      # Ethiopic Extended-A
+    U+1E7E0..U+1E7FF    # Ethiopic Extended-B
+    }
+
+                        # Ethiosemitic:
+am = $ethiopic          #   Amharic (Ge'ez)
+agj = $ethiopic         #   Argobba
+gez = $ethiopic         #   Ge'ez (Ge'ez)
+har = $ethiopic         #   Harari (Ge'ez)
+ior = $ethiopic         #   Inor
+mvz = $ethiopic         #   Mesqan
+                        #   Muher (missing code)
+sgw = $ethiopic         #   Sebat Bet Gurage (Ge'ez)
+stv = $ethiopic         #   Silt'e
+wle = $ethiopic         #   Wolane
+gru = $ethiopic         #   Soddo (Kistane)
+ti = $ethiopic          #   Tigrinya (Ge'ez)
+tig = $ethiopic         #   Tigre (Ge'ez)
+zwa = $ethiopic         #   Zay (Ge'ez)
+                        # Cusitic:
+aa = $ethiopic          #   Afar (Ge'ez, Latin)
+gwd = $ethiopic         #   Ale (Ethiopic)
+arv = $ethiopic         #   Arbore
+awn = $ethiopic         #   Awngi
+bsw = $ethiopic         #   Baiso
+byn = $ethiopic         #   Bilen (Ge'ez)
+dox = $ethiopic         #   Bussa
+bji = $ethiopic         #   Burji (Ethiopic)
+                        #   Daasanach (Latin)
+gdl = $ethiopic         #   Dirasha
+drs = $ethiopic         #   Gedeo
+hdy = $ethiopic         #   Hadiyya (Latin, Ge'ez)
+ktb = $ethiopic         #   Kambaata (Ethiopic, Latin)
+alw = $ethiopic         #   Kambaata, Alaba-K'abeena (Ethiopic, Latin)
+kxc = $ethiopic         #   Konso (Ethiopic)
+liq = $ethiopic         #   Libido
+                        #   Oromo (Latin)
+ahg = $ethiopic         #   Qimant
+ssy = $ethiopic         #   Saho
+sid = $ethiopic         #   Sidama
+                        #   Somali (Latin, Arabic)
+tsb = $ethiopic         #   Tsamai
+xan = $ethiopic         #   Xamtanga
+                        # Omotic:
+aiw = $ethiopic         #   Aari
+myo = $ethiopic         #   Anfillo
+myf = $ethiopic         #   Bambassi
+bst = $ethiopic         #   Basketo
+bcq = $ethiopic         #   Bench
+bwo = $ethiopic         #   Shinasha
+cra = $ethiopic         #   Chara
+dim = $ethiopic         #   Dime
+mdx = $ethiopic         #   Dizin
+doz = $ethiopic         #   Dorze
+gmv = $ethiopic         #   Gamo (Ethiopic, Latin)
+gof = $ethiopic         #   Gofa (Ethiopic, Latin)
+dwr = $ethiopic         #   Dawro (Ethiopic, Latin)
+gza = $ethiopic         #   Ganza
+gyl = $ethiopic         #   Gayil
+amf = $ethiopic         #   Hamer
+hoz = $ethiopic         #   Hozo
+kcx = $ethiopic         #   Kachama-Ganjule
+kbr = $ethiopic         #   Kafa
+kxh = $ethiopic         #   Karo
+kqy = $ethiopic         #   Koore (Ethiopic, Latin)
+mdy = $ethiopic         #   Maale (Ethiopic)
+mfx = $ethiopic         #   Melo
+noz = $ethiopic         #   Nayi
+oyd = $ethiopic         #   Oyda
+sze = $ethiopic         #   Seze
+moy = $ethiopic         #   Shakacho (Ethiopic, Latin)
+she = $ethiopic         #   Sheko
+                        #   Wolaitta (Latin)
+jnj = $ethiopic         #   Yem (Ethiopic, Latin)
+zay = $ethiopic         #   Zayse-Zergulla (Ethiopic)
+                        # Nil-Saharan:
+anu = $ethiopic         #   Anuak
+wti = $ethiopic         #   Berta
+dtn = $ethiopic         #   Daats'iin
+guk = $ethiopic         #   Gumuz (Ethiopic, Latin)
+koe = $ethiopic         #   Baale
+xom = $ethiopic         #   Komo
+kmq = $ethiopic         #   Kwama
+xwg = $ethiopic         #   Kwegu
+mpe = $ethiopic         #   Majang
+mym = $ethiopic         #   Me'en (was Ge'ez, Latin)
+                        #   Murle (Latin)
+muz = $ethiopic         #   Mursi (Ethiopic)
+                        #   Nuer (Latin)
+nnj = $ethiopic         #   Nyangatom
+lgn = $ethiopic         #   Opuo
+sbf = $ethiopic         #   Shabo
+                        #   Suri (Latin)
+                        #   Uduk (Latin)
+
+#--------------------------------------------------------------------#
+#
+# Languages using Cherokee script
+#
+
+$cherokee = {
+    $common
+    U+13A0..U+13FF      # Cherokee Unicode block
+    U+AB70..U+ABBF      # Cherokee Supplement
+    }
+
+chr = $cherokee         # Cherokee
+
+#--------------------------------------------------------------------#
+#
+# Languages using Canadian Aboriginal scripts
+#
+
+$canadian_aboriginal = {
+    $common
+    U+1400..U+167F      # Unified Canadian Aboriginal Syllabics
+    U+18B0..U+18FF      # Unified Canadian Aboriginal Syllabics Extended
+    }
+
+alg = $canadian_aboriginal  # Algonquian:
+cr = $canadian_aboriginal   #   Cree
+crk = cr                    #   Plains Cree
+cwd = cr                    #   Woods Cree
+csw = cr                    #   Swampy Cree
+crm = cr                    #   Moose Cree
+crl = cr                    #   Northern East Cree
+crj = cr                    #   Southern East Cree
+nsk = cr                    #   Naskapi
+moe = cr                    #   Montagnais
+atj = cr                    #   Atikamekw
+oj = $canadian_aboriginal   #   Ojibwe/Chippewa
+ojs = oj                    #   Severn Ojibwa
+ojg = oj                    #   Eastern Ojibwa
+ojc = oj                    #   Central Ojibwa
+ojb = oj                    #   Northwestern Ojibwa
+ojw = oj                    #   Western Ojibwa
+otw = oj                    #   Ottawa
+alq = oj                    #   Algonquin
+ciw = oj                    #   Chippewa
+bla = $canadian_aboriginal  #   Blackfoot (Siksika)
+esx = $canadian_aboriginal  # Eskimo-Aleut:
+iu = $canadian_aboriginal   #   Inuktitut (also Latin)
+ike = iu                    #   Eastern Canadian Inuktitut
+ikt = iu                    #   Inuinnaqtun
+ath = $canadian_aboriginal  # Athabaskan:
+bea = $canadian_aboriginal  #   Dane-zaa
+den = $canadian_aboriginal  #   Slavey
+scs = den                   #   North Slavey
+xsl = den                   #   South Slavey
+chp = $canadian_aboriginal  #   Chipewyan
+crx = $canadian_aboriginal  #   Carrier
+caf = crx                   #   Southern Carrier
+sek = $canadian_aboriginal  #   Sekani
+
+#--------------------------------------------------------------------#
+#
+# Languages using Hanunoo script
+#
+
+$hanunoo = $common U+1720..U+173F
+
+hnn = $hanunoo          # Hanunoo
+
+#--------------------------------------------------------------------#
+#
+# Languages using Buhid script
+#
+
+$buhid = $common U+1740..U+175F
+
+bku = $buhid            # Buhid
+
+#--------------------------------------------------------------------#
+#
+# Languages using Tagbanwa script
+#
+
+$tagbanwa = $common U+1760..U+177F
+
+tbw = $tagbanwa         # Aborlan Tagbanwa
+tbk = $tagbanwa         # Calamian Tagbanwa
+tgt = $tagbanwa         # Central Tagbanwa
+
+#--------------------------------------------------------------------#
+#
+# Languages using Khmer script
+#
+
+$khmer = {
+    $common
+    U+1780..U+17FF      # Khmer
+    U+19E0..U+19FF      # Khmer Symbols
+    }
+
+km = $khmer             # Central Khmer
+kxm = $khmer            # Northern Khmer
+jra = $khmer            # Jarai
+
+#--------------------------------------------------------------------#
+#
+# Languages using Limbu script
+#
+
+$limbu = $common U+1900..U+194F
+
+lif = $limbu            # Limbu
+
+#--------------------------------------------------------------------#
+#
+# Languages using Tai Le script
+#
+
+$tai_le = $common U+1950..U+197F
+
+tdd = $tai_le           # Tai Nüa
+thi = $tai_le           # Tai Long
+
+pll = $myanmar $tai_le  # Palaung, Shwe
+pce = $myanmar $tai_le  # Palaung, Ruching
+rbb = $myanmar $tai_le  # Palaung, Rumai
+
+blr = $tai_tham $tai_le # Blang
+stu = $tai_tham $tai_le # Samtao
+
+#--------------------------------------------------------------------#
+#
+# Languages using New Tai Lue script
+#
+
+$new_tai_lue = $common U+1980..U+19DF
+
+khb = $thai $tai_tham $new_tai_lue  # Tai Lue
+
+#--------------------------------------------------------------------#
+#
+# Languages using Buginese (Lontara) script
+#
+
+$buginese = $common U+1A00..U+1A1F
+
+bug = $buginese         # Buginese
+mak = $buginese         # Makassarese
+bhp = $buginese         # Bima
+end = $buginese         # Ende
+mdr = $buginese         # Mandar
+smw = $buginese         # Sumbawa
+
+#--------------------------------------------------------------------#
+#
+# Languages using Tai Tham script
+#
+
+$tai_tham = $common U+1A20..U+1AAF
+
+nod = $tai_tham $thai $lao  # Northern Thai
+kkh = $tai_tham $thai       # Khün
+tts = $tai_tham $thai       # Isan
+
+#--------------------------------------------------------------------#
+#
+# Languages using Balinese script
+#
+
+$balinese = $common U+1B00..U+1B7F
+
+ban = $balinese         # Balinese (mostly Latin)
+sas = $balinese         # Sasak
+
+#--------------------------------------------------------------------#
+#
+# Languages using Sundanese script
+#
+
+$sundanese = {
+    $common
+    U+1B80..U+1BBF      # Sundanese
+    U+1CC0..U+1CCF      # Sundanese Supplement
+    }
+
+su = $sundanese         # Sundanese
+bac = su                # Baduy Sundanese
+
+#--------------------------------------------------------------------#
+#
+# Languages using Batak script
+#
+
+$batak = $common U+1BC0..U+1BFF
+
+btk = $batak            # Batak languages
+btd = btk               # Pakpak (Dairi)
+btx = btk               # Karo
+btz = btk               # Alas
+bts = btk               # Simalungun
+bbc = btk               # Toba Batak
+akb = btk               # Angkola
+btm = btk               # Mandailing
+
+#--------------------------------------------------------------------#
+#
+# Languages using Lepcha script
+#
+
+$lepcha = $common U+1C00..U+1C4F
+
+lep = $lepcha           # Lepcha
+
+#--------------------------------------------------------------------#
+#
+# Languages using Ol Chiki script
+#
+
+$ol_chiki = $common U+1C50..U+1C7F
+
+sat = $ol_chiki         # Santali
+mjx = $ol_chiki         # Mahali
+
+#--------------------------------------------------------------------#
+#
+# Languages using Coptic script
+#
+
+$coptic = {
+    $common
+    U+0300..U+036F      # Combining Diacritical Marks
+    U+0370..U+03FF      # Greek and Coptic
+    U+2C80..U+2CFF      # Coptic
+    }
+
+cop = $coptic           # Coptic
+
+#--------------------------------------------------------------------#
+#
+# Languages using Tifinagh script
+#
+
+$tifinagh = $common U+2D30..U+2D7F
+
+$berber_latin = {
+    $common
+    $common_marks
+    U+00C2              # Â
+    U+00C4              # Ä
+    U+00CA              # Ê
+    U+00CE              # Î
+    U+00D0..U+00D1      # ÐÑ
+    U+00D4              # Ô
+    U+00DB              # Û
+    U+00E2              # â
+    U+00E4              # ä
+    U+00EA              # ê
+    U+00EE              # î
+    U+00F0..U+00F1      # ðñ
+    U+00F4              # ô
+    U+00FB              # û
+    U+0100..U+0101      # Āā
+    U+0102..U+0103      # Ăă
+    U+010C..U+010D      # Čč
+    U+0120..U+0121      # Ġġ
+    U+012A..U+012B      # Īī
+    U+014A..U+014B      # Ŋŋ
+    U+0158..U+0159      # Řř
+    U+0160..U+0161      # Šš
+    U+0162..U+0163      # Ţţ
+    U+016A..U+016B      # Ūū
+    U+017D..U+017E      # Žž
+    U+018E..U+018F      # ƎƏ
+    U+0190              # Ɛ
+    U+0194              # Ɣ
+    U+01DD              # ǝ
+    U+01E6..U+01E7      # Ǧǧ
+    U+01F0              # ǰ
+    U+0259              # ə
+    U+025B              # ɛ
+    U+0263              # ɣ
+    U+0294..U+0295      # ʔʕ
+    U+0393              # Γ
+    U+0398              # Θ
+    U+03B3              # γ
+    U+03B8              # θ
+    U+1E04..U+1E05      # Ḅḅ
+    U+1E0C..U+1E0D      # Ḍḍ
+    U+1E24..U+1E25      # Ḥḥ
+    U+1E32..U+1E33      # Ḳḳ
+    U+1E36..U+1E37      # Ḷḷ
+    U+1E42..U+1E43      # Ṃṃ
+    U+1E46..U+1E47      # Ṇṇ
+    U+1E5A..U+1E5B      # Ṛṛ
+    U+1E62..U+1E63      # Ṣṣ
+    U+1E6C..U+1E6D      # Ṭṭ
+    U+1E88..U+1E89      # Ẉẉ
+    U+1E92..U+1E93      # Ẓẓ
+    U+0320              # combining minus sign below
+    U+0331..U+0332      # macron below, low line
+    }
+
+ber = $tifinagh $berber_latin # Berber languages
+mzb = ber               # Mozabite
+rif = ber               # Riffian
+shy = ber               # Shawiya
+tzm = ber               # Central Atlas Tamazight
+shi = ber               # Shilha
+kab = ber               # Kabyle
+tmh = ber               # Tuareg
+thv = ber               # Tamahaq
+taq = ber               # Tamasheq
+zen = ber               # Zenaga
+zgh = ber               # Standard Moroccan Tamazight
+
+#--------------------------------------------------------------------#
+#
+# Languages using Yi script
+#
+
+$yi = {
+    $common
+    U+A000..U+A48F      # Yi Syllables
+    U+A490..U+A4CF      # Yi Radicals
+    }
+
+ii = $yi                # Northern Yi (Nuosu)
+                        # Western Yi (Lalo) - no writing system listed
+                        # Central Yi (Lolopo):
+ycl = $yi               #   Lolopo
+ysp = $yi               #   Southern Lolopo
+                        # Southern Yi (Nisu):
+nsd = $yi               #   Nisu, Southern
+yiv = $yi               #   Nisu, Northern
+nos = $yi               #   Nisu, Eastern
+nsv = $yi               #   Nisu, Southwestern
+nsf = $yi               #   Nisu, Northwestern
+                        # Southeastern Yi (Sani) - no writing system listed
+                        # Eastern Yi (Nasu):
+ywq = $yi               #   Nasu (Wulu)
+ygp = $yi               #   Gepo (Köpu)
+yig = $yi               #   Wusa Nasu
+ywu = $yi               #   Wumeng Nasu
+nty = $yi               # Mantsi
+
+#--------------------------------------------------------------------#
+#
+# Languages using Lisu script
+#
+
+$lisu = $common U+A4D0..U+A4FF
+
+lis = $lisu             # Lisu
+
+#--------------------------------------------------------------------#
+#
+# Languages using Vai script
+#
+
+$vai = $common U+A500..U+A63F
+
+vai = $vai              # Vai
+
+#--------------------------------------------------------------------#
+#
+# Languages using Bamum script
+#
+
+$bamum = $common U+A6A0..U+A6FF
+
+bax = $bamum            # Bamum
+
+#--------------------------------------------------------------------#
+#
+# Languages using Syloti Nagri script
+#
+
+$syloti_nagri = $common U+A800..U+A82F
+
+syl = $syloti_nagri     # Sylheti
+
+#--------------------------------------------------------------------#
+#
+# Languages using Kayah Li script
+#
+
+$kayah_li = $common U+A900..U+A92F
+
+eky = $kayah_li         # Eastern Kayah
+kyu = $kayah_li         # Western Kayah
+kvy = $kayah_li         # Yintale (unwritten?)
+
+#--------------------------------------------------------------------#
+#
+# Languages using Javanese script
+#
+
+$javanese = $common U+A980..U+A9DF
+
+jv = $javanese          # Javanese
+jvn = jv                # Caribbean Javanese
+jas = jv                # New Caledonian Javanese
+osi = jv                # Osing
+tes = jv                # Tenggerese
+kaw = jv                # Kawi
+
+mad = {                 # Madurese
+    $common
+    $common_marks
+    U+00C2              # Â
+    U+00C8              # È
+    U+00D1              # Ñ
+    U+00E2              # â
+    U+00E8              # è
+    U+00F1              # ñ
+    U+1E0C..U+1E0D      # Ḍḍ
+    U+1E46..U+1E47      # Ṇṇ
+    U+1E6C..U+1E6D      # Ṭṭ
+    $javanese
+    }
+
+#--------------------------------------------------------------------#
+#
+# Languages using Cham script
+#
+
+$cham = $common U+AA00..U+AA5F
+
+cja = $cham             # Western Cham
+cjm = $cham             # Eastern Cham
+
+#--------------------------------------------------------------------#
+#
+# Languages using Tai Viet script
+#
+
+$tai_viet = $common U+AA80..U+AADF
+
+blt = $tai_viet         # Tai Dam
+tyr = $tai_viet         # Tai Daeng
+twh = $tai_viet         # Tai Dón
+soa = $thai $tai_viet   # Thai Song
+tyt = $tai_viet         # Tày Tac
+
+#--------------------------------------------------------------------#
+#
+# Languages using Meetei Mayek script
+#
+
+$meetei_mayek = $common U+ABC0..U+ABFF
+
+mni = $meetei_mayek     # Meitei
+
+#--------------------------------------------------------------------#

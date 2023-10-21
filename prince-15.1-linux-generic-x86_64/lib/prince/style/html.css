@@ -1,0 +1,672 @@
+/*
+    Prince - HTML stylesheet
+    https://www.princexml.com
+*/
+
+@namespace url("http://www.w3.org/1999/xhtml");
+
+/* Document */
+
+html { display: block }
+
+/* Head */
+
+head { display: none }
+title { display: none }
+style { display: none }
+link { display: none }
+meta { display: none }
+base { display: none }
+
+/* Body */
+
+body { display: block }
+
+body[text] { color: attr(text, color) }
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+    font-weight: bold;
+    page-break-inside: avoid;
+    page-break-after: avoid
+}
+
+h1 { font-size: 24pt; margin: 16pt   0; prince-bookmark-level: 1 }
+h2 { font-size: 18pt; margin: 15pt   0; prince-bookmark-level: 2 }
+h3 { font-size: 14pt; margin: 14pt   0; prince-bookmark-level: 3 }
+h4 { font-size: 12pt; margin: 16pt   0; prince-bookmark-level: 4 }
+h5 { font-size: 10pt; margin: 16.5pt 0; prince-bookmark-level: 5 }
+h6 { font-size:  8pt; margin: 21pt   0; prince-bookmark-level: 6 }
+
+/* Block elements */
+
+article, aside, section, hgroup { display: block }
+header, footer, nav, main { display: block }
+figure, figcaption { display: block }
+
+address {
+    display: block;
+    font-style: italic
+}
+
+blockquote {
+    display: block;
+    margin-top: 1.12em;
+    margin-bottom: 1.12em;
+    margin-left: 22.5pt;
+    margin-right: 22.5pt
+}
+
+div { display: block }
+
+p {
+    display: block;
+    margin-top: 1.12em;
+    margin-bottom: 1.12em
+}
+
+pre {
+    display: block;
+    margin-top: 1.12em;
+    margin-bottom: 1.12em;
+    font-family: monospace;
+    white-space: pre
+}
+
+hr {
+    display: block;
+    border: 1pt inset black
+}
+
+hr[noshade] { border-style: solid }
+
+hr[size] { height: attr(size, px) }
+
+hr[size="1"] {
+    border-style: none;
+    border-top-style: solid;
+    height: auto
+}
+
+hr[align=right i] { margin-left: auto }
+
+/* Images */
+
+img, embed { display: inline-block }
+
+img {
+    content: attr(alt)
+}
+
+img[src]:not([src="" s]) {
+    content: prince-fallback(attr(src, url)), attr(alt)
+}
+
+embed[src]:not([src="" s]) {
+    content: attr(src, url)
+}
+
+object {
+    display: inline-block;
+    content: prince-fallback(attr(data, url))
+}
+
+/* Video */
+
+video {
+    display: inline-block;
+    content: prince-fallback(attr(poster, url))
+}
+
+/* Flash */
+
+embed[type="application/x-shockwave-flash" i],
+object[type="application/x-shockwave-flash" i] {
+    display: table-cell;
+    width: attr(width, px);
+    height: attr(height, px);
+    content: "Flash";
+    background: #f0f0f0;
+    color: black;
+    font: bold 12px sans-serif;
+    text-align: center;
+    vertical-align: middle
+} 
+
+/* Scripting */
+
+script { display: none }
+
+noscript { display: block }
+
+@media (scripting) {
+    noscript { display: none !important }
+}
+
+/* Forms */
+
+form, fieldset { display: block }
+
+input, select, textarea {
+    background: white;
+}
+input:disabled, select:disabled, textarea:disabled {
+    color: #6D6D6D;
+    background: #F0F0F0;
+}
+
+/* Forms - buttons */
+
+button,
+input[type="button" i],
+input[type="reset" i],
+input[type="submit" i],
+input[type="file" i]::after {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    min-height: 1.2em;
+    color: buttontext;
+    background: #D8D8D8;
+    border: outset 1px gray;
+}
+button:disabled,
+input[type="button" i]:disabled,
+input[type="reset" i]:disabled,
+input[type="submit" i]:disabled,
+input[type="file" i]:disabled::after {
+    color: #808080;
+}
+
+input[type="button" i] {
+    content: attr(value, string);
+}
+
+input[type="file" i] {
+    display: inline-block;
+    width: 10em;
+    height: 1.2em;
+    border: solid 1px gray;
+}
+
+input[type="file" i]::after {
+    content: "Browse...";
+    margin-left: 10.2em;
+}
+
+input[type="reset" i] {
+    content: attr(value, string, "Reset");
+}
+
+input[type="submit" i] {
+    content: attr(value, string, "Submit");
+}
+
+/* Forms - checkbox and radio box */
+
+input[type="checkbox" i], input[type="radio" i] {
+    content: " ";
+    display: inline-block;
+    text-align: center;
+    min-width: 1em;
+    height: 1em;
+    border: solid 1px gray;
+}
+
+input[type="checkbox" i][checked] {
+    content: "\2713";
+}
+
+input[type="radio" i] {
+    border-radius: 50%;
+    position: relative;
+}
+
+input[type="radio" i][checked]:before {
+    content: " ";
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: .2em;
+    right: .2em;
+    bottom: .2em;
+    left: .2em;
+}
+
+/* Forms - image button */
+
+input[type="image" i] {
+    content: attr(src, url);
+    display: inline-block;
+    background: none;
+}
+
+/* Forms - text inputs */
+
+input:not([type="button" i],
+          [type="reset" i],
+          [type="submit" i],
+          [type="image" i],
+          [type="checkbox" i],
+          [type="radio" i],
+          [type="file" i],
+          [type="hidden" i]) {
+    display: inline-block;
+    white-space: pre;
+    overflow: hidden;
+    content: attr(value, string, " ");
+    width: attr(size, ex, 10em);
+    height: 1.2em;
+    border: solid 1px gray;
+}
+
+input[type="password" i] {
+    content: " "
+}
+
+/* Forms - hidden input */
+
+input[type="hidden" i] {
+    display: none
+}
+
+/* Forms - textarea */
+
+textarea {
+    display: inline-block;
+    border: solid 1px gray;
+    white-space: pre-wrap;
+    overflow: hidden;
+    /* TODO: use 'ch' and 'lh' units when supported */
+    /* TODO: clamp cols/rows >= 1 when max() when supported */
+    width: calc(1ex * attr(cols integer, 20));
+    height: calc(1.1em * attr(rows integer, 2));
+    line-height: 1.1;
+}
+
+/* Forms - select, option */
+
+select {
+    display: inline-table;
+    border: solid 1px gray
+}
+
+select option {
+    display: table-row;
+}
+
+/* Forms - list box */
+
+select[multiple] option:checked,
+select[size]:not([size="1"]) option:checked {
+    background: lightgray;
+}
+
+select[multiple][size="1"]:has(option:checked) option:not(:checked) {
+    display: none;
+}
+select[multiple][size="1"] option:checked ~ option:checked {
+    display: none;
+}
+select[multiple][size="1"]:not(:has(option:checked)) option:nth-child(n + 2) {
+    display: none;
+}
+select[size="2"] option:nth-child(n + 3) { display: none; }
+select[size="3"] option:nth-child(n + 4) { display: none; }
+select[size="4"] option:nth-child(n + 5) { display: none; }
+select[size="5"] option:nth-child(n + 6) { display: none; }
+select[size="6"] option:nth-child(n + 7) { display: none; }
+select[size="7"] option:nth-child(n + 8) { display: none; }
+select[size="8"] option:nth-child(n + 9) { display: none; }
+select[size="9"] option:nth-child(n + 10) { display: none; }
+select[size="10"] option:nth-child(n + 11) { display: none; }
+
+/* Forms - dropdown */
+
+select:not([multiple], [size]:not([size="1"])) option {
+    display: none;
+}
+
+select:not([multiple], [size]:not([size="1"])) option:checked {
+    display: table-row;
+}
+
+select:not([multiple], [size]:not([size="1"])) option:checked:has(~ option:checked) {
+    display: none;
+}
+
+select:not([multiple], [size]:not([size="1"]), :has(option:checked)) option:first-child {
+    display: table-row;
+}
+
+select:not([multiple], [size]:not([size="1"])) option::after {
+    content: "\00A0\25BC";
+    color: gray;
+    float: right;
+}
+
+select:not([multiple], [size]:not([size="1"]), :has(option)) {
+    content: "\00A0\00A0\00A0\00A0\25BC";
+    color: gray;
+    text-align: right;
+}
+
+select[multiple]:not(:has(option)),
+select[size]:not([size="1"], :has(option)) {
+    content: "\00A0";
+}
+
+/* Forms - datalist */
+
+datalist {
+    display: none
+}
+
+/* Frames */
+
+frameset, noframes { display: block }
+
+/* Lists */
+
+dl { display: block }
+
+dt {
+    display: block;
+    font-weight: bold;
+    page-break-after: avoid
+}
+
+dd {
+    display: block;
+    margin-left: 22.5pt;
+    margin-bottom: 1.0em
+}
+
+ol {
+    display: block;
+    margin-left: 40pt;
+    margin-top: 1.12em;
+    margin-bottom: 1.12em;
+    list-style-type: decimal;
+    counter-reset: list-item
+}
+
+ol[start] {
+    counter-reset: list-item attr(start, integer);
+    counter-increment: list-item -1
+}
+
+ul {
+    display: block;
+    margin-left: 40pt;
+    margin-top: 1.12em;
+    margin-bottom: 1.12em;
+    list-style-type: disc;
+    counter-reset: list-item
+}
+
+li { display: list-item }
+
+li[value] {
+    counter-reset: list-item attr(value, integer);
+    counter-increment: list-item 0
+}
+
+li::marker {
+    padding-right: 8pt;
+    text-align: right
+}
+
+ol ul, ul ul, dl ul,
+ol ol, ul ol, dl ol {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+ul ul, ol ul { list-style-type: circle }
+ul ul ul, ol ul ul, ol ol ul, ul ol ul { list-style-type: square } 
+
+ul[type="disc" i] { list-style-type: disc }
+ul[type="circle" i] { list-style-type: circle }
+ul[type="square" i] { list-style-type: square }
+
+ol[type="1"] { list-style-type: decimal }
+ol[type="a"] { list-style-type: lower-alpha }
+ol[type="A"] { list-style-type: upper-alpha }
+ol[type="i"] { list-style-type: lower-roman }
+ol[type="I"] { list-style-type: upper-roman } 
+
+/* Tables */
+
+table {
+    display: table;
+    box-sizing: border-box;
+    border-spacing: attr(cellspacing, px, 2px);
+    border-style: outset;
+    border-width: attr(border, px, 0)
+}
+
+table[border=""] { border-width: 1px }
+
+tr    { display: table-row }
+thead { display: table-header-group }
+tfoot { display: table-footer-group }
+tbody { display: table-row-group }
+
+caption {
+    display: table-caption;
+    text-align: center;
+    page-break-after: avoid;
+    page-break-inside: avoid
+}
+
+col { display: table-column }
+colgroup { display: table-column-group }
+
+table[border]:not([border="0"]) > thead > tr > td { border: inset 1px }
+table[border]:not([border="0"]) > thead > tr > th { border: inset 1px }
+table[border]:not([border="0"]) > tfoot > tr > td { border: inset 1px }
+table[border]:not([border="0"]) > tfoot > tr > th { border: inset 1px }
+table[border]:not([border="0"]) > tbody > tr > td { border: inset 1px }
+table[border]:not([border="0"]) > tbody > tr > th { border: inset 1px }
+table[border]:not([border="0"]) > tr > td { border: inset 1px }
+table[border]:not([border="0"]) > tr > th { border: inset 1px }
+
+td, th {
+    display: table-cell;
+    vertical-align: middle
+}
+
+th {
+    font-weight: bold;
+    text-align: center
+}
+
+tr[align="left" i] > th:not([align]) { text-align: left }
+tr[align="right" i] > th:not([align]) { text-align: right }
+
+td[valign=top i], th[valign=top i] { vertical-align: top }
+td[valign=bottom i], th[valign=bottom i] { vertical-align: bottom }
+
+td[colspan], th[colspan] { table-column-span: attr(colspan, integer) }
+td[rowspan], th[rowspan] { table-row-span: attr(rowspan, integer) }
+
+td[nowrap], th[nowrap] { white-space: nowrap }
+
+/* Bidi */
+
+bdo[dir="ltr" i] { direction: ltr; unicode-bidi: bidi-override }
+bdo[dir="rtl" i] { direction: rtl; unicode-bidi: bidi-override }
+
+*[dir="ltr" i] { direction: ltr; unicode-bidi: embed }
+*[dir="rtl" i] { direction: rtl; unicode-bidi: embed }
+
+/* Inline elements */
+
+abbr[title], acronym[title] { text-decoration: dotted underline }
+
+i, cite, dfn, em, var { font-style: italic }
+
+tt, code, kbd, samp { font-family: monospace }
+
+b, strong { font-weight: bold }
+
+ins, u { text-decoration: underline }
+del, s, strike { text-decoration: line-through }
+
+big { font-size: 1.17em }
+small { font-size: 0.83em }
+
+sub { vertical-align: sub }
+sup { vertical-align: super }
+
+sub, sup { font-size: 0.83em }
+
+br {
+    content: '\A';
+    white-space: pre;
+    background: none
+}
+
+br[clear="left" i] { clear: left }
+br[clear="right" i] { clear: right }
+br[clear="all" i] { clear: both }
+
+/* Quotes */
+
+q::before { content: "\201C" }
+q::after { content: "\201D" }
+
+q:lang(fr)::before { content: "\AB" }
+q:lang(fr)::after { content: "\BB" }
+
+q:lang(de)::before { content: "\201E" }
+q:lang(de)::after { content: "\201C" }
+
+/* Links */
+
+a[href] {
+    text-decoration: underline;
+    prince-link: attr(href, url)
+}
+
+/* Language appropriate default underline position */
+
+:root:lang(ja), [lang|=ja],
+:root:lang(mn), [lang|=mn],
+:root:lang(ko), [lang|=ko] { text-underline-position: right }
+:root:lang(zh), [lang|=zh] { text-underline-position: left }
+
+/* Presentational attributes */
+
+*[width] { width: attr(width, px, attr(width, percent)) }
+*[height] { height: attr(height, px, attr(height, percent)) }
+
+*[bgcolor] { background-color: attr(bgcolor, color) }
+
+/* Deprecated center tag */
+
+center {
+    display: block;
+    text-align: center
+}
+
+/* Deprecated font tag */
+
+font[face] { font-family: attr(face, font-family) }
+
+font[color] { color: attr(color, color) }
+
+font[size="1"] { font-size: 8pt }
+font[size="2"] { font-size: 10pt }
+font[size="3"] { font-size: 12pt }
+font[size="4"] { font-size: 14pt }
+font[size="5"] { font-size: 18pt }
+font[size="6"] { font-size: 24pt }
+font[size="7"] { font-size: 32pt }
+
+font[size="+1"] { font-size: 120% }
+font[size="+2"] { font-size: 140% }
+font[size="+3"] { font-size: 160% }
+font[size="+4"] { font-size: 190% }
+font[size="+5"] { font-size: 220% }
+font[size="+6"] { font-size: 260% }
+font[size="+7"] { font-size: 310% }
+
+font[size="-1"] { font-size: 83% }
+font[size="-2"] { font-size: 71% }
+font[size="-3"] { font-size: 62% }
+font[size="-4"] { font-size: 52% }
+font[size="-5"] { font-size: 45% }
+font[size="-6"] { font-size: 38% }
+font[size="-7"] { font-size: 32% }
+
+/* nobr */
+
+nobr { white-space: nowrap }
+
+/* Deprecated align attribute */
+
+*:not(table)[align="left" i] { text-align: left }
+*:not(table)[align="right" i] { text-align: right }
+*:not(table)[align="center" i] { text-align: center }
+*:not(table)[align="justify" i] { text-align: justify }
+
+table[align="right" i] {
+    margin-left: auto
+}
+
+table[align="center" i] {
+    margin-left: auto;
+    margin-right: auto
+}
+
+img[align="baseline" i] { vertical-align: baseline }
+img[align="bottom" i] { vertical-align: bottom }
+img[align="middle" i] { vertical-align: middle }
+img[align="top" i] { vertical-align: top }
+img[align="texttop" i] { vertical-align: text-top }
+img[align="left" i] { float: left }
+img[align="right" i] { float: right }
+
+/* Non-standard background attribute */
+
+*[background] { background-image: attr(background, url) }
+
+/* tagged PDF */
+
+article { prince-pdf-tag-type: Art }
+section { prince-pdf-tag-type: Sect }
+blockquote { prince-pdf-tag-type: BlockQuote }
+h1 { prince-pdf-tag-type: H1 }
+h2 { prince-pdf-tag-type: H2 }
+h3 { prince-pdf-tag-type: H3 }
+h4 { prince-pdf-tag-type: H4 }
+h5 { prince-pdf-tag-type: H5 }
+h6 { prince-pdf-tag-type: H6 }
+ol { prince-pdf-tag-type: OL }
+ul { prince-pdf-tag-type: UL }
+li { prince-pdf-tag-type: LI }
+dl { prince-pdf-tag-type: DL }
+dl > div { prince-pdf-tag-type: DL-Div }
+dt { prince-pdf-tag-type: DT }
+dd { prince-pdf-tag-type: DD }
+table { prince-pdf-tag-type: Table }
+figure { prince-pdf-tag-type: Div } /* figure grouper */
+figcaption { prince-pdf-tag-type: Caption }
+p { prince-pdf-tag-type: P }
+q { prince-pdf-tag-type: Quote }
+code { prince-pdf-tag-type: Code }
+input { prince-pdf-tag-type: Form }
+button { prince-pdf-tag-type: Form }
+select { prince-pdf-tag-type: Form }
+textarea { prince-pdf-tag-type: Form }
+img, input[type="image" i] {
+    prince-pdf-tag-type: Figure;
+    prince-alt-text: attr(alt);
+}
+abbr, acronym {
+    prince-expansion-text: attr(title)
+}
+

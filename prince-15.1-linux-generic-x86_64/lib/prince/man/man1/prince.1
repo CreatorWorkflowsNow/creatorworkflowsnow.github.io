@@ -1,0 +1,337 @@
+.TH PRINCE 1 "October 2022"
+.SH NAME
+prince \- convert XML and HTML to PDF
+.SH SYNOPSIS
+.B prince
+[options]
+.I FILES...
+[ -o
+.I PDF
+]
+.SH DESCRIPTION
+Prince is a batch formatter for converting XML and HTML into PDF.
+Prince has strong support for Cascading Style Sheets (CSS).
+Prince prints
+.I any
+XML document without relying on proprietary markup. 
+.SH OPTIONS
+.IP "\fB\-h\fR, \fB\-\-help\fR"
+Display usage and options.
+.IP "\fB\-\-version\fR"
+Display version information.
+.IP "\fB\-\-credits\fR"
+Display credits and acknowledgements.
+.SS LOGGING OPTIONS
+.IP "\fB\-v\fR, \fB\-\-verbose\fR"
+Log informative messages.
+.IP "\fB\-\-debug\fR"
+Log debug messages.
+.IP "\fB\-\-log\fR=\fIFILE\fR"
+Append log messages to a file.
+.IP "\fB\-\-no\-warn\-css\fR"
+Do not warn about CSS (implies the following).
+.IP "\fB\-\-no\-warn\-css\-unknown\fR"
+Do not warn about unknown CSS features.
+.IP "\fB\-\-no\-warn\-css\-unsupported\fR"
+Do not warn about unsupported CSS features.
+.IP "\fB\-\-structured\-log\fR=\fITYPE\fR"
+Enable structured logging on stderr.
+[normal|quiet|progress|buffered]
+.SS INPUT OPTIONS
+.IP "\fB\-i\fR, \fB\-\-input\fR=\fIINPUT\fR"
+Set input format. [xml|html|auto]
+.IP "\fB\-l\fR, \fB\-\-input\-list\fR=\fIFILE\fR"
+Read multiple input filenames from another file.
+.IP "\fB\-\-baseurl\fR=\fIURL\fR"
+Specify the base URL of the input document.
+.IP "\fB\-\-remap\fR=\fIURL\fR=\fIDIR\fR"
+Map a http(s) URL to a path so that network resources matching the
+scheme, host, port and path prefix will be loaded from the given directory.
+This option may be used multiple times.
+.IP "\fB\-\-fileroot\fR=\fIDIR\fR"
+Specify the root directory for absolute filenames.
+Deprecated in favour of
+.BR \-\-remap .
+.IP "\fB\-\-iframes\fR"
+Enable loading of HTML iframes.
+.IP "\fB\-\-xinclude\fR"
+Enable XInclude processing. Implies
+.BR \-\-xml\-external\-entities .
+.IP "\fB\-\-xml\-external\-entities\fR"
+Enable loading of XML external entities (XXE) and external DTD subsets.
+.IP "\fB\-\-no\-local\-files\fR"
+Disable access to local files.
+.SS NETWORK OPTIONS
+.IP "\fB\-\-no\-network\fR"
+Disable network access (prevents HTTP downloads).
+.IP "\fB\-\-auth\-user\fR=\fIUSER\fR, \fB\-\-auth\-password\fR=\fIPASS\fR"
+Specify username and password for HTTP authentication.
+.IP "\fB\-\-auth\-server\fR=\fIHOST\fR[:\fIPORT\fR]"
+Send the
+.BR \-\-auth\-user ,
+.B \-\-auth\-password
+credentials only to the given server.
+The default is to send them to any server
+which challenges for authentication.
+.IP "\fB\-\-auth\-scheme\fR=[\fIhttp\fR|\fIhttps\fR]"
+Send the
+.BR \-\-auth\-user ,
+.B \-\-auth\-password
+credentials only for requests with the given scheme.
+.IP "\fB\-\-auth\-method\fR=\fIbasic\fR,\fIdigest\fR,\fIntlm\fR,\fInegotiate\fR"
+Specify a list of HTTP authentication methods to enable (default: basic).
+.IP "\fB\-\-auth\fR=\fIURL\fR"
+Specify a URL with credentials for HTTP authentication:
+[\fISCHEME:\fR]//\fIUSER\fR:\fIPASS\fR@\fIHOST\fR[:\fIPORT\fR].
+Unlike the preceding options,
+\fB\-\-auth\fR may be used multiple times.
+The username and password must be percent-encoded.
+.IP "\fB\-\-no\-auth\-preemptive\fR"
+Do not send credentials to named servers until an
+authentication challenge is received.
+When multiple authentication methods are enabled,
+an initial request may be required to discover the
+methods supported by the remote site.
+.IP "\fB\-\-http\-proxy\fR=\fIPROXY\fR"
+Specify the HTTP proxy server.
+.IP "\fB\-\-http\-timeout\fR=\fISEC\fR"
+Specify the HTTP timeout in seconds (default: 60).
+.IP "\fB\-\-cookie\fR=\fICOOKIE\fR"
+Specify a cookie that may be sent when making HTTP requests.
+The format is a Set-Cookie header field value, e.g.
+\fB\-\-cookie "name=value; domain=example.com"\fR.
+If you do not specify a domain for the cookie, it may not be sent.
+The exact behaviour depends on the underlying libcurl version.
+.IP "\fB\-\-cookie-file\fR=\fIFILE\fR"
+Specify a file containing HTTP cookies.
+The cookies may be sent when making HTTP requests.
+The format of the file should be plain HTTP headers (Set-Cookie style)
+or the Netscape/Mozilla cookie file format.
+.IP "\fB\-\-ssl\-cacert\fR=\fIFILE\fR"
+Specify an SSL CA certificate file.
+This option is not supported on Windows.
+.IP "\fB\-\-ssl\-capath\fR=\fIPATH\fR"
+Specify an SSL CA certificate directory.
+This option is not supported on Windows.
+.IP "\fB\-\-ssl\-cert\fR=\fIFILE\fR"
+Specify an SSL client certificate file.
+Client authentication is not supported on Windows.
+.IP "\fB\-\-ssl\-cert-type\fR=\fITYPE\fR"
+Specify the SSL client certificate file type (PEM, DER). The default is PEM.
+.IP "\fB\-\-ssl\-key\fR=\fIFILE\fR"
+Specify an SSL private key file.
+.IP "\fB\-\-ssl\-key\-type\fR=\fITYPE\fR"
+Specify the SSL private key file type (PEM, DER). The default is PEM.
+.IP "\fB\-\-ssl\-key\-password\fR=\fIPASS\fR"
+Specify passphrase for the private key.
+.IP "\fB\-\-ssl\-version\fR=\fIVERSION\fR"
+Specify an SSL/TLS version to use (default, TLSv1, TLSv1.0, TLSv1.1, TLSv1.2,
+TLSv1.3).
+The default behaviour is to attempt to figure out the remote SSL protocol
+version.
+.IP "\fB\-\-insecure\fR"
+Disable SSL verification (not recommended).
+.IP "\fB\-\-ssl\-no\-revoke\fR"
+Disable certificate revocation checks.
+This option only has an effect on Windows.
+.IP "\fB\-\-ssl\-revoke\-best\-effort\fR"
+Ignore certificate revocation checks that fail due to missing or offline
+distribution points for the revocation check lists.
+This option only has an effect on Windows.
+.IP "\fB\-\-no\-redirects\fR"
+Do not follow HTTP/HTTPS redirects. The default behaviour is to follow
+redirects.
+.IP "\fB\-\-no\-parallel\-downloads\fR"
+Disable parallel downloads.
+.SS JAVASCRIPT OPTIONS
+.IP "\fB\-j\fR, \fB\-\-javascript\fR"
+Enable JavaScript in HTML documents.
+.IP "\fB\-\-script\fR=\fIFILE\fR"
+Run an external script.
+.IP "\fB\-\-max\-passes\fR=\fINUM\fR"
+Specify a limit on the number of times that the document may be laid out.
+By default, there is no limit.
+The first pass always occurs. The second and subsequent passes will occur if a
+JavaScript function registered with Prince.registerPostLayoutFunc modifies the
+DOM.
+.SS CSS OPTIONS
+.IP "\fB\-s\fR, \fB\-\-style\fR=\fIFILE\fR"
+Apply an external style sheet.
+.IP "\fB\-\-media\fR=\fIMEDIA\fR"
+Specify the media type (e.g. print, screen).
+.IP "\fB\-\-page\-size\fR=\fISIZE\fR"
+Specify the page size (e.g. A4).
+.IP "\fB\-\-page\-margin\fR=\fIMARGIN\fR"
+Specify the page margin (e.g. 20mm).
+The syntax for \fIMARGIN\fR is as for the CSS `margin' property:
+e.g.\ three space-separated lengths give
+the top, side and bottom page margins respectively.
+(However, see the
+.B \-\-mirror\-margins
+option.)
+.IP "\fB\-\-mirror\-margins"
+This option causes a four-term argument to
+.B \-\-page\-margin
+to be interpreted as
+.I TOP OUTSIDE BOTTOM INSIDE.
+Put another way, this option means that
+.B \-\-page\-margin
+specifies margins for right pages,
+while left pages have margins that are the mirror image of that.
+.IP
+(The choice of the
+.B \-\-page\-margin
+argument applying to right rather than recto or left pages
+means that the more visible outside margin comes first,
+and is convenient for books where
+the outside margin is to be either equal to the top margin
+or between the sizes of the top and bottom margins.)
+.IP "\fB\-\-no\-author\-style\fR"
+Ignore author style sheets.
+.IP "\fB\-\-no\-default\-style\fR"
+Ignore default style sheets.
+.SS PDF OUTPUT OPTIONS
+.IP "\fB\-o\fR, \fB\-\-output\fR=\fIFILE\fR"
+Specify the output PDF filename.
+.IP "\fB\-\-pdf\-profile\fR=\fIPROFILE\fR"
+Specify the PDF profile to use
+(PDF/A-1a, PDF/A-1b,
+PDF/A-2a, PDF/A-2b,
+PDF/A-3a, PDF/A-3b,
+PDF/UA-1,
+PDF/A-1a+PDF/UA-1,
+PDF/A-2a+PDF/UA-1,
+PDF/A-3a+PDF/UA-1,
+PDF/X-1a:2001,
+PDF/X-1a:2003,
+PDF/X-3:2002,
+PDF/X-3:2003,
+PDF/X-4).
+.IP "\fB\-\-pdf\-output\-intent\fR=\fIICC\fR"
+Specify the PDF/A or PDF/X output intent ICC profile.
+.IP "\fB\-\-pdf\-script\fR=\fIFILE\fR"
+Include an AcroJS script to run when the PDF is opened.
+.IP "\fB\-\-pdf\-event\-script\fR=\fIEVENT:FILE\fR"
+Include an AcroJS script to run on a specific event
+(will-close, will-save, did-save, will-print, did-print).
+.IP "\fB\-\-attach\fR=\fIFILE\fR"
+Attach a file to the PDF.
+.IP "\fB\-\-tagged\-pdf"
+Produce tagged PDF.
+.IP "\fB\-\-pdf\-forms"
+Enable generation of interactive form fields from HTML form control elements
+by default.
+.IP "\fB\-\-no\-artificial\-fonts\fR"
+Disable synthesis of missing bold/italic fonts.
+.IP "\fB\-\-no\-embed\-fonts\fR"
+Disable font embedding in PDF output.
+.IP "\fB\-\-no\-subset\-fonts\fR"
+Disable font subsetting in PDF output.
+.IP "\fB\-\-force\-identity\-encoding\fR"
+Use identity encoding for all fonts.
+.IP "\fB\-\-no\-compress\fR"
+Disable compression of PDF output.
+.IP "\fB\-\-no\-object\-streams\fR"
+Disable use of PDF object streams.
+.IP "\fB\-\-convert\-colors\fR
+Convert colors to output intent color space.
+.IP "\fB\-\-fallback\-cmyk\-profile=\fIICC\fR"
+Set fallback ICC profile for uncalibrated CMYK.
+The output intent color space takes precedence if it is CMYK.
+.SS PDF METADATA OPTIONS
+.IP "\fB\-\-pdf\-lang\fR=\fILANG\fR"
+Specify the primary language as a RFC 3066-style language tag (e.g. en).
+.IP "\fB\-\-pdf\-xmp\-metadata"
+Include HTML metadata as XMP in the PDF.
+.IP "\fB\-\-pdf\-xmp\fR=\fIFILE\fR"
+Include additional XMP metadata from a file in the PDF.
+.IP "\fB\-\-pdf\-title\fR=\fITITLE\fR"
+Set PDF document title.
+.IP "\fB\-\-pdf\-subject\fR=\fISUBJECT\fR"
+Set PDF document subject.
+.IP "\fB\-\-pdf\-author\fR=\fIAUTHOR\fR"
+Set PDF document author.
+.IP "\fB\-\-pdf\-keywords\fR=\fIKEYWORDS\fR"
+Set PDF document keywords.
+.IP "\fB\-\-pdf\-creator\fR=\fICREATOR\fR"
+Set PDF document creator.
+.SS PDF ENCRYPTION OPTIONS
+.IP "\fB\-\-encrypt\fR"
+Encrypt PDF output.
+.IP "\fB\-\-key\-bits\fR=\fINUM\fR"
+Set encryption key size [40|128].
+.IP "\fB\-\-user\-password\fR=\fIPASS\fR"
+Set PDF user password.
+.IP "\fB\-\-owner\-password\fR=\fIPASS\fR"
+Set PDF owner password.
+.IP "\fB\-\-disallow\-print\fR"
+Disallow printing of PDF output.
+.IP "\fB\-\-disallow\-modify\fR"
+Disallow modification of PDF output.
+This includes document assembly unless used with \fB\-\-allow\-assembly\fR.
+.IP "\fB\-\-disallow\-copy\fR"
+Disallow copying from PDF output.
+.IP "\fB\-\-disallow\-annotate\fR"
+Disallow annotation of PDF output.
+.IP "\fB\-\-allow\-copy\-for\-accessibility\fR"
+Allow copying content for accessibility purposes
+even when copying is disallowed by \fB\-\-disallow\-copy\fR.
+.IP "\fB\-\-allow\-assembly\fR"
+Allow document assembly even when other modifications are disallowed by
+\fB\-\-disallow\-modify\fR.
+.SS FAIL\-SAFE OPTIONS
+.IP "\fB\-\-fail\-safe\fR"
+Set all of the following fail-safe options.
+.IP "\fB\-\-fail\-invalid\-license\fR"
+Fail if the license is invalid or inapplicable.
+.IP "\fB\-\-fail\-dropped\-content\fR"
+Fail if any content is dropped.
+.IP "\fB\-\-fail\-missing\-resources\fR"
+Fail if any resources cannot be loaded.
+.IP "\fB\-\-fail\-missing\-glyphs\fR"
+Fail if glyphs cannot be found for any characters.
+.IP "\fB\-\-fail\-stripped\-transparency\fR"
+Fail if any transparency is stripped.
+.IP "\fB\-\-fail\-pdf\-profile\-error\fR"
+Fail if there are problems complying with the specified PDF profile,
+e.g. due to incompatible options.
+.IP "\fB\-\-fail\-pdf\-tag\-error\fR"
+Fail if there are problems tagging the PDF document for accessibility.
+.SS RASTER OUTPUT OPTIONS
+.IP "\fB\-\-raster\-output\fR=\fITEMPLATE\fR"
+Enable raster output, and rasterise each selected page to an image file named
+according to the template. These field specifications are allowed within
+\fITEMPLATE\fR:
+.IP
+\fB%d\fR is replaced by the page number
+.IP
+\fB%0\fINUM\fBd\fR is replaced by the page number, padded with leading zeroes
+so that the field is at least \fINUM\fR characters long
+.IP
+\fB%\fINUM\fBd\fR is replaced by the page number, padded with leading spaces
+so that the field is at least \fINUM\fR characters long
+(\fINUM\fR must begin with a non-zero digit)
+.IP
+\fB%%\fR is replaced by a single percent sign.
+.IP "\fB\-\-raster\-format\fR=\fIauto\fR|\fIpng\fR|\fIjpeg\fR"
+Set raster output format.
+.IP "\fB\-\-raster\-jpeg\-quality\fR=\fINUM\fR"
+Set quality when writing raster output to JPEG format.
+The value ranges from 0 to 100 (default: 92).
+.IP "\fB\-\-raster\-pages\fR=\fIall\fR|\fIfirst\fR|\fINUM\fR"
+Set range of pages to rasterise (default: all).
+.IP "\fB\-\-raster\-dpi\fR=\fIDPI\fR"
+Set resolution of raster output.
+.IP "\fB\-\-raster\-background\fR=\fIwhite\fR|\fItransparent\fR"
+Set background color of raster output (default: white).
+.IP "\fB\-\-raster\-threads\fR=\fINUM\fR"
+Set number of threads to use for producing raster output.
+.SS UTILITY OPTIONS
+.IP "\fB\-\-scanfonts \fIFILES...\fR"
+Scan font files and create a CSS file.
+.IP "\fB\-\-control\fR"
+Communicate via the control interface.
+.SH COPYRIGHT
+Copyright \(co 2002-2021 YesLogic Pty. Ltd.
+.SH "SEE ALSO"
+For more information, see https://www.princexml.com
