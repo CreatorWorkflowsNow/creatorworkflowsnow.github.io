@@ -63,7 +63,7 @@ In this bonus exercise, we will add the Action to a scheduled Flow to keep our A
 16. Drag and drop the **Airport Records** data pill from the right sidebar onto the **Items** field
 
 
-17. Click the **+** icon under the **For Each Item in** step
+17. Click the small **+** icon directly under the **For Each Item in** step
 ![](images/dropairports.png)
 
 
@@ -74,7 +74,7 @@ In this bonus exercise, we will add the Action to a scheduled Flow to keep our A
 ![](images/getairdetails.png)
 
 
-20. Expand **Airport Record** on the left sidebar under the **2 - For Each** section
+20. Expand **Airport Record** on the right sidebar under the **2 - For Each** section
 
 
 21. Drag and drop the **Code** data pill onto the **IATA Code** field
@@ -87,10 +87,10 @@ In this bonus exercise, we will add the Action to a scheduled Flow to keep our A
 23. Add a new **For Each** Flow Logic under **Get Airport Details**
 
 
-24. Drag and drop the **Output** data pill onto **Items**
+24. Drag and drop the **Output** data pill from the **3 - Get Airport details** section onto **Items**
 
 
-25. Click the **+** under the new **For Each Item in** step
+25. Click the small **+** icon directly under the new **For Each Item in** step
 ![](images/foreachairport.png)
 
 
