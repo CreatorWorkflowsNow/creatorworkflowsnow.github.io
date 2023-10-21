@@ -28,15 +28,17 @@ const sidebars = {
                 '1.0-Build-the-Foundation/forms-in-table-builder',
             ],
         },
+        '2.0-The-User-Experience/create-form',
 
+        /*
         {
             type: 'category',
-            label: '2. Create the User Experience',
+            label: '2. Requester Experience',
             items: [
-                '2.0-The-User-Experience/overview',
                 '2.0-The-User-Experience/create-form',
             ],
         },
+        */
 
         {
             type: 'category',

@@ -61,7 +61,7 @@ Select the **App Engine > App Engine Studio** module.
 This will open AES in a new browser tab.
 :::
 
-6. Click <span className="aes_button">Create app</span>
+6. Click <span className="button-purple">Create app</span>
 
 ![](/img/lab-aemc/2023-08-16-11-42-20.png)
 
@@ -78,11 +78,11 @@ This will open AES in a new browser tab.
 
 ![](/img/lab-aemc/2023-08-16-11-47-41.png)
 
-8. Click <span className="aes_button">Continue</span>  to accept the default roles. 
+8. Click <span className="button-purple">Continue</span>  to accept the default roles. 
 
 ![](/img/lab-aemc/2023-08-16-11-50-34.png)
 
-9. Click <span className="aes_button">Go to app dashboard</span>.
+9. Click <span className="button-purple">Go to app dashboard</span>.
 
 ## Lessons Learned
 

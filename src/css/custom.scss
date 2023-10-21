@@ -25,7 +25,7 @@
   --homepage-feature: #1b1b1d;
   --homepage-feature-box: #f7f7f7;
   --ifm-background-color: #ffffff;
-  --ifm-color-primary: var(--servicenow-brand-blue);
+  --ifm-color-primary: var(--now-blue);
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -33,40 +33,36 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --ifm-footer-background-color: var(--servicenow-brand-blue);
+  --ifm-footer-background-color: var(--now-blue);
   --ifm-footer-color: var(--ifm-color-emphasis-300);
   --ifm-footer-link-color: var(--ifm-color-emphasis-200);
   --ifm-footer-link-hover-color: var(--ifm-link-color);
   --ifm-footer-title-color: var(--ifm-color-emphasis-100);
-  --ifm-heading-color: var(--now-brand-green-darker);
+  --ifm-heading-color: var(--now-green-hover);
   --ifm-heading-font-family: "Gilroy-Regular";
-  --ifm-link-color: var(--now-brand-green-darker);
+  --ifm-link-color: var(--now-green-hover);
 
   --ifm-navbar-item-padding-horizontal: 1rem;
   --ifm-navbar-item-padding-vertical: 0.25rem;
 
-  --aes-tan-background: #F6F7F7;
-  --now-brand-purple:  rgb(58, 87, 233);
-  --now-brand-tan-hover: #E4E7F5;
+  --now-blue: rgb(3, 45, 66);
 
-  --now-brand-blue: rgb(3, 45, 66);
-  --now-brand-green: rgb(134, 237, 120);
-  --now-brand-green-darker: #62d84e;
-  --now-button--primary--background-color: rgb(58, 87, 233);
-  --now-button--primary--background-color--active: rgb(31, 66, 150);
-  --now-button--primary--color: rgb(255, 255, 255);
-  --now-button--scale-size-block: 50px;
-  --now-button--scale-size-inline: 100px;
-  --now-color-white: rgb(255, 255, 255);
-  --now-color-gray: rgb(219, 221, 225);
-  --now-color-dark-green: rgb(63, 143, 91);
-  --now-download-green: rgb(0, 145, 86);
-  --servicenow-brand-blue: #032d42;
-  --servicenow-brand-blue-lighter: #1a5d68;
-  --servicenow-brand-black: #000;
-  --servicenow-brand-gray: #999;
-  --servicenow-brand-green: #86ed78;
-  --servicenow-brand-green-darker: #62d84e;
+  --now-little-button-blue: rgb(40, 65, 145);
+
+  --now-tan: #F6F7F7;
+  --now-tan-hover-purple: #E4E7F5;
+  --now-tan-hover-tan: rgb(228,230,231);
+
+  --now-purple:  rgb(58, 87, 233);
+  --now-purple--hover: rgb(31, 66, 150);
+
+  --now-green: rgb(134, 237, 120);
+  --now-green-hover: rgb(98, 216, 78);
+
+  --ol-border-top: rgb(219, 221, 225);
+
+  --now-dark-green: rgb(63, 143, 91);
+
 }
 
 /*--- Very global stuff ---*/
@@ -98,9 +94,11 @@ h1 {
   @apply text-white;
 }
 
-/*--- Adjustments for the ServiceNow button in Markdown ---*/
-.aes_button {
-  background-color: var(--now-button--primary--background-color);
+/*------ BUTTONS ------*/
+
+/*--- ---*/
+.button-purple {
+  background-color: var(--now-purple);
   border-radius: 22px;
   color: #fff;
   cursor: pointer;
@@ -114,12 +112,12 @@ h1 {
   /* Add a smooth transition for the color change */
 }
 
-.aes_button:hover {
-  background-color: var(--now-button--primary--background-color--active);
+.button-purple:hover {
+  background-color: var(--now-purple--hover);
 }
 
-.aes_button_white {
-  @apply bg-white;
+.button-white {
+  background-color: white;
   @apply text-polarispurple;
   @apply border-polarispurple;
   border-width: 1px;
@@ -136,16 +134,16 @@ h1 {
   box-shadow: 0 2px 4px 0;
 }
 
-.aes_button_white:hover {
+.button-white:hover {
   @apply bg-polarispurplehover;
 }
 
-.tan-button {
-  background-color: var(--aes-tan-background);
-  border-color: var(--now-brand-purple);
+.button-tan-blue {
+  background-color: var(--now-tan);
+  border-color: var(--now-purple);
   border-radius: 22px;
   border-width: 1px;
-  color: var(--now-brand-purple);
+  color: var(--now-purple);
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
@@ -157,18 +155,107 @@ h1 {
   /* Add a smooth transition for the color change */
 }
 
-.tan-button:hover {
-  background-color: var(--now-brand-tan-hover);
+.button-tan-blue:hover {
+  background-color: var(--now-tan-hover-purple);
   box-shadow: 0 2px 4px 0 RGBA(56,56,56,.25);
 }
 
-[data-theme="dark"] .aes_button_white {
+.button-tan-black {
+  background-color: var(--now-tan);
+  border-color: #ACB4B5;
+  border-radius: 22px;
+  border-width: 1px;
+  color: rgb(20, 28, 29);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+}
+
+.button-tan-black:hover {
+  background-color: var(--now-tan-hover-tan);
+  box-shadow: 0 2px 4px 0 RGBA(56,56,56,.25);
+}
+
+.button-tanbg-purple-border {
+  background-color: var(--now-tan);
+  border-color: var(--now-purple);
+  border-radius: 22px;
+  border-width: 1px;
+  color: var(--now-purple);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+}
+
+.button-tanbg-purple-border:hover {
+  background-color: var(--now-tan-hover-purple);
+  box-shadow: 0 2px 4px 0 RGBA(56,56,56,.25);
+}
+
+.button-blue {
+  background-color: var(--now-little-button-blue);
+  border-color: var(--now-little-button-blue);
+  border-radius: 22px;
+  border-width: 1px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  padding: 3px 5px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+}
+
+.button-white-purple-border {
+  background-color: white;
+  border-color: var(--now-purple);
+  border-radius: 22px;
+  border-width: 1px;
+  color: var(--now-purple);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+}
+
+.button-white-purple-border:hover {
+  background-color: var(--now-tan-hover-purple);
+  box-shadow: 0 2px 4px 0 RGBA(56,56,56,.25);
+}
+
+/* #284191 */
+
+[data-theme="dark"] .button-white {
   @apply bg-polarispurpledarkbg;
   @apply text-polarispurpledarktxt;
   box-shadow: 0 0 0 0;
 }
 
-[data-theme="dark"] .aes_button_white:hover {
+[data-theme="dark"] .button-white:hover {
   @apply bg-polarispurpledarkbg;
 }
 
@@ -185,7 +272,7 @@ h1 {
   width: 40px;
   height: 40px;
   background-color: var(--now-button--primary--background-color);
-  color: var(--now-color-white);
+  color: white;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -226,7 +313,7 @@ h1 {
   width: 16rem;
   height: 5px;
   /* Height of the border line */
-  background-color: var(--now-color-dark-green);
+  background-color: var(--now-dark-green);
   display: block;
 }
 
@@ -339,7 +426,7 @@ h1 {
   @apply list-decimal;
   @apply bg-gray-300;
   @apply pl-8;
-  border-top: 1px solid var(--now-color-gray);
+  border-top: 1px solid var(--ol-border-top);
   border-radius: 1em 0 0 1em; /* Top-left and bottom-left rounded */
 }
 
@@ -519,30 +606,6 @@ h1 {
   @apply bg-gray-700;
 }
 
-/*---DOWNLOAD-BOX-STUFF-----------------------------*/
-
-.download-box {
-  background-color: var(--now-download-green);
-  height: 176px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-collapse: collapse;
-  border-radius: 10px;
-  overflow: hidden;
-  border: none;
-  /* Remove the border property */
-}
-
-.download-box td {
-  border: none;
-  background-color: white;
-}
-
-.attachment__title {
-  font-weight: 800;
-  font-size: larger;
-}
 
 /*--------------------------------------------------*/
 /* media query for screens smaller than 500px (iphone) */
@@ -613,7 +676,7 @@ h1 {
   /* Existing styles for rounded corners and others... */
   display: inline-block;
   text-decoration: none;
-  color: var(--now-color-dark-green);
+  color: var(--now-dark-green);
   position: relative;
   border-radius: var(--ifm-pagination-nav-border-radius);
   line-height: var(--ifm-heading-line-height);
@@ -694,7 +757,7 @@ h1 {
   --ifm-color-scheme: dark;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-background-color: bg-nowgreen;
-  --ifm-color-primary: var(--servicenow-brand-green);
+  --ifm-color-primary: var(--now-green);
 
   --dark-background-color: #20232a;
   --dark-text-color: #ffffff;
