@@ -21,7 +21,7 @@ Let's create a dashboard so that users can have an easy view to understand curre
 
 
 4. The right sidebar appears showing the Vizualization type **Single score**
-![](images/trvreqformws.png)
+![](images/2023-10-21-12-27-36.png)
 
 :::tip
 If you face issues with the screen not loading, change to a different Vizualization type, then change it back to **Single score**
@@ -132,26 +132,23 @@ If you have not completed that, please skip this widget.
 This widget will appear different if you have not completed Bonus Exercise 2, but will not impact completing the widget.
 :::
 
-1. Click the middle heading bar which says **My Work**
+1. Click the **My Work** list at the bottom of the dashboard.
 
 
-2. On the right configuration sidebar, change **Label** from **My Work** to **Outstanding travel requests**
-![](images/outstandingtravel.png)
+2. On the right configuration sidebar, scroll to the bottom of the configuration panel to the **Header** section. Change **Label** from **My Work** to **Outstanding travel requests**
+![](images/2023-10-21-12-49-15.png)
 
 
-3. Click on the bigger **List - Simple** widget at the bottom of the screen
+3. On the right configuration sidebar, scroll up and click **Edit filter**
 
 
-4. On the right configuration sidebar, click **Edit filter**
+4. On the pop-up box, remove **Assigned to is (dynamic) Me** by clicking **X** on the far right of the row
 
 
-5. On the pop-up box, remove **Assigned to is (dynamic) Me** by clicking **X** on the far right of the row
+5. Click the **and** button
 
 
-6. Click the **and** button
-
-
-7. In the new **and** row that appears, set the following condition
+6. In the new **and** row that appears, set the following condition
 
     `State is one of Pending, Open, Work in Progress`
 
@@ -159,17 +156,17 @@ Refer to the video below:
 ![](images/listfilter.gif)
 
 
-8. On the top right of the screen, click **Save**
+7. On the top right of the screen, click **Save**
 
 
-9. Click **Exit editing mode**
+8. Click **Exit editing mode**
 
 
-10. Your dashboard should look similar to this
-![](images/dashboardcomplete.png)
+9. Your dashboard should look similar to this
+![](images/2023-10-21-12-52-41.png)
 
 
-11. We have left the final **Critical Tasks** widget for you to experiement with. Feel free to make any changes that you would like with the different Vizualizations available by repeating the steps in this exercise.
+10. We have left the final **Critical Tasks** widget for you to experiement with. Feel free to make any changes that you would like with the different Vizualizations available by repeating the steps in this exercise.
 
 
 :::tip

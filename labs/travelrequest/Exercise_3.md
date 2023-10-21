@@ -222,14 +222,11 @@ This is also known as a Record Producer in ServiceNow terminology.
 
 
 48. Your form should now look like this
-TODO: Update Screenshot
-![](images/clickpreview.png)
+![](images/2023-10-21-12-21-00.png)
 
 
 40. Preview how your form will look like by clicking on the **Preview** button on the top right
-TODO: Update Screenshot
-![](images/previewform.png)
-    
+![](images/2023-10-21-12-23-32.png)    
 
 50. Try filling in the form with any details, but you won't be able to submit the form as it is in preview mode only
 
