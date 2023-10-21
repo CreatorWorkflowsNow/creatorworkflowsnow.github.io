@@ -4,6 +4,7 @@
 const sidebars = {
 
     travelrequest: [
+        'utah',
         {
             type: 'category',
             label: 'Travel Request',

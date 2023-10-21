@@ -6,6 +6,7 @@
 const sidebars = {
 
     deptsvc: [
+        'utah',
         {
             type: 'category',
             label: 'Department Services',

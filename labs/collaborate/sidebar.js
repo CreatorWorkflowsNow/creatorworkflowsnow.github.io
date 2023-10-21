@@ -4,6 +4,7 @@
 const sidebars = {
 
     labaemc: [
+        'utah',
         {
             type: 'category',
             label: 'Collaborate to Accelerate',
