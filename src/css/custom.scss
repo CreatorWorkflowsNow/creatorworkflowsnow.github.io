@@ -25,7 +25,7 @@
   --homepage-feature: #1b1b1d;
   --homepage-feature-box: #f7f7f7;
   --ifm-background-color: #ffffff;
-  --ifm-color-primary: var(--now-blue);
+  --ifm-color-primary: var(--now-inf-blue);
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -33,7 +33,7 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --ifm-footer-background-color: var(--now-blue);
+  --ifm-footer-background-color: var(--now-inf-blue);
   --ifm-footer-color: var(--ifm-color-emphasis-300);
   --ifm-footer-link-color: var(--ifm-color-emphasis-200);
   --ifm-footer-link-hover-color: var(--ifm-link-color);
@@ -45,7 +45,8 @@
   --ifm-navbar-item-padding-horizontal: 1rem;
   --ifm-navbar-item-padding-vertical: 0.25rem;
 
-  --now-blue: rgb(3, 45, 66);
+  --now-blue: rgb(36,194,206);
+  --now-inf-blue: rgb(3, 45, 66);
 
   --now-little-button-blue: rgb(40, 65, 145);
 
@@ -53,6 +54,7 @@
   --now-tan-hover-purple: #E4E7F5;
   --now-tan-hover-tan: rgb(228,230,231);
 
+  --now-pink:  rgb(252,119,134);
   --now-purple:  rgb(58, 87, 233);
   --now-purple--hover: rgb(31, 66, 150);
 
@@ -97,6 +99,51 @@ h1 {
 /*------ BUTTONS ------*/
 
 /*--- ---*/
+.button-homepage-vancouver {
+  background-color: var(--now-green);
+  border-radius: 22px;
+  color: var(--now-inf-blue);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+}
+
+.button-homepage-utah {
+  background-color: var(--now-purple);
+  border-radius: 22px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+}
+
+.button-homepage-tokyo {
+  background-color: var(--now-pink);
+  border-radius: 22px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+}
+
 .button-purple {
   background-color: var(--now-purple);
   border-radius: 22px;

@@ -52,7 +52,7 @@ const FeatureList = [
     icon: faFileCode,
     description: (
       <>
-      <b>🏞️ VANCOUVER</b><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
       </>
     ),
     to: '/labs/telework-vancouver/0.0-introduction/overview',
@@ -65,7 +65,7 @@ const FeatureList = [
     icon: faFileCode,
     description: (
       <>
-      <b>🏔️ UTAH</b><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
+      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
       </>
     ),
     //to: "/docs/telework-utah/Introduction/",
@@ -79,7 +79,7 @@ const FeatureList = [
     icon: faUsers,
     description: (
       <>
-      <b>🏔️ UTAH</b><br/>Create new Departmental Services and publish them to the enterprise using Employee Center.
+      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Create new Departmental Services and publish them to the enterprise using Employee Center.
       </>
     ),
     to: 'labs/deptsvc/lab-introduction/',
@@ -91,7 +91,7 @@ const FeatureList = [
     icon: faCog,
     description: (
       <>
-      <b>🏔️ UTAH</b><br/>Learn to build and govern low-code applications with App Engine Management Center. 
+      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Learn to build and govern low-code applications with App Engine Management Center. 
       </>
     ),
     to: '/labs/collaborate/get_started/intro',
@@ -102,7 +102,7 @@ const FeatureList = [
     icon: faPlane,
     description: (
       <>
-      <b>🏔️ UTAH</b><br/>Create a Travel Request application using concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio.
+      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Create a Travel Request application using concepts such as Building Tables, Record Producers, Integrations and Workflows within App Engine Studio.
       </>
     ),
     to: '/labs/travelrequest/introduction',
@@ -114,7 +114,7 @@ const FeatureList = [
     icon: faTruck,
     description: (
       <>
-      <b>🏔️ UTAH</b><br/>Empower Joe Shipman to revolutionize logistics with ServiceNow, driving efficiency and data integration.
+      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Empower Joe Shipman to revolutionize logistics with ServiceNow, driving efficiency and data integration.
       </>
     ),
     to: '/labs/logistics/get_started/overview',
@@ -126,7 +126,7 @@ const FeatureList = [
     icon: faHeadset,
     description: (
       <>
-      <b>🏔️ UTAH</b><br/>Unstoppable resolution: Enhance CSM capabilities with the power of low-code using App Engine. 
+      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Unstoppable resolution: Enhance CSM capabilities with the power of low-code using App Engine. 
       </>
     ),
     to: '/labs/complaint/overview/',
@@ -138,7 +138,7 @@ const FeatureList = [
     icon: faRobot,
     description: (
       <>
-      <b>🗼 TOKYO</b><br/>Get hands-on experience with products such as Automation Center, Document Intelligence, Integration Hub, and RPA Hub.
+      <div class="button-homepage-tokyo">🗼 TOKYO</div><br/>Get hands-on experience with products such as Automation Center, Document Intelligence, Integration Hub, and RPA Hub.
       </>
     ),
     to: "https://creatorworkflowsnow.github.io/lab_autoengine",
