@@ -82,17 +82,17 @@ This is also known as a Record Producer in ServiceNow terminology.
 ![](images/addcolumn1.png)
 
 
-22. In the pop-up box, enter **Information** under **Title**
+22. In the pop-up box, enter **General Information** under **Title**
 
 
 23. Click **Submit**
 
 
-24. Repeat the top 3 steps again, but this time select **Two column container** and enter **Dates and locations**
+24. Repeat the top 3 steps again, but this time select **Two column container** and enter **Travel Information**
 ![](images/columndone.png)
 
 
-25. Expand the **Information** section, click the **Insert** icon, and select **New question**
+25. Expand the **General Information** section, click the **Insert** icon, and select **New question**
 ![](images/newquesiton.png)
 
 
@@ -128,7 +128,7 @@ This is also known as a Record Producer in ServiceNow terminology.
 31. On the bottom right, click **Insert Question**
 
 
-32. Expand the **Dates and locations** section
+32. Expand the **Travel Information** section
 
 
 33. On the left column, add a **New question**
@@ -163,7 +163,7 @@ This is also known as a Record Producer in ServiceNow terminology.
 37. Now we will capture the locations by looking at the **Airport** table we created
 
 
-38. Under the same **Dates and locations** section, add a new question
+38. Under the same **Travel Information** section, add a new question
 
     Name | Selection
     -------------- | --------------
@@ -200,34 +200,57 @@ This is also known as a Record Producer in ServiceNow terminology.
 43. Remember to choose **Airport** for the **Source table** under the **Additional details** tab
 
 
-44. Your form should now look like this
+44. Now we will capture the estimated airfare. Insert a new question below **Where are you departing from?**
+
+
+45. In the main screen, follow the steps above once more for **Estimated Airfare**
+
+    Name | Selection
+    -------------- | --------------
+    Question type | Text
+    Question subtype | Single-line
+    Map to a specific field on the table | **Estimated Airfare**
+    Table field | Estimated Airfare
+    Question label | What is your estimated airfare?
+    Mandatory | **Checked**
+
+
+46. Click the **Additional Details** tab and type **Decimal Number** for the text validation
+
+
+47. On the bottom right, click **Insert Question**
+
+
+48. Your form should now look like this
+TODO: Update Screenshot
 ![](images/clickpreview.png)
 
 
-45. Preview how your form will look like by clicking on the **Preview** button on the top right
+40. Preview how your form will look like by clicking on the **Preview** button on the top right
+TODO: Update Screenshot
 ![](images/previewform.png)
     
 
-46. Try filling in the form with any details, but you won't be able to submit the form as it is in preview mode only
+50. Try filling in the form with any details, but you won't be able to submit the form as it is in preview mode only
 
 
-47. Click **Now Mobile** on the left sidebar
+51. Click **Now Mobile** on the left sidebar
 ![](images/nowmobile.png)
 
 :::note
 Virtual agent is not installed so you will not be able to preview the conversation.
 :::
 
-48. The experience also automatically gets added to the mobile catalog, so your users can request for travel on the go
+52. The experience also automatically gets added to the mobile catalog, so your users can request for travel on the go
 
 
-49. Close the preview by clicking the cross icon on the top right
+53. Close the preview by clicking the cross icon on the top right
 
 
-50. On the left sidebar, click **Review and submit**
+54. On the left sidebar, click **Review and submit**
 
 
-51. Click the **Submit** button
+55. Click the **Submit** button
 
 
 We will test this form on the *Employee Center Portal* at the end of this session. Now it's time for us to create an approval workflow for this travel request!

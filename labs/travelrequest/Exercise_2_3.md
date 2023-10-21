@@ -26,6 +26,7 @@ draft: false
 ![](images/tfromair.png)
 
 4. Drag and drop your two newly created custom fields onto the form
+TODO: Update Screenshot (add estimated arrival, take out number of days)
 ![](images/addairportfield.png)
 
 

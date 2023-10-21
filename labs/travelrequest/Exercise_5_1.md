@@ -56,7 +56,7 @@ This is actually not best practice, but only for the purposes of today's activit
 12. Copy the current URL of the page, and open a new Browser tab
 
 
-13. Paste the URL, and replace everything after **service-now.com** with **/sp**
+13. Paste the URL, and replace everything after **service-now.com** with **/esc**
 
 :::tip
 **if the copied URL is**: 
@@ -65,15 +65,16 @@ This is actually not best practice, but only for the purposes of today's activit
 
 **change it to:**
 
-**https://sad-oct-123-001.lab.service-now.com/**sp 
-
+**https://sad-oct-123-001.lab.service-now.com/**esc 
+TODO: Change GIF
 ![](images/getsp.gif)
 :::
 
-14. The Service Portal page should now open
+14. The Employee Center Pro home page should now open
 
 
 15. Under **How can we help?**, search for **Travel request**
+TODO: Change Screenshot
 ![](images/searchtrv.png)
 
 
@@ -81,6 +82,7 @@ This is actually not best practice, but only for the purposes of today's activit
 
 
 17. The top result should return the form we had created in Exercise 2
+TODO: Change screenshot
 ![](images/trvreqsearch.png)
 
 
@@ -88,6 +90,7 @@ This is actually not best practice, but only for the purposes of today's activit
 
 
 19. Confirm that the form appears as expected, then fill in all the fields
+TODO: Update Screenshot (add estimated arrival, take out number of days)
 ![](images/fillform.png)
 
 
@@ -95,6 +98,7 @@ This is actually not best practice, but only for the purposes of today's activit
 
 
 21. The next screen can be used to track the status of the request and add attachments
+TODO: Change Screenshot
 ![](images/trackreq.png)
 
 
