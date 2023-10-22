@@ -30,7 +30,19 @@ const sidebars = {
                 '1.0-Build-the-Foundation/forms-in-table-builder',
             ],
         },
-        '2.0-The-User-Experience/create-form',
+
+        {
+            type: 'category',
+            label: '2. User Experience',
+            items: [
+                '2.0-The-User-Experience/overview',
+                '2.0-The-User-Experience/create',
+                '2.0-The-User-Experience/add-fields',
+                '2.0-The-User-Experience/preview-in-aes',
+                '2.0-The-User-Experience/preview-in-portal',
+                '2.0-The-User-Experience/review',
+            ]
+        },
 
         {
             type: 'category',

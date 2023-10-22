@@ -45,6 +45,12 @@
   --ifm-navbar-item-padding-horizontal: 1rem;
   --ifm-navbar-item-padding-vertical: 0.25rem;
 
+  /* Spacing. */
+  --ifm-global-spacing: 0.5rem;
+  --ifm-spacing-vertical: var(--ifm-global-spacing);
+  --ifm-spacing-horizontal: var(--ifm-global-spacing);
+
+
   --now-blue: rgb(36,194,206);
   --now-inf-blue: rgb(3, 45, 66);
 
@@ -57,6 +63,9 @@
   --now-pink:  rgb(252,119,134);
   --now-purple:  rgb(58, 87, 233);
   --now-purple--hover: rgb(31, 66, 150);
+
+  --now-purple-dark: rgb(79,82,189);
+  --now-purple-dark--hover: rgb(56,62,150);
 
   --now-green: rgb(134, 237, 120);
   --now-green-hover: rgb(98, 216, 78);
@@ -161,6 +170,48 @@ h1 {
 
 .button-purple:hover {
   background-color: var(--now-purple--hover);
+}
+
+.button-purple-square {
+  background-color: var(--now-purple-dark);
+  border-radius: 4px;
+  border-color: #383b96;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.25;
+  padding: 5px 12px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
+}
+
+.button-purple-square:hover {
+  background-color: var(--now-purple-dark--hover);
+}
+
+.button-purple-mini {
+  background-color: var(--now-purple);
+  border-color: rgb(99,114,116);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-style: solid;
+  border-radius: 12px;
+  border-width: 1px;
+  color: rgb(246,247,247);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  height: 24px;
+  line-height: 13.75px;
+  padding: 4px;
+  vertical-align: middle;
+  transition: color 0.3s;
+  /* Add a smooth transition for the color change */
 }
 
 .button-white {
@@ -463,7 +514,8 @@ h1 {
 /*--- Markdown list styling ---*/
 
 .markdown ul {
-  @apply ml-8;
+  /*@apply ml-8;*/
+  margin-left: 2rem;
   list-style: disc;
 }
 
@@ -572,9 +624,8 @@ h1 {
 .markdown img {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   margin: auto;
-  @apply mb-10;
-  @apply mt-8;
-  max-width: 70%;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
 }
 
 .markdown table {
