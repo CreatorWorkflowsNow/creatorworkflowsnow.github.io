@@ -10,7 +10,8 @@ const sidebars = {
             type: 'category',
             label: 'Telework Case Management',
             items: [
-                '0.0-introduction/overview',
+                '0.0-introduction/app-engine-overview',
+                '0.0-introduction/lab-goals',
                 '0.0-introduction/use-case',
                 '0.0-introduction/planning',
                 '0.0-introduction/takeoff',

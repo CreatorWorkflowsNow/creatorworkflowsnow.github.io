@@ -248,8 +248,9 @@ h1 {
   font-weight: 600;
   line-height: 1.25;
   padding: 5px 12px;
-  vertical-align: middle;
+  text-align: center;
   transition: color 0.3s;
+  vertical-align: middle;
   /* Add a smooth transition for the color change */
 }
 
@@ -572,8 +573,8 @@ h1 {
 /* .markdown > ol > li > ul > li */
 
 .markdown ol li ul li {
-  @apply m-0;
-  @apply p-0;
+  margin: 10px 0px 0px 0px;
+  padding: 3px;
 }
 
 [data-theme="dark"] .markdown ol li ul li::marker {
@@ -900,3 +901,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   color: #63D74F;
 }
 
+.font-center-italic {
+  text-align: center;
+  font-style: italic;
+}
