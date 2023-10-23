@@ -26,8 +26,7 @@ draft: false
 ![](images/tfromair.png)
 
 4. Drag and drop your two newly created custom fields onto the form
-TODO: Update Screenshot (add estimated arrival, take out number of days)
-![](images/addairportfield.png)
+![](images/2023-10-22-17-24-37.png)
 
 
 5. Click **Save**
@@ -36,4 +35,4 @@ TODO: Update Screenshot (add estimated arrival, take out number of days)
 For simplicity, we are not adding additional fields like Daily estimated expenses, etc. You can always choose to add those fields if you want to.
 :::
 
-Congratulations, you have completed Exercise 1 and now have a complete way to store the Travel requests from your employees.
+Congratulations, you have completed Exercise 2 and now have a complete way to store the Travel requests from your employees.

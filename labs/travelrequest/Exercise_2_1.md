@@ -129,14 +129,11 @@ Instead of adding fields individually via table builder, we will add fields dire
 
 
 32. Drag and drop those 4 fields onto the form
-TODO: Update Screenshot (add estimated arrival, take out number of days)
-![](images/dragdrop.png)
+![](images/2023-10-22-16-56-00.png)
 
 :::tip
 You will need to ensure that you see a grey outline box with a plus icon before releasing the field
-TODO: Update Screenshot (add estimated arrival, take out number of days)
-
-![](images/dragdrophelp.png)
+![](images/2023-10-22-17-08-23.png)
 :::
 
 33. Search and add two more standard fields onto the form: **Opened by, Approval** (These come standard with the **Task** table)
@@ -149,8 +146,7 @@ TODO: Update Screenshot (add estimated arrival, take out number of days)
 
 
 36. The right-side panel will update for the configuration of this field. Expand **Choices**, then click **Edit (1)**
-TODO: Update Screenshot (add estimated arrival, take out number of days)
-![](images/openchoices.png)
+![](images/2023-10-22-17-23-15.png)
 
 
 37. On the **Edit choices for Reason for travel** screen, click **+ Add a choice**

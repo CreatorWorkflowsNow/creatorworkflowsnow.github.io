@@ -88,12 +88,12 @@ This is also known as a Record Producer in ServiceNow terminology.
 23. Click **Submit**
 
 
-24. Repeat the top 3 steps again, but this time select **Two column container** and enter **Travel Information**
-![](images/columndone.png)
+24. Repeat the top 3 steps again, but this time select **Two column container** and enter **Travel Details**
+![](images/2023-10-22-17-32-05.png)
 
 
 25. Expand the **General Information** section, click the **Insert** icon, and select **New question**
-![](images/newquesiton.png)
+![](images/2023-10-22-17-32-37.png)
 
 
 26. In the next form, fill it out as below
@@ -128,11 +128,11 @@ This is also known as a Record Producer in ServiceNow terminology.
 31. On the bottom right, click **Insert Question**
 
 
-32. Expand the **Travel Information** section
+32. Expand the **Travel Details** section
 
 
 33. On the left column, add a **New question**
-![](images/datequestion.png)
+![](images/2023-10-22-17-36-52.png)
 
 
 34. Fill out the form as follows
@@ -163,7 +163,7 @@ This is also known as a Record Producer in ServiceNow terminology.
 37. Now we will capture the locations by looking at the **Airport** table we created
 
 
-38. Under the same **Travel Information** section, add a new question
+38. Under the same **Travel Details** section, add a new question
 
     Name | Selection
     -------------- | --------------
@@ -209,13 +209,13 @@ This is also known as a Record Producer in ServiceNow terminology.
     -------------- | --------------
     Question type | Text
     Question subtype | Single-line
-    Map to a specific field on the table | **Estimated Airfare**
+    Map to a specific field on the table | **Checked**
     Table field | Estimated Airfare
     Question label | What is your estimated airfare?
     Mandatory | **Checked**
 
 
-46. Click the **Additional Details** tab and type **Decimal Number** for the text validation
+46. Click the **Additional Details** tab and type and select **Number** for the text validation
 
 
 47. On the bottom right, click **Insert Question**
@@ -225,29 +225,33 @@ This is also known as a Record Producer in ServiceNow terminology.
 ![](images/2023-10-21-12-21-00.png)
 
 
-40. Preview how your form will look like by clicking on the **Preview** button on the top right
+49. Click **Save** in the upper right hand corner.
+
+
+50. Preview how your form will look like by clicking on the **Preview** button on the top right
 ![](images/2023-10-21-12-23-32.png)    
 
-50. Try filling in the form with any details, but you won't be able to submit the form as it is in preview mode only
+
+51. Try filling in the form with any details, but you won't be able to submit the form as it is in preview mode only
 
 
-51. Click **Now Mobile** on the left sidebar
+52. Click **Now Mobile** on the left sidebar
 ![](images/nowmobile.png)
 
 :::note
 Virtual agent is not installed so you will not be able to preview the conversation.
 :::
 
-52. The experience also automatically gets added to the mobile catalog, so your users can request for travel on the go
+53. The experience also automatically gets added to the mobile catalog, so your users can request for travel on the go
 
 
-53. Close the preview by clicking the cross icon on the top right
+54. Close the preview by clicking the cross icon on the top right
 
 
-54. On the left sidebar, click **Review and submit**
+55. On the left sidebar, click **Review and submit**
 
 
-55. Click the **Submit** button
+56. Click the **Submit** button
 
 
-We will test this form on the *Employee Center Portal* at the end of this session. Now it's time for us to create an approval workflow for this travel request!
+We will test this form on the *Service Portal* at the end of this session. Now it's time for us to create an approval workflow for this travel request!
