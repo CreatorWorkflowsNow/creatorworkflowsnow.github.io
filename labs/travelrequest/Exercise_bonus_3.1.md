@@ -1,7 +1,7 @@
 ---
-id: exercise-bonus-1-1
-title: "Bonus Exercise 1.1: Create an Integration Hub Action"
-sidebar_label: 1.1. Create the Action
+id: exercise-bonus-3-1
+title: "Bonus Exercise 3.1: Create an Integration Hub Action"
+sidebar_label: 3.1. Create the Action
 hide_table_of_contents: true
 draft: false
 ---
@@ -49,7 +49,7 @@ If you noticed in exercise 1, when we imported the Airports from the excel sheet
 ![](images/actiondesigner.png)
 
 
-10. You are brough to the **Flow Designer** interface
+10. You are brought to the **Flow Designer** interface
 
 
 11. Click the **New** button on the top right, then click **Action**
@@ -128,7 +128,7 @@ Use the copy button above to make sure you have the correct URL
 ![](images/iatatest.png)
 
 
-32. The new tab shows every step of the execution so far. Expand **Steps** and scroll down to the line that shows **Response Body**
+32. The new tab shows every step of the execution so far. Expand **Steps** (towards the bottom of the screen) and scroll down to the line that shows **Response Body**
 
 
 33. Click on the corresponding value and copy the entire block of text
