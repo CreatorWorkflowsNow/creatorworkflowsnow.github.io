@@ -46,7 +46,6 @@ export default HomepageFeatures;
 
 const FeatureList = [
 
-  /*
   {
     title: 'Telework Case Management',
     icon: faFileCode,
@@ -55,10 +54,9 @@ const FeatureList = [
       <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
       </>
     ),
-    to: '/labs/telework-vancouver/0.0-introduction/overview',
+    to: '/labs/telework-vancouver/0.0-introduction/app-engine-overview',
     target: '_self',
   },
-  */
 
   {
     title: 'Telework Case Management',
