@@ -29,6 +29,7 @@ const sidebars = {
                 '1.0-Build-the-Foundation/data-in-table-builder',
                 '1.0-Build-the-Foundation/configure-telework-form',
                 '1.0-Build-the-Foundation/forms-in-table-builder',
+                '1.0-Build-the-Foundation/review',
             ],
         },
 
