@@ -23,9 +23,9 @@ In this exercise, we'll see how IT and the business can partner to create applic
 
 | Devon Samrah | Business Process Owner & Citizen Developer 
 |--|--|
-| ![](../images/2023-09-11-08-59-01.png) | Devon Samrah is a long time member of the Legal team and leads the Complaint Investigation team. Given her vast knowledge of the overall process, she is the perfect candidate to build a low-code app that supports the complaints investigation process.
+| ![Devon Samrah](../images/Devon_Samrah.png)| Devon Samrah is a long time member of the Legal team and leads the Complaint Investigation team. Given her vast knowledge of the overall process, she is the perfect candidate to build a low-code app that supports the complaints investigation process.
 
 
 | Andy Brady | System Administrator
 |--|--|
-| ![Andy Brady, Admin](../images/2023-09-11-09-05-54.png) | As a ServiceNow System Administrator, Andy's primary responsibilities involve managing and maintaining the ServiceNow platform within an organization. Here is a brief description of Andy's role|
+| ![Andy Brady, Admin](../images/Andy_Brady.png) | As a ServiceNow System Administrator, Andy's primary responsibilities involve managing and maintaining the ServiceNow platform within an organization. 

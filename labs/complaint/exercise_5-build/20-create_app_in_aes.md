@@ -16,12 +16,21 @@ draft: false
     ![](../images/2023-09-11-09-24-26.png)
 
 
-3. Enter **Complaint Investigation** in the **Name** field. For **Description** use:
-    This app is designed to streamline customer complaint investigations.
-    ![](../images/2023-08-18-09-12-31.png)
+3. Enter the following for each field:
+<br/>
+
+ **Name**
+ ```
+ Complaints Invesitgation
+ ```
+ **Description**
+ ```
+ This app is designed to streamline customer complaint investigations
+ ```
+ ![](../images/2023-08-18-09-12-31.png)
 
 
-4. App Engine Studio will create default roles for **admin** and **user** of our application. Users assigned these roles will be members of the team responsible for investigating the complaints. Accept the default **admin** and **user** roles and select **Continue**.
+1. App Engine Studio will create default roles for **admin** and **user** of our application. Users assigned these roles will be members of the team responsible for investigating the complaints. Accept the default **admin** and **user** roles and select **Continue**.
     ![](../images/2023-08-04-08-44-36.png)
 
 

@@ -121,3 +121,14 @@ Your complaint number may vary from the one reflected in the lab guide.
 
  20. Click on the record that appears in the list to view the newly created investigation record. Your screen should look very much like the screen below!
 ![](../images/2023-09-27-14-57-05.png)
+
+That's it! You've successfully created automation necessary to create a new investigation when a complaint cases requires investigation. 
+
+:::note
+Next Steps for **Devon**:   
+<br/>
+In the real world, once Devon is happy with her app, she would submit the app for review and approval by the App Engine Administrators.     
+<br/>
+<br/>
+For the purposes of our lab today, we will not cover those steps, however if you are interested in learning more about how we govern all aspects of application development in ServiceNow, please reach out to your Creator Workflows team.
+:::

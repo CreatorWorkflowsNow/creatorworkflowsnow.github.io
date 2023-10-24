@@ -14,4 +14,4 @@ In this section, we will see how a business analyst, Andy, can configure the too
 
  | Andy Brady | System Administrator
 |--|--|
-| ![Andy Brady, Admin](../images/2023-09-11-09-05-54.png) | As a ServiceNow System Administrator, Andy's primary responsibilities involve managing and maintaining the ServiceNow platform within an organization. Here is a brief description of Andy's role|
+| ![Andy Brady, Admin](../images/Andy_Brady.png)| As a ServiceNow System Administrator, Andy's primary responsibilities involve managing and maintaining the ServiceNow platform within an organization. 

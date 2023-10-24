@@ -15,4 +15,4 @@ In this section, we will walk through how a Service Agent, like John, keeps trac
 
  | John Jason | Customer Service Agent
 |--|--|
-| ![John Jason](../images/2023-09-11-08-52-37.png) | John Jason is an experienced customer service agent known for his exceptional communication skills and commitment to providing top-notch service. With a friendly and approachable demeanor, he is skilled at actively listening to customers' concerns and finding effective solutions to their problems. 
+| ![John Jason](../images/John_Jason.png)| John Jason is an experienced customer service agent known for his exceptional communication skills and commitment to providing top-notch service. With a friendly and approachable demeanor, he is skilled at actively listening to customers' concerns and finding effective solutions to their problems. 
