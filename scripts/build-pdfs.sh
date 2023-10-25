@@ -18,7 +18,7 @@ fi
 
 npx docusaurus-prince-pdf -d '../labs/collaborate/downloads' -u 'https://creatorworkflowsnow.github.io/labs/collaborate/get_started/intro/' --output '../labs/collaborate/downloads/collaborate-lab.pdf'
 
-npx docusaurus-prince-pdf -d '../labs/complaint/downloads' -u 'https://creatorworkflowsnow.github.io//labs/complaint/overview/' --output '../labs/complaint/downloads/complaint-lab.pdf'
+npx docusaurus-prince-pdf -d '../labs/complaint/downloads' -u 'https://creatorworkflowsnow.github.io/labs/complaint/overview/' --output '../labs/complaint/downloads/complaint-lab.pdf'
 
 npx docusaurus-prince-pdf -d '../labs/travelrequest/downloads' -u 'https://creatorworkflowsnow.github.io/labs/travelrequest/introduction/' --output '../labs/travelrequest/downloads/travelrequest-lab.pdf'
 
