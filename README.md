@@ -71,7 +71,6 @@ When new changes are pushed to the branch 'source', this kicks off a series of [
    - Built-in GitHub Action. When changes are pushed to the branch 'gh-pages', then GitHub will publish these changes to the site [https://creatorworkflowsnow.github.io/](https://creatorworkflowsnow.github.io/).
 
 ## 3. [PDFs Build and Deploy](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/blob/source/.github/workflows/pdfs-build-deployment.yml)
-[![PDFs Build and Deploy](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/actions/workflows/pdfs-build-deployment.yml/badge.svg)](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/actions/workflows/pdfs-build-deployment.yml)
    - This job executes after the 'pages build and deployment' job runs. It's purpose is to use prince-pdf to create new PDF versions of the lab guides and push to the branch 'source'.
    - _As of 2023.10.17, I have still not been able to get this Action to work properly. Please feel free to examine, troubleshoot, and suggest changes. _(Dale Stubblefield)__
 
