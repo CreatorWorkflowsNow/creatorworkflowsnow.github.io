@@ -70,7 +70,7 @@ When new changes are pushed to the branch 'source', this kicks off a series of [
 [![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
    - Built-in GitHub Action. When changes are pushed to the branch 'gh-pages', then GitHub will publish these changes to the site [https://creatorworkflowsnow.github.io/](https://creatorworkflowsnow.github.io/).
 
-## 3. [PDFs Build and Deploy](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/blob/source/.github/workflows/pdfs-build-deployment.yml)
+## 3. [PDFs Build and Deploy](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/blob/source/gh-actions-to-build/pdfs-build-deployment.yml)
    - This job executes after the 'pages build and deployment' job runs. It's purpose is to use prince-pdf to create new PDF versions of the lab guides and push to the branch 'source'.
    - _As of 2023.10.17, I have still not been able to get this Action to work properly. Please feel free to examine, troubleshoot, and suggest changes. _(Dale Stubblefield)__
 
@@ -85,3 +85,4 @@ The lab guides are maintained by:
 - Dale Stubblefield - https://github.com/dalestubblefield
 - Kristy Merriam - https://github.com/KristyS96
 - Marc Mouries - https://github.com/marcmouries
+- Sarah Yao - https://github.com/syaosnow
