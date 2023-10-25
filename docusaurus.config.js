@@ -41,24 +41,19 @@ const config = {
       };
     },
 
+    /*-- COLLABORATE TO ACCELERATE (Governance lab) --**/
     [
       "@docusaurus/plugin-content-docs",
       {
         path: "labs/collaborate",
-        breadcrumbs: false,
         id: "collaborate",
         routeBasePath: "labs/collaborate",
         sidebarPath: require.resolve("./labs/collaborate/sidebar.js"),
-        // https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/edit/source/labs/collaborate/get_started/1-intro.md
-        /*
-        editUrl: ({versionDocsDirPath, docPath}) => 
-        `https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/edit/source/labs/collaborate/${docPath}`,
-        editLocalizedFiles: false,
-        editCurrentVersion: false,
-        */
+        breadcrumbs: false,
       },
     ],
 
+    /*-- COMPLAINT MGMT --**/
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -70,28 +65,7 @@ const config = {
       },
     ],
 
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/logistics",
-        id: "logistics",
-        routeBasePath: "labs/logistics",
-        sidebarPath: require.resolve("./labs/logistics/sidebar.js"),
-        breadcrumbs: false,
-      },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/travelrequest",
-        id: "travelrequest",
-        routeBasePath: "labs/travelrequest",
-        sidebarPath: require.resolve("./labs/travelrequest/sidebar.js"),
-        breadcrumbs: false,
-      },
-    ],
-
+    /*-- DEPARTMENTAL SERVICE --**/
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -105,6 +79,43 @@ const config = {
       },
     ],
 
+    /*-- NOW ASSIST --**/
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/nowassist",
+        id: "nowassist",
+        routeBasePath: "labs/nowassist",
+        sidebarPath: require.resolve("./labs/nowassist/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
+    /*-- LOGISTICS --**/
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/logistics",
+        id: "logistics",
+        routeBasePath: "labs/logistics",
+        sidebarPath: require.resolve("./labs/logistics/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
+    /*-- TRAVEL REQUEST --**/
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/travelrequest",
+        id: "travelrequest",
+        routeBasePath: "labs/travelrequest",
+        sidebarPath: require.resolve("./labs/travelrequest/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
+    /*-- TELEWORK UTAH --**/
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -118,6 +129,7 @@ const config = {
       },
     ],
 
+    /*-- TELEWORK VANCOUVER --**/
     [
       "@docusaurus/plugin-content-docs",
       {

@@ -60,6 +60,20 @@ const FeatureList = [
   },
   */
 
+  /*
+  {
+    title: 'Now Assist',
+    icon: faFileCode,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Coming Soon! 
+      </>
+    ),
+    to: '/labs/nowassist/overview',
+    target: '_self',
+  },
+  */
+
   {
     title: 'Telework Case Management',
     icon: faFileCode,
