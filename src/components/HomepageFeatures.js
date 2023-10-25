@@ -46,7 +46,6 @@ export default HomepageFeatures;
 
 const FeatureList = [
 
-  /*
   {
     title: 'Telework Case Management',
     icon: faFileCode,
@@ -58,7 +57,6 @@ const FeatureList = [
     to: '/labs/telework-vancouver/0.0-introduction/app-engine-overview',
     target: '_self',
   },
-  */
 
   {
     title: 'Telework Case Management',
@@ -109,6 +107,7 @@ const FeatureList = [
     target: '_self',
   },
 
+  /*
   {
     title: 'Logistics',
     icon: faTruck,
@@ -120,6 +119,7 @@ const FeatureList = [
     to: '/labs/logistics/get_started/overview',
     target: '_self',
   },
+  */
 
   {
     title: 'Complaints Management',

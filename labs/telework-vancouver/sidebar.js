@@ -28,7 +28,6 @@ const sidebars = {
                 '1.0-Build-the-Foundation/create-telework-case-table',
                 '1.0-Build-the-Foundation/data-in-table-builder',
                 '1.0-Build-the-Foundation/configure-telework-form',
-                '1.0-Build-the-Foundation/forms-in-table-builder',
                 '1.0-Build-the-Foundation/review',
             ],
         },
@@ -53,6 +52,7 @@ const sidebars = {
                 '3.0-Automate-Work/overview',
                 '3.0-Automate-Work/create-workflow',
                 '3.0-Automate-Work/test-workflow',
+                '3.0-Automate-Work/review',
             ],
         },
 
@@ -64,6 +64,7 @@ const sidebars = {
                 '4.0-Manage-Work/create-workspace',
                 '4.0-Manage-Work/configure-workspace',
                 '4.0-Manage-Work/use-workspace',
+                '4.0-Manage-Work/review',
             ],
         },
 
