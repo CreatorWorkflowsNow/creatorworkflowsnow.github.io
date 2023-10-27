@@ -146,7 +146,12 @@ _Below is an example of how setup your local system to edit the lab guides and c
     
     ![Add commit message](static/img/add-commit-message.png)
 
-12. Open [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to merge with "source" branch.
+12. Push your commits back to the GitHub repo. 
+
+    ![Push your commits](static/img/push-commits.png)
+
+
+13. Open [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to merge with "source" branch.
 
 # Want to test locally? 
 You'll need to install `node.js` and `npm` onto your local system.
