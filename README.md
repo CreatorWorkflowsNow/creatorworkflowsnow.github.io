@@ -150,11 +150,11 @@ _Below is an example of how setup your local system to edit the lab guides and c
 
     ![Push your commits](static/img/push-commits.png)
 
+13. Create a Pull Request. _This pulls your code to the target branch when it gets approved._
 
-13. Open [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to merge with "source" branch.
+    ![Create Pull Request](static/img/create-pull-request.png);
 
-# Want to test locally? 
-You'll need to install `node.js` and `npm` onto your local system.
+
 
 
 ## FAQs
