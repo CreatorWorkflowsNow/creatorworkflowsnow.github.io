@@ -1,18 +1,152 @@
-![image](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/blob/source/static/img/servicenow-logo.png?raw=true)
-
-[![Source build and deploy to gh-pages](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/actions/workflows/source-build-deployment.yml/badge.svg?branch=source)](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/actions/workflows/source-build-deployment.yml)
-
-[![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
-
-A lab guide website for ServiceNow Creator Workflow Workshops.
-
-Visit: [https://CreatorWorkflowsNow.github.io](https://creatorWorkflowsNow.github.io)
+<!--
+*** Thanks for checking out creatorworkflowsnow.github.io. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
 
-# Pre-requisites to contribute 
-- Code editor (VSCode is recommended)
-- Knowledge of Markdown syntax
-- Knowledge of GitHub source control (repos, branching)
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+*** Go here to learn more about the shields
+*** https://shields.io/
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+
+[![Source Build][source-build-shield]][source-build-url]
+
+[![Pages Build][pages-build-shield]][pages-build-url]
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io">
+    <img src="static/img/servicenow-logo.png" alt="Logo" >
+  </a>
+
+  <h3 align="center">Creator Workshops Lab Guides</h3>
+
+  <p align="center">
+    An awesome repository of Lab Guides for ServiceNow Creator Workflows!
+    <br />
+    <a href="https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io">View Demo</a>
+    ·
+    <a href="https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/issues">Request Feature</a>
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![creatorworkflowsnow.github.io Screen Shot][creatorworkflowsnow.github.io-screenshot]](https://creatorworkflowsnow.github.io)
+
+A lab guide website for ServiceNow Creator Workflow Workshops. The lab guides are designed to be used with a pre-configured ServiceNow instance provided to you at a live Workshop event. Results may vary trying on your own instance. 
+
+### Built With
+[![Docusaurus][Docusuarus-tiny]][Docusaurus-url]<br/>
+[Docusaurus][Docusaurus-url]
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is of how to list things you need to know to contribute to the lab guides. 
+
+### Pre-requisites 
+- **Knowledge of Markdown**
+  - _New to Markdown? Try the [Communicate using Markdown](https://github.com/skills/communicate-using-markdown) GitHub Skills course_
+  - _In this course you will work with pull requests as well as edit files. If these things aren't familiar to you, we recommend you take the [Introduction to GitHub](https://github.com/skills/introduction-to-github) course, first!_
+- **Code editor ([Visual Studio Code](https://code.visualstudio.com/Download) is recommended)**
+- **[GitHub Desktop](https://desktop.github.com/)**
+- **[Node.js](#how-do-i-install-nodejs-and-npm-on-macos)**
+
+
+## Creating or Updating content
+
+_Below is an example of how setup your local system to edit the lab guides and contribute back to this project ._
+
+1. Clone this repo by clicking the green code button above, then click **Open with GitHub Desktop**.
+
+   ![Open with GitHub Desktop](static/img/2023-10-27_16-45-20.png)
+
+2. In GitHub Desktop, Create a new Branch.
+
+   ![Create a new Branch](static/img/gh-desktop-new-branch.png)
+
+3. Pick a unique name for your branch, then click Create Branch.
+
+   ![Create a new Branch](static/img/branch-name.png);
+
+4. In GitHub Desktop, go to Repository >> Open in Visual Studio Code
+
+   ![Open in VS Code](static/img/github_desktop_open_in_vscode.png)
+
+5. Open a terminal in VS Code. 
+
+   ![Open a terminal](static/img/open-terminal.png)
+
+6. Install NPM packages with this command: 
+   ```sh
+   npm install
+   ```
+
+7. Run a local server to see your changes locally before you publish back to the repo:
+   ```sh
+   npm run start
+   ```
+
+8. Your desktop should open a new browser tab to the URL: http://localhost:3000/
+
+9. Edit the markdown files in the labs/ folder as needed. Pay close attention to the frontmatter at the top of the file. Refer to to existing lab files for guidance or the [Docusuarus documentation](https://docusaurus.io/docs/markdown-features).
+
+10. When you are done editing and ready to commit back to the repo, go back to GitHub Desktop.
+
+11. Check the blue box next to each file and add a cool commit message like this:
+    
+    ![Add commit message](static/img/add-commit-message.png)
+
+
 
 # Got changes?
 *Do you have suggestions or want to propose changes to lab guide content?*
@@ -26,7 +160,10 @@ Visit: [https://CreatorWorkflowsNow.github.io](https://creatorWorkflowsNow.githu
 # Want to test locally? 
 You'll need to install `node.js` and `npm` onto your local system.
 
-## How do I install Node.js and NPM on MacOS?
+
+## FAQs
+
+### How do I install Node.js and NPM on MacOS?
 Here are the steps to install Node.js and NPM on macOS:
 
 1. **Install Homebrew**: Homebrew is a package manager for macOS that simplifies the installation of software. You can install it by visiting the [Homebrew's official website](https://www.youtube.com/watch?v=0i-gstqgjuE) and following the instructions.
@@ -86,3 +223,22 @@ The lab guides are maintained by:
 - Kristy Merriam - https://github.com/KristyS96
 - Marc Mouries - https://github.com/marcmouries
 - Sarah Yao - https://github.com/syaosnow
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/CreatorWorkflowsNow/creatorworkflowsnow.github.io?style=for-the-badge
+[contributors-url]: https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/CreatorWorkflowsNow/creatorworkflowsnow.github.io.svg?style=for-the-badge
+[forks-url]: https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/network/members
+[stars-shield]: https://img.shields.io/github/stars/CreatorWorkflowsNow/creatorworkflowsnow.github.io?style=for-the-badge
+[stars-url]: https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/stargazers
+[source-build-shield]: https://img.shields.io/github/actions/workflow/status/CreatorWorkflowsNow/creatorworkflowsnow.github.io/source-build-deployment.yml?label=Source%20branch%20build%20and%20deploy%20to%20gh-pages%20branch
+[source-build-url]: https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/actions/workflows/source-build-deployment.yml
+[pages-build-shield]: https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages
+[pages-build-url]: https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/actions/workflows/pages/pages-build-deployment
+[creatorworkflowsnow.github.io-screenshot]: static/img/creatorworkflowsnow.github.io_site.png
+
+[Docusuarus]: https://docusaurus.io/img/docusaurus.svg
+[Docusuarus-tiny]: static/img/docusaurus_tiny.png
+[Docusaurus-url]: https://docusaurus.io/
