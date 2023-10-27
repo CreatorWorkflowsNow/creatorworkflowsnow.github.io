@@ -8,7 +8,7 @@ const sidebars = {
             type: 'category',
             label: 'Overview',
             items: [
-                'Introduction/Overview'
+                'exercise-00-Introduction/Overview'
             ],
         },
 
@@ -16,7 +16,7 @@ const sidebars = {
             type: 'category',
             label: '1. Data',
             items: [
-                'Data/Overview',
+                'exercise-01-Data/overview',
             ],
         },
 
@@ -25,7 +25,7 @@ const sidebars = {
             type: 'category',
             label: '2-Security',
             items: [
-                'Security/Overview',
+                'exercise-02-Security/Overview',
             ],
         },
 
@@ -33,7 +33,7 @@ const sidebars = {
             type: 'category',
             label: '3-Portal',
             items: [
-                'Portal/Overview',
+                'exercise-03-Portal/Overview',
             ],
         },
 
@@ -41,7 +41,7 @@ const sidebars = {
             type: 'category',
             label: '4-Flow',
             items: [
-                'Flow/Overview',
+                'exercise-04-Flow/Overview',
             ],
         },
 
@@ -49,7 +49,7 @@ const sidebars = {
             type: 'category',
             label: '5-Integration',
             items: [
-                'Integration/Overview',
+                'exercise-05-Integration/Overview',
             ],
         },
     ],
