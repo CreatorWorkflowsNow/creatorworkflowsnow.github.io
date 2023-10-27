@@ -50,30 +50,29 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+## Table of Contents
+1. [About The Project](#about-the-project)
+   - [Built With Docusaurus](#built-with)
+2. [Getting Started](#getting-started)
+   - [Prerequisites](#pre-requisites)
+3. [Creating or Updating Content](#creating-or-updating-content)
+   - [Clone this repo](#1-clone-this-repo)
+   - [Create a new Branch](#2-create-a-new-branch)
+   - [Open in Visual Studio Code](#3-open-in-visual-studio-code)
+   - [Open a terminal in VS Code](#4-open-a-terminal-in-vs-code)
+   - [Install NPM packages](#6-install-npm-packages)
+   - [Run a local server](#7-run-a-local-server)
+   - [Edit the markdown files](#9-edit-the-markdown-files)
+   - [Commit your changes](#10-commit-your-changes)
+   - [Push your commits](#11-push-your-commits)
+   - [Create a Pull Request](#13-create-a-pull-request)
+4. [FAQs](#faqs)
+   - [How do I install Node.js and NPM on MacOS?](#how-do-i-install-nodejs-and-npm-on-macos)
+   - [How do I install Node.js and NPM on Windows?](#how-do-i-install-nodejs-and-npm-on-windows)
+   - [How are the new changes published?](#how-are-the-new-changes-published)
+   - [Who do I talk to?](#who-do-i-talk-to)
+5. [Maintainers](#maintainers)
+
 
 
 <!-- ABOUT THE PROJECT -->
@@ -154,7 +153,7 @@ _Below is an example of how setup your local system to edit the lab guides and c
 
     ![Create Pull Request](static/img/create-pull-request.png);
 
-
+14. Patiently wait for one of the [maintainers](#maintainers) below to approve your Pull Request. 
 
 
 ## FAQs
@@ -177,23 +176,9 @@ Here are the steps to install Node.js and NPM on macOS:
 
 3. **Verify Installation**: After the installation finishes, you can confirm that you successfully installed Node.js by checking its version with the command: `node -v`. Similarly, you can check the installed version of NPM by typing: `npm -v`.
 
-# How do I run a local version of CreatorWorkflowsNow.github.io?
-This is much better than just viewing as a preview in VSCode as you will be able to see the full styling of the site in your local web browser.
-
-1. Clone this repo
-2. Run `npm install`
-3. Run `npm start`
-4. Open your web browser to http://localhost:3000
-
-# How are my new changes made live? 
-When your pull request is approved to merge to the branch 'source', an automated GitHub Action will handle the deployment to the live site by deploying to the branch 'gh-pages'.
-
-## Can I deploy manually from my local system to gh-pages?  
-The recommended approach is to open a [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to merge with the 'source' branch and let the automated GitHub Action take care of it. 
-
 # How are the new changes published?
 
-When new changes are pushed to the branch 'source', this kicks off a series of [GitHub Actions](https://docs.github.com/en/actions).
+When new the pull request to 'source' is approved and code gets merged, this kicks off a series of [GitHub Actions](https://docs.github.com/en/actions).
 
 ## 1. [Source build and deploy to gh-pages](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/blob/source/.github/workflows/source-build-deployment.yml) 
 [![Source build and deploy to gh-pages](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/actions/workflows/source-build-deployment.yml/badge.svg?branch=source)](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/actions/workflows/source-build-deployment.yml)
@@ -202,11 +187,6 @@ When new changes are pushed to the branch 'source', this kicks off a series of [
 ## 2. pages build and deployment
 [![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
    - Built-in GitHub Action. When changes are pushed to the branch 'gh-pages', then GitHub will publish these changes to the site [https://creatorworkflowsnow.github.io/](https://creatorworkflowsnow.github.io/).
-
-## 3. [PDFs Build and Deploy](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/blob/source/gh-actions-to-build/pdfs-build-deployment.yml)
-   - This job executes after the 'pages build and deployment' job runs. It's purpose is to use prince-pdf to create new PDF versions of the lab guides and push to the branch 'source'.
-   - _As of 2023.10.17, I have still not been able to get this Action to work properly. Please feel free to examine, troubleshoot, and suggest changes. _(Dale Stubblefield)__
-
 
 # Who do I talk to?
 
