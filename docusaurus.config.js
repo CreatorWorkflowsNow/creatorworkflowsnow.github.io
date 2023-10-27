@@ -9,7 +9,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Creator Workshop Lab Guides",
   tagline: "Ready to learn something new?",
-  url: "https://creatorworkflowsnow.github.io", 
+  url: "https://creatorworkflowsnow.github.io",
   trailingSlash: false,
   baseUrl: "/", // Set the /<baseUrl>/ pathname under which your site is served. For GitHub pages deployment, it is often '/<projectName>/'
   favicon: "img/favicon.ico",
@@ -62,10 +62,21 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        path: "labs/complaint",
-        id: "complaint",
-        routeBasePath: "labs/complaint",
-        sidebarPath: require.resolve("./labs/complaint/sidebar.js"),
+        path: "labs/complaint-utah",
+        id: "complaintutah",
+        routeBasePath: "labs/complaint-utah",
+        sidebarPath: require.resolve("./labs/complaint-utah/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/complaint-vancouver",
+        id: "complaintvancouver",
+        routeBasePath: "labs/complaint-vancouver",
+        sidebarPath: require.resolve("./labs/complaint-vancouver/sidebar.js"),
         breadcrumbs: false,
       },
     ],

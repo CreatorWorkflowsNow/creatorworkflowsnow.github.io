@@ -129,10 +129,22 @@ const FeatureList = [
       <div class="button-homepage-utah">🏔️ UTAH</div><br/>Unstoppable resolution: Enhance CSM capabilities with the power of low-code using App Engine. 
       </>
     ),
-    to: '/labs/complaint/overview/',
+    to: '/labs/complaint-utah/overview/',
     target: '_self',
   },
-
+/*
+  {
+    title: 'Complaints Management',
+    icon: faHeadset,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Unstoppable resolution: Enhance CSM capabilities with the power of low-code using App Engine. 
+      </>
+    ),
+    to: '/labs/complaint-vancouver/overview/',
+    target: '_self',
+  },
+*/
   {
     title: 'Automation Engine',
     icon: faRobot,
