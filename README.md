@@ -146,16 +146,7 @@ _Below is an example of how setup your local system to edit the lab guides and c
     
     ![Add commit message](static/img/add-commit-message.png)
 
-
-
-# Got changes?
-*Do you have suggestions or want to propose changes to lab guide content?*
-
-1. Clone the repo.
-2. Start a new branch. (Ex. xyz-lab-proposed-changes)
-3. Make changes to the markdown files for that lab in it's lab folder. (Ex. /labs/logisics/)
-4. Push changes to repo.
-5. Open [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to merge with "source" branch.
+12. Open [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to merge with "source" branch.
 
 # Want to test locally? 
 You'll need to install `node.js` and `npm` onto your local system.
