@@ -142,6 +142,20 @@ const config = {
       },
     ],
 
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/telework-201_vancouver",
+        id: "telework-201_vancouver",
+        routeBasePath: "labs/telework-201_vancouver",
+        sidebarPath: require.resolve("./labs/telework-201_vancouver/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
+
   ],
 
   presets: [
