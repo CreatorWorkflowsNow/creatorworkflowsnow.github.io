@@ -109,6 +109,7 @@ const FeatureList = [
     target: '_self',
   },
 
+  /*
   {
     title: 'Logistics',
     icon: faTruck,
@@ -120,6 +121,7 @@ const FeatureList = [
     to: '/labs/logistics/get_started/overview',
     target: '_self',
   },
+  */
 
   {
     title: 'Complaints Management',
