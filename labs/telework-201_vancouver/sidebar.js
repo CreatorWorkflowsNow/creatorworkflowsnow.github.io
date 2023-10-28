@@ -8,7 +8,7 @@ const sidebars = {
 
         {
             type: 'category',
-            label: 'Overview',
+            label: 'Telework 201',
             items: [
                 'exercise-00-Introduction/Overview'
             ],
