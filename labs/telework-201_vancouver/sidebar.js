@@ -4,6 +4,8 @@
 const sidebars = {
     telework_201: [
         
+        'vancouver',
+
         {
             type: 'category',
             label: 'Overview',
