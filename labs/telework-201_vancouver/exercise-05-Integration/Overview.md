@@ -1,9 +1,6 @@
 ---
-id: overview
-title: "Overview: Build the Foundation"
+title: "Integration: Overview" 
 sidebar_label: "Overview"
-hide_table_of_contents: true
-pagination_label: "Integration: Overview" 
 ---
 ## Purpose
 

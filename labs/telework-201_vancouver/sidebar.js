@@ -18,7 +18,7 @@ const sidebars = {
             type: 'category',
             label: '1. Data',
             items: [
-                'exercise-01-Data/overview',
+                'exercise-01-Data/Overview',
             ],
         },
 
