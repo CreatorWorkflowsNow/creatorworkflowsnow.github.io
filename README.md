@@ -188,6 +188,22 @@ When new the pull request to 'source' is approved and code gets merged, this kic
 [![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
    - Built-in GitHub Action. When changes are pushed to the branch 'gh-pages', then GitHub will publish these changes to the site [https://creatorworkflowsnow.github.io/](https://creatorworkflowsnow.github.io/).
 
+
+# Examples
+
+## Example Lab Guide
+
+Check out this [Example Lab Guide](https://creatorworkflowsnow.github.io/labs/example-lab/overview) for how to lay out the files in your lab and basic styling guidelines.
+
+## Admonitions
+
+[How to use the Admonitions on this site in your lab guide](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/admonitions)
+
+## Front Matter
+
+The information at the top of your markdown file is important for helping the site understand how to present your page.  [Guide to Front Matter on this site](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/front-matter)
+
+
 # Who do I talk to?
 
 If you have any questions or problems, please [open an issue](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/issues) on GitHub and we will do our best to give you a timely answer.

@@ -155,6 +155,19 @@ const config = {
       },
     ],
 
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/example-lab",
+        id: "examplelab",
+        routeBasePath: "labs/example-lab",
+        sidebarPath: require.resolve("./labs/example-lab/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
 
   ],
 
