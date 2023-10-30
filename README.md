@@ -50,49 +50,48 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
-1. [About The Project](#about-the-project)
-   - [Built With Docusaurus](#built-with)
-2. [Getting Started](#getting-started)
-   - [Prerequisites](#pre-requisites)
-3. [Creating or Updating Content](#creating-or-updating-content)
-   - [Clone this repo](#1-clone-this-repo)
-   - [Create a new Branch](#2-create-a-new-branch)
-   - [Open in Visual Studio Code](#3-open-in-visual-studio-code)
-   - [Open a terminal in VS Code](#4-open-a-terminal-in-vs-code)
-   - [Install NPM packages](#6-install-npm-packages)
-   - [Run a local server](#7-run-a-local-server)
-   - [Edit the markdown files](#9-edit-the-markdown-files)
-   - [Commit your changes](#10-commit-your-changes)
-   - [Push your commits](#11-push-your-commits)
-   - [Create a Pull Request](#13-create-a-pull-request)
-4. [FAQs](#faqs)
-   - [How do I install Node.js and NPM on MacOS?](#how-do-i-install-nodejs-and-npm-on-macos)
-   - [How do I install Node.js and NPM on Windows?](#how-do-i-install-nodejs-and-npm-on-windows)
-   - [How are the new changes published?](#how-are-the-new-changes-published)
-   - [Who do I talk to?](#who-do-i-talk-to)
-5. [Maintainers](#maintainers)
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Pre-requisites](#pre-requisites)
+  - [Creating or Updating content](#creating-or-updating-content)
+- [Examples](#examples)
+  - [Example Lab Guide](#example-lab-guide)
+  - [Admonitions](#admonitions)
+  - [Front Matter](#front-matter)
+- [FAQs](#faqs)
+  - [How do I install Node.js and NPM on MacOS?](#how-do-i-install-nodejs-and-npm-on-macos)
+  - [How do I install Node.js and NPM on Windows?](#how-do-i-install-nodejs-and-npm-on-windows)
+- [How are the new changes published?](#how-are-the-new-changes-published)
+  - [1. Source build and deploy to gh-pages](#1-source-build-and-deploy-to-gh-pages)
+  - [2. pages build and deployment](#2-pages-build-and-deployment)
+- [Who do I talk to?](#who-do-i-talk-to)
+- [Maintainers](#maintainers)
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+# About The Project
 
 [![creatorworkflowsnow.github.io Screen Shot][creatorworkflowsnow.github.io-screenshot]](https://creatorworkflowsnow.github.io)
 
 A lab guide website for ServiceNow Creator Workflow Workshops. The lab guides are designed to be used with a pre-configured ServiceNow instance provided to you at a live Workshop event. Results may vary trying on your own instance. 
 
-### Built With
+## Built With
 [![Docusaurus][Docusuarus-tiny]][Docusaurus-url]<br/>
 [Docusaurus][Docusaurus-url]
 
+[Back to top](#table-of-contents)
+
 
 <!-- GETTING STARTED -->
-## Getting Started
+# Getting Started
 
 This is of how to list things you need to know to contribute to the lab guides. 
 
-### Pre-requisites 
+## Pre-requisites 
 - **Knowledge of Markdown**
   - _New to Markdown? Try the [Communicate using Markdown](https://github.com/skills/communicate-using-markdown) GitHub Skills course_
   - _In this course you will work with pull requests as well as edit files. If these things aren't familiar to you, we recommend you take the [Introduction to GitHub](https://github.com/skills/introduction-to-github) course, first!_
@@ -155,10 +154,29 @@ _Below is an example of how setup your local system to edit the lab guides and c
 
 14. Patiently wait for one of the [maintainers](#maintainers) below to approve your Pull Request. 
 
+[Back to top](#table-of-contents)
 
-## FAQs
 
-### How do I install Node.js and NPM on MacOS?
+# Examples
+
+## Example Lab Guide
+
+Check out this [Example Lab Guide](https://creatorworkflowsnow.github.io/labs/example-lab/overview) for how to lay out the files in your lab and basic styling guidelines.
+
+## Admonitions
+
+[How to use the Admonitions on this site in your lab guide](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/admonitions)
+
+## Front Matter
+
+The information at the top of your markdown file is important for helping the site understand how to present your page.  [Guide to Front Matter on this site](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/front-matter)
+
+[Back to top](#table-of-contents)
+
+
+# FAQs
+
+## How do I install Node.js and NPM on MacOS?
 Here are the steps to install Node.js and NPM on macOS:
 
 1. **Install Homebrew**: Homebrew is a package manager for macOS that simplifies the installation of software. You can install it by visiting the [Homebrew's official website](https://www.youtube.com/watch?v=0i-gstqgjuE) and following the instructions.
@@ -176,6 +194,8 @@ Here are the steps to install Node.js and NPM on macOS:
 
 3. **Verify Installation**: After the installation finishes, you can confirm that you successfully installed Node.js by checking its version with the command: `node -v`. Similarly, you can check the installed version of NPM by typing: `npm -v`.
 
+[Back to top](#table-of-contents)
+
 # How are the new changes published?
 
 When new the pull request to 'source' is approved and code gets merged, this kicks off a series of [GitHub Actions](https://docs.github.com/en/actions).
@@ -188,25 +208,13 @@ When new the pull request to 'source' is approved and code gets merged, this kic
 [![pages-build-deployment](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/actions/workflows/pages/pages-build-deployment)
    - Built-in GitHub Action. When changes are pushed to the branch 'gh-pages', then GitHub will publish these changes to the site [https://creatorworkflowsnow.github.io/](https://creatorworkflowsnow.github.io/).
 
-
-# Examples
-
-## Example Lab Guide
-
-Check out this [Example Lab Guide](https://creatorworkflowsnow.github.io/labs/example-lab/overview) for how to lay out the files in your lab and basic styling guidelines.
-
-## Admonitions
-
-[How to use the Admonitions on this site in your lab guide](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/admonitions)
-
-## Front Matter
-
-The information at the top of your markdown file is important for helping the site understand how to present your page.  [Guide to Front Matter on this site](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/front-matter)
+[Back to top](#table-of-contents)
 
 
 # Who do I talk to?
 
 If you have any questions or problems, please [open an issue](https://github.com/CreatorWorkflowsNow/CreatorWorkflowsNow.github.io/issues) on GitHub and we will do our best to give you a timely answer.
+
 
 # Maintainers
 The lab guides are maintained by:
@@ -215,6 +223,8 @@ The lab guides are maintained by:
 - Kristy Merriam - https://github.com/KristyS96
 - Marc Mouries - https://github.com/marcmouries
 - Sarah Yao - https://github.com/syaosnow
+
+[Back to top](#table-of-contents)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
