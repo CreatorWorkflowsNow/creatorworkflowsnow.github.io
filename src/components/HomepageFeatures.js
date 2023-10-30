@@ -61,6 +61,18 @@ const FeatureList = [
   */
 
   {
+    title: 'IHub: Spoke Generator',
+    icon: faFileCode,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Learn about the newest Integration Hub feature: Spoke Generator. 
+      </>
+    ),
+    to: '/labs/spokegen/overview',
+    target: '_self',
+  },
+
+  {
     title: 'Telework Case Management',
     icon: faFileCode,
     description: (

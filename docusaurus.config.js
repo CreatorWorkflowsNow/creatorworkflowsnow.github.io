@@ -168,6 +168,19 @@ const config = {
       },
     ],
 
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/spokegen",
+        id: "spokegen",
+        routeBasePath: "labs/spokegen",
+        sidebarPath: require.resolve("./labs/spokegen/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
 
   ],
 
