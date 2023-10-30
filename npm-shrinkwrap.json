@@ -18,7 +18,7 @@
         "@fortawesome/react-fontawesome": "^0.2.0",
         "@mdx-js/react": "^1.6.21",
         "@svgr/webpack": "^8.0.1",
-        "autoprefixer": "^10.4.15",
+        "autoprefixer": "^10.4.16",
         "clsx": "^2.0.0",
         "docusaurus-plugin-sass": "^0.2.5",
         "file-loader": "^6.2.0",
@@ -4671,7 +4671,9 @@
       }
     },
     "node_modules/autoprefixer": {
-      "version": "10.4.15",
+      "version": "10.4.16",
+      "resolved": "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.16.tgz",
+      "integrity": "sha512-7vd3UC6xKp0HLfua5IjZlcXvGAGy7cBAXTg2lyQ/8WpNhd6SiZ8Be+xm3FyBSYJx5GKcpRCzBh7RH4/0dnY+uQ==",
       "funding": [
         {
           "type": "opencollective",
@@ -4686,11 +4688,10 @@
           "url": "https://github.com/sponsors/ai"
         }
       ],
-      "license": "MIT",
       "dependencies": {
         "browserslist": "^4.21.10",
-        "caniuse-lite": "^1.0.30001520",
-        "fraction.js": "^4.2.0",
+        "caniuse-lite": "^1.0.30001538",
+        "fraction.js": "^4.3.6",
         "normalize-range": "^0.1.2",
         "picocolors": "^1.0.0",
         "postcss-value-parser": "^4.2.0"
@@ -5143,7 +5144,9 @@
       }
     },
     "node_modules/caniuse-lite": {
-      "version": "1.0.30001524",
+      "version": "1.0.30001558",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001558.tgz",
+      "integrity": "sha512-/Et7DwLqpjS47JPEcz6VnxU9PwcIdVi0ciLXRWBQdj1XFye68pSQYpV0QtPTfUKWuOaEig+/Vez2l74eDc1tPQ==",
       "funding": [
         {
           "type": "opencollective",
@@ -5157,8 +5160,7 @@
           "type": "github",
           "url": "https://github.com/sponsors/ai"
         }
-      ],
-      "license": "CC-BY-4.0"
+      ]
     },
     "node_modules/ccount": {
       "version": "1.1.0",
@@ -7607,14 +7609,15 @@
       }
     },
     "node_modules/fraction.js": {
-      "version": "4.2.0",
-      "license": "MIT",
+      "version": "4.3.7",
+      "resolved": "https://registry.npmjs.org/fraction.js/-/fraction.js-4.3.7.tgz",
+      "integrity": "sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==",
       "engines": {
         "node": "*"
       },
       "funding": {
         "type": "patreon",
-        "url": "https://www.patreon.com/infusion"
+        "url": "https://github.com/sponsors/rawify"
       }
     },
     "node_modules/fresh": {
