@@ -1,5 +1,5 @@
 ---
-title: "201 Overview"
+title: "Lab Overview"
 hide_table_of_contents: true
 ---
 
