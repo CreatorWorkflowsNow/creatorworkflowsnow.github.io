@@ -509,6 +509,7 @@ h1 {
 /* Indent the caution, warning, etc. */
 .theme-admonition {
   @apply ml-5;
+  margin-top: 1rem; // necessary when admonition is inside a list
 }
 
 /*--------------------------------------------------*/
