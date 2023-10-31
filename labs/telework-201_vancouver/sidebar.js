@@ -44,7 +44,9 @@ const sidebars = {
             ],
         },
 
-        'Part-06-Lab Review'
+        'Lab-Review',
+        'CHANGELOG',
+        
     ],
 };
 

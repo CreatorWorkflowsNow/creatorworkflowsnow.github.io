@@ -18,6 +18,7 @@ In this exercise, we will learn techniques for securing our application to speci
 
 ## Marc's Notes 
 
-Discuss 
+Talk about:
+ - scope 
  - the new Access-analyzer
  
