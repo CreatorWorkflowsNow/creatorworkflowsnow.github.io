@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 # Restrict access from Admins
 
-We will lock down the app so hard that even other admins won't be able to see the app data.
+We will secure the app so that even other administrators cannot access the app and its data.
 
 ## Update the admin role for our app 
 
@@ -62,7 +62,10 @@ We will lock down the app so hard that even other admins won't be able to see th
     ![](./images/05_Check-App-Admin.png)
 
 
+:::info
 So far we have developed logged in as the admin user. We'll create a user for our application, add this user to the "App Engine Studio Users" group and then add the role we just created for the Telework app.
+:::
+
 
 
 5. Create a new user 
