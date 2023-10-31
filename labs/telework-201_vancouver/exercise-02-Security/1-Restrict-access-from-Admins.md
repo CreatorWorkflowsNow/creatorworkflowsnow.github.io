@@ -63,20 +63,39 @@ We will secure the app so that even other administrators cannot access the app a
     ![](./images/05_Check-App-Admin.png)
 
 
-## Create a new user with the admin role for our app 
+## Assign the admin role for our app to a user
 
 So far we have developed logged in as the admin user. We'll create a user for our application, assign them the "App Engine Studio Users" role and the role we just created for the Telework app.
 
-1. Go the users list
+1. Go to the list of users
 
-    1. Click the **All** menu
-    
-    2. Search for "Users"
-
-    3. Click on **Users**
+    | Steps                                                 | 
+    |---------------------------------------|------------------------|
+    |<span className="large-number">➊</span>|Click the **All** menu  | 
+    |<span className="large-number">➋</span>|Search for **Users**    |
+    |<span className="large-number">➌</span>|Click on **Users**      |
 
     ![](./images/06-Create-new-user-1.png)
 
+
+2. Open the user **Telework Admin**
+
+    | Steps                                                 | 
+    |---------------------------------------|------------------------|
+    |<span className="large-number">➊</span>|Type **Telework** menu  | 
+    |<span className="large-number">➋</span>|Hit the <kbd>enter</kbd> key  |
+    |<span className="large-number">➌</span>|Click on the user **Telework Admin**     |
+
+    ![](./images/06-Open-admin-user-1.png)
+
+3.  Assign the **App Engine Studio Users** role
+
+    :::tip Best practice
+    Rather than adding a role individually to each user, assign a role to a group. Group members have all of the roles assigned to a group.
+    :::
+
+
+# OLD STUFF
 
 2. Click on the <span className="button-purple">New</span> button, to create a new user
 
@@ -90,24 +109,12 @@ So far we have developed logged in as the admin user. We'll create a user for ou
     |<span className="large-number">➊</span>|User ID    | Telework.Admin
     |<span className="large-number">➋</span>|First name | Telework
     |<span className="large-number">➌</span>|Last name  | Admin
-    |<span className="large-number">➍</span>|Click on the <span className="button-purple">Submit</span> button.
+    |<span className="large-number">➍</span>|Right-click in the header 
+    |<span className="large-number">➎</span>|Click on the <span className="button-purple">Submit</span> button.
 
     ![](./images/06-Create-new-user-3.png)
 
 
-4. Assign the **App Engine Studio Users** role
-
-    :::tip Best practice
-    Rather than adding a role individually to each user, assign a role to a group. Group members have all of the roles assigned to a group.
-    :::
-
-    1. sd
-
-    hello
-
-5. sdf
-
-hello
 
 
 
