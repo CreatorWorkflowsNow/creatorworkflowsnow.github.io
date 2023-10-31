@@ -61,6 +61,18 @@ const FeatureList = [
   */
 
   {
+    title: 'Collaborate to Accelerate',
+    icon: faCog,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Learn to govern low-code applications with App Engine Management Center. 
+      </>
+    ),
+    to: '/labs/collaborate-vancouver/0.0-get_started/intro',
+    target: '_self',
+  },
+
+  {
     title: 'IHub: Spoke Generator',
     icon: faFileCode,
     description: (
@@ -98,17 +110,20 @@ const FeatureList = [
     target: '_self',
   },
 
+  /*
   {
     title: 'Collaborate to Accelerate',
     icon: faCog,
     description: (
       <>
-      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Learn to build and govern low-code applications with App Engine Management Center. 
+      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Learn to govern low-code applications with App Engine Management Center. 
       </>
     ),
-    to: '/labs/collaborate/get_started/intro',
+    to: '/labs/collaborate-utah/get_started/intro',
     target: '_self',
   },
+  */
+
   {
     title: 'Travel Request',
     icon: faPlane,
