@@ -44,24 +44,6 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        path: "labs/collaborate",
-        breadcrumbs: false,
-        id: "collaborate",
-        routeBasePath: "labs/collaborate",
-        sidebarPath: require.resolve("./labs/collaborate/sidebar.js"),
-        // https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/edit/source/labs/collaborate/get_started/1-intro.md
-        /*
-        editUrl: ({versionDocsDirPath, docPath}) => 
-        `https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/edit/source/labs/collaborate/${docPath}`,
-        editLocalizedFiles: false,
-        editCurrentVersion: false,
-        */
-      },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
         path: "labs/complaint-utah",
         id: "complaintutah",
         routeBasePath: "labs/complaint-utah",
@@ -181,6 +163,32 @@ const config = {
       },
     ],
 
+
+    /*
+     * COLLABORATE TO ACCELERATE LABS 
+     */
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/collaborate-utah",
+        id: "collaborateutah",
+        routeBasePath: "labs/collaborate-utah",
+        sidebarPath: require.resolve("./labs/collaborate-utah/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/collaborate-vancouver",
+        id: "collaboratevancouver",
+        routeBasePath: "labs/collaborate-vancouver",
+        sidebarPath: require.resolve("./labs/collaborate-vancouver/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
 
   ],
 
