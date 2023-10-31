@@ -608,7 +608,7 @@ h1 {
   @apply pb-0;
   @apply mt-0;
   @apply mb-0;
-  list-style-type: lower-alpha;
+  list-style-type: decimal;
 }
 
 .markdown ol li ol li::marker {
