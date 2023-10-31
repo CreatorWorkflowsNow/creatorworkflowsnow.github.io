@@ -9,7 +9,13 @@ We will lock down the app so hard that even other admins won't be able to see th
 
 ## Update the admin role for our app 
 
-1. Search for "roles" and click on: System Security > Users and Groups > Roles or User Administration > Roles.
+1. Go to the roles list
+
+    1. Click the **All** menu
+    
+    2. Search for "roles" 
+    
+    3. click on: System Security > Users and Groups > Roles or User Administration > Roles.
 
 ![](./images/01_Search-for-roles.png)
 
@@ -25,6 +31,52 @@ We will lock down the app so hard that even other admins won't be able to see th
     4. Open the default admin record
     
     ![](./images/02_Open-the-admin-role.png)
+
+3. Configure the form to add the **Application Administrator** field.
+
+    1. Right-click in the header to show the record menu
+
+    2. Select Configure > **Form layout**
+
+    ![](./images/03_Configure-form-layout.png)
+
+    3. Add the field **Application Administrator** to the role form
+
+        1. Click **Edit this section in Global**
+
+        2. Select the field **Application Administrator** 
+
+        3. Click on the **[ › ]** button to add the field to the list of selected fields
+
+        4. Click <span className="button-purple">Save</span> at the bottom. 
+
+    ![](./images/04_Add-App-Admin.png)
+
+
+4. Set the Telework Admin role to an Application Administrator
+
+    1. In the role record, select the Application Administrator check box,
+    
+    2. then Click Update.
+
+    ![](./images/05_Check-App-Admin.png)
+
+
+So far we have developed logged in as the admin user. We'll create a user for our application, add this user to the "App Engine Studio Users" group and then add the role we just created for the Telework app.
+
+
+5. Create a new user 
+
+    1. Click the **All** menu
+    
+    2. Search for "Users"
+
+    3. Click on **Users**
+
+    ![](./images/06-Create-new-user-1.png)
+
+    
+
 
 
 
