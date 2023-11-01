@@ -94,6 +94,18 @@ So far we have developed logged in as the admin user. We'll create a user for ou
     Rather than adding a role individually to each user, assign a role to a group. Group members have all of the roles assigned to a group.
     :::
 
+    In the **Telework.Admin** user record, scroll down to the related lists, On the Groups tab, click <span className="button-purple">Edit</span> then follow the steps below.
+
+    | Steps                                                 | 
+    |---------------------------------------|------------------------|
+    |<span className="large-number">➊</span>| Type **App Engine Studio Users**  |
+    |<span className="large-number">➋</span>| Select **App Engine Studio Users**  |
+    |<span className="large-number">➌</span>| Click on the [ › ] button to add the field to the list of selected fields   |
+    |<span className="large-number">➍</span>| Click <span className="button-purple">Save</span>.   |
+
+    ![](./images/07-Assign-AES-users-group.png)
+
+    
 
 # OLD STUFF
 
