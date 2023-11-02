@@ -11,7 +11,7 @@ In this exercise will start building out the tables needed to support out applic
 
 Data can also be imported from other third-party sources like a database or web service/API.
 
-1. On the app homepage, click on **+Add** next to **Data**.
+1. Dismiss any helper windows that may appear on the app homepage then click on **+Add** next to **Data**.
 ![](../images/2023-08-18-09-19-43.png)
 
 
@@ -20,7 +20,7 @@ Data can also be imported from other third-party sources like a database or web 
 
 
 3. Click **Drag and drop or browse to upload spreadsheet**. 
-Download this file: [ComplaintsInvestigationImport.xlsx](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/raw/source/labs/complaint/downloads/ComplaintsInvestigationImport.xlsx) 
+Download this file: [ComplaintsInvestigationImport.xlsx](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/raw/source/labs/complaint-vancouver/downloads/ComplaintsInvestigationImport.xlsx) 
 and upload the file to the instance.
 ![](../images/2023-08-18-09-23-58.png)
 
@@ -49,7 +49,7 @@ Setting the Prefix allows us to distinguish our tasks from records created that 
 
 
 8. The next step is to setup permission for the Dept Task table. Assign full permissions to the admin role by selecting **All**. Select the **Create**, **Read** and **Write** permissions for the user role. When finished, click **Continue**.
-![](../images/2023-09-11-10-03-57.png)
+![](../images/2023-10-30-09-25-44.png)
 
 
 9. Now, we wait for the platform to create our table. Select **Continue** once the table is created to move on to mapping our imported data to the appropriate fields.
@@ -88,7 +88,7 @@ This is referred to as 'dot-walking'.
 Once you've finished reviewing the data, close the window to return to App Engine Studio
 
 
-17. Next, let's focus on the data we want to be shown on the screens when viewing these investigation records. In **App Engine Studio**, click on the table and click on **Forms** at the top of the screen to open **Form Builder**
+17. Next, let's focus on the data we want to be shown on the screens when viewing these investigation records. In **App Engine Studio**, click on the table and click on **Forms** at the top of the screen to open **Form Builder** again dismissing any helper windows
 ![](../images/2023-09-27-14-30-29.png)
 
 

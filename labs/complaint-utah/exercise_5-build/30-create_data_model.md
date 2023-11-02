@@ -20,7 +20,7 @@ Data can also be imported from other third-party sources like a database or web 
 
 
 3. Click **Drag and drop or browse to upload spreadsheet**. 
-Download this file: [ComplaintsInvestigationImport.xlsx](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/raw/source/labs/complaint/downloads/ComplaintsInvestigationImport.xlsx) 
+Download this file: [ComplaintsInvestigationImport.xlsx](https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/raw/source/labs/complaint-utah/downloads/ComplaintsInvestigationImport.xlsx) 
 and upload the file to the instance.
 ![](../images/2023-08-18-09-23-58.png)
 
