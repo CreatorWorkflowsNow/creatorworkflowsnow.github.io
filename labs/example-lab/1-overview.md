@@ -14,3 +14,9 @@ Welcome to the Example Lab.  This is a style guide to help you get started with 
 ## Exercise DEF
   * In this exercise you will learn how to DEF.
   
+
+## Additional Resources
+
+* [Admonitions](/labs/example-lab/3.0-additional-resources/admonitions)
+* [Front Matter](/labs/example-lab/3.0-additional-resources/front-matter)
+* [VS Code Tips](/labs/example-lab/3.0-additional-resources/vs-code-tips)

@@ -278,6 +278,10 @@ const config = {
                 href: "https://developer.servicenow.com/dev.do#!/guides/vancouver/now-platform/glossary/developer-glossary",
               },
               {
+                label: "Example Lab Guide",
+                href: "/labs/example-lab/overview",
+              },
+              {
                 label: "Now Create",
                 href: "https://nowlearning.servicenow.com/nowcreate",
               },

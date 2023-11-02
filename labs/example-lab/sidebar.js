@@ -35,6 +35,7 @@ const sidebars = {
             items: [
                 '3.0-additional-resources/admonitions',
                 '3.0-additional-resources/front-matter',
+                '3.0-additional-resources/vs-code-tips',
             ],
         },
 
