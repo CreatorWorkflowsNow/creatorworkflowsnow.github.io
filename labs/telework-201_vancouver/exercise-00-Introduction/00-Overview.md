@@ -1,4 +1,9 @@
-# Telework Case Management - 201
+---
+title: "Lab Overview"
+hide_table_of_contents: true
+---
+
+# Overview
 
 ## Introduction
 

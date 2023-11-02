@@ -1,0 +1,75 @@
+openapi: 3.0.0
+info:
+  title: User Checker API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+    description: Local development server
+  - url: https://userlookupapi.westus2.cloudapp.azure.com
+    description: Production server (uses live data)
+paths:
+  /checkUser:
+    get:
+      summary: Check if a user exists
+      parameters:
+        - in: query
+          name: firstname
+          schema:
+            type: string
+          required: true
+          description: First name of the user
+        - in: query
+          name: lastname
+          schema:
+            type: string
+          required: true
+          description: Last name of the user
+        - in: query
+          name: dateofbirth
+          schema:
+            type: string
+          required: true
+          description: YYYY-MM-DD
+      responses:
+        '200':
+          description: User existence result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                  message:
+                    type: string
+                  user:
+                    type: object
+                    properties:
+                      guest_title:
+                        type: string
+                      phone:
+                        type: string
+                      host_name:
+                        type: string
+                      host_id_number:
+                        type: string
+                      host_email:
+                        type: string
+                      guest_email:
+                        type: string
+                      building_location:
+                        type: string
+                      access_expiration:
+                        type: string
+              example:
+                code: "0"
+                message: User exists
+                user:
+                  guest_title: Guest
+                  phone: "123-456-7890"
+                  host_name: Jane Smith
+                  host_id_number: "987654"
+                  host_email: jane@example.com
+                  guest_email: john@example.com
+                  building_location: Building A
+                  access_expiration: "2023-12-31"
