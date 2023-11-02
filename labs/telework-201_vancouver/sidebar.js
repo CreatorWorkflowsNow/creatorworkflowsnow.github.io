@@ -35,6 +35,9 @@ const sidebars = {
             label: '4. Flow',
             items: [
                 'exercise-04-Flow/Overview',
+                'exercise-04-Flow/Create-People-Finder-Spoke',
+                'exercise-04-Flow/Create-Decision-Table',
+                'exercise-04-Flow/Modify-Main-Flow',
             ],
         },
         {   type: 'category',
