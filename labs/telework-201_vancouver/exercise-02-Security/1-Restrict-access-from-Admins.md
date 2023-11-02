@@ -88,13 +88,14 @@ So far we have developed logged in as the admin user. We'll create a user for ou
 
     ![](./images/06-Open-admin-user-1.png)
 
+
 3.  Assign the **App Engine Studio Users** role
 
     :::tip Best practice
     Rather than adding a role individually to each user, assign a role to a group. Group members have all of the roles assigned to a group.
     :::
 
-    In the **Telework.Admin** user record, scroll down to the related lists, On the Groups tab, click <span className="button-purple">Edit</span> then follow the steps below.
+    In the **Telework.Admin** user record, scroll down to the related lists, On the **Groups** tab, click <span className="button-purple">Edit</span> then follow the steps below.
 
     | Steps                                                 | 
     |---------------------------------------|------------------------|
@@ -105,7 +106,41 @@ So far we have developed logged in as the admin user. We'll create a user for ou
 
     ![](./images/07-Assign-AES-users-group.png)
 
+
     
+4.  Assign the **App's Admin** role
+
+    On the **Roles** tab, click <span className="button-purple">Edit</span> then follow the steps below.
+
+    :::danger  Update role name?
+    Check again on the 201 instance
+    :::
+
+    | Steps                                                 | 
+    |---------------------------------------|------------------------|
+    |<span className="large-number">➊</span>| Type **x_snc_tlw**  |
+    |<span className="large-number">➋</span>| Select **x_snc_tlw**  |
+    |<span className="large-number">➌</span>| Click on the [ › ] button to add the field to the list of selected fields   |
+    |<span className="large-number">➍</span>| Click <span className="button-purple">Save</span>.   |
+
+    ![](./images/08_Add-app-admin-role.png)
+
+
+5. Set Application administration
+
+    1. Open Studio (All > Studio), and open the “Telework Case Management” app
+
+    2. In the top menu, choose File > Settings
+    
+    3. Check [x] Application administration
+    
+    4. Click **Update**.
+
+    :::danger  Problem
+    The user Telework.Admin does not have access to the app settings and can not check [x] Application administration
+    :::
+
+
 
 # OLD STUFF
 

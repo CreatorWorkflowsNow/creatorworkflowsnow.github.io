@@ -19,6 +19,21 @@ In this exercise, we will learn techniques for securing our application to speci
 ## Marc's Notes 
 
 Talk about:
- - scope 
- - the new Access-analyzer
+ 1. scope 
+
+ 2. the new Access-analyzer
+
+    ServiceNow® Access Analyzer an access evaluation tool that helps to view the permissions of an identity for a resource.
+
+    :::danger  Might need to be installed 
+    Check if installed on the cloud lab instance
+    :::
+
+## References
+* [Restrict access to an application](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/applications/task/enable-application-administration.html)
+* [Application access settings](https://docs.servicenow.com/bundle/vancouver-application-development/page/build/applications/concept/c_ApplicationAccessSettings.html)
+
+
+
+
  
