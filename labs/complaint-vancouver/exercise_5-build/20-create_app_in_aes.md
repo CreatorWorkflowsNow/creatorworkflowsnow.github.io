@@ -11,9 +11,9 @@ draft: false
     ![](../images/2023-09-15-15-26-33.png)
 
 
-2. Once App Engine Studio opens click the **Create app** button in the upper right of the screen.   
+2. Once App Engine Studio opens click the **Create app** button located in the upper right of the screen OR use the icon under **Quick Start**.   
    NOTE: if you get a **Getting Started** message, you can close it.
-    ![](../images/2023-09-11-09-24-26.png)
+    ![](../images/2023-10-30-09-20-02.png)
 
 
 3. Enter the following for each field:
@@ -21,7 +21,7 @@ draft: false
 
  **Name**
  ```
- Complaints Invesitgation
+ Complaints Investigation
  ```
  **Description**
  ```

@@ -509,6 +509,7 @@ h1 {
 /* Indent the caution, warning, etc. */
 .theme-admonition {
   @apply ml-5;
+  margin-top: 1rem; // necessary when admonition is inside a list
 }
 
 /*--------------------------------------------------*/
@@ -608,7 +609,7 @@ h1 {
   @apply pb-0;
   @apply mt-0;
   @apply mb-0;
-  list-style-type: lower-alpha;
+  list-style-type: decimal;
 }
 
 .markdown ol li ol li::marker {
