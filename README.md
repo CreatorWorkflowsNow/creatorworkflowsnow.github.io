@@ -61,6 +61,7 @@
   - [Example Lab Guide](#example-lab-guide)
   - [Admonitions](#admonitions)
   - [Front Matter](#front-matter)
+  - [VS Code tips](#vs-code-tips)
 - [FAQs](#faqs)
   - [How do I install Node.js and NPM on MacOS?](#how-do-i-install-nodejs-and-npm-on-macos)
   - [How do I install Node.js and NPM on Windows?](#how-do-i-install-nodejs-and-npm-on-windows)
@@ -171,6 +172,10 @@ Check out this [Example Lab Guide](https://creatorworkflowsnow.github.io/labs/ex
 
 The information at the top of your markdown file is important for helping the site understand how to present your page.  [Guide to Front Matter on this site](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/front-matter)
 
+## VS Code tips
+
+Some useful plugins for creating markdown content. [Link](/labs/example-lab/3.0-additional-resources/vs-code-tips)
+
 [Back to top](#table-of-contents)
 
 
@@ -223,6 +228,7 @@ The lab guides are maintained by:
 - Kristy Merriam - https://github.com/KristyS96
 - Marc Mouries - https://github.com/marcmouries
 - Sarah Yao - https://github.com/syaosnow
+- quentincloudsnow - https://github.com/quentincloudsnow
 
 [Back to top](#table-of-contents)
 
