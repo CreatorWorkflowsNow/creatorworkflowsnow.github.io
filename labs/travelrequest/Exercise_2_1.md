@@ -121,7 +121,7 @@ Instead of adding fields individually via table builder, we will add fields dire
 
     |Column label | Type
     |-------------- | --------------
-    |Number of days | Integer
+    |Estimated Airfare | Decimal
     |Reason for travel | Choice
 
 
@@ -129,11 +129,11 @@ Instead of adding fields individually via table builder, we will add fields dire
 
 
 32. Drag and drop those 4 fields onto the form
-![](images/dragdrop.png)
+![](images/2023-10-22-16-56-00.png)
 
 :::tip
 You will need to ensure that you see a grey outline box with a plus icon before releasing the field
-![](images/dragdrophelp.png)
+![](images/2023-10-22-17-08-23.png)
 :::
 
 33. Search and add two more standard fields onto the form: **Opened by, Approval** (These come standard with the **Task** table)
@@ -146,7 +146,7 @@ You will need to ensure that you see a grey outline box with a plus icon before 
 
 
 36. The right-side panel will update for the configuration of this field. Expand **Choices**, then click **Edit (1)**
-![](images/openchoices.png)
+![](images/2023-10-22-17-23-15.png)
 
 
 37. On the **Edit choices for Reason for travel** screen, click **+ Add a choice**
@@ -162,44 +162,7 @@ You will need to ensure that you see a grey outline box with a plus icon before 
 40. On the bottom right, click **Apply**
 
 
-41. Click **Number of days**
-
-
-42. On the right-side panel, expand **Formula** and click **+Add**
-![](images/addformula.png)
-
-
-43. In the pop-up **Formula** box, you are able to enter Excel based formulas. Here, we would like to calculate the number of days traveled
-
-
-44. Enter **TIME**, the it should automatically pickup the operator for **TIMEDIFF**, press Enter
-![](images/timediff.png)
-
-
-45. The inputs are shown in the formula example below, we need to provide two different date values
-
-
-46. Within the brackets, first type *return**, then select your custom field **return_date**
-
-
-47. Key in a **comma**
-![](images/returndate1.png)
-
-:::tip
-If this does not appear, it means you haven't saved your form yet, so go ahead and click **Save** on the top right.
-:::
-
-
-48. Finish off the formula by entering and selecting **departure_date**
-![](images/depdate.png)
-
-49. You can copy and paste the whole formula if you are having trouble with the auto-fill capability: **TIMEDIFF(return_date, departure_date)**
-
-
-50. Click **Submit**
-
-
-51. Click **Save**
+41. Click **Save**
 
     At this point, we could also capture the Origin and Destination via a String field so that the users can enter free text, but for more consistency, let's create an **Airports** table so that users can select these locations (like how you would select on any airline reservation website)
 

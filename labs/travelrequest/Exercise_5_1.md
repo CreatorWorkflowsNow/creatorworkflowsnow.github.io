@@ -19,7 +19,7 @@ draft: false
 ![](images/selectbillie.png)
 
 
-4. On Billie's user record, click the **Roles** tab below, then click **Edit**
+4. On Billie's user record, click the **Roles** tab below, then click **Edit** on the right hand side
 ![](images/billierecord.png)
 
 :::info
@@ -66,11 +66,10 @@ This is actually not best practice, but only for the purposes of today's activit
 **change it to:**
 
 **https://sad-oct-123-001.lab.service-now.com/**sp 
-
 ![](images/getsp.gif)
 :::
 
-14. The Service Portal page should now open
+14. The Service Portal home page should now open
 
 
 15. Under **How can we help?**, search for **Travel request**
@@ -88,8 +87,7 @@ This is actually not best practice, but only for the purposes of today's activit
 
 
 19. Confirm that the form appears as expected, then fill in all the fields
-![](images/fillform.png)
-
+![](images/2023-10-22-16-49-46.png)
 
 20. Click **Submit**
 
@@ -124,8 +122,9 @@ This is actually not best practice, but only for the purposes of today's activit
 28. You will be brought back to the list view
 
 
-29. Click on the Approved record for your Travel request, if you followed all the steps so far, this should be the first record created: TRVREQ0001001
+29. Click on the Approved record for your Travel request, if you followed all the steps so far, this should be the first record created: TRV0001001
 ![](images/clicktrvreq.png)
+![](images/2023-10-22-17-48-45.png)
 
 
 30. On the record, notice that the **State** was automatically changed to **Closed Complete**, as per our approval flow that was designed
