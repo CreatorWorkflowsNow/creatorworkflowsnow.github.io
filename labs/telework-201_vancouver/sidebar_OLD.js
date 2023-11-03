@@ -22,6 +22,7 @@ const sidebars = {
             label: '2. Security',
             items: [
                 'exercise-02-Security/Overview',
+                'exercise-02-Security/Collaboration',
                 'exercise-02-Security/Restrict-access-from-Admins',
             ],
         },
