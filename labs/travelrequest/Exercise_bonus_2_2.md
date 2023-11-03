@@ -1,92 +1,180 @@
 ---
 id: exercise-bonus-2-2
-title: "Bonus Exercise 2.2: Test the Calculations"
-sidebar_label: "2.2 Test the Calculations"
-hide_table_of_contents: true
+title: "Bonus Exercise 2.2: Create a Dashboard"
+sidebar_label: 2.2. Create a Dashboard
+hide_table_of_contents: false
 draft: false
 ---
 
-1. Go back to **App Home**
-![](images/apphome2.png)
+Let's create a dashboard so that users can have an easy view to understand current requests.  Then, we will add three widgets to the dashboard. 
+
+## Widget 1: All travel requests
+
+1. Click on the **Home** icon on the left sidebar to return to the workspace home page
 
 
-2. Click **PREVIEW** on the **Travel request** row
+2. On the top right, click **Edit**
+![](images/editdb.png)
 
 
-3. A new tab opens up to show the list of **Travel requests**
-![](images/trlist.png)
+3. Click **My Tasks**, then the **Configure** button on the highlighted **Data visualization**
 
 
-4. We did not format this list view back in Exercise 1, so let's go ahead to do that quickly
+4. The right sidebar appears showing the Vizualization type **Single score**
+![](images/2023-10-21-12-27-36.png)
 
-
-5. Right-click anywhere on one of the column headers
-
-
-6. Click **List Layout** under **Configure**
-![](images/listlayout.png)
-
-
-7. On the right **Selected** section, remove everything except **Number** and **State**. Do this by double-clicking on each line to be removed
-![](images/numstate.png)
-
-
-8. Add **Opened by, Reason for travel, Departure date, Estimated trip cost** from the left **Available** section onto the right **Selected** section
-![](images/addedlistlayout.png)
-
-
-9. Click **Save**
-
-
-10. You should now return to the list layout (your records will be slightly different based on what you entered in the exercise 4)
-![](images/completelist.png)
-
-
-11. Click **New** on the top right
-
-
-12. Fill up the form, ensure that you enter information for **Departure date**, **Return date** and any numerical figure for **Estimated airfare**
-![](images/addinfo.png)
-
-
-13. Right-click on the form header, then click **Save**
-![](images/finishedcalc.png)
-
-
-14. Notice that the **Travel days** and **Estimated trip cost** fields are automatically populated, ensure that the values are correct
-
-
-15. In the screenshot above, the following was calculated
-
-    `(4 * 150) + 1,390.50 = 1,990.50`
-
-![](images/funnycalculation.gif)
-
-Well done, you now understand how to build excel-like formulas into your application! Here are some other possible formulas that are currently supported, but more are on the way:
-
-* **AND** Performs a logical AND operation on the arguments.
-* **AVERAGE** Returns the average value of the arguments.
-* **CONCATENATE** Joins one or more input strings into a single string.
-* **DIVIDE** Returns the quotient value after dividing argument 2 by argument 1.
-* **IF** Executes the specified statements based on the Boolean output of the conditional expression.
-* **ISBLANK** Finds white spaces or blank values in the string and returns true if there are any.
-* **LENGTH** Returns the total number of characters in the input string.
-* **LOWERCASE** Converts the input string to all lowercase characters.
-* **MAX** Returns the highest value in the specified arguments.
-* **MIN** Returns the lowest value in the specified arguments.
-* **MULTIPLY** Returns the multiplied value of the arguments.
-* **NOW** Returns the current date and time of the instance in ISO format.
-* **OR** Performs logical OR operation on the arguments.
-* **POWER** Returns the result of the base value raised to the power of the exponent value.
-* **REPLACE** Replaces characters in the source string with the characters in the target string.
-* **SUBTRACT** Returns the result value after subtracting argument 2 from argument 1.
-* **SUM** Returns the sum of all the arguments.
-* **TIMEDIFF** Finds difference between 2 dates for Duration field.
-* **TITLECASE** Converts the input string to all title case characters.
-* **UPPERCASE** Converts the input string to all uppercase characters.
-
-:::info
-Here is a link to the official Product Documentation with an up to date list of the formulas: 
-
-[Product Docs: Formulas for column values in Table Builder](https://docs.servicenow.com/csh?topicname=formulas-columns-table-builder.html&version=latest)
+:::tip
+If you face issues with the screen not loading, change to a different Vizualization type, then change it back to **Single score**
 :::
+
+
+5. Expand **Header and border**, then change **Chart title** to **All Travel Requests**. Here are all the steps so far:
+![](images/alltravreq.gif)
+
+
+6. Under the **Data sources** section, click the 3 dot icon next to **Travel request**, then click **Edit**
+
+
+7. On the **Edit data source** screen, click **Edit** under **Filters**
+
+
+8. Remove the **Assigned to** condition by clicking the **X** icon
+
+
+9. Click **Apply**
+![](images/changedsource.gif)
+
+
+10. Confirm that the **All Travel Requests** widget now refreshes to show the number of Travel requests that you have created
+![](images/widgetrefresh.png)
+
+
+11. Click **Save** on the top right
+
+
+## Widget 2: Estimated travel spend vs budget
+
+:::danger
+**This widget can only be configured if you completed Bonus Exercise 2.**
+
+If you have not completed that, please skip this widget.
+:::
+
+1. Click and configure the next widget, **Unassigned Tasks**
+
+
+2. Change the **Visualization type** to **Dial**
+
+
+3. Under **Header and border** change **Chart title** to **Estimated Travel Spend**
+![](images/dialspend.png)
+
+
+4. Under **Data sources**, edit the **Task** data source
+
+
+5. On the next **Edit data source** screen, click on **Travel request [x_snc_travel_req_0_travel_request]** under **Suggested** on the left sidebar
+
+
+6. Click **Add custom conditions**, then set the following condition: `Opened` on `Months -> This month`
+
+
+7. Refer to the video below for a walkthrough:
+![](images/travelspenddata.gif)
+
+
+8. Back on the Edit dashboard view, on the right sidebar, click **Edit** for **Travel request** under **Metric**
+![](images/editmetric.png)
+
+
+9. On the pop-up box, change **Count** under **Select an aggregation** to **Sum**
+
+
+10. Change **Field** to **Estimated trip cost**
+![](images/changemetric.png)
+
+
+11. Click **Apply**
+
+
+12. Click **Format values** under the **Estimated trip cost** metric
+
+
+13. In the pop-up box, toggle **Use custom formatting**
+
+
+14. Change **Rounding** to **Up**
+
+
+15. Toggle **Enable abbreviation**
+
+
+16. Click **Save**
+![](images/formatvalue.gif)
+
+
+17. On the right Configuration sidebar, expand **Presentation**, then expand **Display settings**
+
+
+18. Change **Max value** to a budget you think fits your current Estimated Travel Spend. e.g. here the Estimated Travel Spend is currently **4.45K** for the month, so we will put the Max value at **10K**
+![](images/10K.png)
+
+
+19. On the top right, click **Save**
+
+
+20. Your middle **Estimated Travel Spend** widget should have been dynamically updating based on all the changes that we have been making
+
+
+## Widget 3: Outstanding Approvals
+
+:::caution
+This widget will appear different if you have not completed Bonus Exercise 2, but will not impact completing the widget.
+:::
+
+1. Click the **My Work** list at the bottom of the dashboard.
+
+
+2. On the right configuration sidebar, scroll to the bottom of the configuration panel to the **Header** section. Change **Label** from **My Work** to **Outstanding travel requests**
+![](images/2023-10-21-12-49-15.png)
+
+
+3. On the right configuration sidebar, scroll up and click **Edit filter**
+
+
+4. On the pop-up box, remove **Assigned to is (dynamic) Me** by clicking **X** on the far right of the row
+
+
+5. Click the **and** button
+
+
+6. In the new **and** row that appears, set the following condition
+
+    `State is one of Pending, Open, Work in Progress`
+
+Refer to the video below:
+![](images/listfilter.gif)
+
+
+7. On the top right of the screen, click **Save**
+
+
+8. Click **Exit editing mode**
+
+
+9. Your dashboard should look similar to this
+![](images/2023-10-21-12-52-41.png)
+
+
+10. We have left the final **Critical Tasks** widget for you to experiement with. Feel free to make any changes that you would like with the different Vizualizations available by repeating the steps in this exercise.
+
+
+:::tip
+All widgets are also built with the drill-down capability. You can click on any of the widgets created to get to the underlying data supporting that widget.
+:::
+![](images/dashboardfinal.gif)
+
+
+**Well done once again!**
+
+In this exercise, you have built a dashboard purely through drag and drop. This is obviously just a short snippet into the possibilities here, and there is so much more that can be done to give data-rich vizualizations to those who need easy access to data as fulfillers and admins, all in a single workspace.

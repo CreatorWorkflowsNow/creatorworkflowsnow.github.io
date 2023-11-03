@@ -51,15 +51,12 @@ const FeatureList = [
     icon: faFileCode,
     description: (
       <>
-      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
       <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 1 - </strong>Gain valuable experience through hands-on exercises with App Engine Studio.
       </>
     ),
     to: '/labs/telework-vancouver/0.0-introduction/app-engine-overview',
     target: '_self',
   },
-<<<<<<< Updated upstream
-=======
 
   {
     title: 'Telework Case Management',
@@ -96,7 +93,6 @@ const FeatureList = [
     to: '/labs/spokegen/overview',
     target: '_self',
   },
->>>>>>> Stashed changes
 
   {
     title: 'Telework Case Management',
@@ -124,17 +120,20 @@ const FeatureList = [
     target: '_self',
   },
 
+  /*
   {
     title: 'Collaborate to Accelerate',
     icon: faCog,
     description: (
       <>
-      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Learn to build and govern low-code applications with App Engine Management Center. 
+      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Learn to govern low-code applications with App Engine Management Center. 
       </>
     ),
-    to: '/labs/collaborate/get_started/intro',
+    to: '/labs/collaborate-utah/get_started/intro',
     target: '_self',
   },
+  */
+
   {
     title: 'Travel Request',
     icon: faPlane,
@@ -169,10 +168,22 @@ const FeatureList = [
       <div class="button-homepage-utah">🏔️ UTAH</div><br/>Unstoppable resolution: Enhance CSM capabilities with the power of low-code using App Engine. 
       </>
     ),
-    to: '/labs/complaint/overview/',
+    to: '/labs/complaint-utah/overview/',
     target: '_self',
   },
-
+/*
+  {
+    title: 'Complaints Management',
+    icon: faHeadset,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Unstoppable resolution: Enhance CSM capabilities with the power of low-code using App Engine. 
+      </>
+    ),
+    to: '/labs/complaint-vancouver/overview/',
+    target: '_self',
+  },
+*/
   {
     title: 'Automation Engine',
     icon: faRobot,
