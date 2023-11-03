@@ -7,7 +7,7 @@ pagination_label: "Security"
 ---
 ## Purpose
 
-Cool, we have built a fully funcitonnal Telework Case Management application. 
+Cool, we have built a fully functional Telework Case Management application. 
 
 But before we can deploy the app, our manager asked us to make sure the application is secure. The app might contain sensitive data about employees such as personal address that not even ServiceNow administrators should be able to see.
 
