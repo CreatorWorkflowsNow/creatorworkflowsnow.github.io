@@ -52,11 +52,51 @@ const FeatureList = [
     description: (
       <>
       <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 1 - </strong>Gain valuable experience through hands-on exercises with App Engine Studio.
       </>
     ),
     to: '/labs/telework-vancouver/0.0-introduction/app-engine-overview',
     target: '_self',
   },
+<<<<<<< Updated upstream
+=======
+
+  {
+    title: 'Telework Case Management',
+    icon: faFileCode,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 2 - </strong>Dive deeper into the use case by exploring more advanced features.
+      </>
+    ),
+    to: '/labs/telework-201_vancouver/exercise-00-Introduction/overview',
+    target: '_self',
+  },
+
+  {
+    title: 'Collaborate to Accelerate',
+    icon: faCog,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Learn to govern low-code applications with App Engine Management Center. 
+      </>
+    ),
+    to: '/labs/collaborate-vancouver/0.0-get_started/intro',
+    target: '_self',
+  },
+
+  {
+    title: 'IHub: Spoke Generator',
+    icon: faFileCode,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Learn about the newest Integration Hub feature: Spoke Generator. 
+      </>
+    ),
+    to: '/labs/spokegen/overview',
+    target: '_self',
+  },
+>>>>>>> Stashed changes
 
   {
     title: 'Telework Case Management',
