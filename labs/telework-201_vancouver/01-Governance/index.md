@@ -1,11 +1,7 @@
 ---
 title: "Governance" 
 sidebar_label: "1. Governance"
-
 hide_table_of_contents: true
-_pagination_label: "Security" 
-image: https://i.imgur.com/mErPwqL.png
-
 ---
 ## Use case
 
