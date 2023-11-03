@@ -46,19 +46,29 @@ export default HomepageFeatures;
 
 const FeatureList = [
 
-  /*
   {
     title: 'Telework Case Management',
     icon: faFileCode,
     description: (
       <>
-      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 1 - </strong>Gain valuable experience through hands-on exercises with App Engine Studio.
       </>
     ),
     to: '/labs/telework-vancouver/0.0-introduction/app-engine-overview',
     target: '_self',
   },
-  */
+
+  {
+    title: 'Telework Case Management',
+    icon: faFileCode,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 2 - </strong>Dive deeper into the use case by exploring more advanced features.
+      </>
+    ),
+    to: '/labs/telework-201_vancouver/exercise-00-Introduction/overview',
+    target: '_self',
+  },
 
   {
     title: 'Collaborate to Accelerate',
