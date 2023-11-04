@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+//const lightCodeTheme = require("prism-react-renderer/themes/github");
+//const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 
 /** @type {import('@docusaurus/types').Config} */
@@ -40,24 +40,6 @@ const config = {
         },
       };
     },
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/collaborate",
-        breadcrumbs: false,
-        id: "collaborate",
-        routeBasePath: "labs/collaborate",
-        sidebarPath: require.resolve("./labs/collaborate/sidebar.js"),
-        // https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/edit/source/labs/collaborate/get_started/1-intro.md
-        /*
-        editUrl: ({versionDocsDirPath, docPath}) => 
-        `https://github.com/CreatorWorkflowsNow/creatorworkflowsnow.github.io/edit/source/labs/collaborate/${docPath}`,
-        editLocalizedFiles: false,
-        editCurrentVersion: false,
-        */
-      },
-    ],
 
     [
       "@docusaurus/plugin-content-docs",
@@ -181,6 +163,32 @@ const config = {
     ],
 
 
+    /*
+     * COLLABORATE TO ACCELERATE LABS 
+     */
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/collaborate-utah",
+        id: "collaborateutah",
+        routeBasePath: "labs/collaborate-utah",
+        sidebarPath: require.resolve("./labs/collaborate-utah/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/collaborate-vancouver",
+        id: "collaboratevancouver",
+        routeBasePath: "labs/collaborate-vancouver",
+        sidebarPath: require.resolve("./labs/collaborate-vancouver/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
   ],
 
   presets: [
@@ -290,6 +298,10 @@ const config = {
                 href: "https://developer.servicenow.com/dev.do#!/guides/vancouver/now-platform/glossary/developer-glossary",
               },
               {
+                label: "Example Lab Guide",
+                href: "/labs/example-lab/overview",
+              },
+              {
                 label: "Now Create",
                 href: "https://nowlearning.servicenow.com/nowcreate",
               },
@@ -358,10 +370,12 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} ServiceNow`,
       },
 
+      /*
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      */
 
       // https://docusaurus.io/docs/search#using-algolia-docsearch
       algolia: {
