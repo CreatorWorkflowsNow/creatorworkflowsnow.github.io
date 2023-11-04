@@ -8,4 +8,4 @@ nav_order: 99
 
 | Version                   | Author                          | Changes                            |
 | --------------------------|---------------------------------|------------------------------------|
-| 2023-November (Vancouver) | [Marc.Mouries(ServiceNow)](https://github.com/marcmouries)         | Initial release
+| 2023-November (Vancouver) | [Marc.Mouries(ServiceNow)](https://github.com/marcmouries)  <br/> Kate Flood, David Bourland, Lily Liang       | Initial release
