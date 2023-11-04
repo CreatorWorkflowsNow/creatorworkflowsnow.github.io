@@ -46,19 +46,41 @@ export default HomepageFeatures;
 
 const FeatureList = [
 
-  /*
   {
     title: 'Telework Case Management',
     icon: faFileCode,
     description: (
       <>
-      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Gain valuable experience through hands-on exercises with App Engine Studio.
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 1 - </strong>Gain valuable experience through hands-on exercises with App Engine Studio.
       </>
     ),
     to: '/labs/telework-vancouver/0.0-introduction/app-engine-overview',
     target: '_self',
   },
-  */
+
+  {
+    title: 'Telework Case Management',
+    icon: faFileCode,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 2 - </strong>Dive deeper into the use case by exploring more advanced features.
+      </>
+    ),
+    to: '/labs/telework-201_vancouver/Introduction/Overview',
+    target: '_self',
+  },
+
+  {
+    title: 'Collaborate to Accelerate',
+    icon: faCog,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/>Learn to govern low-code applications with App Engine Management Center. 
+      </>
+    ),
+    to: '/labs/collaborate-vancouver/0.0-get_started/intro',
+    target: '_self',
+  },
 
   {
     title: 'IHub: Spoke Generator',
@@ -98,17 +120,20 @@ const FeatureList = [
     target: '_self',
   },
 
+  /*
   {
     title: 'Collaborate to Accelerate',
     icon: faCog,
     description: (
       <>
-      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Learn to build and govern low-code applications with App Engine Management Center. 
+      <div class="button-homepage-utah">🏔️ UTAH</div><br/>Learn to govern low-code applications with App Engine Management Center. 
       </>
     ),
-    to: '/labs/collaborate/get_started/intro',
+    to: '/labs/collaborate-utah/get_started/intro',
     target: '_self',
   },
+  */
+
   {
     title: 'Travel Request',
     icon: faPlane,
