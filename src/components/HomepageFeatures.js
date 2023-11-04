@@ -66,7 +66,7 @@ const FeatureList = [
       <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 2 - </strong>Dive deeper into the use case by exploring more advanced features.
       </>
     ),
-    to: '/labs/telework-201_vancouver/exercise-00-Introduction/overview',
+    to: '/labs/telework-201_vancouver/Introduction/Overview',
     target: '_self',
   },
 
