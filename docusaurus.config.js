@@ -114,10 +114,10 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        path: "labs/telework-vancouver",
-        id: "teleworkvancouver",
-        routeBasePath: "labs/telework-vancouver",
-        sidebarPath: require.resolve("./labs/telework-vancouver/sidebar.js"),
+        path: "labs/telework-vancouver-101",
+        id: "teleworkvancouver-101",
+        routeBasePath: "labs/telework-vancouver-101",
+        sidebarPath: require.resolve("./labs/telework-vancouver-101/sidebar.js"),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
         breadcrumbs: false,
