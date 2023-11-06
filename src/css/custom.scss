@@ -907,3 +907,12 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   text-align: center;
   font-style: italic;
 }
+
+
+/* Allows to hide elements
+It can be used to hide an item in the sidebar by adding this to the top section of the md file:
+sidebar_class_name: hidden
+*/
+.hidden {
+  display: none !important;
+  }
