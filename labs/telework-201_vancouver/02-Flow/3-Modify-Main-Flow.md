@@ -1,6 +1,6 @@
 ---
 title: "Modify Main Flow" 
-sidebar_label: "Modify Main Flow"
+sidebar_label: "3. Modify Main Flow"
 hide_table_of_contents: false
 ---
 # Modify the Telework Case Main Flow

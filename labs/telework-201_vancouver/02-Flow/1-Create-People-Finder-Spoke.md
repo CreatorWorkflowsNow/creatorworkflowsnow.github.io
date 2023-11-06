@@ -1,6 +1,6 @@
 ---
 title: "Create People Finder Spoke" 
-sidebar_label: "Create People Finder Spoke"
+sidebar_label: "1. Create People Finder Spoke"
 hide_table_of_contents: false
 ---
 # Create People Finder Spoke

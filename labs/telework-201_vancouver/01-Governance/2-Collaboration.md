@@ -1,6 +1,6 @@
 ---
 title: "Collaboration" 
-sidebar_label: "Collaboration"
+sidebar_label: "2. Collaboration"
 hide_table_of_contents: true
 ---
 # Collaboration
