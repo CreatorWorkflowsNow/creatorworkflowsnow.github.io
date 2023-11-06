@@ -22,7 +22,7 @@
         "clsx": "^2.0.0",
         "docusaurus-plugin-sass": "^0.2.5",
         "file-loader": "^6.2.0",
-        "mermaid": "^10.3.0",
+        "mermaid": "^10.6.0",
         "postcss": "^8.4.28",
         "prism-react-renderer": "^1.2.1",
         "puppeteer": "^21.2.1",
@@ -9262,10 +9262,11 @@
       }
     },
     "node_modules/mermaid": {
-      "version": "10.3.0",
-      "license": "MIT",
+      "version": "10.6.0",
+      "resolved": "https://registry.npmjs.org/mermaid/-/mermaid-10.6.0.tgz",
+      "integrity": "sha512-Hcti+Q2NiWnb2ZCijSX89Bn2i7TCUwosBdIn/d+u63Sz7y40XU6EKMctT4UX4qZuZGfKGZpfOeim2/KTrdR7aQ==",
       "dependencies": {
-        "@braintree/sanitize-url": "^6.0.2",
+        "@braintree/sanitize-url": "^6.0.1",
         "@types/d3-scale": "^4.0.3",
         "@types/d3-scale-chromatic": "^3.0.0",
         "cytoscape": "^3.23.0",
@@ -9275,7 +9276,7 @@
         "d3-sankey": "^0.12.3",
         "dagre-d3-es": "7.0.10",
         "dayjs": "^1.11.7",
-        "dompurify": "3.0.5",
+        "dompurify": "^3.0.5",
         "elkjs": "^0.8.2",
         "khroma": "^2.0.0",
         "lodash-es": "^4.17.21",
