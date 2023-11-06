@@ -1,6 +1,6 @@
 ---
 title: "Collaboration" 
-sidebar_label: "2. Collaboration"
+sidebar_label: "3. Collaboration"
 hide_table_of_contents: true
 ---
 # Collaboration
@@ -46,9 +46,8 @@ In AEMC, app engine admins can monitor and govern applications developed through
     ![](./images/collab_07_AEMC_Approve_the_request.png)
 
 
-5. Log out & Log in as **Ingrid / AppEngine4ever!**, one of the App Engine Integration specialist
+5. Log out & Log in as **Ingrid** (ingrid/AppEngine4ever!), one of the App Engine Integration specialist
     ![](./images/collab_08_Login_as_Ingrid.png)
-
 
 6. Open the Telework app in App Engine Studio
 
