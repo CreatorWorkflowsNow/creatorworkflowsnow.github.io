@@ -5,7 +5,19 @@ hide_table_of_contents: true
 ---
 # Restrict access from Admins
 
-We will secure the app so that even other administrators cannot access the app and its data.
+If we login as a regular admin, we can see we have access to the application. In this exercise, we will secure the app so that even other administrators cannot access the app and its data.
+
+1. Log in as user **admin** 
+
+
+2. Go to App Engine Studio
+
+
+3. Notice that the **admin** can see all the records in the Telework application
+
+    ![](./images/01-Admin-can-see-all-records.png)
+
+
 
 ## Update the admin role for our app as an Application Administrator
 
@@ -28,7 +40,9 @@ We will secure the app so that even other administrators cannot access the app a
 
     3. For the value, start typing **"Tele"** and then select the "Telework application".
 
-    4. Open the default admin record
+    4. Click **Run**
+
+    5. Open the admin role for our app.
     
     ![](./images/02_Open-the-admin-role.png)
 
@@ -65,7 +79,7 @@ We will secure the app so that even other administrators cannot access the app a
 
 ## Assign the admin role for our app to a user
 
-So far we have developed logged in as the admin user. We'll create a user for our application, assign them the "App Engine Studio Users" role and the role we just created for the Telework app.
+We're going to assign the Telework admin role to the **Telework Admin** user
 
 1. Go to the list of users
 
@@ -89,31 +103,13 @@ So far we have developed logged in as the admin user. We'll create a user for ou
     ![](./images/06-Open-admin-user-1.png)
 
 
-3.  Assign the **App Engine Studio Users** role
 
-    :::tip Best practice
-    Rather than adding a role individually to each user, assign a role to a group. Group members have all of the roles assigned to a group.
-    :::
-
-    In the **Telework.Admin** user record, scroll down to the related lists, On the **Groups** tab, click <span className="button-purple">Edit</span> then follow the steps below.
-
-    | Steps                                                 | 
-    |---------------------------------------|------------------------|
-    |<span className="large-number">➊</span>| Type **App Engine Studio Users**  |
-    |<span className="large-number">➋</span>| Select **App Engine Studio Users**  |
-    |<span className="large-number">➌</span>| Click on the [ › ] button to add the field to the list of selected fields   |
-    |<span className="large-number">➍</span>| Click <span className="button-purple">Save</span>.   |
-
-    ![](./images/07-Assign-AES-users-group.png)
-
-
-    
-4.  Assign the **App's Admin** role
+3.  Assign the **App's Admin** role
 
     On the **Roles** tab, click <span className="button-purple">Edit</span> then follow the steps below.
 
-    :::danger  Update role name?
-    Check again on the 201 instance
+    :::danger  Update role name
+    The name of the role should match
     :::
 
     | Steps                                                 | 
@@ -125,54 +121,49 @@ So far we have developed logged in as the admin user. We'll create a user for ou
 
     ![](./images/08_Add-app-admin-role.png)
 
+## Set Application administration
 
-5. Set Application administration
+1. Impersonate the Telework.Admin user
 
-    1. Open Studio (All > Studio), and open the “Telework Case Management” app
+    1. In the top right, click the **Avatar**
+    2. Click **Impersonate user**.
+    3. Type "telework"
+    4. Click the **Telework Admin** user
+    5. Click <span className="button-purple">Impersonate user</span>. 
+    ![](./images/09_Impersonate_TeleworkAdmin.png)
 
-    2. In the top menu, choose File > Settings
-    
+
+2. Open the app in the developer Studio
+    1. Click the **All** menu
+    2. Type **Studio**
+    3. Click **Studio**
+    ![](./images/10_Open_the_Studio.png)
+
+
+3. Open the “Telework Case Management” app
+    1. Type **telework** 
+    2. Click the **Telework (done) app** 
+    ![](./images/11_open_the_app.png)
+
+
+4. Set Application administration
+    1. In the top menu, choose File
+    2. then click **Settings**
     3. Check [x] Application administration
-    
     4. Click **Update**.
-
-    :::danger  Problem
-    The user Telework.Admin does not have access to the app settings and can not check [x] Application administration
-    :::
+    ![](./images/12-Check_Application_administration.png)
 
 
+## Verify Admins don't have access anymore
 
-# OLD STUFF
-
-2. Click on the <span className="button-purple">New</span> button, to create a new user
-
-    ![](./images/06-Create-new-user-2.png)
+1. Log out & Log in as **admin**
+    ![](./images/13_Login_As_Admin.png)
 
 
-3. Fill the user form with the following values (💡 double-click to select, copy & paste into the form).
-
-    | |Field Name                | Field Value
-    |-|--------------------------| --------------
-    |<span className="large-number">➊</span>|User ID    | Telework.Admin
-    |<span className="large-number">➋</span>|First name | Telework
-    |<span className="large-number">➌</span>|Last name  | Admin
-    |<span className="large-number">➍</span>|Right-click in the header 
-    |<span className="large-number">➎</span>|Click on the <span className="button-purple">Submit</span> button.
-
-    ![](./images/06-Create-new-user-3.png)
+2. Go to the browser tab with the App Engine Studio
 
 
+3. Notice that the **admin** can **not** see any record in the Telework application
+    ![](./images/14_Admin_can_no_longer_see_the_app_records.png)
 
-
-
-
-
-
-    
-
-
-
-
-
-
-
+We have secured the app so that even other administrators cannot access the app and its data.
