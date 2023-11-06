@@ -5,9 +5,9 @@ hide_table_of_contents: false
 ---
 # Create People Finder Spoke
 
-We will create a re-usble integration to the finance department's People Finder OPen API, so that we can access this data in our Main flow.
+We will create a re-usble integration to the finance department's People Finder Open API, so that we can access this data in our Main flow.
 
-## Update the admin role for our app as an Application Administrator
+## Open Flow Designer to use Spoke Generator to create the People Finder Integration
 
 1. Go to the tab with the ServiceNow Admin Home Page (your title may be different).
 
