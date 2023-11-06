@@ -62,11 +62,13 @@ Finally, choose your table and conditions – we aren't going to have any condit
 1. Table: Telework Case
 2. Click on "Go to Designer"
 
-![](RackMultipart20231103-1-5wlrnk_html_77225bea59b1d690.jpg)
+[//]: <> (IMAGE NOT FOUND)
+[//]: <>![](RackMultipart20231103-1-5wlrnk_html_77225bea59b1d690.jpg)
 
 You should now be on this page:
 
-![](RackMultipart20231103-1-5wlrnk_html_97914b0127efdc48.jpg)
+[//]: <> (IMAGE NOT FOUND)
+[//]: <>![](RackMultipart20231103-1-5wlrnk_html_97914b0127efdc48.jpg)
 
 We're going to add 2 lanes:
 
