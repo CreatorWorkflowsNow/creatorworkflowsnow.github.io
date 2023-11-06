@@ -1,6 +1,6 @@
 ---
 title: "Create Decision Table" 
-sidebar_label: "Create Decision Table"
+sidebar_label: "2. Create Decision Table"
 hide_table_of_contents: false
 ---
 # Create Decision Table for Auto Approval Conditions

@@ -1,8 +1,7 @@
 ---
 title: "Flow: Overview" 
-sidebar_label: "Overview"
+sidebar_label: "2. Flow"
 pagination_label: "Flow" 
-
 ---
 
 ## Purpose
