@@ -6,6 +6,6 @@ nav_order: 99
 
 ## History
 
-| Version                   | Author                          | Changes                            |
+| Version                   | Author(s)                       | Changes                            |
 | --------------------------|---------------------------------|------------------------------------|
-| 2023-November (Vancouver) | [Marc.Mouries(ServiceNow)](https://github.com/marcmouries)  <br/> Kate Flood, David Bourland, Lily Liang       | Initial release
+| 2023-November (Vancouver) | David Bourland,  Kate Flood,  <br/> Lily Liang, [Marc.Mouries](https://github.com/marcmouries)       | Initial release
