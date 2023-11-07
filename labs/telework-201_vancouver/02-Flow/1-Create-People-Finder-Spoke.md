@@ -11,7 +11,7 @@ We will create a re-usble integration to the finance department's People Finder 
 
 1. Go to the tab with the ServiceNow Admin Home Page (your title may be different).
 
-   ![](./images/04-1-return-to-admin-page.png)
+![](./images/04-1-return-to-admin-page.png)
 
 2. Open Flow Desginer from the All Menu
 
@@ -19,7 +19,8 @@ We will create a re-usble integration to the finance department's People Finder 
     
     2. Search for "flow designer" 
     
-    3. Click on: Process Automation > Flow Designer  
+    3. Click on: Process Automation > Flow Designer
+
 ![](./images/04-2-flow-designer.png)
 
 3. Create New Spoke
