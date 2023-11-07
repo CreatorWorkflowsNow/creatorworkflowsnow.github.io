@@ -65,41 +65,16 @@ Click **Continue**
  |Requires Investigation| checked
  |Work Notes| Upon the research results, this complaint requires investigation. Please see the previous steps notes for more details.
 Click on **Mark Complete**
-![](../images/2023-09-21-13-36-37.png)
+![](../images/2023-11-07-08-30-43.png)
 
 
-11.	Now, let’s submit the task to the Legal Team. Populate the subject and description as following:
-
- |Field Name| Value|
- |---|---|
- |Subject|Please investigate
- |Description|See previous notes on the complaint case
-Click **Save**
-![](../images/2023-09-21-13-37-51.png)
+11.	Now let’s check the new stage of the case and verify that the case stage is automatically updated to **Under Investigation** because of the previous step. Click on **Details** tab. Observe that the Stage is automatically updated to Under Investigation
+![](../images/2023-11-07-08-31-58.png)
 
 
-12. Click on **Tasks** tab to observe the task that you just created
-![](../images/2023-09-21-13-39-00.png)
+**Congratulations!** You just experienced the investigation stage that you added to the out of the box complaint management process. Let’s stop here.
 
-
-**Congratulations!** You just experienced the investigation stage that you added to the out of the box complaint management process. Let’s stop here.  
-Our next section of the lab will focus on creating the “Investigation App” that the Legal Support team will use to execute the investigation.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Our next section of the lab will focus on creating the **Investigation App** that the Legal Support team will use to execute the investigation.
 
 
 
