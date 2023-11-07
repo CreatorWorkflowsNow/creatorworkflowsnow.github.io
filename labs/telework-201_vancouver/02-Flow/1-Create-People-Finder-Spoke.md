@@ -10,34 +10,32 @@ We will create a re-usble integration to the finance department's People Finder 
 ## Open Flow Designer to use Spoke Generator to create the People Finder Integration
 
 1. Go to the tab with the ServiceNow Admin Home Page (your title may be different).
-
 ![](./images/04-1-return-to-admin-page.png)
 
 2. Open Flow Desginer from the All Menu
 
-    1. Click the **All** menu
+   1. Click the **All** menu
     
-    2. Search for "flow designer" 
+   2. Search for "flow designer" 
     
-    3. Click on: Process Automation > Flow Designer
-
+   3. Click on: Process Automation > Flow Designer
 ![](./images/04-2-flow-designer.png)
 
 3. Create New Spoke
 
-    1. Click "Create new"
+   1. Click "Create new"
 
-    2. Click "Spoke"  
+   2. Click "Spoke"
 ![](./images//04-3-create-spoke.png)
 
 4. Setup General Information for the Spoke (💡 double-click to select, copy & paste into the form).
 
-    | |Field Name                | Field Value
-    |-|--------------------------| --------------
-    |<span className="large-number">➊</span>|Drag and drop the icon in the telework_lab files folder we downloaded earlier | people_finder.png
-    |<span className="large-number">➋</span>|Spoke Name (App scope name will auto-populate) | People Finder
-    |<span className="large-number">➌</span>|Description | API to find people in a remote system
-    |<span className="large-number">➍</span>|Click on the <span className="button-purple">Create and continue</span> button.  
+   | |Field Name                | Field Value
+   |-|--------------------------| --------------
+   |<span className="large-number">➊</span>|Drag and drop the icon in the telework_lab files folder we downloaded earlier | people_finder.png
+   |<span className="large-number">➋</span>|Spoke Name (App scope name will auto-populate) | People Finder
+   |<span className="large-number">➌</span>|Description | API to find people in a remote system
+   |<span className="large-number">➍</span>|Click on the <span className="button-purple">Create and continue</span> button.  
 ![](./images/04-4-spoke-general-info.png)
 
 5. Specify how we want to build our Spoke
