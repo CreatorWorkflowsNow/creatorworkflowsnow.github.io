@@ -12,6 +12,7 @@ For Amanda's team, they need to be able to allow anyone to on their team to work
 
 The second backlog item they need to implement is having the requestor double check their manager.  Right now, if there's no manager on the sys_user table, then the workflow stops and Amanda has to correct the issue.  To mitigate this, Amanda would like to add a 'Manager' question for verification on the record producer and have it auto-populate with the manager on file for ease of use.
 
+In this section of the lab, we'll be using Process Automation Designer, UI Builder, and Dev Studio.
 
 # Notes 
 
