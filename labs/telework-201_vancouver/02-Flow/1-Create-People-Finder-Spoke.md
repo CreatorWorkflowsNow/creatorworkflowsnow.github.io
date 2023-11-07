@@ -9,8 +9,9 @@ We will create a re-usble integration to the finance department's People Finder 
 
 ## Open Flow Designer to use Spoke Generator to create the People Finder Integration
 
-1. Go to the tab with the ServiceNow Admin Home Page (your title may be different).  
-![](./images/04-1-return-to-admin-page.png)
+1. Go to the tab with the ServiceNow Admin Home Page (your title may be different).
+
+   ![](./images/04-1-return-to-admin-page.png)
 
 2. Open Flow Desginer from the All Menu
 
