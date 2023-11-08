@@ -362,6 +362,22 @@ h1 {
   transition: color 0.3s;
    /* Add a smooth transition for the color change */
  }
+ 
+ .button-white-red-border {
+   background-color: white;
+   border-color: red;
+   border-radius: 22px;
+   color: red;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 16px;
+   font-weight: 800;
+   line-height: 1.25;
+   padding: 5px 12px;
+   vertical-align: middle;
+   transition: color 0.3s;
+    /* Add a smooth transition for the color change */
+  }
 
 /* #284191 */
 

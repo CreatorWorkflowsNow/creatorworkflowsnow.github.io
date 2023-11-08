@@ -22,9 +22,9 @@ Now that we have created the People Finder Spoke and our Auto Approval Decision 
 
 4. First, we want to add a Flow Variable to store the status of auto approval.
 
-    1. Click the ... button next to the Save button on the top-left of your screen.
+   1. Click the <span className="button-white-purple-border">...</span> button next to the Save button on the top-left of your screen.
 
-    2. Select "Flow Variables" from the drop-down.  
+   2. Select "Flow Variables" from the drop-down.  
 ![](./images/04-03-04-flowvariables.png)
 
 5. Click the plus sign ⨁ to add a variable.  
@@ -32,12 +32,12 @@ Now that we have created the People Finder Spoke and our Auto Approval Decision 
 
 6. Set up the flow variable.
 
-    | |Field Name                | Field Value
-    |-|--------------------------| --------------
-    |<span className="large-number">➊</span>|Label |Approved
-    |<span className="large-number">➋</span>|Name |approved
-    |<span className="large-number">❸</span>|Type | True/False
-    |<span className="large-number">❹</span>|Click on the 🆇 button to close.  
+   | |Field Name                | Field Value
+   |-|--------------------------| --------------
+   |<span className="large-number">➊</span>|Label |Approved
+   |<span className="large-number">➋</span>|Name |approved
+   |<span className="large-number">❸</span>|Type | True/False
+   |<span className="large-number">❹</span>|Click on the 🆇 button to close.  
 ![](./images/04-03-06-populateflowvariable.png)
 
 7. Before our first step, we want to call the People Finder Spoke. Hover above the "Ask for Approval" step and click the plus sign ⨁.  
@@ -45,94 +45,94 @@ Now that we have created the People Finder Spoke and our Auto Approval Decision 
 
 8. Add the People Finder Spoke
 
-    1. Select "Action" as the step type.
-
-    2. Search for "people finder".
-
-    3. Select the "GET /user" action.  
+   1. Select "Action" as the step type.
+   
+   2. Search for "people finder".
+   
+   3. Select the "GET /user" action.  
 ![](./images/04-03-08-addspokeaction.png)
 
 9. Click the data pill picker for email.  
 ![](./images/04-03-09-dotwalkspoke.png)
 
-10. Dot-walk to the email address of the person that opened the request.
+1. Dot-walk to the email address of the person that opened the request.
 
-    1. Click "Trigger - Record Ceated"
+   1. Click "Trigger - Record Ceated"
 
-    2. Click the blue arrow next to the "Telework Case" record to drill down.
+   2. Click the blue arrow next to the "Telework Case" record to drill down.
 
-    3. Click the blue arrow next to "Opened by".
+   3. Click the blue arrow next to "Opened by".
 
-    4. Click on "Email" to set the value.  
+   4. Click on "Email" to set the value.  
 ![](./images/04-03-10-dotwalkspoke.png)
 
-11. Click the "Done" button.  
+11. Click the <span className="button-purple">Done</span> button.  
 ![](./images/04-03-11-donespoke.png)
 
 12. Next, we want to use the decision table we built. Hover in-between steps 1 and 2 and click the plus sign ⨁.  
 ![](./images/04-03-12-adddecision.png)
 
-13. Add the Telework Auto Approval Decision Table.
+1. Add the Telework Auto Approval Decision Table.
 
-    1. Select "Flow Logic" as the step type.
+   1. Select "Flow Logic" as the step type.
 
-    2. Select "Make a decision" from the list.  
+   2. Select "Make a decision" from the list.  
 ![](./images/04-03-13-adddecision.png)
 
 14. Setup the decision step.
 
-    | |Field Name                | Field Value
-    |-|--------------------------| --------------
-    |<span className="large-number">➊</span>|Decision Label |Check auto approve conditions
-    |<span className="large-number">➋</span>|Decision Table |Telework Auto Approval
-    |<span className="large-number">❸</span>|Execution | First decision that matches
-    |<span className="large-number">❹</span>|Use Branches | Un-check
-    |<span className="large-number">❺</span>|Arrangement | Dot-walk (see step 15 below)
-    |<span className="large-number">❻</span>|Number of Days | Dot-walk (see step 16 below)
-    |<span className="large-number">❼</span>|Click on the <span className="button-purple">Done</span> button.  
+   | |Field Name                | Field Value
+   |-|--------------------------| --------------
+   |<span className="large-number">➊</span>|Decision Label |Check auto approve conditions
+   |<span className="large-number">➋</span>|Decision Table |Telework Auto Approval
+   |<span className="large-number">❸</span>|Execution | First decision that matches
+   |<span className="large-number">❹</span>|Use Branches | Un-check
+   |<span className="large-number">❺</span>|Arrangement | Dot-walk (see step 15 below)
+   |<span className="large-number">❻</span>|Number of Days | Dot-walk (see step 16 below)
+   |<span className="large-number">❼</span>|Click on the <span className="button-purple">Done</span> button.  
 ![](./images/04-03-14-setdecision.png)
 
-15. Dot-walk Arrangement (step 5 above)
+1. Dot-walk Arrangement (step 5 above)
 
-    1. Click "Trigger - Record Ceated"
+   1. Click "Trigger - Record Ceated"
 
-    2. Click the blue arrow next to the "Telework Case" record to drill down.
+   2. Click the blue arrow next to the "Telework Case" record to drill down.
 
-    3. Click on "Arrangement" to set the value.  
+   3. Click on "Arrangement" to set the value.  
 ![](./images/04-03-15-dotwalkdecision.png)
 
-16. Dot-walk Number of Days (step 6 above)
+1. Dot-walk Number of Days (step 6 above)
 
-    1. Click "Trigger - Record Ceated"
+   1. Click "Trigger - Record Ceated"
 
-    2. Click the blue arrow next to the "Telework Case" record to drill down.
+   2. Click the blue arrow next to the "Telework Case" record to drill down.
 
-    3. Click on "Days per week" to set the value.  
+   3. Click on "Days per week" to set the value.  
 ![](./images/04-03-16-dotwalkdecision.png)
 
 17. Now, we have to check if either auto-approve condition has been met. Hover in-between steps 2 and 3 and click the plus sign ⨁.  
 ![](./images/04-03-17-checkautoapprovemet.png)
 
-18. Add the if condition.
+1. Add the if condition.
 
-    1. Select "Flow Logic" as the step type.
+   1. Select "Flow Logic" as the step type.
 
-    2. Select "If" from the list.  
+   2. Select "If" from the list.  
 ![](./images/04-03-18-addifstep.png)
 
 19. Setup the if condition.
 
-    | |Field Name                | Field Value
-    |-|--------------------------| --------------
-    |<span className="large-number">➊</span>|Condition Label |If auto approve conditions are met
-    |<span className="large-number">➋</span>|Condition 1 |Dot-walk (see step 20 below)
-    |<span className="large-number">❸</span>|Operator | is
-    |<span className="large-number">❹</span>|Value | Y
-    |<span className="large-number">❺</span>|Click on the <span className="button-purple">or</span> button.
-    |<span className="large-number">❻</span>|Condition 2 | Dot-walk (see step 21 below)
-    |<span className="large-number">❼</span>|Operator | is
-    |<span className="large-number">❽</span>|Value |True
-    |<span className="large-number">❾</span>|Click on the <span className="button-purple">Done</span> button.  
+   | |Field Name                | Field Value
+   |-|--------------------------| --------------
+   |<span className="large-number">➊</span>|Condition Label |If auto approve conditions are met
+   |<span className="large-number">➋</span>|Condition 1 |Dot-walk (see step 20 below)
+   |<span className="large-number">❸</span>|Operator | is
+   |<span className="large-number">❹</span>|Value | Y
+   |<span className="large-number">❺</span>|Click on the <span className="button-white-red-border">or</span> button.
+   |<span className="large-number">❻</span>|Condition 2 | Dot-walk (see step 21 below)
+   |<span className="large-number">❼</span>|Operator | is
+   |<span className="large-number">❽</span>|Value |True
+   |<span className="large-number">❾</span>|Click on the <span className="button-purple">Done</span> button.  
 ![](./images/04-03-19-setupifcond.png)
 
 20. Dot-walk Condition 1 (step 2 above)
