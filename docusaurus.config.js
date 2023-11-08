@@ -189,6 +189,18 @@ const config = {
       },
     ],
 
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/psds-utah",
+        id: "psdsutah",
+        routeBasePath: "labs/psds-utah",
+        sidebarPath: require.resolve("./labs/psds-utah/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
   ],
 
   presets: [
@@ -205,6 +217,9 @@ const config = {
         },
       },
     ],
+
+
+
   ],
 
   themeConfig:
