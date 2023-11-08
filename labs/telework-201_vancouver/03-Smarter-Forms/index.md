@@ -1,6 +1,6 @@
 ---
 title: "Smarter Forms" 
-sidebar_label: "2. Smarter Forms"
+sidebar_label: "3. Smarter Forms"
 hide_table_of_contents: true
 ---
 ## Purpose
