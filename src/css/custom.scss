@@ -333,8 +333,7 @@ h1 {
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.25;
   padding: 5px 12px;
   vertical-align: middle;
@@ -351,6 +350,7 @@ h1 {
   background-color: white;
   border-color: grey;
   border-radius: 22px;
+  border-width: 1px;
   color: black;
   cursor: pointer;
   display: inline-block;
@@ -363,11 +363,12 @@ h1 {
    /* Add a smooth transition for the color change */
  }
  
- .button-white-red-border {
+ .button-white-maroon-border {
    background-color: white;
-   border-color: red;
+   border-color: #914F41;
    border-radius: 22px;
-   color: red;
+   border-width: 1px;
+   color: #914F41;
    cursor: pointer;
    display: inline-block;
    font-size: 16px;
@@ -378,6 +379,39 @@ h1 {
    transition: color 0.3s;
     /* Add a smooth transition for the color change */
   }
+  .button-white-red-border {
+   background-color: white;
+   border-color: #B61B2D;
+   border-radius: 22px;
+   border-width: 1px;
+   color: #B61B2D;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 16px;
+   font-weight: 800;
+   line-height: 1.25;
+   padding: 5px 12px;
+   vertical-align: middle;
+   transition: color 0.3s;
+    /* Add a smooth transition for the color change */
+  }
+  
+  .button-white-purple-border-black {
+   background-color: white;
+   border-color: var(--now-purple);
+   border-radius: 22px;
+   border-width: 1px;
+   color: black;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 16px;
+   font-weight: 800;
+   line-height: 1.25;
+   padding: 5px 12px;
+   vertical-align: middle;
+   transition: color 0.3s;
+   /* Add a smooth transition for the color change */
+ }
 
 /* #284191 */
 
