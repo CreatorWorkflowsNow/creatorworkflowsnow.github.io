@@ -40,43 +40,43 @@ We will create a re-usble integration to the finance department's People Finder 
 
 5. Specify how we want to build our Spoke
 
-    1. Select OpenAPI
+   1. Select OpenAPI
 
-    2. Click "Continue"  
+   2. Click on the <span className="button-purple">Continue</span> button.
 ![](./images/04-5-how-build-spoke.png)
 
-6. For the OpenAPI source, click "Import new"  
+6. For the OpenAPI source, click <span className="button-white-grey-border">Import new</span>  
 ![](./images/04-6-openapi-import-new.png)
 
 7. Fill the user form with the following values (💡 double-click to select, copy & paste into the form).
 
-    | |Field Name                | Field Value
-    |-|--------------------------| --------------
-    |<span className="large-number">➊</span>|Import method    | Import from URL
-    |<span className="large-number">➋</span>|OpenAPI URL | https://low-code.guide/api-specs.json
-    |<span className="large-number">➌</span>|Click on the <span className="button-purple">Import</span> button.  
+   | |Field Name                | Field Value
+   |-|--------------------------| --------------
+   |<span className="large-number">➊</span>|Import method    | Import from URL
+   |<span className="large-number">➋</span>|OpenAPI URL | https://low-code.guide/api-specs.json
+   |<span className="large-number">➌</span>|Click on the <span className="button-purple">Import</span> button.  
 ![](./images/04-7-import-new-openapi.png)
 
-8. For the Connection alias, click "Create new"  
+8. For the Connection alias, click on the <span className="button-white-grey-border">Create new</span> button.  
 ![](./images/04-8-connection-alias-create-new.png)
 
 9. Fill the user form with the following values (💡 double-click to select, copy & paste into the form).
 
-    | |Field Name                | Field Value
-    |-|--------------------------| --------------
-    |<span className="large-number">➊</span>|Connection alias name | People Finder
-    |<span className="large-number">➋</span>|Authentication Configuration Template | API Key Template
-    |<span className="large-number">➌</span>|Click on the <span className="button-purple">Create</span> button.  
+   | |Field Name                | Field Value
+   |-|--------------------------| --------------
+   |<span className="large-number">➊</span>|Connection alias name | People Finder
+   |<span className="large-number">➋</span>|Authentication Configuration Template | API Key Template
+   |<span className="large-number">➌</span>|Click on the <span className="button-purple">Create</span> button.  
 ![](./images/04-9-create-new-connection-alias.png)
 
-10. To continue, click the "Generate operations" button  
+10. To continue, click the <span className="button-purple">Generate operations</span>
 ![](./images/04-10-generate-operations.png)
 
 11. Select the actions you want to create
 
-    1. Select all actions
+   1. Select all actions
 
-    2. Click the "Pubish" button  
+   2. Click the "Pubish" button  
 ![](./images/04-11-actions-to-create.png)
 
 12. Click the "GET /user" link to view the action we just created  
