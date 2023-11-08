@@ -317,6 +317,10 @@ const config = {
                 href: "/labs/example-lab/overview",
               },
               {
+                label: "PSDS Draft",
+                href: "/labs/psds-utah/exercise_1_service_offering/overview",
+              },
+              {
                 label: "Now Create",
                 href: "https://nowlearning.servicenow.com/nowcreate",
               },
