@@ -77,7 +77,14 @@ const sidebars = {
                 },
             ],
         },
-        'lab-guide-pdf',
+        //'lab-guide-pdf',
+
+            // External link
+        {
+            type: 'link',
+            label: 'Post Workshop Survey', 
+            href: 'https://forms.office.com/r/KcNQR6ApJ3',
+        },
     ],
 
 };
