@@ -26,17 +26,19 @@ const sidebars = {
 
         'exercise-3',
         'exercise-4',
+        'exercise-5-1',
 
-        {
-            type: 'category',
-            label: '5. Testing',
-            items: [
-                'exercise-5-0',
-                'exercise-5-1',
-                'exercise-5-2',
 
-            ],
-        },
+        // {
+        //     type: 'category',
+        //     label: '5. Testing',
+        //     items: [
+        //         'exercise-5-0',
+        //         'exercise-5-1',
+        //         'exercise-5-2',
+
+        //     ],
+        // },
 
         'lab-recap',
 
@@ -75,7 +77,14 @@ const sidebars = {
                 },
             ],
         },
-        'lab-guide-pdf',
+        //'lab-guide-pdf',
+
+            // External link
+        {
+            type: 'link',
+            label: 'Post Workshop Survey', 
+            href: 'https://forms.office.com/r/KcNQR6ApJ3',
+        },
     ],
 
 };

@@ -18,7 +18,7 @@ These are minor changes that will not affect the completion of this exercise.
 
 
 1. Navigate back to your **App Home** screen if you are not currently on it, then click **Add** under **Experience**
-![](images/addexp2.png)
+![](images/2023-11-08-21-22-09.png)
 
 
 2. Click **Workspace**
@@ -78,7 +78,7 @@ These are minor changes that will not affect the completion of this exercise.
 
 
 19. Fill in the form with data of your liking, then click **Save**
-![](images/trvreqformws.png)
+![](images/2023-11-08-21-28-28.png)
 
 
 :::tip
