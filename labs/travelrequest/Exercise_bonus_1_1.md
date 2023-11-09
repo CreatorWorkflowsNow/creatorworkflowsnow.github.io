@@ -7,14 +7,14 @@ draft: false
 ---
 
 1. Navigate back to your **App Home** screen if you are not currently on it, then click the **Travel request** table to open table builder
-![](images/opentrvagain.png)
+![](images/2023-11-08-21-01-50.png)
 
 
 2. Click the **Forms** button to get to form builder
 
 
 3. Click **Add a field in the table**
-![](images/openfb.png)
+![](images/2023-11-08-21-04-03.png)
 
 
 4. In the pop-up, enter **Travel days** in **Column label**, and change **Type** to **Integer**. Leave the auto-populated field under **Column name**
@@ -87,7 +87,7 @@ draft: false
 ![](images/totaltripcost.gif)
 
 :::info
-Our formula here takes into account that each travel day, the employee is given a $150 per diem
+Our formula here takes into account that each travel day, the employee is given $150 per diem
 :::
 
 

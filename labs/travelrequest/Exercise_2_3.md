@@ -17,13 +17,13 @@ draft: false
 
 3. Click **+ Add a field in the table**, and add the following fields:
 
+    |Column label | Type
+    |-------------- | --------------
+    |Travel from | Reference (Airport)
+    |Travel to | Reference (Airport) 
 
-|Column label | Type
-|-------------- | --------------
-|Travel from | Reference (Airport)
-|Travel to | Reference (Airport) 
+    ![](images/tfromair.png)
 
-![](images/tfromair.png)
 
 4. Drag and drop your two newly created custom fields onto the form
 ![](images/2023-10-22-17-24-37.png)

@@ -9,7 +9,7 @@ draft: false
 
 **Duration: 30 minutes**
 
-In this bonus exercise, you will learn how to use Excel like formulas to add cost calculations for a travel request. Our goal here is to use a per diem rate multiplied by number of days, added to the estimated airfare cost to get an estimated trip total cost.
+In this bonus exercise, you will learn how to use Excel-like formulas to add cost calculations for a travel request. Our goal here is to use a per diem rate multiplied by number of days, added to the estimated airfare cost to get an estimated total trip cost.
 
 ## 2.1: Creating Calculations
 Learn to add automated calculations to your table. 

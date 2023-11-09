@@ -14,7 +14,7 @@ Let's create a dashboard so that users can have an easy view to understand curre
 
 
 2. On the top right, click **Edit**
-![](images/editdb.png)
+![](images/2023-11-08-21-31-03.png)
 
 
 3. Click **My Tasks**, then the **Configure** button on the highlighted **Data visualization**
@@ -46,7 +46,7 @@ If you face issues with the screen not loading, change to a different Vizualizat
 
 
 10. Confirm that the **All Travel Requests** widget now refreshes to show the number of Travel requests that you have created
-![](images/widgetrefresh.png)
+![](images/2023-11-08-21-34-48.png)
 
 
 11. Click **Save** on the top right
@@ -55,7 +55,7 @@ If you face issues with the screen not loading, change to a different Vizualizat
 ## Widget 2: Estimated travel spend vs budget
 
 :::danger
-**This widget can only be configured if you completed Bonus Exercise 2.**
+**This widget can only be configured if you completed Bonus Exercise 1.**
 
 If you have not completed that, please skip this widget.
 :::
@@ -70,20 +70,20 @@ If you have not completed that, please skip this widget.
 ![](images/dialspend.png)
 
 
-4. Under **Data sources**, edit the **Task** data source
+4. Under **Data sources**, edit the **Travel Request** data source
 
 
 5. On the next **Edit data source** screen, click on **Travel request [x_snc_travel_req_0_travel_request]** under **Suggested** on the left sidebar
 
 
-6. Click **Add custom conditions**, then set the following condition: `Opened` on `Months -> This month`
+6. Click **Edit** under filters, and remove the two conditions by clicking the **x**. 
 
 
-7. Refer to the video below for a walkthrough:
-![](images/travelspenddata.gif)
+7. Set the following condition: `Opened` on `Months -> This month` and click **Apply**.
+![](images/2023-11-08-21-40-05.png)
 
 
-8. Back on the Edit dashboard view, on the right sidebar, click **Edit** for **Travel request** under **Metric**
+8. Back on the Edit dashboard view, on the right sidebar, under the **Metric** section, click the 3 dot icon, then **Edit** for **Travel request**
 ![](images/editmetric.png)
 
 
@@ -129,7 +129,7 @@ If you have not completed that, please skip this widget.
 ## Widget 3: Outstanding Approvals
 
 :::caution
-This widget will appear different if you have not completed Bonus Exercise 2, but will not impact completing the widget.
+This widget will appear different if you have not completed Bonus Exercise 1, but will not impact completing the widget.
 :::
 
 1. Click the **My Work** list at the bottom of the dashboard.
@@ -148,7 +148,7 @@ This widget will appear different if you have not completed Bonus Exercise 2, bu
 5. Click the **and** button
 
 
-6. In the new **and** row that appears, set the following condition
+6. In the new **and** row that appears, set the following condition:
 
     `State is one of Pending, Open, Work in Progress`
 
@@ -156,7 +156,7 @@ Refer to the video below:
 ![](images/listfilter.gif)
 
 
-7. On the top right of the screen, click **Save**
+7. Click **Apply**, then on the top right of the screen, click **Save**
 
 
 8. Click **Exit editing mode**
@@ -166,7 +166,7 @@ Refer to the video below:
 ![](images/2023-10-21-12-52-41.png)
 
 
-10. We have left the final **Critical Tasks** widget for you to experiement with. Feel free to make any changes that you would like with the different Vizualizations available by repeating the steps in this exercise.
+10. We have left the final **Critical Tasks** widget for you to experiment with. Feel free to make any changes that you would like with the different Vizualizations available by repeating the steps in this exercise.
 
 
 :::tip
