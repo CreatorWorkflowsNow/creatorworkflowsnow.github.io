@@ -61,9 +61,10 @@ const sidebars = {
             label: '4. Manage the Work',
             items: [
                 '4.0-Manage-Work/overview',
-                '4.0-Manage-Work/create-workspace',
-                '4.0-Manage-Work/configure-workspace',
-                '4.0-Manage-Work/use-workspace',
+                '4.0-Manage-Work/create',
+                '4.0-Manage-Work/configure-lists',
+                '4.0-Manage-Work/configure-dashboard',
+                '4.0-Manage-Work/use',
                 '4.0-Manage-Work/review',
             ],
         },
