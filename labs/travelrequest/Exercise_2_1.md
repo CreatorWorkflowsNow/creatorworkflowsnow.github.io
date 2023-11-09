@@ -9,7 +9,7 @@ draft: false
 **Duration: 10 minutes**
 
 1. Under **Data**, click **Add**
-![](images/addtable1.png)
+![](images/2023-11-08-15-14-27.png)
 
 
 2. On the *Add Data* page, click **Create a blank table**
@@ -78,13 +78,11 @@ Instead of adding fields individually via table builder, we will add fields dire
 19. Remove the following fields from the form:
     - Priority
     - Assigned to
-    - Configuration item
-    - Parent
-![](images/removefield.png)
+![](images/2023-11-08-15-25-42.png)
 
 
 20. The form should look like this
-![](images/formstate1.png)
+![](images/2023-11-08-15-27-18.png)
 
 
 21. On the left panel, click **Add a field in the table**
@@ -136,7 +134,7 @@ You will need to ensure that you see a grey outline box with a plus icon before 
 ![](images/2023-10-22-17-08-23.png)
 :::
 
-33. Search and add two more standard fields onto the form: **Opened by, Approval** (These come standard with the **Task** table)
+33. Search and add two more standard fields onto the form beneath the Number and State fields: **Opened by, Approval** (These come standard with the **Task** table)
 
 
 34. Click **Save** on the top right of the form
