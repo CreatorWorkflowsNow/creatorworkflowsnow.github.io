@@ -86,7 +86,8 @@ We're going to add 2 lanes:
   1. Label: Completeness of Request
   2. Description: review all information
   3. When to start: Immediately
-  4. Click on 'Save'
+  4. Click on 'Save'  
+
 >2. Click on: + Add Lane (next to the lane you just created)
   1. Label: Finalizing Request
   2. Description: ensure all approvals and tasks have been created and completed
@@ -109,7 +110,7 @@ Completeness of Request – Activity 1
 
 
 ##
-## \*\*\*\*STOP HERE\*\*\*\* Explore the Activity Screen
+## \*\*Take A Break\*\* Explore the Activity Screen
 
 - 'Search Activities'
 - 'Create a new activity' – to learn more about this, [go here](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/process-automation-designer/task/create-activity-definition.html)
