@@ -11,6 +11,9 @@ We need to import the Telework App Management xml file.  We will be using this a
 **Before starting, download this XML file:**
 [Telework Case Management](./Telework_App_File/Telework%20Case%20Management%20v1.0.1.xml)  
 
+:::danger Make archive
+make it easy to download
+:::
 
 Steps to Importing Application  
 
