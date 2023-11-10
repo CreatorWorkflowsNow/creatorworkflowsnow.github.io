@@ -67,38 +67,42 @@ Finally, choose your table and conditions – we aren't going to have any condit
 >1. Table: Telework Case
 >2. Click on "Go to Designer"
 
-![](./Playbook%20Images/choose%20conditions%20for%20when%20it%20runs.jpg)
+![](./Playbook%20Images/choose%20conditions%20for%20when%20it%20runs.jpg)  
+
+Switch to 'Board View'
+![](./Playbook%20Images/switch%20to%20board%20view.png)  
+
 
 You should now be on this page:
 
-![](./Playbook%20Images/PAD%20first%20page.jpg)
+![](./Playbook%20Images/Telework%20Case%20STAGE%201.png)  
 
-We're going to add 2 lanes:
+We're going to add 2 Stages:
 
->1. Lane 1: Completeness of Request
+>1. Stage 1: Completeness of Request
   -This will be used to walk the workspace user reviewing the form and ensuring there's everything needed to make a good decision
->2. Lane 2: Finalizing Request
-  -This lane will be used to review that approvals are completed and IT has the task
+>2. Stage 2: Finalizing Request
+  -This stage will be used to review that approvals are completed and IT has the task
 
 ## Go ahead and create the two lanes
 
->1. Click on: + Add Lane
+>Click on: + Add Stage
   1. Label: Completeness of Request
   2. Description: review all information
-  3. When to start: Immediately
-  4. Click on 'Save'  
+  3. When to start: When process starts
+  4. Click on 'Save and close'  
 
->2. Click on: + Add Lane (next to the lane you just created)
+>Click on: + Add Stage (next to the stage you just created)
   1. Label: Finalizing Request
   2. Description: ensure all approvals and tasks have been created and completed
-  3. When to start: After previous
-  4. Click on 'Save'
+  3. When to start: After specific stages
+  4. Click on 'Save and close'
 
 Your screen should now look like this:
 
-![](./Playbook%20Images/Two%20Lanes%20created.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%202.png)  
 
-In the first lane, Completeness of Request, we are going to have 3 activities:
+In the first Stage, Completeness of Request, we are going to have 3 activities:
 
 1. Check the opened\_by has a manager, the reason field is filled out and set the priority
 2. See if the opened\_by has any telework cases already submitted
@@ -106,7 +110,7 @@ In the first lane, Completeness of Request, we are going to have 3 activities:
 
 Completeness of Request – Activity 1
 
->1. Click on +Add activity under Lane 1 ![](./Playbook%20Images/add%20activity.jpg)
+>1. Click on +Add activity under Stage 1 ![](./Playbook%20Images/add%20activity.jpg)
 
 
 ##
@@ -136,7 +140,7 @@ Choose
 
 You should now be here:
 
-![](./Playbook%20Images/1st%20activity%20add%20user%20form%20activity.jpg)
+![](./Playbook%20Images/Telework%20Stage%202-5.jpg)  
 
 On the right hand side, is the activity properties. This is where we give the necessary info for the activity to work.
 
@@ -145,18 +149,18 @@ Fill out the form (Edit activity properties):
 >1. Label: Review Form
 >2. Description: Check the requestor has a manager, the reason field is filled out and the priority is set to correct level.
 
-![](./Playbook%20Images/1st%20activity%20review%20form.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%203.png)  
 
-Click on 'Automation' tab (next to 'Details', no need to hit 'Save' yet, you will get an error)
+Click on 'Automation' tab (next to 'Details', DO NOT hit 'Save and close' yet, you will get an error)
 
 This activity has some inputs it needs:
 
 >1. Table: Telework Case
 >2. Record: use the data pill picker to choose the trigger record, just like in flow designer.
->3. Form Fields: opened\_by,reason,priority (this is a string field, must type them in) All other fields do not get changed.
+>3. Form Fields: opened\_by,justification,priority (this is a string field, must type them in) All other fields do not get changed.
 >4. Click on: 'Save'
 
-![](./Playbook%20Images/1st%20Activity%20automation%20filled%20out.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%204.jpg)  
 
 Before we go any further, let's test this out so you can see how this all will look to the workspace user.
 
@@ -173,13 +177,15 @@ Choose the 'Playbook preview' – click on: View (it will open in a new browser 
 
 Give this screen a moment to load – when it's done, it should look like this:
 
-![](./Playbook%20Images/Run%20Test%20Preview%20Screen.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%207.jpg)  
+
+Try adding something for 'Justification' then 'Update' then 'Mark Complete'  
 
 In the bottom right corner is a 'cog' – you can open this up and try some of the extra settings. These can be configured in the experience tab for your playbook (not doing in this lab).
 
 If everything looks good, you can close this browser tab then click on 'Done' and you should be back to your playbook designer here:
 
-![](./Playbook%20Images/Telework%20Case%20Designer%20with%20one%20activity.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%206.jpg)  
 
 After the workspace user has reviewed the form, we would like them to see a list of any telework cases that have already been opened by the requestor. That will be our next activity – adding a list of telework cases opened by the requestor.
 
@@ -196,12 +202,12 @@ In the 'Edit activity properties' on the right hand side, fill out the form:
 
 >1. Label: Requestors Telework Cases
 >2. Description: If the requestor has submitted any other telework case requests, they will be listed below.
->3. Click on 'Experience' tab
+>3. Click on 'UI Layout' tab
 
-![](./Playbook%20Images/2nd%20Activity%20fill%20out%20details.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%209.jpg)  
 
 
-Fill out the 'Experience' tab
+Fill out the 'UI Layout' tab
 
 >1. List Title: Requestor Cases
 >2. Table: Telework Case
@@ -210,17 +216,17 @@ Fill out the 'Experience' tab
   >>We need to only pull the records that have been opened by the current requestor.  
   >>Opened\_by is opened\_by (use the data pill picker)
 
-Step 4 'Add Condition' will look like this:
+Step 4 'Add Condition' will look like this (then click 'modify'):
 
 ![](./Playbook%20Images/2nd%20Activity%20is%20opened%20by.jpg)
 
-Before clicking on 'Save' your form will look like this:
+**Before** clicking on 'Save and close' your form will look like this:
 
-![](./Playbook%20Images/2nd%20activity%20with%204%20steps.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%208.jpg)  
 
-Click 'Save' and now your process looks like this:
+Click 'Save and close' and now your process looks like this:
 
-![](./Playbook%20Images/After%202nd%20Activity.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%2010.jpg)  
 
 The last activity in this lane will be to show the workspace user the knowledge article on telework guidelines – many have asked to have this handy in case they need it at during the process or to attach for the requestor to review.
 
@@ -235,30 +241,41 @@ Fill out the 'Edit activity properties'
 
 >1. Label: Show Telework Guidelines KA
 >2. Description: This will give the requestor the telework guidelines knowledge article so they can use it if needed in the process.
->3. When to start: Immediately (we want this to be available right away)
+>3. Start rule: When stage starts (we want this to be available right away)
 >4. Click on: Automation tab (next to details tab)
 
-![](./Playbook%20Images/3rd%20activity%20fill%20out%20details.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%2011.jpg)  
 
 Fill out the 'Automation' tab
 
 >1. Title: Telework Guidelines
 >2. Knowledge Article: KB0050185
->3. Click on: 'Save'
+>3. Click on: 'Save and close'
 
-![](./Playbook%20Images/3rd%20activity%20final%20screen.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%2012.jpg)  
 
 
 Super – your process should look like this now:
 
-![](./Playbook%20Images/3%20Activities%20Process.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%2013.jpg)
+
+#
+**If you have an error regarding an 'end connection' for step 2**  
+>Go to 'Diagram View'  
+>Connect Activity 1.2 to Stage 2  
+>It should look like this:  
+
+![](./Playbook%20Images/Telework%20Case%20Stage%2014.jpg)  
+>then go back to Board view  
+
+#
 
 # Feel free to take a break and test out your process like we did earlier
 
 
-### Now, let's add an activity to the 'Finalizing Request' lane and then we'll add the playbook to our workspace.
+### Now, let's add an activity to the 'Finalizing Request' stage and then we'll add the playbook to our workspace.
 
->Click on +Add activity in the Finalizing Request lane  ![](./Playbook%20Images/add%20activity.jpg)
+>Click on +Add activity in the Finalizing Request stage  ![](./Playbook%20Images/add%20activity.jpg)
 
 
 Choose
@@ -269,16 +286,16 @@ Fill out the 'Edit activity properties' form
 
 >1. Label: Check for approval and IT Task
 >2. Description: ensure approval was done and the IT Task was assigned to the right group.
->3. When to Start: Immediately
->4. Click on: 'Save'
+>3. Start rule: When stage starts
+>4. Click on: 'Save and close'
 
 That's it! If you look under the 'Automation' tab it automatically puts the description as your instruction. Your form should look like this:
 
-![](./Playbook%20Images/4th%20activity%20form%20filled%20out.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%2015.jpg)  
 
 Now, you're all set with version one of your Playbook! It's time to click on 'Activate'
 
-![](./Playbook%20Images/Final%20and%20Activate.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%2016.jpg)  
 
 What else would you add to the process?
 
@@ -295,9 +312,10 @@ You should now be here:
 
 Let's edit the 'Telework' workspace
 
-![](./Playbook%20Images/Edit%20Telework%20Workspace%20click.jpg)
+![](./Playbook%20Images/Telework%20Case%20Stage%2017.jpg)  
 
 (if 'Get Started' pops up, go ahead and click on that)
+
 
 You should now be in the workspace builder, your screen should look something like this (some of the reports may differ)
 
@@ -341,7 +359,8 @@ For more on using playbook experiences, there are a lot of resources – here ar
 ##
 
 
-Now that you have added the playbook to the workspace, see how it's showing up as a tab on the record page at the very end. Let's move it to the very beginning. This is how it looks now – go ahead and click on the link in the upper right 'open in UI Builder' (and if there's a pop up, continue to UI Builder)
+Now that you have added the playbook to the workspace, take note of how it's showing up as a tab on the record page at the very end, the last tab.   
+Let's move it to the very beginning. This is how it looks now – go ahead and click on the link in the upper right 'open in UI Builder' (and if there's a pop up, continue to UI Builder)
 
 ![](./Playbook%20Images/Telework%20playbook%20move%20to%20first.jpg)
 
@@ -356,7 +375,7 @@ Now that you're in UI Builder – it takes a minute to load. Soon, you will see 
 
 ![](./Playbook%20Images/Step%201%20UIB.jpg)
 
-Now, on the right side  
+Now, on the right side pane of UI Builder  
 
 >Drag the Telework Playbook tab so it's on top of the Details tab.  
 
@@ -387,7 +406,7 @@ Once the workspace opens:
 Fill in the fields:
 
 >1. Arrangement: Remote
->2. Reason: Dependent Care
+>2. Justification: Dependent Care
 >3. Click 'Save'
 
 (if it doesn't show up right away, refresh browser – this might happen the first time you run it)
