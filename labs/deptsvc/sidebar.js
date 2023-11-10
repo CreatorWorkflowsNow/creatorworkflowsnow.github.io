@@ -72,7 +72,12 @@ const sidebars = {
         },
 
         'lab-review',
-        'download-pdf'
+        'download-pdf',
+        {
+            type: 'link',
+            label: 'Post Workshop Survey', 
+            href: 'https://forms.office.com/r/KcNQR6ApJ3',
+        },
 
     ],
 

@@ -26,6 +26,6 @@ npx docusaurus-prince-pdf -d '../labs/deptsvc/downloads' -u 'https://creatorwork
 
 npx docusaurus-prince-pdf -d '../labs/telework-utah/downloads' -u 'https://creatorworkflowsnow.github.io/labs/telework-utah/0.0-introduction/overview' --output '../labs/telework-utah/downloads/telework-utah-lab.pdf'
 
-npx docusaurus-prince-pdf -d '../labs/telework-vancouver/downloads' -u 'https://creatorworkflowsnow.github.io/labs/telework-vancouver/0.0-introduction/app-engine-overview' --output '../labs/telework-vancouver/downloads/telework-vancouver-lab.pdf'
+npx docusaurus-prince-pdf -d '../labs/telework-vancouver/downloads' -u 'https://creatorworkflowsnow.github.io/labs/telework-vancouver-101/0.0-introduction/app-engine-overview' --output '../labs/telework-vancouver-101/downloads/telework-vancouver-lab.pdf'
 
 npx docusaurus-prince-pdf -d '../labs/travelrequest/downloads' -u 'https://creatorworkflowsnow.github.io/labs/travelrequest/introduction/' --output '../labs/travelrequest/downloads/travelrequest-lab.pdf'
