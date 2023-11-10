@@ -1,5 +1,6 @@
 ---
 title: "Lab Overview"
+sidebar_label: "1. Lab Overview"
 hide_table_of_contents: true
 ---
 
