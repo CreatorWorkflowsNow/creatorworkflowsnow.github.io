@@ -1,10 +1,11 @@
 ---
 title: We Value Your Feedback!
 sidebar_label: "Survey"
+hide_table_of_contents: true
 ---
 # We Value Your Feedback!
 
-## **Help Us Improve Your Learning Experience**
+## Help Us Improve Your Learning Experience
 
 As we wrap up our Telework 201 workshop, we would greatly appreciate your input. Your feedback is vital in shaping future workshops to better meet your needs and expectations. We invite you to take a few moments to complete our post-workshop survey.
 
@@ -18,10 +19,17 @@ Your responses will be kept confidential and anonymous. We are interested in you
 
 Click on the link below to access the survey. It should take no more than **5 minutes** to complete.
 
-<a href="https://forms.office.com/r/KcNQR6ApJ3" style={{ fontSize: '20px', color: '#479f38', textDecoration: 'none' }}>
-  🔗 Start the Survey Here!
+<div style={{
+ marginLeft: '20px', width: '200px', 
+ fontSize: '20px', 
+ borderRadius: '5px',
+ backgroundColor: '#62d84e', 
+ textDecoration: 'none', 
+ textAlign: 'center',
+ fontWeight: 'bold' }}>
+<a href="https://forms.office.com/r/KcNQR6ApJ3" style={{ fontSize: '20px', color: '#1d1d1d', textDecoration: 'none', fontWeight: 'bold' }}>
+Start the Survey
 </a>
-<br/>
+ </div>
 <br/>
 Thank you for taking the time to help us enhance the Telework 201 workshop experience.
-
