@@ -218,7 +218,7 @@ Remember, we're relying on the 'requested for' field now, not the 'opened by' si
 
 >- Click on 'Logic and automation'
 >- Open the 'Main' flow (switch to tree view)  
-![](./Forms%20Images/main%20flow%201.jpg)  
+![](./Forms%20Images/mainflow_new.jpg)  
 
 
 2 things we need to change:
@@ -228,23 +228,23 @@ Remember, we're relying on the 'requested for' field now, not the 'opened by' si
 
 Changing Approval
 
->1. Expand Step 1 – Ask for Approval
+>1. Expand Step 6 – Ask for Approval
 >2. Clear the box after 'Anyone Approves'
 >3. Click on the data pill picker to find the Manager field
 >4. Trigger Record Created: tiny arrow: scroll and click on 'Manager' field  
-![](./Forms%20Images/main%20flow%202.jpg)  
+![](./Forms%20Images/mainflow202_new.jpg)  
 >Click on 'Done'
 
-![](./Forms%20Images/main%20flow%203.jpg)  
+![](./Forms%20Images/mainflow203_new.jpg)  
 
 
 Let's change the email To field to the requested for email address
 
->1. Expand 'Send Email' (step 4)
+>1. Expand 'Send Email' (step 11)
 >2. Clear the 'To' field
 >3. Choose the data pill picker for the 'To' field
 >4. Trigger – Record Created: Telework Case Record tiny arrow: Requested For tiny arrow: scroll and click on 'Email'  
-![](./Forms%20Images/main%20flow%204.jpg)  
+![](./Forms%20Images/mainflow204_new.jpg)  
 >Click on 'Done'  
 
 ![](./Forms%20Images/Main%20flow%205.jpg)  
