@@ -447,6 +447,27 @@ h1 {
    /* Add a smooth transition for the color change */
  }
 
+ .text-purple-bold {
+   color: var(--now-purple-dark);
+   font-size: 16px;
+   font-weight: 800;
+   background-color: white;
+ }
+
+ .text-black-bold-lgrey {
+   color: black;
+   font-size: 16px;
+   font-weight: 800;
+   background-color: #F6F7F7;
+ }
+
+ .text-black-bold-lblue {
+   color: black;
+   font-size: 16px;
+   font-weight: 800;
+   background-color: #E3E7F6;
+ }
+
 /* #284191 */
 
 [data-theme="dark"] .button-white {
