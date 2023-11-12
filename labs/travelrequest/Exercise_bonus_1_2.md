@@ -7,7 +7,7 @@ draft: false
 ---
 
 1. Go back to **App Home**
-![](images/apphome2.png)
+![](images/2023-11-08-21-10-45.png)
 
 
 2. Click **PREVIEW** on the **Travel request** row
@@ -17,7 +17,7 @@ draft: false
 ![](images/trlist.png)
 
 
-4. We did not format this list view back in Exercise 1, so let's go ahead to do that quickly
+4. We did not format this list view back in Exercise 2, so let's go ahead to do that quickly
 
 
 5. Right-click anywhere on one of the column headers
@@ -39,14 +39,14 @@ draft: false
 
 
 10. You should now return to the list layout (your records will be slightly different based on what you entered in the exercise 4)
-![](images/completelist.png)
+![](images/2023-11-08-21-13-15.png)
 
 
 11. Click **New** on the top right
 
 
-12. Fill up the form, ensure that you enter information for **Departure date**, **Return date** and any numerical figure for **Estimated airfare**
-![](images/addinfo.png)
+12. Fill up the form, ensure that you enter information for **Departure date**, **Return date**, **Travel from**, **Travel to**, and any numerical figure for **Estimated airfare**
+![](images/2023-11-08-21-16-06.png)
 
 
 13. Right-click on the form header, then click **Save**
@@ -58,11 +58,11 @@ draft: false
 
 15. In the screenshot above, the following was calculated
 
-    `(4 * 150) + 1,390.50 = 1,990.50`
+    `2000 + (3 * 150) = 2,450`
 
 ![](images/funnycalculation.gif)
 
-Well done, you now understand how to build excel-like formulas into your application! Here are some other possible formulas that are currently supported, but more are on the way:
+Well done, you now understand how to build Excel-like formulas into your application! Here are some other possible formulas that are currently supported, but more are on the way:
 
 * **AND** Performs a logical AND operation on the arguments.
 * **AVERAGE** Returns the average value of the arguments.
@@ -86,7 +86,7 @@ Well done, you now understand how to build excel-like formulas into your applica
 * **UPPERCASE** Converts the input string to all uppercase characters.
 
 :::info
-Here is a link to the official Product Documentation with an up to date list of the formulas: 
+Here is a link to the official Product Documentation with an up-to-date list of the formulas: 
 
 [Product Docs: Formulas for column values in Table Builder](https://docs.servicenow.com/csh?topicname=formulas-columns-table-builder.html&version=latest)
 :::

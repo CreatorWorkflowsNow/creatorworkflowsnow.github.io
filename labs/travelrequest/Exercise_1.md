@@ -10,8 +10,8 @@ draft: false
 
 Before we begin, we will need to create our scoped application.  It will contain all of the tables, forms, flows, and other assets that make up our application. 
 
-1. Click **All**, then search and click **App Engine Studio**
-![](images/openaes.png)
+1. On the Landing Page click the bright green button that says **Click here to open App Engine Studio**, and it will take you to the App Engine Studio home page. 
+![](images/2023-11-08-15-06-25.png)
 
 
 2. Click **Create app** on the top right of the screen

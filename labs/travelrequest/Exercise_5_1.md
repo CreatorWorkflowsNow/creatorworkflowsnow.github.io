@@ -1,12 +1,16 @@
 ---
 id: exercise-5-1
-title: "Exercise 5.1: Putting it all together - Testing our application"
-sidebar_label: 5.1. Testing
+title: "Exercise 5: Putting it all together - Testing our application"
+sidebar_label: 5. Testing
 hide_table_of_contents: true
 draft: false
 ---
 
 **Duration: 15 minutes**
+
+Congratulations on making it so far! 
+
+We have one last thing to do, which is to test our application. Our person of interest here is Billie Cowley who is wanting to raise a travel request. His direct manager is Krystle Stika, and this relationship has already been inherited through a Microsoft AD integration. We will first directly grant the Travel request user role to one of our employees for the test.
 
 1. Head back into the main ServiceNow interface
 
@@ -79,7 +83,7 @@ This is actually not best practice, but only for the purposes of today's activit
 16. Click the **Search icon**
 
 
-17. The top result should return the form we had created in Exercise 2
+17. The top result should return the form we had created in Exercise 3
 ![](images/trvreqsearch.png)
 
 
@@ -89,11 +93,12 @@ This is actually not best practice, but only for the purposes of today's activit
 19. Confirm that the form appears as expected, then fill in all the fields
 ![](images/2023-10-22-16-49-46.png)
 
+
 20. Click **Submit**
 
 
 21. The next screen can be used to track the status of the request and add attachments
-![](images/trackreq.png)
+![](images/2023-11-08-20-39-41.png)
 
 
 22. Go back to the ServiceNow main interface, and **End impersonation**
@@ -123,7 +128,6 @@ This is actually not best practice, but only for the purposes of today's activit
 
 
 29. Click on the Approved record for your Travel request, if you followed all the steps so far, this should be the first record created: TRV0001001
-![](images/clicktrvreq.png)
 ![](images/2023-10-22-17-48-45.png)
 
 

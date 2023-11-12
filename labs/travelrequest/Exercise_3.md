@@ -92,7 +92,7 @@ This is also known as a Record Producer in ServiceNow terminology.
 ![](images/2023-10-22-17-32-05.png)
 
 
-25. Expand the **General Information** section, click the **Insert** icon, and select **New question**
+25. Expand the **General Information** section, click the **+ Insert** icon, and select **New question**
 ![](images/2023-10-22-17-32-37.png)
 
 
@@ -107,9 +107,9 @@ This is also known as a Record Producer in ServiceNow terminology.
     Question label | What is the reason for travel?
     Mandatory | **Checked**
 
-![](images/choicept1.png)
+    ![](images/choicept1.png)
 
-![](images/choicept2.png)
+    ![](images/choicept2.png)
 
 
 27. Click **Choices**
