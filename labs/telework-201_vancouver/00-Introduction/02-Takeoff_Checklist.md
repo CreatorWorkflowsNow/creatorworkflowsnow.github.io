@@ -1,6 +1,3 @@
-import iconMacOS  from './images/icon_MacOs_48.png';
-import iconWindows from './images/icon_Windows_48.png';
-
 ---
 id: takeoff
 title: "2. Takeoff Checklist 🚀"
@@ -12,6 +9,9 @@ Welcome to the next phase of our workshop! This session, spanning over two days,
 ## Let's make sure you have everything you need to get started.
 
 Before beginning the lab exercies, you should have the following:
+
+import iconMacOS  from './images/icon_MacOs_48.png';
+import iconWindows from './images/icon_Windows_48.png';
 
 - [ ] A ServiceNow instance URL and credentials.
 - [ ] Download the lab files bundle: **[Telework_Lab_Files.zip](../downloads/Telework_Lab_Files.zip)** (Right-click and select 'Save link as...')
