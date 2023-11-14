@@ -16,13 +16,13 @@ Before beginning the lab exercies, you should have the following:
 - [ ] A ServiceNow instance URL and credentials.
 - [ ] Download the lab files bundle: **[Telework_Lab_Files.zip](../downloads/Telework_Lab_Files.zip)** (Right-click and select 'Save link as...')
 - [ ] Extract the `Telework_Lab_Files.zip` file:
-    - <img src={iconMacOS} style={{ display: 'inline-block', verticalAlign: 'left', marginRight: '8px' }} alt="Example banner" /> MacOS users:
+    - <img src={iconMacOS} className='inline-icon' alt="iconMacOS" /> <strong>MacOS users:</strong>
 
        - Right-click on the `Telework_Lab_Files.zip` file.
        - Choose “Extract All” or “Open with Archive Utility” (the exact option may vary depending on your macOS version).
        - The files will be extracted into a folder named `Telework_Lab_Files`.
 
-    - <img src={iconWindows} style={{ display: 'inline-block', verticalAlign: 'left', marginRight: '8px' }} alt="Example banner" /> Windows users:
+    - <img src={iconWindows} className='inline-icon'  alt="iconWindows" /> <strong>Windows users:</strong>
 
         - Right-click on the `Telework_Lab_Files.zip` file.
         - Select “Extract All”.

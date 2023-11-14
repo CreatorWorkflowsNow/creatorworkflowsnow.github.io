@@ -1036,4 +1036,15 @@ sidebar_class_name: hidden
 */
 .hidden {
   display: none !important;
-  }
+}
+
+/* Used for MacOS and Windows icons
+ * See: /labs/telework-201_vancouver/Introduction/Takeoff_Checklist 
+ */
+.contains-task-list .inline-icon {
+  width: 24px;
+  display: inline-block; 
+  box-shadow: none;
+  vertical-align: middle;
+  margin: 5px;
+}
