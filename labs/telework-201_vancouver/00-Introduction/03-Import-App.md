@@ -12,6 +12,7 @@ In this exercise, we will learn how to import an existing scoped application usi
 
 >1. Go to 'Retrieved Update Sets'  
 
+
 >2. Scroll to 'Releated links' and click on 'Import Update Set from XML'  
 
 >3. Upload Update Set  
@@ -29,6 +30,7 @@ In this exercise, we will learn how to import an existing scoped application usi
 # Step 1 - Go to 'Retrieved Update Sets'  
 
 >1. Go to All  
+
 >2. Then under 'System Update Sets' go to: **Retrieved Update Sets**  
 ![](./images/Step%201.png)  
 
@@ -36,6 +38,7 @@ In this exercise, we will learn how to import an existing scoped application usi
 # Step 2 - Import Update Set
 
 >1. Scroll to the bottom of the list
+
 >2. Click on related link: **Import Update Set from XML**
 ![](./images/Step%202.png)  
 
@@ -43,7 +46,12 @@ In this exercise, we will learn how to import an existing scoped application usi
 # Step 3 - Upload Update Set  
 
 >1. Click on 'Choose File'
+
 >2. Find and choose the file you downloaded earlier "Telework Case Management...xml"
+![](./images/Step%203_Choose_Telework.png)  
+
+
+
 >3. Click on 'Upload'
 ![](./images/Step%203.png)  
 
@@ -51,6 +59,7 @@ In this exercise, we will learn how to import an existing scoped application usi
 # Step 4 - Find record State = 'Loaded'
 
 >1. Right click on 'Committed' (any record)
+
 >2. Choose "Filter Out"  
 ![](./images/Step%204.png)  
 
@@ -64,6 +73,7 @@ In this exercise, we will learn how to import an existing scoped application usi
 ![](./images/Step%206.png)  
 
 >2. Watch the bar progress...until 100%
+
 >3. Click on 'Close' (there can be errors, so it's ok if it says 'Failed')  
 ![](./images/Step%207.png)  
 
@@ -76,11 +86,15 @@ In this exercise, we will learn how to import an existing scoped application usi
 [Update Set Super Guide](https://www.servicenowelite.com/blog/2016/8/7/update-sets)  
 
 >1. Scroll to the related lists
+
 >2. Select 'All' records under 'Update Set Preview Problems'
+
 >3. Expand 'Actions on selected rows' option box
+
 >4. Click on 'Accept Remote Update'
 
-![](./images/Step%208.png)  
+![](./images/Step_08_New.png)
+
 
 
 # Step 7 - Commit Update Set    
@@ -88,12 +102,27 @@ In this exercise, we will learn how to import an existing scoped application usi
 >1. Click on 'Commit Update Set'
 ![](./images/Step%209.png)  
 
->2. If needed, click on 'done' - You should now be on this screen:  
+
+
+>2. Click on **Close**
+![](./images/Step_10_Close_Commit_UpdateSet.png)  
+
+
+>3. You should now see the applicaiton has been successfully imported:  
 ![](./images/Step%2010.png)  
+
+>4. Click on the ServiceNow logo to go to the home page
+![](./images/Step_11_Click_on_ServiceNow_logo.png)  
+
+>5. Click the button **Click here to open App Engine Studio**
+![](./images/Step_12_Click_on_Open_Studio.png)  
+
 
 **Congratulations!**
 
-You have completed importing the Telework Case Management application.  Continue into App Engine Studio to find your application - Telework Case Management.
+You have completed importing the Telework Case Management application.
+
+Continue into App Engine Studio to find your application - Telework Case Management.
 
 
 
