@@ -1,3 +1,6 @@
+import iconMacOS  from './images/icon_MacOs_48.png';
+import iconWindows from './images/icon_Windows_48.png';
+
 ---
 id: takeoff
 title: "2. Takeoff Checklist 🚀"
@@ -11,9 +14,24 @@ Welcome to the next phase of our workshop! This session, spanning over two days,
 Before beginning the lab exercies, you should have the following:
 
 - [ ] A ServiceNow instance URL and credentials.
-- [ ] Create a folder on your machine to store the lab files (ex: AppEngine_Lab): 
-- [ ] Download the lab files (right-click, Save link as...then put it in your folder):
-    - [ ] File 1: [Telework_Case_Management_v1.0.2.xml](../lab_files/Telework_Case_Management_v1.0.2.xml)
-    - [ ] File 2: [people%20finder.png](../lab_files/people%20finder.png)
-    - [ ] File 3: [Portal_Background.png](../lab_files/Portal_Background.png)  
-    - [ ] File 4: [SHIELD_Logo.png](../lab_files/SHIELD_Logo.png)  
+- [ ] Download the lab files bundle: **[Telework_Lab_Files.zip](../downloads/Telework_Lab_Files.zip)** (Right-click and select 'Save link as...')
+- [ ] Extract the `Telework_Lab_Files.zip` file:
+    - <img src={iconMacOS} style={{ display: 'inline-block', verticalAlign: 'left', marginRight: '8px' }} alt="Example banner" /> MacOS users:
+
+       - Right-click on the `Telework_Lab_Files.zip` file.
+       - Choose “Extract All” or “Open with Archive Utility” (the exact option may vary depending on your macOS version).
+       - The files will be extracted into a folder named `Telework_Lab_Files`.
+
+    - <img src={iconWindows} style={{ display: 'inline-block', verticalAlign: 'left', marginRight: '8px' }} alt="Example banner" /> Windows users:
+
+        - Right-click on the `Telework_Lab_Files.zip` file.
+        - Select “Extract All”.
+        - In the dialog that appears, choose where you want the files to be extracted or use the default location.
+        - Click “Extract” to unpack the files into the specified folder.
+
+After extraction, the `Telework_Lab_Files` folder should contain the following files: 
+- Telework_Case_Management_v1.0.2.xml
+- people finder.png
+- Portal_Background.png
+- SHIELD_Logo.png
+
