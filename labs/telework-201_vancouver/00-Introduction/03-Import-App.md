@@ -23,13 +23,10 @@ In this exercise, we will learn how to import an existing scoped application usi
 >6. Accept/Skip Remote Updates  
 
 >7. Commit Update Set  
-
-
     
 ## Here are those steps in detail: 
 
-
-# Step 1 - Retrieve Update Set
+# Step 1 - Go to 'Retrieved Update Sets'  
 
 >1. Go to All  
 >2. Then under 'System Update Sets' go to: **Retrieved Update Sets**  
