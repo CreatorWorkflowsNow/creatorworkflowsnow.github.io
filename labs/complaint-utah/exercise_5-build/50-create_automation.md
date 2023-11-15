@@ -95,11 +95,11 @@ In this exercise, we'll tie our investigation process together with the Complain
  |---|---|
  |Task [task]|**Trigger - Record Created or Updated - Complaint Case Record**|
  |Comment|Created investigation task: **1 - Create Record - Complaint Investigation Record - Number**
- When you're finsihed, your action should look similar to this:
+ When you're finished, your action should look similar to this:
  ![](../images/2023-09-27-14-12-01.png)
 
 
-15. Time to test! Save your flow and click the **Test** button at the top of the screen. When prompted, choose the complaint case we created earlier in our lab
+15. Time to test! **Save** your flow and click the **Test** button at the top of the screen. When prompted, choose the complaint case we created earlier in our lab
 :::note
 Your complaint number may vary from the one reflected in the lab guide.
 :::
