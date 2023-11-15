@@ -1,6 +1,6 @@
 ---
 title: "Governance" 
-sidebar_label: "1. Governance (WIP)"
+sidebar_label: "1. Governance"
 hide_table_of_contents: true
 ---
 ## Use case

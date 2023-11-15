@@ -108,13 +108,16 @@ In this exercise, we will learn how to import an existing scoped application usi
 ![](./images/Step_10_Close_Commit_UpdateSet.png)  
 
 
->3. You should now see the applicaiton has been successfully imported:  
+>3. You should now see the application has been successfully imported:  
 ![](./images/Step%2010.png)  
 
->4. Click on the ServiceNow logo to go to the home page
+
+# Step 8 - Open App Engine Studio    
+
+>1. Click on the ServiceNow logo to go to the home page
 ![](./images/Step_11_Click_on_ServiceNow_logo.png)  
 
->5. Click the button **Click here to open App Engine Studio**
+>2. Click the button **Click here to open App Engine Studio**
 ![](./images/Step_12_Click_on_Open_Studio.png)  
 
 
@@ -123,7 +126,3 @@ In this exercise, we will learn how to import an existing scoped application usi
 You have completed importing the Telework Case Management application.
 
 Continue into App Engine Studio to find your application - Telework Case Management.
-
-
-
-
