@@ -56,7 +56,7 @@ Click on Devon's profile picture in the top right then click **End Impersonation
 ![](../images/2023-09-11-11-03-33.png)
 
 
-6. Here, Andy can see any new requests for applications, collaborations or application delployments. We see there is one new pending request to complete. Click on the **1** just above the work **Intake**.
+6. Here, Andy can see any new requests for applications, collaborations or application deployments. We see there is one new pending request to complete. Click on the **1** just above the work **Intake**.
 ![](../images/2023-09-11-11-20-55.png)
 
 
@@ -80,4 +80,4 @@ Click on Andy's profile picture in the top right and click **Impersonate User**.
 Click **Impersonate User** to complete the switch to Devon's persona.
    
 
-Nice work.. you've just created the foundation of our Complaint Investigation app. Now let's move on to the next exercise, creating our data model.
+Nice work.. you've just created the foundation of our Complaint Investigation app. Now let's move on to the next exercise, creating our app.
