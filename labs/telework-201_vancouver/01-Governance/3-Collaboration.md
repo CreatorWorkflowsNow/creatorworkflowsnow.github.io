@@ -2,25 +2,29 @@
 title: "Collaboration" 
 sidebar_label: "3. Collaboration"
 hide_table_of_contents: true
+sidebar_class_name: hidden
+
 ---
 # Collaboration
 
-Amanda is now ready to release the first version of her application, but before she does, she wants to invite collaborators to help her get started on version two.
+Amanda is now ready to release the first version of her application, but before she does, she wants to invite collaborators to aid in the development process.
 
 ## Invite Collaborators
 
+<!-- 
+ 
 1.	Login as Amanda with the credentials (amanda / AppEngine4ever!)
     ![](./images/collab_01_Login_as_Amanda.png)
+-  etc -->
+
+1. Open the Telework app in App Engine Studio
 
 
-2. Open the Telework app in App Engine Studio
-
-
-3. Click the **Manage collaborators** button
+2. Click the **Manage collaborators** button
     ![](./images/collab_02_Click_Manage_Collaborators.png)
 
 
-4. Invite **Ingrid** as an **Integration_Specialist**, Click <span className="button-purple">Send</span>. 
+3. Invite **Ingrid** as an **Integration_Specialist**, Click <span className="button-purple">Send</span>. 
     ![](./images/collab_03_Invite_Ingrid_Integration_Specialist.png)
 
     The invitation is sent.
@@ -28,7 +32,7 @@ Amanda is now ready to release the first version of her application, but before 
 
 ## Accept the Collaborator invitation
 
-In AEMC, app engine admins can monitor and govern applications developed through AES. She can approve or reject collaboration, deployment, and application intake requests.
+In App Engine Management Center, App Engine admins can monitor and govern applications developed through App Engine Studio. We can approve or reject collaboration, deployment, and application intake requests.
 
 1. Impersonate **Adam** one of the App Engine Admin
     ![](./images/collab_04_Impersonate_Adam.png)

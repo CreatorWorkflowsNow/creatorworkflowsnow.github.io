@@ -2,6 +2,7 @@
 title: "Restrict access from Admins" 
 sidebar_label: "1. Restrict access from Admins"
 hide_table_of_contents: true
+sidebar_class_name: hidden
 ---
 # Restrict access from Admins
 

@@ -1,5 +1,6 @@
 ---
 sidebar_class_name: hidden
+
 ---
 
 == NEXT = Collaboration
