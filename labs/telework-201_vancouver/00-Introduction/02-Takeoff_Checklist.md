@@ -30,7 +30,7 @@ import iconWindows from './images/icon_Windows_48.png';
         - Click “Extract” to unpack the files into the specified folder.
 
 After extraction, the `Telework_Lab_Files` folder should contain the following files: 
-- Telework_Case_Management_v1.0.2.xml
+- Telework_Case_Management_v1.0.5.xml
 - people finder.png
 - Portal_Background.png
 - SHIELD_Logo.png
