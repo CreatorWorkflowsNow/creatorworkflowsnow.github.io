@@ -119,28 +119,38 @@ We will create a re-usble integration to the finance department's People Finder 
 19. Click on the RUNTIME VALUE link  
 ![](./images/04-19-test-output.png)
 
-20. Review the JSON results. Note the "telework-certified" value.
+20. Review the JSON results. We can switch to the Formatted view.
 
-   >Click <span className="button-white-purple-border">Close</span> to continue  
-![](./images/04-20-action-json.png)
+   >Click <span className="button-white-purple-border">Formatted</span> toggle.
+![](./images/04-20-action-json-new.png)
 
-21. Close the Execution Details tab  
+21. Expand the output.
+![](./images/04-21-expand-output.png)
+
+22. Review the Formatted JSON results.
+
+   > 1. Note the <b>telework-certified</b> value.
+
+   > 2. Click <span className="button-white-purple-border">Close</span>
+   ![](./images/04-22-formatted-json.png)
+
+23. Close the Execution Details tab  
 ![](./images/04-21-close-execution-details.png)
 
-22. Close the Test Action model by clicking the <span className="button-white-purple-border">Cancel</span> button  
+24. Close the Test Action model by clicking the <span className="button-white-purple-border">Cancel</span> button  
 ![](./images/04-22-close-test-action.png)
 
-23. Save the GET /user spoke action
+25. Save the GET /user spoke action
 
    >Click the <span className="button-purple">Save</span> button  
 ![](./images/04-23-save-action.png)
 
-24. Now, we publish the spoke, so it will be available to call from our Main Flow.
+26. Now, we publish the spoke, so it will be available to call from our Main Flow.
 
    >Click the <span className="button-white-purple-border">Publish</span> button  
 ![](./images/04-24-publish-action.png)
 
-25. Confirm publication of the action
+27. Confirm publication of the action
 
    >Click the <span className="button-purple">Publish</span> button   
 ![](./images/04-25-confirm-publish-action.png)
