@@ -75,15 +75,15 @@ In this exercise, we'll tie our investigation process together with the Complain
  |Contact|**Trigger - Record Created or Updated - Complaint Case Record - Contact**|
  |Assignment Group|Complaints Investigation|
 
- When you're finsihed, your action should look similar to this:
+ When you're finished, your action should look similar to this:
  ![](../images/automation_1.png)
 
 
- 1.  Next, we want to make sure we indicate in the complaint case record that we have automatically created this investigation. This will ensure that anyone who looks at the case later will know we've taken action. Let's add a new action by clicking the **+ Add an Action, Flow Logic, or Subflow** button under the action we just created then click **Action**
+ 12.  Next, we want to make sure we indicate in the complaint case record that we have automatically created this investigation. This will ensure that anyone who looks at the case later will know we've taken action. Let's add a new action by clicking the **+ Add an Action, Flow Logic, or Subflow** button under the action we just created then click **Action**
 ![](../images/2023-09-27-14-09-28.png)
 
 
-13. This time we're looking for the **Add Comment To Task** action. In the Search field, type **Add comment** and select the option that appears under the **Customer Serivice** spoke
+13. This time we're looking for the **Add Comment To Task** action. In the Search field, type **Add comment** and select the option that appears under the **Customer Service** spoke
 ![](../images/2023-09-27-14-07-58.png)
 
 
@@ -125,7 +125,7 @@ Your complaint number may vary from the one reflected in the lab guide.
  20. Click on the record that appears in the list to view the newly created investigation record. Your screen should look very much like the screen below!
 ![](../images/2023-09-27-14-57-05.png)
 
-That's it! You've successfully created automation necessary to create a new investigation when a complaint cases requires investigation. 
+That's it! You've successfully created automation necessary to create a new investigation when a complaint case requires investigation. 
 
 :::note
 Next Steps for **Devon**:   

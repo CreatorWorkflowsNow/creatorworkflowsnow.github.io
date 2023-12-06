@@ -54,6 +54,7 @@ Note that the **Intake** section is now completed, and Complaint is automaticall
 You can click on the complaint case to see more details. For now, we will leave this as is and move on.
 :::
 
+
 10.	On the Verify complaint, on the **Work notes** section enter **Customer is facing a recurring problem** and click on **Submit for review**.
 ![](../images/2023-09-19-11-30-46.png)
 

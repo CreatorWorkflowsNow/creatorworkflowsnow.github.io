@@ -48,7 +48,7 @@ Setting the Prefix allows us to distinguish our tasks from records created that 
 :::
 
 
-8. The next step is to setup permission for the Dept Task table. Assign full permissions to the admin role by selecting **All**. Select the **Create**, **Read** and **Write** permissions for the user role. When finished, click **Continue**.
+8. The next step is to setup permission for the Complaint Investigation table. Assign full permissions to the admin role by selecting **All**. Select the **Create**, **Read** and **Write** permissions for the user role. When finished, click **Continue**.
 ![](../images/2023-10-30-09-25-44.png)
 
 

@@ -9,7 +9,7 @@ draft: false
 
 Governance plays a key role in the success of any citizen development program. Our use case is no exception. Before Devon can build her application, she needs to request the access from the IT team. She will create a new request on the Employee Center portal and Andy, our platform administrator will review and provide his approval. 
 
-NOTE: In a real world environment, notifications in the form or email, text, playform notifications would take place. In our lab environment we will simply rely on the switching of users to see and approve the requests.
+NOTE: In a real world environment, notifications in the form or email, text, platform notifications would take place. In our lab environment we will simply rely on the switching of users to see and approve the requests.
 
 1. To get started, navigate to the Employee Center portal and impersonate our Citizen Developer, **Devon Samrah**. You can find the link to Employee Center on the landing page of your instance, but for quick reference - 
 [https://INSTANCENAME.lab.service-now.com/esc](https://INSTANCENAME.lab.service-now.com/esc) 
@@ -56,7 +56,7 @@ Click on Devon's profile picture in the top right then click **End Impersonation
 ![](../images/2023-09-11-11-03-33.png)
 
 
-6. Here, Andy can see any new requests for applications, collaborations or application deployments. We see there is one new pending request to complete. Click on the **1** just above the work **Intake**.
+6. Here, Andy can see any new requests for applications, collaborations or application deployments. We see there is one new pending request to complete. Click on the **1** just above the word **Intake**.
 ![](../images/2023-09-11-11-20-55.png)
 
 
@@ -80,4 +80,4 @@ Click on Andy's profile picture in the top right and click **Impersonate User**.
 Click **Impersonate User** to complete the switch to Devon's persona.
    
 
-Nice work.. you've just created the foundation of our Complaint Investigation app. Now let's move on to the next exercise, creating our app.
+Nice work! You've just set things up for Devon to be able to create her app. Now let's move on to the next exercise, creating the complaints investigation app.
