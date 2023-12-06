@@ -79,19 +79,19 @@ In this exercise, we'll tie our investigation process together with the Complain
  |Contact|**Trigger - Record Created or Updated - Complaint Case Record - Contact**|
  |Assignment Group|Complaints Investigation|
 
- When you're finsihed, your action should look similar to this:
+ When you're finished, your action should look similar to this:
  ![](../images/2023-10-30-09-51-36.png)
 
 
- 12. Next, we want to make sure we indicate in the complaint case record that we have automatically created this investigation. This will ensure that anyone who looks at the case later will know we've taken action. Let's add a new action by clicking the **+ Add an Action, Flow Logic, or Subflow** button under the action we just created then click **Action**
+ 11. Next, we want to make sure we indicate in the complaint case record that we have automatically created this investigation. This will ensure that anyone who looks at the case later will know we've taken action. Let's add a new action by clicking the **+ Add an Action, Flow Logic, or Subflow** button under the action we just created then click **Action**
 ![](../images/2023-10-30-09-52-25.png)
 
 
-13. This time we're looking for the **Add Comment To Task** action. In the Search field, type **Add comment** and select the option that appears under the **Customer Serivice** spoke
+12. This time we're looking for the **Add Comment To Task** action. In the Search field, type **Add comment** and select the option that appears under the **Customer Service** spoke
 ![](../images/2023-10-30-09-53-20.png)
 
 
-14. Complete the action with the following values then click **Done**:
+13. Complete the action with the following values then click **Done**:
  :::note
  Values highlighted in bold below indicate we are dot walking to the fields we need in our workflow
  :::
@@ -103,33 +103,33 @@ In this exercise, we'll tie our investigation process together with the Complain
  ![](../images/2023-10-30-09-54-35.png)
 
 
-15. Time to test! **Save** your flow and click the **Test** button at the top of the screen. When prompted, choose the complaint case we created earlier in our lab
+14. Time to test! **Save** your flow and click the **Test** button at the top of the screen. When prompted, choose the complaint case we created earlier in our lab
 :::note
 Your complaint number may vary from the one reflected in the lab guide.
 :::
 ![](../images/2023-10-30-09-56-45.png)
 
 
-16. To view your test results, click the link on the pop-up
+15. To view your test results, click the link on the pop-up
 ![](../images/2023-10-30-09-55-12.png)
 
 
-17. Here you will be able to view any errors or resultant records that are created as part of your workflow. If you received errors, go back and take a look at your flow to ensure everything has been completed correctly. If it was successful, you should see **Test Run - Completed** at the top of your screen. If your test was successful, **Save** your work!
+16. Here you will be able to view any errors or resultant records that are created as part of your workflow. If you received errors, go back and take a look at your flow to ensure everything has been completed correctly. If it was successful, you should see **Test Run - Completed** at the top of your screen. If your test was successful, **Save** your work!
 ![](../images/2023-10-30-09-56-15.png)
 
 
-18. Finally, let's see what this looks like for Devon in her new Workspace. Go back to **App Home** and Preview the Workspace again.
+17. Finally, let's see what this looks like for Devon in her new Workspace. Go back to **App Home** and Preview the Workspace again.
 ![](../images/2023-10-30-09-58-25.png)
 
 
-19. Notice there is now an unassigned Investigation for Devon awaiting her on the workspace homepage. Click on the **1** under **Unassigned Investigations** to view the list of investigations that are unnassigned
+18. Notice there is now an unassigned Investigation for Devon awaiting her on the workspace homepage. Click on the **1** under **Unassigned Investigations** to view the list of investigations that are unnassigned
 ![](../images/2023-09-27-14-26-05.png)
 
 
- 20. Click on the record that appears in the list to view the newly created investigation record. Your screen should look very much like the screen below!
+ 19. Click on the record that appears in the list to view the newly created investigation record. Your screen should look very much like the screen below!
 ![](../images/2023-09-27-14-57-05.png)
 
-That's it! You've successfully created automation necessary to create a new investigation when a complaint cases requires investigation. 
+That's it! You've successfully created automation necessary to create a new investigation when a complaint case requires investigation. 
 
 :::note
 Next Steps for **Devon**:   
