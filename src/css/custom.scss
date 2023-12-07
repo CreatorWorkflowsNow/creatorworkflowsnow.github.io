@@ -25,6 +25,7 @@
   --homepage-feature: #1b1b1d;
   --homepage-feature-box: #f7f7f7;
   --ifm-background-color: #ffffff;
+  --ifm-code-background: rgba(255, 255, 255, 0.3);
   --ifm-color-primary: var(--now-inf-blue);
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -52,6 +53,7 @@
 
 
   --now-blue: rgb(36,194,206);
+  --now-bright-blue: rgb(58,87,233);
   --now-inf-blue: rgb(3, 45, 66);
 
   --now-little-button-blue: rgb(40, 65, 145);
@@ -108,6 +110,18 @@ p img {
 [data-theme="dark"] p {
   @apply text-white;
 }
+
+/*------ Colored text ------*/
+
+.bright-blue-font {
+  color: var(--now-bright-blue);
+  background-color: var(--now-tan);
+  line-height: 1.25;
+  padding: 5px 12px;
+}
+
+
+
 
 /*------ BUTTONS ------*/
 
