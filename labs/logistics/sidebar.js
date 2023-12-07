@@ -11,9 +11,8 @@ const sidebars = {
             label: 'Logistics Lab',
             items: [
                 '0.0-overview',
-                '0.1-goals',
-                '0.2-usecase',
-                '0.3-setup',
+                '0.1-usecase',
+                '0.2-setup',
             ],
         },
 
@@ -24,7 +23,8 @@ const sidebars = {
                 '1.0-overview',
                 '1.1-create-app',
                 '1.2-create-data',
-                '1.3-review',
+                '1.3-table-builder-data',
+                '1-review',
             ],
         },
 
