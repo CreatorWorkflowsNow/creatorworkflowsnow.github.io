@@ -46,6 +46,20 @@ export default HomepageFeatures;
 
 const FeatureList = [
 
+  /*
+  {
+    title: 'Logistics',
+    icon: faFileCode,
+    description: (
+      <>
+      <div class="button-homepage-vancouver">🏞️ VANCOUVER</div><br/><strong>Level 1 - </strong>Gain valuable experience through hands-on exercises with App Engine Studio.
+      </>
+    ),
+    to: '/labs/logistics/0.0-overview',
+    target: '_self',
+  },
+  */
+
   {
     title: 'Telework Case Management',
     icon: faFileCode,
