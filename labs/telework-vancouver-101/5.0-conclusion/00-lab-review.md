@@ -5,7 +5,7 @@ hide_table_of_contents: true
 draft: false
 ---
 
-In this lab, we built, implemented, and tested an application using the fundamental part of an application: Data, User Experience, and Automation.
+In this lab, we built, implemented, and tested an application using the fundamental parts of an application: Data, User Experience, and Automation.
 
 The team managing the work will be more efficient and the users will get what they need faster.
 
