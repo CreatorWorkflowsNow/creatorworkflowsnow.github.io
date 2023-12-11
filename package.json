@@ -35,7 +35,7 @@
     "puppeteer": "^21.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "tailwindcss": "^3.3.3",
+    "tailwindcss": "^3.3.6",
     "url-loader": "^4.1.1"
   },
   "browserslist": {
