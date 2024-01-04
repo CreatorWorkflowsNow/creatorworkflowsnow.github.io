@@ -18,7 +18,7 @@ Within this exercise, we will be creating an approval workflow. Let's describe w
 
 
 3. Click **Flow**
-![](images/clickflow.png)
+![](images/2023-11-08-17-46-44.png)
 
 
 4. Click **Build from scratch**
@@ -50,7 +50,7 @@ Within this exercise, we will be creating an approval workflow. Let's describe w
 
 
 13. Under **RECORD**, click **Created**
-![](images/addtrigger.png)
+![](images/2023-11-08-17-54-01.png)
 
 
 14. Under **Table**, search and select **Travel request**
@@ -114,7 +114,7 @@ What we have achieved here is that we are looking for the user who opened the re
 ![](images/if.png)
 
 
-30. Under **Condition**, enter **Manager approved**
+30. For **Condition Label**, enter **Manager approved**
 
 
 31. Drag and drop the **Approval State** data pill from the right sidebar onto **Condition 1**

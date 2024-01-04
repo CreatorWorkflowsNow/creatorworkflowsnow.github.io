@@ -65,7 +65,7 @@ Before we move on **SAVE YOUR WORK**!
     ![](../images/2023-10-30-09-33-52.png)
 
 
-14. The new component will be added to the bottom of the workspace by default. Drag it up just about **My Work** and resize it using the bottom right corner of the widget to match the **My Work** list below
+14. The new component will be added to the bottom of the workspace by default. Drag it up just above **My Work** and resize it using the bottom right corner of the widget to match the **My Work** list below
 ![](../images/2023-09-27-12-59-48.png)
 
 

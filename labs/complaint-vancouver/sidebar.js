@@ -40,9 +40,9 @@ const sidebars = {
                 'exercise_5-build/automation',
             ],
 
-            'Review': [
-                'review',
-            ],
+            // 'Review': [
+            //     'review',
+            // ],
 
         }
     ]

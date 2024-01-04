@@ -15,7 +15,7 @@ We will create a decision table to assess the arrangement type and numbers of da
 2. Click on "Logic and Automation (1)".  
 ![](./images/04-02-02-logicandautomation.png)
 
-3. Click the <span className="button-white-purple-border">+ Add</span> button.  
+3. Click the <span className="button-white-purple-border">+Add</span> button.  
 ![](./images/04-02-03-addlogicandautomation.png)
 
 4. Select the Decision tile.  
@@ -36,7 +36,7 @@ We will create a decision table to assess the arrangement type and numbers of da
 7. Click the <span className="button-white-grey-border">Edit Decision Table</span> button.  
 ![](./images/04-02-07-editdecisiontable.png)
 
-8. Click the "⨁ Add" button next to Inputs.  
+8. Click the <span className="text-purple-bold">⨁ Add</span> button next to Inputs.  
 ![](./images/04-02-08-addinputs.png)
 
 9. Populate the following:
@@ -48,7 +48,7 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">➌</span>|Table | Arrangement  
 ![](./images/04-02-09-populateinputs.png)
 
-10. Click the "⨁ Add" button next to Inputs again.  
+10. Click the <span className="text-purple-bold">⨁ Add</span> button next to Inputs again.  
 ![](./images/04-02-10-addinputs.png)
 
 11. Populate the following:
@@ -59,7 +59,7 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">➋</span>|Type | Integer  
 ![](./images/04-02-11-populateinputs.png)
 
-12.  In the Decision Table section, click "⨁ Add condition column".  
+12.  In the Decision Table section, click <span className="text-black-bold-lblue">⨁ Add condition column</span>.  
 ![](./images/04-02-12-addconditioncolumn.png)
 
 13. Populate the NEW CONDITION COLUMN form.
@@ -74,11 +74,11 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">❻</span>|Click on the <span className="button-purple">Done</span> button.  
 ![](./images/04-02-13-newconditioncolumnform.png)
 
-1. Add another condition column.
+14. Add another condition column.
 
-   1. Click the plus button ⨁ next the condition we just created.
+   >1. Click the plus button ⨁ next the condition we just created.
 
-   2. Select "Add condition column".  
+   >2. Select "Add condition column".  
 ![](./images/04-02-14-addconditioncolumn.png)
 
 15. Populate the NEW CONDITION COLUMN form.
@@ -92,7 +92,7 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">❺</span>|Click on the <span className="button-purple">Done</span> button.  
 ![](./images/04-02-15-newconditioncolumnform.png)
 
-16. In the results column, click "⨁ Add result column".  
+16. In the results column, click <span className="text-black-bold-lgrey">⨁ Add result column</span>.  
 ![](./images/04-02-16-addresultcolumn.png)
 
 17. Populate the NEW RESULT COLUMN form.
@@ -125,14 +125,14 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">❸</span>|Click on the value in the Auto Approved column (currently false).  
 ![](./images/04-02-20-populatnumdayscondition.png)
 
-2. Change the result for Auto Approval to true.
+21. Change the result for Auto Approval to true.
 
-   1. Switch the reult to true.
+   >1. Switch the reult to true.
 
-   2. Click the "OK" button to continue.  
+   >2. Click the <span className="button-white-purple-border">OK</span> button to continue.  
 ![](./images/04-02-21-populateresult.png)
 
-22. Let's add our next decicion row by clicking "⨁ Add new deicion row".  
+22. Let's add our next decicion row by clicking <span className="text-purple-bold">⨁ Add new deicion row</span>  
 ![](./images/04-02-22-addnewdecisionrow.png)
 
 23. Populate the Arrangement Condition.
@@ -151,7 +151,7 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">➋</span>|Value | 3  
 ![](./images/04-02-24-populatenumdayscondition.png)
 
-25. Let's add another decicion row by clicking "⨁ Add new deicion row".  
+25. Let's add another decicion row by clicking <span className="text-purple-bold">⨁ Add new deicion row</span> 
 ![](./images/04-02-25-addnewdecisionrow.png)
 
 26. Populate the Arrangement Condition.
