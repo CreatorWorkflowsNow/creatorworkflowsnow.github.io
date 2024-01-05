@@ -46,7 +46,6 @@ export default HomepageFeatures;
 
 const FeatureList = [
 
-  /*
   {
     title: 'Logistics',
     icon: faFileCode,
@@ -58,7 +57,6 @@ const FeatureList = [
     to: '/labs/logistics/0.0-overview',
     target: '_self',
   },
-  */
 
   {
     title: 'Telework Case Management',
