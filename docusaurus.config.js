@@ -201,6 +201,17 @@ const config = {
       },
     ],
 
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/csm-va-utah",
+        id: "csmvautah",
+        routeBasePath: "labs/csm-va-utah",
+        sidebarPath: require.resolve("./labs/csm-va-utah/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
   ],
 
   presets: [
@@ -317,8 +328,8 @@ const config = {
                 href: "/labs/example-lab/overview",
               },
               {
-                label: "PSDS Draft",
-                href: "/labs/psds-utah/exercise_1_service_offering/overview",
+                label: "CSM-VA-Utah",
+                href: "/labs/csm-va-utah/overview",
               },
               {
                 label: "Now Create",
