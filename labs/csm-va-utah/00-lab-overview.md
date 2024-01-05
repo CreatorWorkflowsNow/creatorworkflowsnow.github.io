@@ -7,7 +7,7 @@ hide_table_of_contents: true
 draft: false 
 ---
 
-# Enterpise Service Management Experience: CSM & App Engine
+# Enterprise Service Management Experience: CSM & App Engine
 
 ## Complaint Management and App Engine Workflows
 
