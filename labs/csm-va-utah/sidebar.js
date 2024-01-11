@@ -13,10 +13,12 @@ const sidebars = {
                 'definitions',
             ],
 
-            '1. OOB Experience': [
-                'exercise_1_OOB/overview',
-                'exercise_1_OOB/oob',
+            '1. AI Search': [
+                'exercise_1_AISearch/overview',
+                'exercise_1_AISearch/aisearchrequest',
+                'exercise_1_AISearch/verification',
             ],
+
             '2. Branding': [
                 'exercise_2_branding/overview',
                 'exercise_2_branding/branding',
@@ -36,6 +38,11 @@ const sidebars = {
             '5. Iterate': [
                 'exercise_5_iterate/overview',
                 'exercise_5_iterate/iterate',
+            ],
+
+            'X. OOB Experience': [
+                'sample_exercise_1_OOB/overview',
+                'sample_exercise_1_OOB/oob',
             ],
 
             'Review': [
