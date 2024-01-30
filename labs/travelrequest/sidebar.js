@@ -85,6 +85,8 @@ const sidebars = {
             label: 'Post Workshop Survey', 
             href: 'https://forms.office.com/r/KcNQR6ApJ3',
         },
+
+        'lab-guide-pdf',
     ],
 
 };
