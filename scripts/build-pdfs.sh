@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+echo "Use the python script instead. This is outdated"
+
+exit
+
 # Check if prince is installed
 if ! command -v prince &> /dev/null
 then
