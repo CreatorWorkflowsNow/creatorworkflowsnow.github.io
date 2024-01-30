@@ -33,6 +33,8 @@ const sidebars = {
             href: 'https://forms.office.com/r/KcNQR6ApJ3',
         },
 
+        'lab-guide-pdf',
+
     ],
 };
 
