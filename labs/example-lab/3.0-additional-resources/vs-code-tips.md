@@ -17,3 +17,4 @@ draft: false
 
    * [Paste Image on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)
 
+   * [YouTube Video on how to use Paste Image](https://youtu.be/5ssMxSnHFG8?si=zh4OtMiOk30Pvvci)
