@@ -4,4 +4,4 @@ title: Download Lab Guide PDF
 draft: false
 ---
 
-[Click here to download Lab Guide PDF](./downloads/collaborate-vancouver-lab.pdf)
+[Click here to download Lab Guide PDF](./downloads/lab-guide.pdf)

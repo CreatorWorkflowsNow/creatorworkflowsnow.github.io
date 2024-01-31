@@ -45,7 +45,9 @@ const sidebars = {
             //     'review',
             // ],
 
-        }
+        },
+
+        'lab-guide-pdf',
     ],
 };
 
