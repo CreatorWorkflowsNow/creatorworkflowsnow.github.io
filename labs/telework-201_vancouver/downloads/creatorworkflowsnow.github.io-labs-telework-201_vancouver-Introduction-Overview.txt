@@ -16,3 +16,4 @@ https://creatorworkflowsnow.github.io/labs/telework-201_vancouver/Portal/3.3 Cre
 https://creatorworkflowsnow.github.io/labs/telework-201_vancouver/Conclusion
 https://creatorworkflowsnow.github.io/labs/telework-201_vancouver/Survey
 https://creatorworkflowsnow.github.io/labs/telework-201_vancouver/CHANGELOG
+https://creatorworkflowsnow.github.io/labs/telework-201_vancouver/lab-guide-pdf
