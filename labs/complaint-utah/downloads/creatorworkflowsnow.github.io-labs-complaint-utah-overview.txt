@@ -17,3 +17,4 @@ https://creatorworkflowsnow.github.io/labs/complaint-utah/exercise_5-build/creat
 https://creatorworkflowsnow.github.io/labs/complaint-utah/exercise_5-build/data-model
 https://creatorworkflowsnow.github.io/labs/complaint-utah/exercise_5-build/workspace
 https://creatorworkflowsnow.github.io/labs/complaint-utah/exercise_5-build/automation
+https://creatorworkflowsnow.github.io/labs/complaint-utah/lab-guide-pdf

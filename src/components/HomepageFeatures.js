@@ -94,6 +94,7 @@ const FeatureList = [
     target: '_self',
   },
 
+  /*
   {
     title: 'Telework Case Management',
     icon: faFileCode,
@@ -107,6 +108,7 @@ const FeatureList = [
     to: '/labs/telework-utah/0.0-introduction/overview',
     target: '_self',
   },
+  */
 
   {
     title: 'EWF+CrWF',
@@ -184,6 +186,8 @@ const FeatureList = [
     target: '_self',
   },
 */
+
+/*
   {
     title: 'Automation Engine',
     icon: faRobot,
@@ -195,5 +199,6 @@ const FeatureList = [
     to: "https://creatorworkflowsnow.github.io/lab_autoengine",
     target: '_self',
   },
+ */
 
 ];
