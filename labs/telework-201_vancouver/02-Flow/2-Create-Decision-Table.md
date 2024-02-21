@@ -127,7 +127,7 @@ We will create a decision table to assess the arrangement type and numbers of da
 
 21. Change the result for Auto Approval to true.
 
-   >1. Switch the reult to true.
+   >1. Switch the result to true.
 
    >2. Click the <span className="button-white-purple-border">OK</span> button to continue.  
 ![](./images/04-02-21-populateresult.png)
