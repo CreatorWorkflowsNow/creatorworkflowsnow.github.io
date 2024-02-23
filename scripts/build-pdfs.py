@@ -11,51 +11,51 @@ if current_directory != "scripts":
 
 # Define a list of tasks as dictionaries with keys for directory, URL, and output
 tasks = [
-    {
-        "directory": "../labs/telework-vancouver-101/downloads",
-        "url": "https://creatorworkflowsnow.github.io/labs/telework-vancouver-101/0.0-introduction/app-engine-overview",
-        "output": "../labs/telework-vancouver-101/downloads/lab-guide.pdf"
-    },
-    {
-        "directory": "../labs/telework-201_vancouver/downloads",
-        "url": "https://creatorworkflowsnow.github.io/labs/telework-201_vancouver/Introduction/Overview",
-        "output": "../labs/telework-201_vancouver/downloads/lab-guide.pdf"
-    },
-    {
-        "directory": "../labs/collaborate-vancouver/downloads",
-        "url": "https://creatorworkflowsnow.github.io/labs/collaborate-vancouver/0.0-get_started/intro",
-        "output": "../labs/collaborate-vancouver/downloads/lab-guide.pdf"
-    },
-    {
-        "directory": "../labs/spokegen/downloads",
-        "url": "https://creatorworkflowsnow.github.io/labs/collaborate-vancouver/0.0-get_started/intro",
-        "output": "../labs/collaborate-vancouver/downloads/lab-guide.pdf"
-    },
+#    {
+#        "directory": "../labs/telework-vancouver-101/downloads",
+#        "url": "https://creatorworkflowsnow.github.io/labs/telework-vancouver-101/0.0-introduction/app-engine-overview",
+#        "output": "../labs/telework-vancouver-101/downloads/lab-guide.pdf"
+#    },
+#    {
+#        "directory": "../labs/telework-201_vancouver/downloads",
+#        "url": "https://creatorworkflowsnow.github.io/labs/telework-201_vancouver/Introduction/Overview",
+#        "output": "../labs/telework-201_vancouver/downloads/lab-guide.pdf"
+#    },
+#    {
+#        "directory": "../labs/collaborate-vancouver/downloads",
+#        "url": "https://creatorworkflowsnow.github.io/labs/collaborate-vancouver/0.0-get_started/intro",
+#        "output": "../labs/collaborate-vancouver/downloads/lab-guide.pdf"
+#    },
+#    {
+#        "directory": "../labs/spokegen/downloads",
+#        "url": "https://creatorworkflowsnow.github.io/labs/collaborate-vancouver/0.0-get_started/intro",
+#        "output": "../labs/collaborate-vancouver/downloads/lab-guide.pdf"
+#    },
     {
         "directory": "../labs/complaint-utah/downloads",
         "url": "https://creatorworkflowsnow.github.io/labs/complaint-utah/overview",
-        "output": "../labs/complaint/downloads/lab-guide.pdf"
+        "output": "../labs/complaint-utah/downloads/lab-guide.pdf"
     },
     {
         "directory": "../labs/complaint-vancouver/downloads",
         "url": "https://creatorworkflowsnow.github.io/labs/complaint-vancouver/overview",
-        "output": "../labs/complaint/downloads/lab-guide.pdf"
-    },
-    {
-        "directory": "../labs/deptsvc/downloads",
-        "url": "https://creatorworkflowsnow.github.io/labs/deptsvc/lab-introduction/",
-        "output": "../labs/deptsvc/downloads/lab-guide.pdf"
-    },
-    {
-        "directory": "../labs/telework-utah/downloads",
-        "url": "https://creatorworkflowsnow.github.io/labs/telework-utah/0.0-introduction/overview",
-        "output": "../labs/telework-utah/downloads/lab-guide.pdf"
-    },
-    {
-        "directory": "../labs/travelrequest/downloads",
-        "url": "https://creatorworkflowsnow.github.io/labs/travelrequest/introduction/",
-        "output": "../labs/travelrequest/downloads/lab-guide.pdf"
+        "output": "../labs/complaint-vancouver/downloads/lab-guide.pdf"
     }
+#    {
+#        "directory": "../labs/deptsvc/downloads",
+#        "url": "https://creatorworkflowsnow.github.io/labs/deptsvc/lab-introduction/",
+#        "output": "../labs/deptsvc/downloads/lab-guide.pdf"
+#    },
+#    {
+#        "directory": "../labs/telework-utah/downloads",
+#        "url": "https://creatorworkflowsnow.github.io/labs/telework-utah/0.0-introduction/overview",
+#        "output": "../labs/telework-utah/downloads/lab-guide.pdf"
+#    },
+#    {
+#        "directory": "../labs/travelrequest/downloads",
+#        "url": "https://creatorworkflowsnow.github.io/labs/travelrequest/introduction/",
+#        "output": "../labs/travelrequest/downloads/lab-guide.pdf"
+#    }
 ]
 
 
