@@ -28,20 +28,20 @@ draft: false
    * Important Items
    * My Active Cases
    * My Team's Cases
-![](../images/2023-08-03-09-32-08.png)
-![](../images/2023-08-03-09-33-56.png)
+![](../images/2024-02-23-12-30-42.png)
+![](../images/2024-02-23-12-30-25.png)
 
 
 5.	Under the **Important Items**, we see that there is a case where the **SLA is breached**, we need to escalate the case immediately. Click on **the number** in the SLA breached tile to be taken to the list of cases.
-![](../images/2023-08-03-09-34-49.png)
+![](../images/2024-02-23-12-29-13.png)
 
 
 6.	On the list, we can see the case, which SLA is breached, stage, and by how many minutes/days alongside other information. Click on the case number to be taken to the case record.
-![](../images/2023-08-03-09-35-12.png)
+![](../images/2024-02-23-12-28-35.png)
 
 
 7.	First, you’ll see **Special Handling Notes**. These notes automatically pop up based on the values on the case. You can have multiple special handling notes to alert your agents for better customer service. Click **X** to close the special handling notes window.
-![](../images/2023-08-03-09-35-43.png)
+![](../images/2024-02-23-12-28-03.png)
 
 
 8.	On the case page, we can see all the details such as customer information, work orders, SLA, tasks etc. John can also see the details about the issue to quickly decide the next steps to resolve the issue.
@@ -49,7 +49,7 @@ draft: false
 
 
 9.	John will leverage out of the box features to search for similar cases that were resolved and look for helpful knowledge articles. Click on the **Agent Assist** icon as shown on the screenshot below
-![](../images/2023-08-03-09-36-37.png)
+![](../images/2024-02-23-12-27-09.png)
 
 
 10.	Click on the **hamburger icon** as shown on the picture to see all the out of the box search options. Currently you are seeing all similar resolved cases. Click on **Knowledge Articles**. 
