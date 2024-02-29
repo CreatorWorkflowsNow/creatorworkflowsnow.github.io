@@ -48,8 +48,8 @@ Note that the **Intake** section is now completed, and Complaint is automaticall
 ![](../images/2023-09-19-11-29-44.png)
 
 
-9.	Stay on **Open Complaint Cases** and observe that there is a similar problem occurring for the same customer. So, this is a persisting issue.
-![](../images/2023-09-19-11-30-25.png)
+9.	Click on **Resolved Complaint Cases** and observe that there is a similar problem occurring for the same customer. So, this is a persisting issue.
+![](../images/2024-02-28-17-41-10.png)
 :::note
 You can click on the complaint case to see more details. For now, we will leave this as is and move on.
 :::
