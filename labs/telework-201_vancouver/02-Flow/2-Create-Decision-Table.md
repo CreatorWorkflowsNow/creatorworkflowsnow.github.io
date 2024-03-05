@@ -5,6 +5,10 @@ hide_table_of_contents: false
 ---
 # Create Decision Table for Auto Approval Conditions
 
+A Decision Table allows users to define complex business rules and decision logic using a tabular format. Decision tables are particularly useful for automating decision-making processes within workflows, approvals, or other business processes.
+
+[Click here to learn more about Decision Tables.](https://docs.servicenow.com/bundle/vancouver-application-development/page/administer/decision-table/concept/decision-designer-overview.html)
+
 We will create a decision table to assess the arrangement type and numbers of days and return an auto-approval result that we can access in our Main flow.
 
 ## Return to App Engine Studio to Build the Decision Table
