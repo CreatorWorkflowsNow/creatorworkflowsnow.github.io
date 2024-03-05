@@ -5,6 +5,14 @@ hide_table_of_contents: false
 ---
 # Create People Finder Spoke
 
+A spoke is a scoped application containing Flow Designer content dedicated to a particular application or record type. This includes integrations that connect external systems or services with the ServiceNow platform. By leveraging spokes, organizations can extend the capabilities of their ServiceNow instance and integrate it with a wide range of external tools and services, enhancing automation, collaboration, and efficiency across their IT operations and business processes.
+
+[Click here to learn more about Spokes.](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/flow-designer/concept/spokes.html)
+
+Spoke Generator allows users to create custom spokes for integrating ServiceNow with external systems or services. It provides a graphical interface and a set of tools to streamline the process of building, configuring, and deploying spokes tailored to specific integration scenarios.
+
+[Click here to learn more about Spoke Generator.](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/flow-designer/concept/spoke-builder.html)
+
 We will create a re-usble integration to the finance department's People Finder Open API, so that we can access this data in our Main flow.
 
 ## Open Flow Designer to use Spoke Generator to create the People Finder Integration
@@ -155,3 +163,10 @@ We will create a re-usble integration to the finance department's People Finder 
    >Click the <span className="button-purple">Publish</span> button   
 ![](./images/04-25-confirm-publish-action.png)
 
+## Bonus: Explore Spoke Generator More
+
+Open a new browser tab or window and explore the following:
+https://developer.opentext.com/imservices/products/contentstorageservice/apis/contentstorage
+
+On your own, create a new spoke using the following OpenAPI spec:
+https://raw.githubusercontent.com/deflant/opentext-content-storage-swagger/main/opentext-content-storage-swagger.yaml
