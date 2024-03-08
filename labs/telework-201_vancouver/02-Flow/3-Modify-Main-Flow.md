@@ -1,19 +1,19 @@
 ---
-title: "Modify Main Flow" 
-sidebar_label: "3. Modify Main Flow"
+title: "Modify Telework Case Approval Flow" 
+sidebar_label: "3. Modify Telework Case Approval Flow"
 hide_table_of_contents: false
 ---
-# Modify the Telework Case Main Flow
+# Modify the Telework Case Approval Flow
 
-Now that we have created the People Finder Spoke and our Auto Approval Decision Table, let's modify the Telework Case Main Flow to allow auto-approval for those that were pre-certified or have requested 3 days or less for Situational Telework.
+Now that we have created the People Finder Spoke and our Auto Approval Decision Table, let's modify the Telework Case Approval Flow to allow auto-approval for those that were pre-certified or have requested 3 days or less for Situational Telework.
 
-## Open the Main Flow and add our changes
+## Open the Telework Case Approval Flow and add our changes
 
 1. Return to the App Home tab in App Engine Studio.  
 ![](./images/04-03-01-AppHome.png)
 
 
-2. Open the Main flow by clicking on the row under Logic and Automation.  
+2. Open the Telework Case Approval flow by clicking on the row under Logic and Automation.  
 ![](./images/04-03-02-selectmainflow.png)
 
 
@@ -69,7 +69,7 @@ Now that we have created the People Finder Spoke and our Auto Approval Decision 
 11. Click the <span className="button-purple">Done</span> button.  
 ![](./images/04-03-11-donespoke.png)
 
-12. Next, we want to use the decision table we built. Hover in-between steps 1 and 2 and click the plus sign ⨁.  
+12. Next, we want to use the decision table we built. Hover in-between steps 2 and 3 and click the plus sign ⨁.  
 ![](./images/04-03-12-adddecision.png)
 
 13. Add the Telework Auto Approval Decision Table.
@@ -87,66 +87,47 @@ Now that we have created the People Finder Spoke and our Auto Approval Decision 
    |<span className="large-number">➋</span>|Decision Table |Telework Auto Approval
    |<span className="large-number">❸</span>|Execution | First decision that matches
    |<span className="large-number">❹</span>|Use Branches | Un-check
-   |<span className="large-number">❺</span>|Arrangement | Dot-walk (see step 15 below)
-   |<span className="large-number">❻</span>|Number of Days | Dot-walk (see step 16 below)
-   |<span className="large-number">❼</span>|Click on the <span className="button-purple">Done</span> button.  
+   |<span className="large-number">❺</span>|Telework Request | Drag and drop <span className="button-white-purple-border-black">Telework Case Record</span> data pill   
+   |<span className="large-number">❻</span>|Click on the <span className="button-purple">Done</span> button.  
 ![](./images/04-03-14-setdecision.png)
 
-15. Dot-walk Arrangement (step 5 above)
-
-   >1. Click "Trigger - Record Ceated"
-
-   >2. Click the blue arrow next to the "Telework Case" record to drill down.
-
-   >3. Click on "Arrangement" to set the value.  
-![](./images/04-03-15-dotwalkdecision.png)
-
-16. Dot-walk Number of Days (step 6 above)
-
-   >1. Click "Trigger - Record Ceated"
-
-   >2. Click the blue arrow next to the "Telework Case" record to drill down.
-
-   >3. Click on "Days per week" to set the value.  
-![](./images/04-03-16-dotwalkdecision.png)
-
-17. Now, we have to check if either auto-approve condition has been met. Hover in-between steps 2 and 3 and click the plus sign ⨁.  
+15. Now, we have to check if either auto-approve condition has been met. Hover in-between steps 3 and 4 and click the plus sign ⨁.  
 ![](./images/04-03-17-checkautoapprovemet.png)
 
-18. Add the if condition.
+16. Add the if condition.
 
    >1. Select "Flow Logic" as the step type.
 
    >2. Select "If" from the list.  
 ![](./images/04-03-18-addifstep.png)
 
-19. Setup the if condition.
+17. Setup the if condition.
 
    | |Field Name                | Field Value
    |-|--------------------------| --------------
    |<span className="large-number">➊</span>|Condition Label |If auto approve conditions are met
-   |<span className="large-number">➋</span>|Condition 1 |Dot-walk (see step 20 below)
+   |<span className="large-number">➋</span>|Condition 1 |Dot-walk (see step 18 below)
    |<span className="large-number">❸</span>|Operator | is
    |<span className="large-number">❹</span>|Value | Y
    |<span className="large-number">❺</span>|Click on the <span className="button-white-maroon-border">or</span> button.
-   |<span className="large-number">❻</span>|Condition 2 | Dot-walk (see step 21 below)
+   |<span className="large-number">❻</span>|Condition 2 | Dot-walk (see step 19 below)
    |<span className="large-number">❼</span>|Operator | is
    |<span className="large-number">❽</span>|Value |True
    |<span className="large-number">❾</span>|Click on the <span className="button-purple">Done</span> button.  
 ![](./images/04-03-19-setupifcond.png)
 
-20. Dot-walk Condition 1 (step 2 above)
+18. Dot-walk Condition 1 (step 2 above)
 
-   >1. Click "1 - GET /User"
+   >1. Click "2 - GET /User"
 
    >2. Click the blue arrow next to the "output" object to drill down.
 
    >3. Click on "telework-certified" to set the value.  
 ![](./images/04-03-20-dotwalkpeoplefinder.png)
 
-21. Dot-walk Condition 2 (step 2 above)
+19. Dot-walk Condition 2 (step 2 above)
 
-   >1. Click "2 - Make A Decision"
+   >1. Click "3 - Make A Decision"
 
    >2. Click the blue arrow next to the "Decision Table Multiple Result Record" record to drill down.
 
@@ -155,91 +136,63 @@ Now that we have created the People Finder Spoke and our Auto Approval Decision 
    >4. Click on "Auto Approved" to set the value.  
 ![](./images/04-03-21-dotwalkautoapprove.png)
 
-22. Let's set the Approved value to true.
+20. Let's set the Approved value to true.
 
    >1. Select "Flow Logic" as the step type.
 
    >2. Select "Set Flow Variables" from the list.  
 ![](./images/04-03-22-setflowvariables.png)
 
-23.  To add a flow variable to set, click the plus sign ⨁.  
+21.  To add a flow variable to set, click the plus sign ⨁.  
 ![](./images/04-03-23-setflowvariables.png)
 
-24. Set the Approved flow variable to true.
+22. Set the Approved flow variable to true.
 
-   >1. Drag and drop the <span className="button-white-purple-border-black">Approved</span> flow variable from the data pills on the right side of the screen into the Name field.
+   >1. Select "Approved | True/False" from the drop-down.
 
    >2. Check the data box for true.
 
-   >3. Click the "Done" button.  
+   >3. Click the <span className="button-purple">Done</span> button.  
 ![](./images/04-03-24-setflowvariables.png)
 
-25. Now let's the flow logic for when our condition is not met. Hover above step 5 and click the plus sign ⨁.  
+23. Now let's add the flow logic for when our condition is not met. Hover above step 6 and click the plus sign ⨁.  
 ![](./images/04-03-25-addelse.png)
 
-26. Add the else condition.
+24. Add the else condition.
 
    >1. Select "Flow Logic" as the step type.
 
    >2. Select "Else" from the list.  
 ![](./images/04-03-26-addelse.png)
 
-27. Add the ask for approval action.
+25. Move the ask for approval action.
 
-   >1. Select "Action" as the step type.
+   >1. Hover next to step 7 until you see and cross-shape and the text appears "Drag to reorder steps".
 
-   >2. Select "ServiceNow Core" > "Ask for Approval".  
+   >2. Drag step 7 onto the plus sign ⨁ under step 6.
 ![](./images/04-03-27-askforapproval.png)
 
-28. Setup the approval step.
+26. Move the if condition for then manager approves.
 
-   >1. Drag and drop the <span className="button-white-purple-border-black">Telework Case Record</span> from the data pills on the right-side of your screen.
+   >1. Hover next to step 8 until you see and cross-shape and the text appears "Drag to reorder steps".
 
-   >2. Set the Approval When field to "Anyone Approves.
-
-   >3. Dot-walk to the manager of the person that opened the telework request (see step 29 below).
-
-   >4. Click the <span className="button-purple">Done</span> button.  
-![](./images/04-03-28-setupapproval.png)
-
-29. Dot-walk to the manager (step 3 above).  
-   
-   >1. Click "Trigger - Record Created"
-
-   >2. Click the blue arrow next to the "Telework Case Record" record to drill down.
-
-   >3. Click the blue arrow next to the "Opened by" Reference to drill down.
-
-   >4. Click on "Manager" to set the value.  
-![](./images/04-03-29-dotwalkapproval.png)
-
-30. Add the if condition for then manager approves.
-
-   >1. Select "Flow Logic" as the step type.
-
-   >2. Select "If" from the list.  
+   >2. Drag step 8 onto the plus sign ⨁ under step 7.
 ![](./images/04-03-30-checkforapproval.png)
 
-31. Setup the if condition to check for manager approval.
+27. Now let's set the flow variable when the manager approves. Hover above step 9 and click the plus sign ⨁.
+![](./images/04-03-32-setflowvariables.png)
 
-   >1. Drag and drop <span className="button-white-purple-border-black">Approval State</span> from the data pills on the right-side of your screen.
-
-   >2. Set the value to "Approved".
-
-   >3. Click the <span className="button-purple">Done</span> button.  
-![](./images/04-03-31-setupapprovalcheck.png)
-
-32. Set the Approval flow variable to true.
+28. Set the Approval flow variable to true.
 
    >1. Select "Flow Logic" as the action type.
 
    >2. Select "Set Flow Variables" from the list.  
-![](./images/04-03-32-setflowvariables.png)
-
-33. To add a flow variable to set, click the plus sign ⨁.  
 ![](./images/04-03-33-setflowvariables.png)
 
-34. Set the Approved flow variable to true.
+29. To add a flow variable to set, click the plus sign ⨁.  
+![](./images/04-03-29-setflowvariables.png)
+
+30. Set the Approved flow variable to true.
 
    >1. Drag and drop the <span className="button-white-purple-border-black">Approved</span> flow variable from the data pills on the right side of the screen into the Name field.
 
@@ -248,27 +201,43 @@ Now that we have created the People Finder Spoke and our Auto Approval Decision 
    >3. Click the <span className="button-purple">Done</span> button.  
 ![](./images/04-03-34-setflowvariables.png)
 
-35. We no longer need our old Ask for Approval action, so go to line 9 and click the delete icon.  
-![](./images/04-03-35-deleteoldapproval.png)
+31. Let's return to our mainline logic and add a new step.  
+![](./images/04-03-31-addnewstep.png)
 
-36. Confirm that we want to delete the action by clicking "Delete".  
-![](./images/04-03-36-deleteoldapproval.png)
+32. Add the if condition.
 
-37. To modify the if condition to check for approval, click on line 9 to expand.  
-![](./images/04-03-37-editifmgrapproves.png)
+   >1. Select "Flow Logic" as the step type.
 
-38. Modify the approval condition.
+   >2. Select "If" from the list.  
+![](./images/04-03-32-addifstep.png)
 
-   >1. Change the condition label to: if approval conditions met
+33. Setup the if condition.
 
-   >2. Clear Condition 1.
+   | |Field Name                | Field Value
+   |-|--------------------------| --------------
+   |<span className="large-number">➊</span>|Condition Label | If all approve conditions are met
+   |<span className="large-number">➋</span>|Condition 1 | Drag and drop <span className="button-white-purple-border-black">Approved</span> data pill
+   |<span className="large-number">❸</span>|Operator | is
+   |<span className="large-number">❹</span>|Value | True
+   |<span className="large-number">❺</span>|Click on the <span className="button-purple">Done</span> button.  
+![](./images/04-03-33-setupifcond.png)
 
-   >3. Drag and drop the <span className="button-white-purple-border-black">Approved</span> flow variable from the data pills on the right side of the screen into the Condition 1 field.
+34. Delete the step placeholder under step 12.
+![](./images/04-03-34-deletestep.png)
 
-   >4. Set value to "True".
+35. Move the Create Task step.
 
-   >5. Click the <span className="button-purple">Done</span> button.  
-![](./images/04-03-38-editifmgrapproves.png)
+   >1. Hover next to step 10 until you see and cross-shape and the text appears "Drag to reorder steps".
+
+   >2. Drag step 10 onto the plus sign ⨁ under the then condition in step 12.
+![](./images/04-03-35-movecreatetask.png)
+
+36. Move the Send Email step.
+
+   >1. Hover next to the new step 10 until you see and cross-shape and the text appears "Drag to reorder steps".
+
+   >2. Drag step 10 onto the plus sign ⨁ under the new step 12 (Create Task).
+![](./images/04-03-36-moveemail.png)
 
 39. Save the changes to the Main flow by clicking the <span className="button-purple">Save</span> button.  
 ![](./images/04-03-39-saveflow.png)

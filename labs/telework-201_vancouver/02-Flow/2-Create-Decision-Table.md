@@ -47,59 +47,50 @@ We will create a decision table to assess the arrangement type and numbers of da
 
    | |Field Name                | Field Value
    |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Label | Arrangement
+   |<span className="large-number">➊</span>|Label | Telework Case
    |<span className="large-number">➋</span>|Type | Reference
-   |<span className="large-number">➌</span>|Table | Arrangement  
+   |<span className="large-number">➌</span>|Table | Telework Case  
 ![](./images/04-02-09-populateinputs.png)
 
-10. Click the <span className="text-purple-bold">⨁ Add</span> button next to Inputs again.  
-![](./images/04-02-10-addinputs.png)
-
-11. Populate the following:
-
-   | |Field Name                | Field Value
-   |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Label | Number of Days
-   |<span className="large-number">➋</span>|Type | Integer  
-![](./images/04-02-11-populateinputs.png)
-
-12.  In the Decision Table section, click <span className="text-black-bold-lblue">⨁ Add condition column</span>.  
+10.  On the Input row you just created, click <span className="button-white-purple-border">Add condition column</span>.  
 ![](./images/04-02-12-addconditioncolumn.png)
 
-13. Populate the NEW CONDITION COLUMN form.
+11. Populate the NEW CONDITION COLUMN form.
 
    | |Field Name                | Field Value
    |-|--------------------------| --------------
    |<span className="large-number">➊</span>|Condition Column Label | Arrangement
    |<span className="large-number">➋</span>|Description | Type of Arrangement
-   |<span className="large-number">❸</span>|Input | Arrangement
-   |<span className="large-number">❹</span>|Data to Evaluate | Reference Record
+   |<span className="large-number">❸</span>|Data to Evaluate | Field
+   |<span className="large-number">❹</span>|Field | Telework Case.arrangement
    |<span className="large-number">❺</span>|Default operator | is
    |<span className="large-number">❻</span>|Click on the <span className="button-purple">Done</span> button.  
 ![](./images/04-02-13-newconditioncolumnform.png)
 
-14. Add another condition column.
+12. Add another condition column.
 
    >1. Click the plus button ⨁ next the condition we just created.
 
    >2. Select "Add condition column".  
 ![](./images/04-02-14-addconditioncolumn.png)
 
-15. Populate the NEW CONDITION COLUMN form.
+13. Populate the NEW CONDITION COLUMN form.
 
    | |Field Name                | Field Value
    |-|--------------------------| --------------
-   |<span className="large-number">➊</span>|Condition Column Label | Number of Days
-   |<span className="large-number">➋</span>|Description | Number of Days
-   |<span className="large-number">❸</span>|Input | Number of Days
-   |<span className="large-number">❹</span>|Default operator | less than or is
-   |<span className="large-number">❺</span>|Click on the <span className="button-purple">Done</span> button.  
+   |<span className="large-number">➊</span>|Condition Column Label | Days per Week
+   |<span className="large-number">➋</span>|Description | Days per Week
+   |<span className="large-number">❸</span>|Input | Telework Request
+   |<span className="large-number">❹</span>|Data to Evaluate | Field
+   |<span className="large-number">❺</span>|Field | Telework Case.days_per_week
+   |<span className="large-number">❻</span>|Default operator | less than or is
+   |<span className="large-number">❼</span>|Click on the <span className="button-purple">Done</span> button.  
 ![](./images/04-02-15-newconditioncolumnform.png)
 
-16. In the results column, click <span className="text-black-bold-lgrey">⨁ Add result column</span>.  
+14. In the results column, click <span className="text-black-bold-lgrey">⨁ Add result column</span>.  
 ![](./images/04-02-16-addresultcolumn.png)
 
-17. Populate the NEW RESULT COLUMN form.
+15. Populate the NEW RESULT COLUMN form.
 
    | |Field Name                | Field Value
    |-|--------------------------| --------------
@@ -109,10 +100,10 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">❹</span>|Click on the <span className="button-purple">Done</span> button.  
 ![](./images/04-02-17-newresultcolumnform.png)
 
-18. Let's define our first decision row, by clicking into row 1.  
+16. Let's define our first decision row, by clicking into row 1.  
 ![](./images/04-02-18-definedecisionrow.png)
 
-19. Populate the Arrangement Condition.
+17. Populate the Arrangement Condition.
 
    | |Field Name                | Field Value
    |-|--------------------------| --------------
@@ -120,7 +111,7 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">➋</span>|Value | Situational Telework  
 ![](./images/04-02-19-populatearrangementcondition.png)
 
-20. Populate the Number of Days Condition.
+18. Populate the Number of Days Condition.
 
    | |Field Name                | Field Value
    |-|--------------------------| --------------
@@ -129,17 +120,17 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">❸</span>|Click on the value in the Auto Approved column (currently false).  
 ![](./images/04-02-20-populatnumdayscondition.png)
 
-21. Change the result for Auto Approval to true.
+19. Change the result for Auto Approval to true.
 
    >1. Switch the result to true.
 
    >2. Click the <span className="button-white-purple-border">OK</span> button to continue.  
 ![](./images/04-02-21-populateresult.png)
 
-22. Let's add our next decicion row by clicking <span className="text-purple-bold">⨁ Add new deicion row</span>  
+20. Let's add our next decision row by clicking <span className="text-purple-bold">⨁ Add new deicion row</span>  
 ![](./images/04-02-22-addnewdecisionrow.png)
 
-23. Populate the Arrangement Condition.
+21. Populate the Arrangement Condition.
 
    | |Field Name                | Field Value
    |-|--------------------------| --------------
@@ -147,7 +138,7 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">➋</span>|Value | Situational Telework  
 ![](./images/04-02-23-populatearrangementcondition.png)
 
-24. Populate the Number of Days Condition.
+22. Populate the Number of Days Condition.
 
    | |Field Name                | Field Value
    |-|--------------------------| --------------
@@ -155,10 +146,10 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">➋</span>|Value | 3  
 ![](./images/04-02-24-populatenumdayscondition.png)
 
-25. Let's add another decicion row by clicking <span className="text-purple-bold">⨁ Add new deicion row</span> 
+23. Let's add another decision row by clicking <span className="text-purple-bold">⨁ Add new deicion row</span> 
 ![](./images/04-02-25-addnewdecisionrow.png)
 
-26. Populate the Arrangement Condition.
+24. Populate the Arrangement Condition.
 
    | |Field Name                | Field Value
    |-|--------------------------| --------------
@@ -166,7 +157,7 @@ We will create a decision table to assess the arrangement type and numbers of da
    |<span className="large-number">➋</span>|Value | Situational Telework  
 ![](./images/04-02-26-populatearrangementcondition.png)
 
-27. Let's save our work by clikcing the <span className="button-purple">Save</span> button.  
+25. Let's save our work by clikcing the <span className="button-purple">Save</span> button.  
 ![](./images/04-02-27-savedecision.png)
 
 ## Bonus
