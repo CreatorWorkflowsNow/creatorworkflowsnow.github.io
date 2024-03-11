@@ -41,6 +41,122 @@ const config = {
       };
     },
 
+    /*
+     * TELEWORK CASE MGMT 101
+     */
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/telework-vancouver-101",
+        id: "teleworkvancouver-101",
+        routeBasePath: "labs/telework-vancouver-101",
+        sidebarPath: require.resolve("./labs/telework-vancouver-101/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
+    /*
+     * TELEWORK CASE MGMT 201
+     */
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/telework-201_vancouver",
+        id: "telework-201_vancouver",
+        routeBasePath: "labs/telework-201_vancouver",
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
+    /*
+     * COLLABORATE TO ACCELERATE LAB
+     */
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/collaborate-vancouver",
+        id: "collaboratevancouver",
+        routeBasePath: "labs/collaborate-vancouver",
+        sidebarPath: require.resolve("./labs/collaborate-vancouver/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
+    /*
+     * IHUB: SPOKE GENERATOR
+     */
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/spokegen",
+        id: "spokegen",
+        routeBasePath: "labs/spokegen",
+        sidebarPath: require.resolve("./labs/spokegen/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
+    /*
+     * Telework Utah
+     */
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/telework-utah",
+        id: "teleworkutah",
+        routeBasePath: "labs/telework-utah",
+        sidebarPath: require.resolve("./labs/telework-utah/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
+    /*
+     * EWF+CrWF: Dept Svc
+     */
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/deptsvc",
+        id: "deptsvc",
+        routeBasePath: "labs/deptsvc",
+        sidebarPath: require.resolve("./labs/deptsvc/sidebar.js"),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+        breadcrumbs: false,
+      },
+    ],
+
+    /*
+     * TRAVEL REQUEST
+     */
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        path: "labs/travelrequest",
+        id: "travelrequest",
+        routeBasePath: "labs/travelrequest",
+        sidebarPath: require.resolve("./labs/travelrequest/sidebar.js"),
+        breadcrumbs: false,
+      },
+    ],
+
+    /*
+     * COMPLAINT MGMT UTAH
+     */
+
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -51,6 +167,12 @@ const config = {
         breadcrumbs: false,
       },
     ],
+
+
+    /*
+     * THE FOLLOWING SECTIONS ARE NOT CURRENTLY IN USE.
+     * THEY ARE DEFINED HERE TO MAKE IT EASY TO MANUALLY GO THE URL AND TEST THEM.
+     */
 
     [
       "@docusaurus/plugin-content-docs",
@@ -77,68 +199,6 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        path: "labs/travelrequest",
-        id: "travelrequest",
-        routeBasePath: "labs/travelrequest",
-        sidebarPath: require.resolve("./labs/travelrequest/sidebar.js"),
-        breadcrumbs: false,
-      },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/deptsvc",
-        id: "deptsvc",
-        routeBasePath: "labs/deptsvc",
-        sidebarPath: require.resolve("./labs/deptsvc/sidebar.js"),
-        showLastUpdateAuthor: false,
-        showLastUpdateTime: false,
-        breadcrumbs: false,
-      },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/telework-utah",
-        id: "teleworkutah",
-        routeBasePath: "labs/telework-utah",
-        sidebarPath: require.resolve("./labs/telework-utah/sidebar.js"),
-        showLastUpdateAuthor: false,
-        showLastUpdateTime: false,
-        breadcrumbs: false,
-      },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/telework-vancouver-101",
-        id: "teleworkvancouver-101",
-        routeBasePath: "labs/telework-vancouver-101",
-        sidebarPath: require.resolve("./labs/telework-vancouver-101/sidebar.js"),
-        showLastUpdateAuthor: false,
-        showLastUpdateTime: false,
-        breadcrumbs: false,
-      },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/telework-201_vancouver",
-        id: "telework-201_vancouver",
-        routeBasePath: "labs/telework-201_vancouver",
-        showLastUpdateAuthor: false,
-        showLastUpdateTime: false,
-        breadcrumbs: false,
-      },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
         path: "labs/example-lab",
         id: "examplelab",
         routeBasePath: "labs/example-lab",
@@ -149,54 +209,14 @@ const config = {
       },
     ],
 
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/spokegen",
-        id: "spokegen",
-        routeBasePath: "labs/spokegen",
-        sidebarPath: require.resolve("./labs/spokegen/sidebar.js"),
-        showLastUpdateAuthor: false,
-        showLastUpdateTime: false,
-        breadcrumbs: false,
-      },
-    ],
-
-
-    /*
-     * COLLABORATE TO ACCELERATE LABS 
-     */
 
     [
       "@docusaurus/plugin-content-docs",
       {
-        path: "labs/collaborate-utah",
-        id: "collaborateutah",
-        routeBasePath: "labs/collaborate-utah",
-        sidebarPath: require.resolve("./labs/collaborate-utah/sidebar.js"),
-        breadcrumbs: false,
-      },
-    ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/collaborate-vancouver",
-        id: "collaboratevancouver",
-        routeBasePath: "labs/collaborate-vancouver",
-        sidebarPath: require.resolve("./labs/collaborate-vancouver/sidebar.js"),
-        breadcrumbs: false,
-      },
-    ],
-
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        path: "labs/psds-utah",
-        id: "psdsutah",
-        routeBasePath: "labs/psds-utah",
-        sidebarPath: require.resolve("./labs/psds-utah/sidebar.js"),
+        path: "labs/csm-va-utah",
+        id: "csmvautah",
+        routeBasePath: "labs/csm-va-utah",
+        sidebarPath: require.resolve("./labs/csm-va-utah/sidebar.js"),
         breadcrumbs: false,
       },
     ],
@@ -317,8 +337,8 @@ const config = {
                 href: "/labs/example-lab/overview",
               },
               {
-                label: "PSDS Draft",
-                href: "/labs/psds-utah/exercise_1_service_offering/overview",
+                label: "CSM-VA-Utah",
+                href: "/labs/csm-va-utah/overview",
               },
               {
                 label: "Now Create",

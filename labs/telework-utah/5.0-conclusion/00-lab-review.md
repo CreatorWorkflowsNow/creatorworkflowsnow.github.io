@@ -9,7 +9,7 @@ In this lab, we built, implemented, and tested an application using the fundamen
 
 The team managing the work will be more efficient and the users will get what they need faster.
 
-Of course, the examples in these exercises are just the beginning when it comes to the power of leveraging Automation Engine.
+Of course, the examples in these exercises are just the beginning when it comes to the power of leveraging App Engine.
 
 The possibilities are limited only by your imagination as a Creator. If you can dream it, you can workflow it on the Now Platform.
 

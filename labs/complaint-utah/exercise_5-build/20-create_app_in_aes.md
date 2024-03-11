@@ -30,7 +30,7 @@ draft: false
  ![](../images/2023-08-18-09-12-31.png)
 
 
-1. App Engine Studio will create default roles for **admin** and **user** of our application. Users assigned these roles will be members of the team responsible for investigating the complaints. Accept the default **admin** and **user** roles and select **Continue**.
+4. App Engine Studio will create default roles for **admin** and **user** of our application. Users assigned these roles will be members of the team responsible for investigating the complaints. Accept the default **admin** and **user** roles and select **Continue**.
     ![](../images/2023-08-04-08-44-36.png)
 
 

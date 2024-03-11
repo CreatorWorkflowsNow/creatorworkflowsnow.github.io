@@ -166,15 +166,43 @@ Check out this [Example Lab Guide](https://creatorworkflowsnow.github.io/labs/ex
 
 ## Admonitions
 
-[How to use the Admonitions on this site in your lab guide](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/admonitions)
+This is an example of a **TIP** admonition. 
+
+![](static/img/admonition-example.png)
+
+[How to add Admonitions to your lab guide](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/admonitions)
 
 ## Front Matter
 
-The information at the top of your markdown file is important for helping the site understand how to present your page.  [Guide to Front Matter on this site](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/front-matter)
+Front matter is the metadata at the top of a markdown file that tells the Docusuarus framework what to do with it.  Here is an example:
+
+```yaml
+---
+id: front-matter
+title: "Front Matter"
+pagination_label: "Amazing Front Matter Examples"
+hide_table_of_contents: true
+draft: false
+---
+```
+
+The information at the top of your markdown file is important for helping the site understand how to present your page.  
+
+[Guide to Front Matter](https://creatorworkflowsnow.github.io/labs/example-lab/3.0-additional-resources/front-matter)
 
 ## VS Code tips
 
-Some useful plugins for creating markdown content. [Link](/labs/example-lab/3.0-additional-resources/vs-code-tips)
+1. **Markdown All in One** - All you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
+
+   * [Markdown All in One on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+
+
+2. **Paste Image** - Paste image from clipboard directly into your markdown file. 
+
+   * [Paste Image on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)
+
+   * [YouTube Video on how to use Paste Image](https://youtu.be/5ssMxSnHFG8?si=zh4OtMiOk30Pvvci)
+
 
 [Back to top](#table-of-contents)
 

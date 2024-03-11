@@ -4,4 +4,4 @@ title: Download Lab Guide PDF
 draft: false
 ---
 
-[Click here to download Travel Request Lab Guide PDF](./downloads/travelrequest-lab.pdf)
+[Click here to download Travel Request Lab Guide PDF](./downloads/lab-guide.pdf)

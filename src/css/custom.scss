@@ -97,6 +97,10 @@ h1 {
   @apply text-nowinfblue-100;
 }
 
+p img {
+  max-width: 100%;
+}
+
 [data-theme="dark"] h1 {
   @apply text-nowwasabi;
 }
@@ -213,6 +217,7 @@ h1 {
   transition: color 0.3s;
   /* Add a smooth transition for the color change */
 }
+
 
 .button-white {
   background-color: white;
@@ -741,6 +746,7 @@ h1 {
 .markdown ol li ol li p img {
   @apply mt-5;
   @apply mb-5;
+  max-width: 60%;
 }
 
 /* end of list styling */
@@ -750,6 +756,7 @@ h1 {
   margin: auto;
   margin-bottom: 2.5rem;
   margin-top: 2rem;
+  max-width: 60%;
 }
 
 .markdown table {

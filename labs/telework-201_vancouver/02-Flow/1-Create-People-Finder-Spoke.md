@@ -5,6 +5,14 @@ hide_table_of_contents: false
 ---
 # Create People Finder Spoke
 
+A spoke is a scoped application containing Flow Designer content dedicated to a particular application or record type. This includes integrations that connect external systems or services with the ServiceNow platform. By leveraging spokes, organizations can extend the capabilities of their ServiceNow instance and integrate it with a wide range of external tools and services, enhancing automation, collaboration, and efficiency across their IT operations and business processes.
+
+[Click here to learn more about Spokes.](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/flow-designer/concept/spokes.html)
+
+Spoke Generator allows users to create custom spokes for integrating ServiceNow with external systems or services. It provides a graphical interface and a set of tools to streamline the process of building, configuring, and deploying spokes tailored to specific integration scenarios.
+
+[Click here to learn more about Spoke Generator.](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/flow-designer/concept/spoke-builder.html)
+
 We will create a re-usble integration to the finance department's People Finder Open API, so that we can access this data in our Main flow.
 
 ## Open Flow Designer to use Spoke Generator to create the People Finder Integration
@@ -119,29 +127,46 @@ We will create a re-usble integration to the finance department's People Finder 
 19. Click on the RUNTIME VALUE link  
 ![](./images/04-19-test-output.png)
 
-20. Review the JSON results. Note the "telework-certified" value.
+20. Review the JSON results. We can switch to the Formatted view.
 
-   >Click <span className="button-white-purple-border">Close</span> to continue  
-![](./images/04-20-action-json.png)
+   >Click <span className="button-white-purple-border">Formatted</span> toggle.
+![](./images/04-20-action-json-new.png)
 
-21. Close the Execution Details tab  
+21. Expand the output.
+![](./images/04-21-expand-output.png)
+
+22. Review the Formatted JSON results.
+
+   > 1. Note the <b>telework-certified</b> value.
+
+   > 2. Click <span className="button-white-purple-border">Close</span>
+   ![](./images/04-22-formatted-json.png)
+
+23. Close the Execution Details tab  
 ![](./images/04-21-close-execution-details.png)
 
-22. Close the Test Action model by clicking the <span className="button-white-purple-border">Cancel</span> button  
+24. Close the Test Action model by clicking the <span className="button-white-purple-border">Cancel</span> button  
 ![](./images/04-22-close-test-action.png)
 
-23. Save the GET /user spoke action
+25. Save the GET /user spoke action
 
    >Click the <span className="button-purple">Save</span> button  
 ![](./images/04-23-save-action.png)
 
-24. Now, we publish the spoke, so it will be available to call from our Main Flow.
+26. Now, we publish the spoke, so it will be available to call from our Main Flow.
 
    >Click the <span className="button-white-purple-border">Publish</span> button  
 ![](./images/04-24-publish-action.png)
 
-25. Confirm publication of the action
+27. Confirm publication of the action
 
    >Click the <span className="button-purple">Publish</span> button   
 ![](./images/04-25-confirm-publish-action.png)
 
+## Bonus: Explore Spoke Generator More
+
+Open a new browser tab or window and explore the following:
+https://developer.opentext.com/imservices/products/contentstorageservice/apis/contentstorage
+
+On your own, create a new spoke using the following OpenAPI spec:
+https://raw.githubusercontent.com/deflant/opentext-content-storage-swagger/main/opentext-content-storage-swagger.yaml
