@@ -1,11 +1,11 @@
 ---
 title: "Add a playbook" 
 sidebar_label: "1. Add a playbook"
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
-# Workspace – adding a playbook to the record page view
+# Adding a playbook to the workspace
 
-Amandas team is growing and her workspace that she uses to manage and report on telework cases is now used by more members of her direct reports. She has noticed some of them aren't always >aware of what to validate on the requests and Amanda would like a way for anyone who views the Telework Cases to be guided through what to look for and validate ensuring the process is followed >and all cases are treated equally.  
+Amandas team is growing and the workspace that she uses to manage and report on telework cases is now used by more of her direct reports. She has noticed some of the direct reports aren't always aware of what to validate on the requests and Amanda would like a way for anyone who views the Telework Cases to be guided through what to look for, ensure the process is followed and all cases are treated equally.  
 
 The solution for this is to implement a playbook into the workspace.  
 
@@ -20,100 +20,128 @@ Example of a playbook in a workspace:
 
 ## Steps to Adding a Playbook
 
-1. Design your playbook in Process Automation Designer
-2. Test and Publish your playbook
-3. Add playbook to your workspace in workspace builder
-4. If you want to change the order of where the tab appears, use UI Builder
+|   | 
+    |-------------|---------------------------------|
+    |<span className="large-number">➊</span>| Design your playbook in Process Automation Designer |
+    |<span className="large-number">➋</span>| Test and Publish your playbook  |
+    |<span className="large-number">➌</span>| Add playbook to your workspace in workspace builder  |
+    |<span className="large-number">➍</span>| If you want to change the order of where the tab appears, use UI Builder |
 
 
 ## Let's get started
 
 # Design your playbook in Process Automation Designer
 
->1. Go to 'All'
->2. Type in 'Process Automation Designer'
->3. Click on "Process Automation Designer' (this will open up a new tab in your browser)  
+1. 
+  |   | 
+    |-------------|---------------------------------|
+    |<span className="large-number">➊</span>| Go to 'All' |
+    |<span className="large-number">➋</span>| Type in 'Process Automation Designer' |
+    |<span className="large-number">➌</span>| Click on 'Process Automation Designer' (this will open up in a new tab in your browser) |
+
+  ![](./Playbook%20Images/go%20to%20all%20and%20click%20on%20process%20automation%20designer.jpg)
 
 
-![](./Playbook%20Images/go%20to%20all%20and%20click%20on%20process%20automation%20designer.jpg)
+  You are now in the Process Automation Designer list view showing you all the processes that have been completed.
+
+2. Click on 'Create a new process'
+
+  ![](./Playbook%20Images/PAD%20click%20on%20new%20process.jpg)
 
 
-You are now in the Process Automation Designer list view showing you all the processes that have been completed.
+3.  Give your process a label and description 
+  (**note: your application name should be the name of your Telework Case Management application, might be different than the one in the screenshot**)  
 
->1. Click on 'Create a new process'
+    | **Steps**   | 
+    |-------------|---------------------------------|
+    | Label | Telework Case Playbook |
+    | Description | used to ensure completeness of telework cases, triggered when case is created  |
+    | Click | Select a Trigger  |  
 
-![](./Playbook%20Images/PAD%20click%20on%20new%20process.jpg)
+  ![](./Playbook%20Images/name%20your%20process%20and%20select%20trigger.jpg)
 
-Give your process a label and description (note: your application name should be the name of your Telework Case Management application, might be different than the one in the screenshot)
+:::info
+This is going to feel a lot like flow designer – in the background, flows are being triggered and used as we put together our process.
+:::  
 
->1. Label: Telework Case Playbook
->2. Description: used to ensure completeness of telework cases, triggered when case is created
->3. Click on "Select a trigger"
 
-![](./Playbook%20Images/name%20your%20process%20and%20select%20trigger.jpg)
+4.  Select a trigger  
 
-> **Tip** This is going to feel a lot like flow designer – in the background, flows are being triggered and used as we put together our process.
+    | Steps | 
+    |-------------|---------------------------------|
+    |<span className="large-number">➊</span>| Choose the first option, "Define your own conditions for when your process runs" |
+    |<span className="large-number">➋</span>| Choose "Record Create" |
+    |<span className="large-number">➌</span>| Click on 'Set your trigger condition' |
 
-Select your trigger
 
->1. Choose the first option, "Define your own conditions for when your process runs"
->2. Choose "Record Create"
->3. Click on "Set your trigger conditions"
+  ![](./Playbook%20Images/select%20a%20trigger%201.jpg)![](./Playbook%20Images/select%20a%20trigger%202.jpg)  
 
-![](./Playbook%20Images/select%20a%20trigger%201.jpg)![](./Playbook%20Images/select%20a%20trigger%202.jpg)  
 
-Finally, choose your table and conditions – we aren't going to have any conditions on types of records but that is an option.
+5. Finally, choose your table and conditions – we aren't going to have any conditions on types of records but that is an option.  
 
->1. Table: Telework Case
->2. Click on "Go to Designer"
+    | **Steps**   | 
+    |-------------|---------------------------------|
+    | Table | Telework Case |
+    | Click | "Go to Designer"  |  
+    
+    ![](./Playbook%20Images/choose%20conditions%20for%20when%20it%20runs.jpg)  
+    
+    Switch to 'Board View'
 
-![](./Playbook%20Images/choose%20conditions%20for%20when%20it%20runs.jpg)  
-
-Switch to 'Board View'
-![](./Playbook%20Images/switch%20to%20board%20view.png)  
+  ![](./Playbook%20Images/switch%20to%20board%20view.png)  
 
 
 You should now be on this page:
 
 ![](./Playbook%20Images/Telework%20Case%20STAGE%201.png)  
 
-We're going to add 2 Stages:
 
->1. Stage 1: Completeness of Request
-  -This will be used to walk the workspace user reviewing the form and ensuring there's everything needed to make a good decision
->2. Stage 2: Finalizing Request
-  -This stage will be used to review that approvals are completed and IT has the task
+## Next we will add 2 stages
 
-## Go ahead and create the two lanes
+1. Adding the First Stage
 
->Click on: + Add Stage
-  1. Label: Completeness of Request
-  2. Description: review all information
-  3. When to start: When process starts
-  4. Click on 'Save and close'  
+    | Steps | 
+    |-------------|---------------------------------|
+    | Click | <span className="button-purple">+ Add Stage</span>  |
+    | Label | Completeness of Request |
+    | Description | ensure all the information is provided |
+    | When to start | When process starts |
+    | Click | 'Save and close' |
 
->Click on: + Add Stage (next to the stage you just created)
-  1. Label: Finalizing Request
-  2. Description: ensure all approvals and tasks have been created and completed
-  3. When to start: After specific stages
-  4. Click on 'Save and close'
+
+2. Adding the Second Stage
+
+    | Steps | 
+    |-------------|---------------------------------|
+    | Click | <span className="button-purple">+ Add Stage</span> (next to the stage you created)  |
+    | Label | Finalizing Request |
+    | Description | ensure all approvals and tasks have been created and completed |
+    | When to start | After specific stages |
+    | Click | 'Save and close' |
 
 Your screen should now look like this:
 
 ![](./Playbook%20Images/Telework%20Case%20Stage%202.png)  
 
-In the first Stage, Completeness of Request, we are going to have 3 activities:
+## In Column 1, Completeness of Request, we are going to add 3 activities  
 
-1. Check the opened\_by has a manager, the reason field is filled out and set the priority
-2. See if the opened\_by has any telework cases already submitted
-3. Give the workspace user the telework guidelines knowledge article if they want to attach it
+ | Completeness of Request | 
+    |-------------|---------------------------------|
+    | Activity &nbsp;<span className="large-number">➊</span>| Check the opened\_by has a manager, the reason field is filled out and set the priority |
+    | Activity &nbsp;<span className="large-number">➋</span>| See if the opened\_by has any telework cases already submitted |
+    | Activity &nbsp;<span className="large-number">➌</span>| Give the workspace user the telework guidelines knowledge article if they want to attach it |
 
-Completeness of Request – Activity 1
+<br/>
+**Completeness of Request – Activity <span className="large-number">➊</span>**
+<br/>
+<br/>
 
->1. Click on +Add activity under Stage 1 ![](./Playbook%20Images/add%20activity.jpg)
+1.  
+    |  | 
+    |-------------|---------------------------------|
+    | Click | <span className="button-purple">+ Add Activity</span>  |
 
 
-##
 ## \*\*Take A Break\*\* Explore the Activity Screen
 
 - 'Search Activities'
@@ -127,222 +155,287 @@ _(the boxes have been outlined with color to differentiate them. In your instanc
 ![](./Playbook%20Images/Add%20activity%20screen.jpg)
 
 More Info, [Click Here](https://docs.servicenow.com/bundle/vancouver-build-workflows/page/administer/process-automation-designer/task/create-process-definition.html)
-##
 
-## \*\*Back to Lab\*\*
+## \*\*Back to Lab and Adding Activity 1\*\*
 
-We'll be using the 'Common Activities' bundle. Feel free to see what is under 'Global' and 'Process Automation Content' for ideas on what else you can add to a playbook.
+Note: We'll be using the 'Common Activities' bundle. Feel free to see what is under 'Global' and 'Process Automation Content' for ideas on what else you can add to a playbook.
 
-Choose
+2.  
+    | Choose | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span>| Common Activities |
+    | <span className="large-number">➋</span>| User Form |
 
->1. Common Activities
->2. User Form
+  You should now be here:
 
-You should now be here:
+  ![](./Playbook%20Images/Telework%20Stage%202-5.jpg)  
 
-![](./Playbook%20Images/Telework%20Stage%202-5.jpg)  
-
+<br/>
 On the right hand side, is the activity properties. This is where we give the necessary info for the activity to work.
+<br/>
+<br/>
 
-Fill out the form (Edit activity properties):
+3. Fill out the form (Edit activity properties):
 
->1. Label: Review Form
->2. Description: Check the requestor has a manager, the reason field is filled out and the priority is set to correct level.
+  | Choose | 
+    |-------------|---------------------------------|
+    | Label | Review Form |
+    | Description | Check the requestor has a manager, the reason field is filled out and the priority is set to correct level. |
+    | Click | 'Automation' TAB (DO NOT click on 'Save and Close') |
 
-![](./Playbook%20Images/Telework%20Case%20Stage%203.png)  
+  ![](./Playbook%20Images/Telework%20Case%20Stage%203.png)  
 
-Click on 'Automation' tab (next to 'Details', DO NOT hit 'Save and close' yet, you will get an error)
+<br/>
+<br/>
 
-This activity has some inputs it needs:
 
->1. Table: Telework Case
->2. Record: use the data pill picker to choose the trigger record, just like in flow designer.
->3. Form Fields: opened\_by,justification,priority (this is a string field, must type them in) All other fields do not get changed.
->4. Click on: 'Save'
+4. This activity has some inputs it needs
 
-![](./Playbook%20Images/Telework%20Case%20Stage%204.jpg)  
+    | Choose | 
+    |-------------|---------------------------------|
+    | Table | Telework Case |
+    | Record | use the data pill picker to choose the trigger record, just like in flow designer |
+    | Form Fields | **must type in string field:** opened\_by,justification,priority |
+    | Click | <span className="button-purple">Save and close</span> |
+
+  ![](./Playbook%20Images/Telework%20Case%20Stage%204.jpg)  
 
 Before we go any further, let's test this out so you can see how this all will look to the workspace user.
 
-Click on 'Test' in upper right corner near activate: ![](./Playbook%20Images/Test%20button.jpg)
+Click on 'Test' in upper right corner near activate: <span className="button-purple">Test</span>
 
-  1. Choose any Telework Case record – the pictures below will be using TEL0001002
-  2. Click on: 'Run Test'
+1. 
+    | TEST | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span> | Choose Telework Case record – the pictures below will be using TEL0001002 |
+    | <span className="large-number">➋</span> | Click <span className="button-purple">Run Test</span> |
 
-![](./Playbook%20Images/Run%20Test.jpg)
+  ![](./Playbook%20Images/Run%20Test.jpg)
 
-Choose the 'Playbook preview' – click on: View (it will open in a new browser tab)  
-![](./Playbook%20Images/Run%20Test%20Choose%20View.jpg)
+2. Choose the 'Playbook preview' – click on: View (it will open in a new browser tab)  
+  ![](./Playbook%20Images/Run%20Test%20Choose%20View.jpg)
+
+  Give this screen a moment to load – when it's done, it should look like this:
+
+  ![](./Playbook%20Images/Telework%20Case%20Stage%207.jpg)  
+
+3. Try adding something for 'Justification' then 'Update' then 'Mark Complete'  
+
+4. In the bottom right corner is a 'cog' – you can open this up and try some of the extra settings. These can be configured in the experience tab for your playbook (not doing in this lab).
+
+5. If everything looks good, you can close this browser tab then click <span className="button-purple">Done</span> and you should be back to your playbook designer here:
+
+  ![](./Playbook%20Images/Telework%20Case%20Stage%206.jpg)  
 
 
-Give this screen a moment to load – when it's done, it should look like this:
-
-![](./Playbook%20Images/Telework%20Case%20Stage%207.jpg)  
-
-Try adding something for 'Justification' then 'Update' then 'Mark Complete'  
-
-In the bottom right corner is a 'cog' – you can open this up and try some of the extra settings. These can be configured in the experience tab for your playbook (not doing in this lab).
-
-If everything looks good, you can close this browser tab then click on 'Done' and you should be back to your playbook designer here:
-
-![](./Playbook%20Images/Telework%20Case%20Stage%206.jpg)  
+<br/>
+**Completeness of Request – Activity <span className="large-number">➋</span>**
+<br/>
+<br/>
 
 After the workspace user has reviewed the form, we would like them to see a list of any telework cases that have already been opened by the requestor. That will be our next activity – adding a list of telework cases opened by the requestor.
 
-Underneath 'Review Form' activity, click on: +Add activity ![](./Playbook%20Images/add%20activity.jpg)
+1.  
+    | Underneath 'Review Form'  | 
+    |-------------|---------------------------------|
+    | Click | <span className="button-purple">+ Add Activity</span>  |
 
-Choose:
+2.  
+    | Choose | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span> | Process Automation Content |
+    | <span className="large-number">➋</span> | Show list of records |
 
->1. Process Automation Content
->2. Show list of records
+  ![](./Playbook%20Images/2nd%20Activity%20pick%20activity.jpg)
 
-![](./Playbook%20Images/2nd%20Activity%20pick%20activity.jpg)
+3. In the 'Edit activity properties' on the right hand side
 
-In the 'Edit activity properties' on the right hand side, fill out the form:
+  |   | 
+    |-------------|---------------------------------|
+    | Label | Requestors Telework Case |
+    | Description | If the requestor has submitted any other telework case requests, they will be listed below |
+    | Click | <span className="button-purple">UI Layout</span> |
 
->1. Label: Requestors Telework Cases
->2. Description: If the requestor has submitted any other telework case requests, they will be listed below.
->3. Click on 'UI Layout' tab
+  ![](./Playbook%20Images/Telework%20Case%20Stage%209.jpg)  
 
-![](./Playbook%20Images/Telework%20Case%20Stage%209.jpg)  
+4. Fill out the 'UI Layout' tab  
+
+  |   |   
+    |-------------|---------------------------------|
+    | List Title | Requestors Case |
+    | Table | Telework Case |
+    | Columns | Number,state,created,opened\_by |
+    | Click  | 'Add Condition' next to 'List Query' |
+
+  Condition: opened\_by  is  opened\_by            
+  <br/>
+  'Add Condition' will look like this (then click <span className="button-purple">Modify</span> ):
+  
+  ![](./Playbook%20Images/2nd%20Activity%20is%20opened%20by.jpg)
+  
+  **Before** clicking on 'Save and close' your form will look like this:
+  
+  ![](./Playbook%20Images/Telework%20Case%20Stage%208.jpg)  
+
+5.  
+  |  | 
+    |-------------|---------------------------------|
+    | Click | <span className="button-purple">Save and Close</span> |
+
+  ![](./Playbook%20Images/Telework%20Case%20Stage%2010.jpg)  
 
 
-Fill out the 'UI Layout' tab
-
->1. List Title: Requestor Cases
->2. Table: Telework Case
->3. Columns: Number,state,created,opened\_by
->4. Click on 'Add Condition' next to 'List Query'
-  >>We need to only pull the records that have been opened by the current requestor.  
-  >>Opened\_by is opened\_by (use the data pill picker)
-
-Step 4 'Add Condition' will look like this (then click 'modify'):
-
-![](./Playbook%20Images/2nd%20Activity%20is%20opened%20by.jpg)
-
-**Before** clicking on 'Save and close' your form will look like this:
-
-![](./Playbook%20Images/Telework%20Case%20Stage%208.jpg)  
-
-Click 'Save and close' and now your process looks like this:
-
-![](./Playbook%20Images/Telework%20Case%20Stage%2010.jpg)  
+<br/>
+**Completeness of Request – Activity <span className="large-number">➌</span>**
+<br/>
+<br/>
 
 The last activity in this lane will be to show the workspace user the knowledge article on telework guidelines – many have asked to have this handy in case they need it at during the process or to attach for the requestor to review.
 
-Click on +Add Activity under 'Requestors Telework Cases' ![](./Playbook%20Images/add%20activity.jpg)
+1.  
+    | Underneath 'Requestors Telework Cases'  | 
+    |-------------|---------------------------------|
+    | Click | <span className="button-purple">+ Add Activity</span>  |
 
->1. Common Activities
->2. Show Knowledge Article
+2.  
+    | Choose | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span> | Common Activities |
+    | <span className="large-number">➋</span> | Show Knowledge Article |
 
-![](./Playbook%20Images/3rd%20Activity%20Show%20KA.jpg)
+  ![](./Playbook%20Images/3rd%20Activity%20Show%20KA.jpg)
 
-Fill out the 'Edit activity properties'
+3. In the 'Edit activity properties' on the right hand side
 
->1. Label: Show Telework Guidelines KA
->2. Description: This will give the requestor the telework guidelines knowledge article so they can use it if needed in the process.
->3. Start rule: When stage starts (we want this to be available right away)
->4. Click on: Automation tab (next to details tab)
+  |   | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span>  Label | Show Telework Guidelines KA |
+    | <span className="large-number">➋</span>  Description | This will give the requestor the telework guidelines knowledge article so they can use it if needed in the process |
+    | <span className="large-number">➌</span>  Start rule | When stage starts (we want this to be available right away) |
+    | <span className="large-number">➍</span>  Click | Automation Tab (next to details tab) |
 
-![](./Playbook%20Images/Telework%20Case%20Stage%2011.jpg)  
+  ![](./Playbook%20Images/Telework%20Case%20Stage%2011.jpg)  
 
-Fill out the 'Automation' tab
+4. Fill out the 'Automation' tab
 
->1. Title: Telework Guidelines
->2. Knowledge Article: KB0050185
->3. Click on: 'Save and close'
+  |   | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span> Title | Telework Guidelines |
+    | <span className="large-number">➋</span> Knowledge Article | KB0050185 |
+    | <span className="large-number">➌</span> Click | <span className="button-purple">Save and Close</span> |
 
-![](./Playbook%20Images/Telework%20Case%20Stage%2012.jpg)  
+  ![](./Playbook%20Images/Telework%20Case%20Stage%2012.jpg)  
 
 
 Super – your process should look like this now:
 
 ![](./Playbook%20Images/Telework%20Case%20Stage%2013.jpg)
 
-#
+##
 **If you have an error regarding an 'end connection' for step 2**  
->Go to 'Diagram View'  
->Connect Activity 1.2 to Stage 2  
->It should look like this:  
+- Go to 'Diagram View'  
+- Connect Activity 1.2 to Stage 2  
+- It should look like this:  
 
 ![](./Playbook%20Images/Telework%20Case%20Stage%2014.jpg)  
->then go back to Board view  
+- then go back to Board view  
 
-#
+## Feel free to take a break and test out your process like we did earlier
 
-# Feel free to take a break and test out your process like we did earlier
+<br/>
+<br/>
 
+For the second column, 'Finalizing Request' stage, we will be adding just one activity.
 
-### Now, let's add an activity to the 'Finalizing Request' stage and then we'll add the playbook to our workspace.
+1. Under the 'Finalizing Request' column  
 
->Click on +Add activity in the Finalizing Request stage  ![](./Playbook%20Images/add%20activity.jpg)
+    |  | 
+    |-------------|---------------------------------|
+    | Click | <span className="button-purple">+ Add Activity</span>  |
 
+2.  
+    | Choose | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span> | Common Activities |
+    | <span className="large-number">➋</span> | Instructions |
 
-Choose
->1. Common Activities
->2. Instruction
+3. In the 'Edit activity properties' on the right hand side  
 
-Fill out the 'Edit activity properties' form
-
->1. Label: Check for approval and IT Task
->2. Description: ensure approval was done and the IT Task was assigned to the right group.
->3. Start rule: When stage starts
->4. Click on: 'Save and close'
+    |   | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span> Label | Check for approval and IT Task |
+    | <span className="large-number">➋</span> Description | ensure approval was done and the IT Task was assigned to the right group |
+    | <span className="large-number">➌</span> Start rule | When stage starts |
+    | <span className="large-number">➍</span> Click | <span className="button-purple">Save and Close</span> |
 
 That's it! If you look under the 'Automation' tab it automatically puts the description as your instruction. Your form should look like this:
 
 ![](./Playbook%20Images/Telework%20Case%20Stage%2015.jpg)  
 
-Now, you're all set with version one of your Playbook! It's time to click on 'Activate'
+Now, you're all set with version one of your Playbook! It's time to click on <span className="button-purple">Activate</span>
 
 ![](./Playbook%20Images/Telework%20Case%20Stage%2016.jpg)  
 
-What else would you add to the process?
+- What else would you add to the process?
 
-Did you notice an activity for manager approval? Some great activities already in there, out of the box!
+- Did you notice an activity for manager approval? Some great activities are already in there, out of the box!
 ##
 
-Now that we have published the playbook, we need to add it to our workspace in app engine studio.
+<br/>
 
->1. Open 'App Engine Studio'
->2. Open your 'Telework Case Management' application
+Now that we have published the playbook, we need to add the playbook to our workspace in app engine studio.
+<br/>
 
-You should now be here:  
-![](./Playbook%20Images/App%20Engine%20Studio%20Telework%20Case.jpg)
+1.    
+    |  | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span> | Open 'App Engine Studio' |
+    | <span className="large-number">➋</span> | Open your 'Telework Case Management' application |  
 
-Let's edit the 'Telework' workspace
+  You should now be here:  
+  ![](./Playbook%20Images/App%20Engine%20Studio%20Telework%20Case.jpg)
 
-![](./Playbook%20Images/Telework%20Case%20Stage%2017.jpg)  
+2. Edit the 'Telework' workspace
 
-(if 'Get Started' pops up, go ahead and click on that)
+  ![](./Playbook%20Images/Telework%20Case%20Stage%2017.jpg)  
+
+  (if 'Get Started' pops up, go ahead and click on that)
 
 
 You should now be in the workspace builder, your screen should look something like this (some of the reports may differ)
 
 ![](./Playbook%20Images/workspace%20builder.jpg)
 
-At the top of the page:
+2.  At the top of the page:  
 
->1. Click on 'Record pages'
->2. Change to 'Telework Case Record Page'
+    |  | 
+    |-------------|---------------------------------|
+    | Click | 'Record pages' |
+    | Choose | 'Telework Case Record Page' |
 
-![](./Playbook%20Images/switch%20to%20record%20view%20on%20workspace.jpg)
+  ![](./Playbook%20Images/switch%20to%20record%20view%20on%20workspace.jpg)
 
-Choose 'Record details' on the left navigation bar:
+3.  On the left hand side, choose 'Record details' on the left navigation bar
 
-![](./Playbook%20Images/choose%20record%20details.jpg)
+  ![](./Playbook%20Images/choose%20record%20details.jpg)
 
-On the far right side, is the Record details configuration pane, choose + Add a playbook:
+4.  On the far right side, is the Record details configuration pane   
 
-![](./Playbook%20Images/add%20a%20playbook.jpg)
+    |  | 
+    |-------------|---------------------------------|
+    | Click on | + Add playbook |
 
-Enter in these fields:
+  ![](./Playbook%20Images/add%20a%20playbook.jpg)
 
->1. Tab name: Telework Playbook
->2. Playbook experience: Global Playbook Experience
->3. Click on 'Add'  
+5. Enter in these fields:  
 
-![](./Playbook%20Images/Add%20a%20playbook%20fields.jpg)
+    |  | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span> Tab name | Telework Playbook |
+    | <span className="large-number">➋</span> Playbook experience | Global Playbook Experience |
+    | <span className="large-number">➌</span> Click | <span className="button-purple">Add</span> |
+
+  ![](./Playbook%20Images/Add%20a%20playbook%20fields.jpg)
 
 
 ##
@@ -366,56 +459,59 @@ Let's move it to the very beginning. This is how it looks now – go ahead and c
 
 Now that you're in UI Builder – it takes a minute to load. Soon, you will see the pages and sections on the left.
 
->1. On the left go to: (these should already be expanded)
+1. On the left go to: (these should already be expanded)  
 
 >Body  
 >>- Resizable panes
   >>>- Left
     >>>>- Click on "Main Tab"
 
-![](./Playbook%20Images/Step%201%20UIB.jpg)
+  ![](./Playbook%20Images/Step%201%20UIB.jpg)
 
-Now, on the right side pane of UI Builder  
+2. On the right side pane of UI Builder  
+  Drag the Telework Playbook tab so it's on top of the Details tab.  
 
->Drag the Telework Playbook tab so it's on top of the Details tab.  
+  ![](./Playbook%20Images/UIB%202.jpg)  
 
-![](./Playbook%20Images/UIB%202.jpg)  
+  It should look like this and then Click <span className="button-purple">Save</span>:
 
-
-It should look like this and then Click 'Save':
-
-![](./Playbook%20Images/UIB%203.jpg)
+  ![](./Playbook%20Images/UIB%203.jpg)
 
 ### You're done! When the 'Save' button in the upper right is greyed out, you're good to close this tab and now we'll test in your workspace.
 
 ##
+
 Go back to the platform view and under workspaces, find 'Telework':
 
 ![](./Playbook%20Images/find%20telework%20workspace%20for%20test.jpg)
 
 The playbook runs when a new Telework case is created, so we'll need to do that in order to see our playbook in action.
 
-Once the workspace opens:
+1. When the workspace opens:  
 
->1. Choose the 'List' action on the far left
->2. Choose 'New'
+  |  | 
+    |-------------|---------------------------------|
+    | <span className="large-number">➊</span> | Choose 'List' Menu on far left |
+    | <span className="large-number">➋</span> | Choose 'New' | 
 
-![](./Playbook%20Images/Open%20new%20case%20step%201%20and%202.jpg)
+  ![](./Playbook%20Images/Open%20new%20case%20step%201%20and%202.jpg)
 
 
-Fill in the fields:
+2. Fill in the fields:  
 
->1. Arrangement: Remote
->2. Justification: Dependent Care
->3. Click 'Save'
+  |  | 
+    |-------------|---------------------------------|
+    | Arrangement | Remote |
+    | Justification | Dependent Care |
+    | Click | <span className="button-purple">Save</span> |
 
-(if it doesn't show up right away, refresh browser – this might happen the first time you run it)
+  (if it doesn't show up right away, refresh browser – this might happen the first time you run it)
 
 Here's your playbook 
 
-Walk through it and check out the experience –  
-What would you do differently?  
-What else would be helpful?  
+- Walk through it and check out the experience –  
+- What would you do differently?  
+- What else would be helpful?  
 
 Congrats!  
 
