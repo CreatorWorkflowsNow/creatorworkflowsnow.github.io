@@ -39,6 +39,13 @@ const sidebars = {
                 'Portal/3.3 Create a Widget',
             ],
         },
+        {
+            type: 'category',
+            label: '4. Bonus',
+            items: [
+                'Governance/Securely-Expand',
+            ],
+        },
         'Conclusion/index',
         'Survey',
         'CHANGELOG',
